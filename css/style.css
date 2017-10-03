@@ -1,0 +1,181 @@
+body {
+    background-color: #fff;
+}
+
+@font-face {
+    font-family: 'bessemer';
+    src: url('../fonts/fontello/bessemer.eot?50008918');
+    src: url('../fonts/fontello/bessemer.eot?50008918#iefix') format('embedded-opentype'),
+    url('../fonts/fontello/bessemer.woff2?50008918') format('woff2'),
+    url('../fonts/fontello/bessemer.woff?50008918') format('woff'),
+    url('../fonts/fontello/bessemer.ttf?50008918') format('truetype'),
+    url('../fonts/fontello/bessemer.svg?50008918#bessemer') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: "bessemer";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    /*width: 1em;*/
+    /*margin-right: .2em;*/
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    /*line-height: 1em;*/
+    /*margin-left: .2em;*/
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-plus:before { content: '\e800'; }
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.wrap {
+    margin: 0 auto;
+    max-width: 1380px;
+    width: 100%;
+    background-color: red;
+}
+
+/*--------------- HEADER ---------------*/
+
+header {
+    background-color: #fff;
+}
+
+.header-wrapper {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+.header-logo {
+    max-width: 180px;
+    width: 100%;
+    display: inline-block;
+    float: left;
+}
+
+.header-navigation {
+    float: right;
+}
+
+.header-navigation-item {
+    display: inline-block;
+    list-style: none;
+}
+
+.header-navigation-item a {
+    display: inline-block;
+}
+
+
+/*--------------- top slides content wrapper ---------------*/
+
+.top-slides-content-elements {
+    width: 100%;
+    height: 700px;
+    display: flex;
+}
+
+.top-slide-content-element {
+    position: relative;
+    display: inline-block;
+    width: 25%;
+    height: 100%;
+    max-height: 700px;
+    background-color: #0B8755;
+    border-right: 1px solid #CECFD0;
+    border-left: 1px solid #CECFD0;
+    transition: background-color .3s, width .3s;
+}
+
+.top-slide-content-element .top-slide-content-element-preview-block {
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+    left: 0;
+    width: 100%;
+    padding: 0 25px;
+}
+
+.top-slide-content-element-preview-block .read-more-block .plus-icon {
+    position: relative;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    vertical-align: middle;
+    display: inline-block;
+    text-align: center;
+    transition: background-color .3s;
+}
+
+.top-slide-content-element-preview-block .read-more-block .plus-icon .icon-plus {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    vertical-align: middle;
+    font-style: normal;
+    color: #fff;
+    margin: 0;
+    display: inline-block;
+    width: initial;
+    font-size: 24px;
+    transition: color .3s;
+}
+
+.top-slide-content-element-preview-block .read-more-block .read-more-block-title {
+    color: rgba(255,255,255,.0);
+    transition: .3s;
+    margin-left: 10px;
+
+}
+
+.top-slide-content-element:first-child {
+    border-left: none;
+}
+.top-slide-content-element:last-child {
+    border-right: none;
+}
+
+.top-slide-content-element:hover:not(.active) {
+    background-color: #165C40;
+}
+
+.top-slides-content-elements.has-active-child .top-slide-content-element {
+    width: 5%;
+}
+
+.top-slides-content-elements.has-active-child .top-slide-content-element.active {
+    width: 85%;
+}
+
+.top-slide-content-element:hover:not(.active) .top-slide-content-element-preview-block .read-more-block .plus-icon{
+    background-color: #fff;
+}
+
+.top-slide-content-element:hover:not(.active) .top-slide-content-element-preview-block .read-more-block .plus-icon .icon-plus {
+    color: #165C40;
+}
+
+.top-slide-content-element:hover:not(.active) .top-slide-content-element-preview-block .read-more-block .read-more-block-title {
+    color: rgba(255,255,255, 1);
+}
