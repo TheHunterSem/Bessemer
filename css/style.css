@@ -3,6 +3,18 @@ body {
 }
 
 @font-face {
+    font-family: 'NeueHaasUnicaPro-ThinItalic';
+    src: url('../fonts/NeueHaasUnica/NeueHaasUnicaPro-ThinItalic.eot');
+    src: url('../fonts/NeueHaasUnica/NeueHaasUnicaPro-ThinItalic.woff2') format('woff2'),
+    url('../fonts/NeueHaasUnica/NeueHaasUnicaPro-ThinItalic.woff') format('woff'),
+    url('../fonts/NeueHaasUnica/NeueHaasUnicaPro-ThinItalic.ttf') format('truetype'),
+    url('../fonts/NeueHaasUnica/NeueHaasUnicaPro-ThinItalic.svg#NeueHaasUnicaPro-ThinItalic') format('svg'),
+    url('../fonts/NeueHaasUnica/NeueHaasUnicaPro-ThinItalic.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'bessemer';
     src: url('../fonts/fontello/bessemer.eot?50008918');
     src: url('../fonts/fontello/bessemer.eot?50008918#iefix') format('embedded-opentype'),
@@ -91,6 +103,8 @@ header {
     width: 100%;
     height: 700px;
     display: flex;
+    background-color: #0B8755;
+    /*background-color: #CCCCCC;*/
 }
 
 .top-slide-content-element {
@@ -99,7 +113,7 @@ header {
     width: 25%;
     height: 100%;
     max-height: 700px;
-    background-color: #0B8755;
+    background-color: transparent;
     border-right: 1px solid #CECFD0;
     border-left: 1px solid #CECFD0;
     transition: background-color .3s, width .3s;
@@ -119,7 +133,8 @@ header {
     margin-top: 50px;
 }
 
-.top-slide-content-element-preview-block .read-more-block .plus-icon {
+.top-slide-content-element-preview-block .read-more-block .plus-icon,
+.top-slides-content-elements.has-active-child .top-slide-content-element.active .top-slide-content-element-preview-block .content-block .close-button .plus-icon {
     position: relative;
     background-color: transparent;
     border: 2px solid #fff;
@@ -132,7 +147,8 @@ header {
     transition: background-color .3s;
 }
 
-.top-slide-content-element-preview-block .read-more-block .plus-icon .icon-plus {
+.top-slide-content-element-preview-block .read-more-block .plus-icon .icon-plus,
+.top-slides-content-elements.has-active-child .top-slide-content-element.active .top-slide-content-element-preview-block .content-block .close-button .plus-icon .icon-plus {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -145,6 +161,10 @@ header {
     width: initial;
     font-size: 24px;
     transition: color .3s;
+}
+
+.top-slides-content-elements.has-active-child .top-slide-content-element.active .top-slide-content-element-preview-block .content-block .close-button .plus-icon .icon-plus {
+    transform: translate(-50%, -50%) rotate(45deg);
 }
 
 .top-slide-content-element-preview-block .read-more-block .read-more-block-title {
@@ -162,7 +182,7 @@ header {
 }
 
 .top-slide-content-element:hover:not(.active) {
-    background-color: #165C40;
+    background-color: rgba(0,0,0,.3);
 }
 
 .top-slides-content-elements.has-active-child .top-slide-content-element {
@@ -219,4 +239,34 @@ header {
 
 .top-slide-content-element:hover:not(.active) .top-slide-content-element-preview-block .content-block {
     margin-top: -100px;
+}
+
+.top-slide-content-element .preview-header {
+    display: none;
+}
+
+.top-slides-content-elements.has-active-child .top-slide-content-element:not(.active) .preview-header {
+    display: block;
+    margin: 60px auto 0;
+    transform: rotate(90deg);
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.top-slides-content-elements.has-active-child .top-slide-content-element.active .top-slide-content-element-preview-block .content-block .description {
+    height: auto;
+    opacity: 1;
+}
+
+.top-slides-content-elements.has-active-child .top-slide-content-element.active .top-slide-content-element-preview-block .read-more-block {
+    display: none;
+}
+
+.top-slides-content-elements.has-active-child .top-slide-content-element:not(.active) .top-slide-content-element-preview-block,
+.top-slides-content-elements .top-slide-content-element .top-slide-content-element-preview-block .content-block .close-button {
+    display: none;
+}
+
+.top-slides-content-elements.has-active-child .top-slide-content-element.active .top-slide-content-element-preview-block .content-block .close-button {
+    display: block;
 }
