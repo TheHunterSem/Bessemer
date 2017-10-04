@@ -114,6 +114,11 @@ header {
     padding: 0 25px;
 }
 
+.top-slide-content-element-preview-block .read-more-block {
+    display: block;
+    margin-top: 50px;
+}
+
 .top-slide-content-element-preview-block .read-more-block .plus-icon {
     position: relative;
     background-color: transparent;
@@ -178,4 +183,40 @@ header {
 
 .top-slide-content-element:hover:not(.active) .top-slide-content-element-preview-block .read-more-block .read-more-block-title {
     color: rgba(255,255,255, 1);
+}
+
+.top-slide-content-element-preview-block .content-block .main-header {
+    display: block;
+    text-transform: uppercase;
+    font-weight: 100;
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.top-slide-content-element-preview-block .content-block .year {
+    display: block;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #fff;
+    font-size: 20px;
+}
+
+.top-slide-content-element-preview-block .content-block .description {
+    transition: .3s;
+    height: 0;
+    opacity: 0;
+}
+
+.top-slide-content-element:hover:not(.active) .top-slide-content-element-preview-block .content-block .description {
+    height: 100px;
+    opacity: 1;
+}
+
+.top-slide-content-element-preview-block .content-block {
+    transition: .3s;
+}
+
+.top-slide-content-element:hover:not(.active) .top-slide-content-element-preview-block .content-block {
+    margin-top: -100px;
 }
