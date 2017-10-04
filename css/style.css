@@ -1,7 +1,9 @@
 body {
     background-color: #fff;
+    font-family: 'NeueHaasUnicaPro-Regular';
 }
 
+/*font-family: 'NeueHaasUnicaPro-ThinItalic';*/
 @font-face {
     font-family: 'NeueHaasUnicaPro-ThinItalic';
     src: url('../fonts/NeueHaasUnica/NeueHaasUnicaPro-ThinItalic.eot');
@@ -14,6 +16,7 @@ body {
     font-style: normal;
 }
 
+/*font-family: 'NeueHaasUnicaPro-Medium';*/
 @font-face {
     font-family: 'NeueHaasUnicaPro-Medium';
     src: url('../fonts/NeueHaasUnica/NeueHaasUnicaPro-Medium.eot');
@@ -26,6 +29,7 @@ body {
     font-style: normal;
 }
 
+/*font-family: 'NeueHaasUnicaPro-Thin';*/
 @font-face {
     font-family: 'NeueHaasUnicaPro-Thin';
     src: url('../fonts/NeueHaasUnica/NeueHaasUnicaPro-Thin.eot');
@@ -38,6 +42,7 @@ body {
     font-style: normal;
 }
 
+/*font-family: 'NeueHaasUnicaPro-UltLightIt';*/
 @font-face {
     font-family: 'NeueHaasUnicaPro-UltLightIt';
     src: url('../fonts/NeueHaasUnica/NeueHaasUnicaPro-UltLightIt.eot');
@@ -50,6 +55,7 @@ body {
     font-style: normal;
 }
 
+/*font-family: 'NeueHaasUnicaPro-UltraLight';*/
 @font-face {
     font-family: 'NeueHaasUnicaPro-UltraLight';
     src: url('../fonts/NeueHaasUnica/NeueHaasUnicaPro-UltraLight.eot');
@@ -62,6 +68,7 @@ body {
     font-style: normal;
 }
 
+/*font-family: 'NeueHaasUnicaPro-XBlackIt';*/
 @font-face {
     font-family: 'NeueHaasUnicaPro-XBlackIt';
     src: url('../fonts/NeueHaasUnica/NeueHaasUnicaPro-XBlackIt.eot');
@@ -74,6 +81,7 @@ body {
     font-style: normal;
 }
 
+/*font-family: 'NeueHaasUnicaPro-XBlack';*/
 @font-face {
     font-family: 'NeueHaasUnicaPro-XBlack';
     src: url('../fonts/NeueHaasUnica/NeueHaasUnicaPro-XBlack.eot');
@@ -86,6 +94,7 @@ body {
     font-style: normal;
 }
 
+/*font-family: 'NeueHaasUnicaPro-Regular';*/
 @font-face {
     font-family: 'NeueHaasUnicaPro-Regular';
     src: url('../fonts/NeueHaasUnica/NeueHaasUnicaPro-Regular.eot');
@@ -98,6 +107,7 @@ body {
     font-style: normal;
 }
 
+/*font-family: 'NeueHaasUnicaPro-BlackIt';*/
 @font-face {
     font-family: 'NeueHaasUnicaPro-BlackIt';
     src: url('../fonts/NeueHaasUnica/NeueHaasUnicaPro-BlackIt.eot');
@@ -110,6 +120,7 @@ body {
     font-style: normal;
 }
 
+/*font-family: 'NeueHaasUnicaPro-Black';*/
 @font-face {
     font-family: 'NeueHaasUnicaPro-Black';
     src: url('../fonts/NeueHaasUnica/NeueHaasUnicaPro-Black.eot');
@@ -122,6 +133,7 @@ body {
     font-style: normal;
 }
 
+/*font-family: 'NeueHaasUnicaPro-BoldItalic';*/
 @font-face {
     font-family: 'NeueHaasUnicaPro-BoldItalic';
     src: url('../fonts/NeueHaasUnica/NeueHaasUnicaPro-BoldItalic.eot');
@@ -134,6 +146,7 @@ body {
     font-style: normal;
 }
 
+/*font-family: 'NeueHaasUnicaPro-Bold';*/
 @font-face {
     font-family: 'NeueHaasUnicaPro-Bold';
     src: url('../fonts/NeueHaasUnica/NeueHaasUnicaPro-Bold.eot');
@@ -146,6 +159,7 @@ body {
     font-style: normal;
 }
 
+/*font-family: 'NeueHaasUnicaPro-HeavyIt';*/
 @font-face {
     font-family: 'NeueHaasUnicaPro-HeavyIt';
     src: url('../fonts/NeueHaasUnica/NeueHaasUnicaPro-HeavyIt.eot');
@@ -158,6 +172,7 @@ body {
     font-style: normal;
 }
 
+/*font-family: 'NeueHaasUnicaPro-Heavy';*/
 @font-face {
     font-family: 'NeueHaasUnicaPro-Heavy';
     src: url('../fonts/NeueHaasUnica/NeueHaasUnicaPro-Heavy.eot');
@@ -170,6 +185,7 @@ body {
     font-style: normal;
 }
 
+/*font-family: 'NeueHaasUnicaPro-Italic';*/
 @font-face {
     font-family: 'NeueHaasUnicaPro-Italic';
     src: url('../fonts/NeueHaasUnica/NeueHaasUnicaPro-Italic.eot');
@@ -182,6 +198,7 @@ body {
     font-style: normal;
 }
 
+/*font-family: 'NeueHaasUnicaPro-LightIt';*/
 @font-face {
     font-family: 'NeueHaasUnicaPro-LightIt';
     src: url('../fonts/NeueHaasUnica/NeueHaasUnicaPro-LightIt.eot');
@@ -194,6 +211,7 @@ body {
     font-style: normal;
 }
 
+/*font-family: 'NeueHaasUnicaPro-Light';*/
 @font-face {
     font-family: 'NeueHaasUnicaPro-Light';
     src: url('../fonts/NeueHaasUnica/NeueHaasUnicaPro-Light.eot');
@@ -206,6 +224,7 @@ body {
     font-style: normal;
 }
 
+/*font-family: 'NeueHaasUnicaPro-MediumIt';*/
 @font-face {
     font-family: 'NeueHaasUnicaPro-MediumIt';
     src: url('../fonts/NeueHaasUnica/NeueHaasUnicaPro-MediumIt.eot');
@@ -218,6 +237,7 @@ body {
     font-style: normal;
 }
 
+/*font-family: 'bessemer';  (fontello-ions)  */
 @font-face {
     font-family: 'bessemer';
     src: url('../fonts/fontello/bessemer.eot?50008918');
