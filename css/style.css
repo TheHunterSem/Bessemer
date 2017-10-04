@@ -314,10 +314,23 @@ header {
 .header-navigation-item {
     display: inline-block;
     list-style: none;
+    margin: 0 20px;
+}
+
+.header-navigation-item:first-child {
+    margin-left: 0;
+}
+
+.header-navigation-item:last-child {
+    margin-right: 0;
 }
 
 .header-navigation-item a {
     display: inline-block;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 16px;
+    color: #7C7D81;
 }
 
 
