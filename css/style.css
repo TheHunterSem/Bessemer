@@ -250,7 +250,6 @@ body {
     font-style: normal;
 }
 
-
 [class^="icon-"]:before, [class*=" icon-"]:before {
     font-family: "bessemer";
     font-style: normal;
@@ -269,7 +268,9 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-plus:before { content: '\e800'; }
+.icon-plus:before {
+    content: '\e800';
+}
 
 * {
     -webkit-box-sizing: border-box;
@@ -333,14 +334,13 @@ header {
     color: #7C7D81;
 }
 
-
 /*--------------- top slides content wrapper ---------------*/
 
 .top-slides-content-elements {
     width: 100%;
     height: 700px;
     display: flex;
-    background-color: #0B8755;
+    background: linear-gradient(180deg, #007144 0%, #0B8756 29.72%, #0B8756 71.54%, #007144 100%);
     /*background-color: #CCCCCC;*/
 }
 
@@ -367,7 +367,7 @@ header {
 
 .top-slide-content-element-preview-block .read-more-block {
     display: block;
-    margin-top: 50px;
+    margin-top: 60px;
 }
 
 .top-slide-content-element-preview-block .read-more-block .plus-icon,
@@ -398,6 +398,7 @@ header {
     width: initial;
     font-size: 24px;
     transition: color .3s;
+    font-family: 'bessemer';
 }
 
 .top-slides-content-elements.has-active-child .top-slide-content-element.active .top-slide-content-element-preview-block .content-block .close-button .plus-icon .icon-plus {
@@ -405,21 +406,25 @@ header {
 }
 
 .top-slide-content-element-preview-block .read-more-block .read-more-block-title {
-    color: rgba(255,255,255,.0);
+    color: rgba(255, 255, 255, .0);
     transition: .3s;
-    margin-left: 10px;
-
+    margin-left: 9px;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
+    font-family: 'NeueHaasUnicaPro-Regular';
 }
 
 .top-slide-content-element:first-child {
     border-left: none;
 }
+
 .top-slide-content-element:last-child {
     border-right: none;
 }
 
 .top-slide-content-element:hover:not(.active) {
-    background-color: rgba(0,0,0,.3);
+    background-color: rgba(0, 0, 0, .3);
 }
 
 .top-slides-content-elements.has-active-child .top-slide-content-element {
@@ -430,7 +435,7 @@ header {
     width: 85%;
 }
 
-.top-slide-content-element:hover:not(.active) .top-slide-content-element-preview-block .read-more-block .plus-icon{
+.top-slide-content-element:hover:not(.active) .top-slide-content-element-preview-block .read-more-block .plus-icon {
     background-color: #fff;
 }
 
@@ -439,30 +444,39 @@ header {
 }
 
 .top-slide-content-element:hover:not(.active) .top-slide-content-element-preview-block .read-more-block .read-more-block-title {
-    color: rgba(255,255,255, 1);
+    color: rgba(255, 255, 255, 1);
 }
 
 .top-slide-content-element-preview-block .content-block .main-header {
     display: block;
     text-transform: uppercase;
-    font-weight: 100;
     color: #fff;
-    font-size: 24px;
     margin-bottom: 20px;
+    font-family: 'NeueHaasUnicaPro-Light';
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 32px;
 }
 
 .top-slide-content-element-preview-block .content-block .year {
     display: block;
     text-transform: uppercase;
+    color: #FFFFFF;
+    font-family: 'NeueHaasUnicaPro-Medium';
+    font-size: 24px;
     font-weight: 500;
-    color: #fff;
-    font-size: 20px;
+    line-height: 24px;
 }
 
 .top-slide-content-element-preview-block .content-block .description {
-    transition: .3s;
+    transition: .3s ease;
     height: 0;
     opacity: 0;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #fff;
+    margin-top: 19px;
 }
 
 .top-slide-content-element:hover:not(.active) .top-slide-content-element-preview-block .content-block .description {
@@ -484,8 +498,15 @@ header {
 
 .top-slides-content-elements.has-active-child .top-slide-content-element:not(.active) .preview-header {
     display: block;
-    margin: 60px auto 0;
+    margin: 53px auto 0;
     transform: rotate(90deg);
+}
+
+.top-slides-content-elements.has-active-child .top-slide-content-element:not(.active) .preview-header .main-header {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 18px;
+    font-family: 'NeueHaasUnicaPro-Medium';
     color: #fff;
     text-transform: uppercase;
 }
