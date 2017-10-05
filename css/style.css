@@ -342,7 +342,7 @@ header {
     height: 700px;
     display: flex;
     background: linear-gradient(180deg, #007144 0%, #0B8756 29.72%, #0B8756 71.54%, #007144 100%);
-    /*background-color: #CCCCCC;*/
+    overflow: hidden;
 }
 
 .top-slides-content-elements .top-slides-content-elements-logo-preview {
@@ -354,7 +354,7 @@ header {
     display: block;
 }
 
-.top-slides-content-elements  .top-slides-content-elements-logo-preview img {
+.top-slides-content-elements .top-slides-content-elements-logo-preview img {
     max-width: 100%;
 }
 
@@ -420,7 +420,11 @@ header {
 }
 
 .top-slides-content-elements.has-active-child .top-slide-content-element.active .top-slide-content-element-preview-block .content-block .close-button .plus-icon {
-    transform: rotate(45deg);
+    background-color: transparent;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    border: none;
 }
 
 .top-slide-content-element-preview-block .read-more-block .read-more-block-title {
@@ -530,8 +534,7 @@ header {
 }
 
 .top-slides-content-elements.has-active-child .top-slide-content-element.active .top-slide-content-element-preview-block .content-block .description {
-    height: auto;
-    opacity: 1;
+    display: none;
 }
 
 .top-slides-content-elements.has-active-child .top-slide-content-element.active .top-slide-content-element-preview-block .read-more-block {
@@ -545,4 +548,24 @@ header {
 
 .top-slides-content-elements.has-active-child .top-slide-content-element.active .top-slide-content-element-preview-block .content-block .close-button {
     display: block;
+    margin-bottom: 30px;
+}
+
+.top-slides-content-elements.has-active-child .top-slide-content-element.active .top-slide-content-element-preview-block {
+    max-width: 228px;
+    top: 30px;
+    left: 30px;
+    transform: none;
+    bottom: initial;
+    padding: 0;
+}
+
+.top-slides-content-elements.has-active-child .top-slide-content-element.active .top-slide-content-element-preview-block .content-block .main-header {
+    font-size: 28px;
+    line-height: 28px;
+}
+
+.top-slides-content-elements.has-active-child .top-slide-content-element.active .top-slide-content-element-preview-block .content-block .year {
+    font-size: 22px;
+    line-height: 22px;
 }
