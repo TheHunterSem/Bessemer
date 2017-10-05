@@ -371,7 +371,7 @@ header {
     background-color: transparent;
     border-right: 1px solid #CECFD0;
     border-left: 1px solid #CECFD0;
-    transition: background-color .3s, width .3s;
+    transition: background-color .3s, width .5s;
 }
 
 .top-slide-content-element .top-slide-content-element-preview-block {

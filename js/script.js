@@ -10,7 +10,9 @@ $(document).ready(function () {
 
     $('.top-slide-content-element-preview-block .content-block .close-button .plus-icon').on('click', function (e) {
         e.stopPropagation();
-        $('.top-slide-content-element').removeClass('active');
+        setTimeout(function () {
+            $('.top-slide-content-element').removeClass('active');
+        }, 700);
         $('.top-slides-content-elements').removeClass('has-active-child');
     });
 
