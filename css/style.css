@@ -287,6 +287,27 @@ body {
     background-color: red;
 }
 
+/*homepage slider start*/
+.sp-left-thumbnails,.sp-right-thumbnails {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.sp-thumbnail-container {
+    cursor: pointer;
+}
+
+.sp-right-thumbnails {
+    right: -30px;
+    margin-left: 0;
+}
+
+.sp-right-thumbnails .sp-thumbnail-container {
+    margin-bottom: 20px;
+}
+/*homepage slider end*/
+
+
 /*--------------- HEADER ---------------*/
 
 header {

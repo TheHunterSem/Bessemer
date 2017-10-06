@@ -1,3 +1,20 @@
+jQuery(document).ready(function( $ ) {
+    $('#my-slider').sliderPro({
+        width: 356,
+        height: 430,
+        autoplay: false,
+        orientation: 'vertical',
+        loop: false,
+        arrows: true,
+        buttons: false,
+        thumbnailsPosition: 'right',
+        thumbnailPointer: false,
+        thumbnailArrows: true,
+        thumbnailWidth: 93,
+        thumbnailHeight: 113
+    });
+});
+
 $(document).ready(function () {
 
     //top slides content tabs
