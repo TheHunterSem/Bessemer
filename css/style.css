@@ -3,6 +3,10 @@ body {
     font-family: 'NeueHaasUnicaPro-Regular';
 }
 
+html {
+    margin-right: 0 !important;
+}
+
 /*font-family: 'NeueHaasUnicaPro-ThinItalic';*/
 @font-face {
     font-family: 'NeueHaasUnicaPro-ThinItalic';
@@ -648,6 +652,6 @@ header {
     visibility: visible;
 }
 
-.slider-megasuperpuper {
+.slider-content-block .slider-pro {
     min-width: 356px;
 }
