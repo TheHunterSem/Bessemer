@@ -3,11 +3,12 @@
 /*    top: 0;
     left: 0;*/
     /*width: 100%;*/
-    width: calc(100vw - 60px);
-    height: calc(100% - 70px);
+    width: calc(100vw - 80px);
+    /*height: calc(100% - 70px);*/
+    height: 800px;
     z-index: 1042;
     overflow: hidden;
-    position: fixed;
+    position: absolute;
     /*background: #0b0b0b;*/
     /*opacity: 0.8;*/
     background: #000;
@@ -23,10 +24,11 @@
     /*left: 0;*/
     max-width: 1380px;
     /*width: 100%;*/
-    width: calc(100vw - 60px);
-    height: calc(100% - 70px);
+    width: calc(100vw - 80px);
+    /*height: calc(100% - 70px);*/
+    height: 800px;
     z-index: 1043;
-    position: fixed;
+    position: absolute;
     outline: none !important;
     -webkit-backface-visibility: hidden;
     left: 50%;
@@ -166,7 +168,7 @@ button::-moz-focus-inner {
     position: absolute;
     /*right: 0;
     top: 0;*/
-    top: -10px;
+    top: -30px;
     left: 11px;
     text-decoration: none;
     text-align: center;
@@ -184,9 +186,9 @@ button::-moz-focus-inner {
     opacity: 1;
 }
 
-.mfp-close:active {
+/*.mfp-close:active {
     top: 1px;
-}
+}*/
 
 .mfp-close-btn-in .mfp-close {
     color: #333;

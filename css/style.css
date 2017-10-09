@@ -5,6 +5,7 @@ body {
 
 html {
     margin-right: 0 !important;
+    overflow: visible !important;
 }
 
 /*font-family: 'NeueHaasUnicaPro-ThinItalic';*/
@@ -292,6 +293,10 @@ html {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+}
+
+main .wrap {
+    padding: 0 30px 30px 30px;
 }
 
 /*homepage slider start*/
@@ -658,4 +663,14 @@ header {
 
 .slider-content-block .slider-pro {
     min-width: 356px;
+}
+
+.slider-content-description {
+    max-width: 640px;
+    width: 100%;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 30px;
 }
