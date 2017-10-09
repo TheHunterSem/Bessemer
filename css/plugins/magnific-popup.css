@@ -2,11 +2,12 @@
 .mfp-bg {
 /*    top: 0;
     left: 0;*/
-    width: 100%;
+    /*width: 100%;*/
+    width: calc(100vw - 60px);
     height: calc(100% - 70px);
     z-index: 1042;
     overflow: hidden;
-    position: absolute;
+    position: fixed;
     /*background: #0b0b0b;*/
     /*opacity: 0.8;*/
     background: #000;
@@ -19,14 +20,17 @@
 
 .mfp-wrap {
     top: 70px;
-    left: 0;
+    /*left: 0;*/
     max-width: 1380px;
-    width: 100%;
+    /*width: 100%;*/
+    width: calc(100vw - 60px);
     height: calc(100% - 70px);
     z-index: 1043;
-    position: absolute;
+    position: fixed;
     outline: none !important;
     -webkit-backface-visibility: hidden;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .mfp-container {

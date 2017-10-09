@@ -288,6 +288,10 @@ html {
     margin: 0 auto;
     max-width: 1380px;
     width: 100%;
+    padding: 0 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /*homepage slider start*/
