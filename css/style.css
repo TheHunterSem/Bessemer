@@ -679,16 +679,18 @@ header {
     display: none;
 }
 
-.top-slides-content-elements .top-slide-content-element .top-slide-content-element-preview-block .content-block .description-inside {
+.top-slides-content-elements .top-slide-content-element .top-slide-content-element-preview-block .content-block .description-inside-link {
     display: none;
     margin-top: 30px;
     font-family: Times;
     font-size: 20px;
     line-height: 26px;
     color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-.top-slides-content-elements.has-active-child .top-slide-content-element.active .top-slide-content-element-preview-block .content-block .description-inside {
+.top-slides-content-elements.has-active-child .top-slide-content-element.active .top-slide-content-element-preview-block .content-block .description-inside-link {
     display: block;
 }
 
