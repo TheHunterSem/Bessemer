@@ -4,26 +4,37 @@ $(document).ready(function () {
         type:'image'
     });
 
+    $('.slider-pro').sliderPro({
+        width: 356,
+        height: 430,
+        responsive: true,
+        autoplay: false,
+        orientation: 'vertical',
+        loop: false,
+        arrows: true,
+        buttons: false,
+        thumbnailsPosition: 'right',
+        thumbnailPointer: false,
+        thumbnailArrows: true,
+        thumbnailWidth: 93,
+        thumbnailHeight: 113,
+        breakpoints: {
+            1023: {
+                arrows: false,
+                buttons: true,
+                orientation: 'horizontal',
+                thumbnailWidth: 0,
+                thumbnailHeight: 0
+            }
+        }
+    });
+
     //top slides content tabs
 
     $('.top-slide-content-element').on('click', function () {
         $('.top-slide-content-element').removeClass('active');
         $(this).addClass('active');
         $('.top-slides-content-elements').addClass('has-active-child');
-        $('.slider-pro').sliderPro({
-            width: 356,
-            height: 430,
-            autoplay: false,
-            orientation: 'vertical',
-            loop: false,
-            arrows: true,
-            buttons: false,
-            thumbnailsPosition: 'right',
-            thumbnailPointer: false,
-            thumbnailArrows: true,
-            thumbnailWidth: 93,
-            thumbnailHeight: 113
-        });
     });
 
     $('.top-slide-content-element-preview-block .content-block .close-button .plus-icon').on('click', function (e) {
