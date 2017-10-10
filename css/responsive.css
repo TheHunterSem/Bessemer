@@ -1,0 +1,24 @@
+@media screen and (max-width: 1024px){
+
+    .top-slides-content-elements {
+        height: 700px;
+    }
+
+    .top-slide-content-element {
+        max-height: 700px;
+    }
+
+    .slider-pro {
+        margin: 0 0 0 265px;
+    }
+
+    .top-slides-content-elements .top-slide-content-element .main-content-inside {
+        margin-top: 30px;
+    }
+
+    .mfp-bg,
+    .mfp-wrap {
+        height: 700px;
+    }
+
+}
