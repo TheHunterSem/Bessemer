@@ -58,13 +58,15 @@
 }
 
 .mfp-content {
-    position: relative;
+    position: absolute;
     display: inline-block;
     vertical-align: middle;
     margin: 0 auto;
     text-align: left;
     z-index: 1045;
     width: 100%;
+    left: 0;
+    top: 0;
 }
 
 .mfp-inline-holder .mfp-content,
@@ -168,8 +170,8 @@ button::-moz-focus-inner {
     position: absolute;
     /*right: 0;
     top: 0;*/
-    top: -30px;
-    left: 11px;
+    top: 30px;
+    left: 30px;
     text-decoration: none;
     text-align: center;
     /*opacity: 0.65;*/

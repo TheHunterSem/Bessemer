@@ -413,6 +413,20 @@ header {
     background: linear-gradient(180deg, #ACAEB0 0%, #B9BBB9 30.83%, #B9BBB9 71.61%, #ACAEB0 100%);
 }
 
+.top-slide-content-element:last-child.active .top-slide-content-element-preview-block {
+    position: relative;
+}
+
+.top-slide-content-element:last-child.active .tab-main-description-text {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+}
+
+.top-slide-content-element:last-child.active .main-content-inside {
+    padding: 0 30px;
+}
+
 .top-slide-content-element .top-slide-content-element-preview-block {
     position: absolute;
     bottom: 50%;
@@ -665,7 +679,7 @@ header {
     min-width: 356px;
 }
 
-.slider-content-description {
+.tab-main-description-text {
     max-width: 640px;
     width: 100%;
     margin: 0 auto;
