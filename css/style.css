@@ -293,7 +293,7 @@ html {
 }
 
 main .wrap {
-    padding: 0 30px 30px 30px;
+    padding-bottom: 30px;
 }
 
 /*homepage slider start*/
@@ -328,6 +328,7 @@ header {
 }
 
 .header-wrapper {
+    position: relative;
     height: 70px;
     display: -webkit-box;
     display: -webkit-flex;
@@ -380,7 +381,60 @@ header {
     color: #7C7D81;
 }
 
-/*--------------- top slides content wrapper ---------------*/
+.mobile-btn-wrapper {
+    position: relative;
+    display: none;
+    width: 18px;
+    height: 16px;
+    background-color: transparent;
+}
+
+.mobile-btn-wrapper .btn-line {
+    position: absolute;
+    display: block;
+    width: 18px;
+    height: 2px;
+    background-color: #2F2D2D;
+    border-radius: 2px;
+    transition: .2s;
+}
+
+.mobile-btn-wrapper .btn-line.top {
+    top: 0;
+    left: 0;
+}
+
+.mobile-btn-wrapper .btn-line.middle {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .1s;
+}
+
+.mobile-btn-wrapper .btn-line.bottom {
+    bottom: 0;
+    left: 0;
+}
+
+.mobile-btn-wrapper.active .btn-line.middle {
+    width: 0;
+}
+
+.mobile-btn-wrapper.active .btn-line.top  {
+    top: 7px;
+    left: -2px;
+    transform: rotate(42deg);
+    width: 22px;
+}
+
+.mobile-btn-wrapper.active .btn-line.bottom {
+    bottom: 7px;
+    left: -2px;
+    transform: rotate(-42deg);
+    width: 22px;
+}
+
+    /*--------------- top slides content wrapper ---------------*/
 
 .top-slides-content-elements {
     position: relative;

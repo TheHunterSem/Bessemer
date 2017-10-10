@@ -9,3 +9,43 @@
     }
 
 }
+
+@media screen and (max-width: 1023px) {
+
+    .mobile-btn-wrapper {
+        display: inline-block;
+    }
+
+    .header-wrapper .header-navigation-items {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: #fff;
+        z-index: 20;
+        padding: 0 15px 30px 15px;
+    }
+
+    .header-navigation-item {
+        display: block;
+        margin: 0;
+        text-align: center;
+        border-bottom: 1px solid #F1F1F1;
+        min-width: 150px;
+    }
+
+    .header-navigation-item a {
+        font-size: 20px;
+        line-height: 20px;
+        text-transform: capitalize;
+        padding: 15px;
+    }
+
+    .wrap {
+        padding: 0 10px;
+    }
+
+    main .wrap {
+        padding-bottom: 10px;
+    }
+
+}

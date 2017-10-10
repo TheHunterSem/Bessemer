@@ -32,4 +32,19 @@ $(document).ready(function () {
         $('.top-slides-content-elements').removeClass('has-active-child');
     });
 
+
+    //MENU START
+
+    $('.mobile-btn-wrapper').click(function () {
+        if($(this).hasClass('active')) {
+            $(this).removeClass('active');
+        } else {
+            $(this).addClass('active');
+        }
+    });
+
+
+
+    //MENU START
+
 });
