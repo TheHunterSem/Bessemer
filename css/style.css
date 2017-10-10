@@ -290,9 +290,6 @@ html {
     max-width: 1380px;
     width: 100%;
     padding: 0 30px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
 }
 
 main .wrap {
@@ -302,6 +299,10 @@ main .wrap {
 /*homepage slider start*/
 .sp-left-thumbnails,.sp-right-thumbnails {
     top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
     transform: translateY(-50%);
 }
 
@@ -328,8 +329,20 @@ header {
 
 .header-wrapper {
     height: 70px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     background-color: #fff;
 }
@@ -373,6 +386,10 @@ header {
     position: relative;
     width: 100%;
     height: 800px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
     /*background: linear-gradient(180deg, #007144 0%, #0B8756 29.72%, #0B8756 71.54%, #007144 100%);*/
     overflow: hidden;
@@ -403,13 +420,24 @@ header {
     height: 100%;
     max-height: 800px;
     /*background-color: transparent;*/
+    background: -webkit-gradient(linear, left top, left bottom, from(#007144), color-stop(29.72%, #0B8756), color-stop(71.54%, #0B8756), to(#007144));
+    background: -webkit-linear-gradient(top, #007144 0%, #0B8756 29.72%, #0B8756 71.54%, #007144 100%);
+    background: -moz-linear-gradient(top, #007144 0%, #0B8756 29.72%, #0B8756 71.54%, #007144 100%);
+    background: -o-linear-gradient(top, #007144 0%, #0B8756 29.72%, #0B8756 71.54%, #007144 100%);
     background: linear-gradient(180deg, #007144 0%, #0B8756 29.72%, #0B8756 71.54%, #007144 100%);
     border-right: 1px solid #CECFD0;
     border-left: 1px solid #CECFD0;
+    -webkit-transition: background-color .3s, width .5s;
+    -o-transition: background-color .3s, width .5s;
+    -moz-transition: background-color .3s, width .5s;
     transition: background-color .3s, width .5s;
 }
 
 .top-slide-content-element:last-child {
+    background: -webkit-gradient(linear, left top, left bottom, from(#ACAEB0), color-stop(30.83%, #B9BBB9), color-stop(71.61%, #B9BBB9), to(#ACAEB0));
+    background: -webkit-linear-gradient(top, #ACAEB0 0%, #B9BBB9 30.83%, #B9BBB9 71.61%, #ACAEB0 100%);
+    background: -moz-linear-gradient(top, #ACAEB0 0%, #B9BBB9 30.83%, #B9BBB9 71.61%, #ACAEB0 100%);
+    background: -o-linear-gradient(top, #ACAEB0 0%, #B9BBB9 30.83%, #B9BBB9 71.61%, #ACAEB0 100%);
     background: linear-gradient(180deg, #ACAEB0 0%, #B9BBB9 30.83%, #B9BBB9 71.61%, #ACAEB0 100%);
 }
 
@@ -430,6 +458,10 @@ header {
 .top-slide-content-element .top-slide-content-element-preview-block {
     position: absolute;
     bottom: 50%;
+    -webkit-transform: translateY(50%);
+    -moz-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    -o-transform: translateY(50%);
     transform: translateY(50%);
     left: 0;
     width: 100%;
@@ -447,12 +479,17 @@ header {
     position: relative;
     background-color: transparent;
     border: 2px solid #fff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
     border-radius: 50%;
     height: 45px;
     width: 45px;
     vertical-align: middle;
     display: inline-block;
     text-align: center;
+    -webkit-transition: background-color .3s;
+    -o-transition: background-color .3s;
+    -moz-transition: background-color .3s;
     transition: background-color .3s;
 }
 
@@ -461,6 +498,10 @@ header {
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     vertical-align: middle;
     font-style: normal;
@@ -469,6 +510,9 @@ header {
     display: inline-block;
     width: initial;
     font-size: 24px;
+    -webkit-transition: color .3s;
+    -o-transition: color .3s;
+    -moz-transition: color .3s;
     transition: color .3s;
     font-family: 'bessemer';
 }
@@ -483,6 +527,9 @@ header {
 
 .top-slide-content-element-preview-block .read-more-block .read-more-block-title {
     color: rgba(255, 255, 255, .0);
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    -moz-transition: .3s;
     transition: .3s;
     margin-left: 9px;
     font-size: 18px;
@@ -500,7 +547,7 @@ header {
 }
 
 /*.top-slide-content-element:hover:not(.active) {*/
-    /*background-color: rgba(0, 0, 0, .3);*/
+/*background-color: rgba(0, 0, 0, .3);*/
 /*}*/
 
 .top-slide-content-element:not(.active)::before {
@@ -514,6 +561,9 @@ header {
     height: 100%;
     background-color: rgba(0, 0, 0, .0);
     z-index: 2;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    -moz-transition: .3s;
     transition: .3s;
 }
 
@@ -567,6 +617,9 @@ header {
 }
 
 .top-slide-content-element-preview-block .content-block .description {
+    -webkit-transition: .3s ease;
+    -o-transition: .3s ease;
+    -moz-transition: .3s ease;
     transition: .3s ease;
     height: 0;
     opacity: 0;
@@ -583,6 +636,9 @@ header {
 }
 
 .top-slide-content-element-preview-block .content-block {
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    -moz-transition: .3s;
     transition: .3s;
 }
 
@@ -602,6 +658,10 @@ header {
     position: relative;
     display: block;
     margin: 53px auto 0;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
     transform: rotate(90deg);
     z-index: 3;
 }
@@ -650,6 +710,10 @@ header {
     max-width: 228px;
     top: 30px;
     left: 30px;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
     transform: none;
     bottom: initial;
     padding: 0;
