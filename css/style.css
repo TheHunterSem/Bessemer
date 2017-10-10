@@ -615,7 +615,7 @@ header {
     transition: .3s;
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1025px) {
 
     .top-slide-content-element:hover:not(.active)::before {
         background-color: rgba(0, 0, 0, .3);

@@ -36,14 +36,31 @@ $(document).ready(function () {
     //MENU START
 
     $('.mobile-btn-wrapper').click(function () {
-        if($(this).hasClass('active')) {
-            $(this).removeClass('active');
+        if($('.mobile-btn-wrapper').hasClass('active')) {
+            $('.mobile-btn-wrapper').removeClass('active');
         } else {
-            $(this).addClass('active');
+            $('.mobile-btn-wrapper').addClass('active');
+        }
+        if($('.header-navigation-items').hasClass('active')) {
+            $('.header-navigation-items').removeClass('active');
+        } else {
+            $('.header-navigation-items').addClass('active');
         }
     });
 
-
+    function fixedHeader() {
+        var
+            boss = $(window),
+            y = boss.scrollTop();
+        if (y > (70)) {
+            $('.header-navigation-items.active').addClass('fixed');
+        } else {
+            $('.header-navigation-items.active').removeClass('fixed');
+        }
+    }
+    $(window).on('scroll', function() {
+        fixedHeader();
+    });
 
     //MENU START
 
