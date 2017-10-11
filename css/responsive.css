@@ -34,12 +34,13 @@
         height: 100vh;
         right: -300px;
         /*transition: right 1s;*/
-        display: none;
+        /*display: none;*/
+        transition: .3s;
     }
 
     .header-wrapper .header-navigation-items.active {
         right: 0;
-        display: block;
+        /*display: block;*/
     }
 
     .header-wrapper .header-navigation-items.fixed {
@@ -54,7 +55,7 @@
         margin: 0;
         text-align: center;
         border-bottom: 1px solid #F1F1F1;
-        min-width: 150px;
+        min-width: 200px;
     }
 
     .header-navigation-item a {
