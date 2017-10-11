@@ -396,7 +396,12 @@ header {
     width: 18px;
     height: 2px;
     background-color: #2F2D2D;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
     border-radius: 2px;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    -moz-transition: .2s;
     transition: .2s;
 }
 
@@ -408,7 +413,14 @@ header {
 .mobile-btn-wrapper .btn-line.middle {
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    -webkit-transition: .1s;
+    -o-transition: .1s;
+    -moz-transition: .1s;
     transition: .1s;
 }
 
@@ -424,6 +436,10 @@ header {
 .mobile-btn-wrapper.active .btn-line.top  {
     top: 7px;
     left: -2px;
+    -webkit-transform: rotate(42deg);
+    -moz-transform: rotate(42deg);
+    -ms-transform: rotate(42deg);
+    -o-transform: rotate(42deg);
     transform: rotate(42deg);
     width: 22px;
 }
@@ -431,11 +447,15 @@ header {
 .mobile-btn-wrapper.active .btn-line.bottom {
     bottom: 7px;
     left: -2px;
+    -webkit-transform: rotate(-42deg);
+    -moz-transform: rotate(-42deg);
+    -ms-transform: rotate(-42deg);
+    -o-transform: rotate(-42deg);
     transform: rotate(-42deg);
     width: 22px;
 }
 
-    /*--------------- top slides content wrapper ---------------*/
+/*--------------- top slides content wrapper ---------------*/
 
 .top-slides-content-elements {
     position: relative;
