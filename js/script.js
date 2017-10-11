@@ -31,10 +31,18 @@ $(document).ready(function () {
 
     //top slides content tabs
 
+    function BlaBla() {
+        if($('.top-slide-content-element:last').hasClass('active')) {
+            $('.top-slide-content-element').addClass('last-element-active');
+            $('.top-slide-content-element:last').removeClass('last-element-active');
+        }
+    }
+
     $('.top-slide-content-element').on('click', function () {
         $('.top-slide-content-element').removeClass('active');
         $(this).addClass('active');
         $('.top-slides-content-elements').addClass('has-active-child');
+        BlaBla();
     });
 
     $('.top-slide-content-element-preview-block .content-block .close-button .plus-icon').on('click', function (e) {
