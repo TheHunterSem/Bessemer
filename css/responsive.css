@@ -304,9 +304,9 @@
 
     .mfp-bg.fixed ,
     .mfp-wrap.fixed {
-        position: fixed;
-        top: 0;
-        height:100vh;
+        position: fixed !important;
+        top: 0 !important;
+        height:100vh !important;
     }
 
     .mfp-container {
@@ -365,6 +365,11 @@
 
     .mfp-content {
         top: 50px;
+    }
+
+    .mfp-bg.fixed .mfp-content ,
+    .mfp-wrap.fixed .mfp-content {
+        top: 0;
     }
 
     /*TABS END*/
