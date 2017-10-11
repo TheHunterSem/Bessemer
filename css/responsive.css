@@ -44,6 +44,7 @@
         -o-transition: .3s;
         -moz-transition: .3s;
         transition: .3s;
+        display: none !important;
     }
 
     .header-wrapper .header-navigation-items.active {
