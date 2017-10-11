@@ -35,6 +35,8 @@ $(document).ready(function () {
         if($('.top-slide-content-element:last').hasClass('active')) {
             $('.top-slide-content-element').addClass('last-element-active');
             $('.top-slide-content-element:last').removeClass('last-element-active');
+        } else {
+            $('.top-slide-content-element').removeClass('last-element-active');
         }
     }
 
