@@ -65,6 +65,8 @@
     }
 
     /*HEADER END*/
+
+
     /*TABS START*/
     .top-slides-content-elements {
         flex-direction: column;
@@ -92,6 +94,8 @@
         height: 92px;
         background: transparent;
         border-top: 2px solid #CECFD0;
+        border-right: none;
+        border-left: none;
         border-bottom: none;
         padding: 0 25px 25px 25px;
     }
@@ -211,6 +215,36 @@
         display: none;
     }
 
+    .sp-button {
+        width: 11px;
+        height: 11px;
+        border: 1px solid #fff;
+    }
+
+    .sp-selected-button {
+        background-color: #fff;
+    }
+
+    .mfp-bg,
+    .mfp-wrap {
+        width: calc(100vw - 20px);
+    }
+
+    .mfp-bg.fixed ,
+    .mfp-wrap.fixed {
+        position: fixed;
+        top: 0;
+        height:100vh;
+    }
+
+    .mfp-container {
+        top: 70px;
+    }
+
+    .top-slides-content-elements.has-active-child .top-slide-content-element.active .top-slide-content-element-preview-block .content-block {
+        height: auto;
+        margin-top: 20px;
+    }
 
     /*TABS END*/
 

@@ -64,9 +64,9 @@ $(document).ready(function () {
             boss = $(window),
             y = boss.scrollTop();
         if (y > (70)) {
-            $('.header-navigation-items.active').addClass('fixed');
+            $('.header-navigation-items.active, .mfp-bg, .mfp-wrap').addClass('fixed');
         } else {
-            $('.header-navigation-items.active').removeClass('fixed');
+            $('.header-navigation-items.active, .mfp-bg, .mfp-wrap').removeClass('fixed');
         }
     }
     $(window).on('scroll', function() {
