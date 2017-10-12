@@ -1,8 +1,8 @@
 /* Magnific Popup CSS */
 .mfp-bg {
-    width: -webkit-calc(100vw - 76px);
+/*    width: -webkit-calc(100vw - 76px);
     width: -moz-calc(100vw - 76px);
-    width: calc(100vw - 76px);
+    width: calc(100vw - 76px);*/
     height: 800px;
     z-index: 1042;
     overflow: hidden;
@@ -16,15 +16,16 @@
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
     transform: translateX(-50%);
-    max-width: 1380px;
+    max-width: 1320px;
+    width: 100%;
 }
 
 .mfp-wrap {
     top: 70px;
-    max-width: 1380px;
-    width: -webkit-calc(100vw - 76px);
-    width: -moz-calc(100vw - 76px);
-    width: calc(100vw - 76px);
+    /*max-width: 1380px;*/
+    /*width: -webkit-calc(100vw - 76px);*/
+    /*width: -moz-calc(100vw - 76px);*/
+    /*width: calc(100vw - 76px);*/
     height: 800px;
     z-index: 1043;
     position: absolute;
@@ -36,6 +37,8 @@
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
     transform: translateX(-50%);
+    max-width: 1320px;
+    width: 100%;
 }
 
 .mfp-container {

@@ -290,15 +290,6 @@
         display: none;
     }
 
-    .sp-button {
-        width: 11px;
-        height: 11px;
-        border: 1px solid #fff;
-    }
-
-    .sp-selected-button {
-        background-color: #fff;
-    }
 
     .mfp-bg,
     .mfp-wrap {
@@ -384,5 +375,20 @@
     }
 
     /*TABS END*/
+
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    .sp-button {
+        width: 11px;
+        height: 11px;
+        border: 1px solid #fff;
+    }
+
+    .sp-selected-button {
+        background-color: #fff;
+    }
 
 }

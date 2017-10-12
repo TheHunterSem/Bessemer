@@ -293,7 +293,7 @@ html {
     max-width: 1380px;
     width: 100%;
     padding: 0 30px;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 @keyframes FadeIn {
@@ -654,7 +654,7 @@ header {
     transition: .8s;
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
 
     .top-slide-content-element:hover:not(.active,.delay)::before {
         background-color: rgba(0, 0, 0, .3);
@@ -731,7 +731,7 @@ header {
     }
 
     .top-slides-content-elements.delay .top-slide-content-element .top-slide-content-element-preview-block .content-block .description,
-    .top-slides-content-elements.delay .top-slide-content-element .top-slide-content-element-preview-block .content-block .year,
+    .top-slides-content-elements.delay .top-slide-content-element:not(.active) .top-slide-content-element-preview-block .content-block .year,
     .top-slides-content-elements.delay .top-slide-content-element .top-slide-content-element-preview-block .read-more-block {
         opacity: 0 !important;
     }
