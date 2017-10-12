@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa0c892b-4e8c-4252-a1ce-9d5ec5871834" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/script.js" afterPath="$PROJECT_DIR$/js/script.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,8 +17,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="851" column="0" lean-forward="false" selection-start-line="851" selection-start-column="2" selection-end-line="853" selection-end-column="3" />
+            <state relative-caret-position="-3145">
+              <caret line="520" column="34" lean-forward="false" selection-start-line="520" selection-start-column="34" selection-end-line="520" selection-end-column="34" />
               <folding>
                 <element signature="e#289#931#0" expanded="false" />
                 <element signature="e#988#1598#0" expanded="false" />
@@ -115,6 +113,7 @@
       <find>header-navigation-items</find>
       <find>.top-slides-content-elements.has-active-child</find>
       <find>mfp</find>
+      <find>.top-slide-content-elements</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -349,12 +348,12 @@
       <workItem from="1507619227744" duration="15992000" />
       <workItem from="1507661601896" duration="4895000" />
       <workItem from="1507724726157" duration="10194000" />
-      <workItem from="1507796256648" duration="9561000" />
+      <workItem from="1507796256648" duration="9987000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129730000" />
+    <option name="totallyTimeSpent" value="130156000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -957,8 +956,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="851" column="0" lean-forward="false" selection-start-line="851" selection-start-column="2" selection-end-line="853" selection-end-column="3" />
+        <state relative-caret-position="-3145">
+          <caret line="520" column="34" lean-forward="false" selection-start-line="520" selection-start-column="34" selection-end-line="520" selection-end-column="34" />
           <folding>
             <element signature="e#289#931#0" expanded="false" />
             <element signature="e#988#1598#0" expanded="false" />

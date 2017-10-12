@@ -518,10 +518,10 @@ header {
     background: linear-gradient(180deg, #007144 0%, #0B8756 29.72%, #0B8756 71.54%, #007144 100%);
     border-right: 1px solid #CECFD0;
     border-left: 1px solid #CECFD0;
-    -webkit-transition: background-color .3s, width 1s;
-    -o-transition: background-color .3s, width 1s;
-    -moz-transition: background-color .3s, width 1s;
-    transition: background-color .3s, width 1s;
+    -webkit-transition: background .8s, width 1s;
+    -o-transition: background .8s, width 1s;
+    -moz-transition: background .8s, width 1s;
+    transition: background .8s, width 1s;
 }
 
 .top-slide-content-element:last-child {
