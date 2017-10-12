@@ -79,22 +79,26 @@ $(document).ready(function () {
 
     //MENU START
 
-    $('.mobile-btn-wrapper').click(function () {
+    function ActivationMobileMenu() {
+
         if($('.mobile-btn-wrapper').hasClass('active')) {
             $('.mobile-btn-wrapper').removeClass('active');
-        } else {
-            $('.mobile-btn-wrapper').addClass('active');
-        }
-        if($('.header-navigation-items').hasClass('active')) {
             setTimeout(function () {
-            $('.header-navigation-items').removeClass('active');
+                $('.header-navigation-items').removeClass('active');
             }, 400);
         } else {
+            $('.mobile-btn-wrapper').addClass('active');
             setTimeout(function () {
                 $('.header-navigation-items').addClass('active');
             }, 400);
-
         }
+
+    }
+
+    $('.mobile-btn-wrapper').on('click', function () {
+
+        ActivationMobileMenu();
+
     });
 
     function fixedHeader() {
