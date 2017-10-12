@@ -296,6 +296,16 @@ html {
     overflow-x: hidden;
 }
 
+@keyframes FadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 .top-slides-content-wrapper {
     padding-bottom: 30px;
 }
@@ -818,6 +828,13 @@ header {
     margin-bottom: 30px;
 }
 
+.top-slides-content-elements.has-active-child .top-slide-content-element .top-slide-content-element-preview-block {
+    opacity: 0;
+    animation-delay: 1s;
+    animation-duration: .7s;
+    animation-fill-mode: forwards;
+}
+
 .top-slides-content-elements.has-active-child .top-slide-content-element.active .top-slide-content-element-preview-block {
     max-width: 228px;
     top: 30px;
@@ -829,6 +846,15 @@ header {
     transform: none;
     bottom: initial;
     padding: 0;
+    animation-name: FadeIn;
+}
+
+/*.top-slides-content-elements .top-slide-content-element .top-slide-content-element-preview-block .description {*/
+    /*opacity: 1;*/
+/*}*/
+
+.top-slides-content-elements.delay .top-slide-content-element .top-slide-content-element-preview-block .content-block .description {
+    opacity: 0 !important;
 }
 
 .top-slides-content-elements.has-active-child .top-slide-content-element.active .top-slide-content-element-preview-block .content-block .main-header {
@@ -845,6 +871,15 @@ header {
 .top-slides-content-elements .top-slide-content-element .main-content-inside {
     visibility: hidden;
     margin-top: 60px;
+    opacity: 0;
+    transition: .6s;
+    animation-duration: .7s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards ;
+}
+
+.top-slides-content-elements.has-active-child .top-slide-content-element.active .main-content-inside {
+    animation-name: FadeIn;
 }
 
 .top-slides-content-elements .top-slide-content-element.active .main-content-inside {

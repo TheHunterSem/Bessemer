@@ -66,7 +66,7 @@ $(document).ready(function () {
     $('.top-slide-content-element').on('click', function () {
         $('.top-slide-content-element').removeClass('active');
         $(this).addClass('active');
-        $('.top-slides-content-elements').addClass('has-active-child');
+        $('.top-slides-content-elements').addClass('has-active-child delay');
         RecolorOfTabs();
     });
 
@@ -74,6 +74,10 @@ $(document).ready(function () {
         e.stopPropagation();
         $('.top-slide-content-element').removeClass('active');
         $('.top-slides-content-elements').removeClass('has-active-child');
+        setTimeout(function () {
+            $('.top-slides-content-elements').removeClass('delay');
+        }, 1100 );
+
     });
 
 
