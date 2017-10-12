@@ -111,19 +111,19 @@ $(document).ready(function () {
 
     });
 
-    function fixedHeader() {
+    /*function fixedHeader() {
         var
             boss = $(window),
             y = boss.scrollTop();
         if (y > (70)) {
-            $('.header-navigation-items.active, .mfp-bg, .mfp-wrap').addClass('fixed');
+            $('.mfp-bg, .mfp-wrap').addClass('fixed');
         } else {
-            $('.header-navigation-items.active, .mfp-bg, .mfp-wrap').removeClass('fixed');
+            $('.mfp-bg, .mfp-wrap').removeClass('fixed');
         }
     }
     $(window).on('scroll', function() {
         fixedHeader();
-    });
+    });*/
 
     //MENU START
 

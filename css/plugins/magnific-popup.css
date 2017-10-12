@@ -16,8 +16,8 @@
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
     transform: translateX(-50%);
-    max-width: 1320px;
-    width: 100%;
+    /*max-width: 1290px;*/
+    width: calc(100vw - 60px);
 }
 
 .mfp-wrap {
@@ -37,8 +37,8 @@
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
     transform: translateX(-50%);
-    max-width: 1320px;
-    width: 100%;
+    /*max-width: 1290px;*/
+    width: calc(100vw - 60px);
 }
 
 .mfp-container {

@@ -368,11 +368,11 @@
         top: 0;
     }*/
 
-    .mfp-wrap {
+    /*.mfp-wrap {
         top: 50% !important;
         transform: translate(-50%, -50%)!important;
         height: calc(100vh - 140px)!important;
-    }
+    }*/
 
     /*TABS END*/
 
@@ -389,6 +389,27 @@
 
     .sp-selected-button {
         background-color: #fff;
+    }
+
+}
+
+@media screen and (max-width: 1023px) {
+
+    /*html {*/
+        /*overflow: hidden !important;*/
+    /*}*/
+
+    .mfp-wrap {
+        height: 100vh;
+    }
+
+    .mfp-bg {
+        height: 100vh;
+    }
+
+    .mfp-container {
+        top: 50%;
+        transform: translateY(-50%);
     }
 
 }

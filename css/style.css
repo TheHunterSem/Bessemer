@@ -779,6 +779,8 @@ header {
     -moz-transition: .8s;
     transition: .8s;
     overflow: hidden;
+    padding-left: 10px;
+    margin-left: -10px;
 }
 
 .top-slide-content-element .preview-header {
@@ -819,6 +821,12 @@ header {
     color: #ffffff;
     text-decoration: none;
     cursor: pointer;
+    position: relative;
+}
+
+.description-inside-link .brackets.front {
+    position: absolute;
+    left: -9px;
 }
 
 .top-slides-content-elements.has-active-child .top-slide-content-element.active .top-slide-content-element-preview-block .content-block .description-inside-link {
