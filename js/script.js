@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     $('.sp-image-link').magnificPopup({
-        type:'image'
+        type: 'image'
     });
 
     $('.slider-pro').sliderPro({
