@@ -1,8 +1,8 @@
 /* Magnific Popup CSS */
 .mfp-bg {
-    width: -webkit-calc(100vw - 60px);
-    width: -moz-calc(100vw - 60px);
-    width: calc(100vw - 60px);
+    width: -webkit-calc(100vw - 76px);
+    width: -moz-calc(100vw - 76px);
+    width: calc(100vw - 76px);
     height: 800px;
     z-index: 1042;
     overflow: hidden;
@@ -22,9 +22,9 @@
 .mfp-wrap {
     top: 70px;
     max-width: 1380px;
-    width: -webkit-calc(100vw - 60px);
-    width: -moz-calc(100vw - 60px);
-    width: calc(100vw - 60px);
+    width: -webkit-calc(100vw - 76px);
+    width: -moz-calc(100vw - 76px);
+    width: calc(100vw - 76px);
     height: 800px;
     z-index: 1043;
     position: absolute;
@@ -492,4 +492,39 @@ img.mfp-img {
         padding-left: 6px;
         padding-right: 6px;
     }
+}
+
+
+/* overlay at start */
+.mfp-fade.mfp-bg {
+    opacity: 0;
+
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready {
+    opacity: 0.8;
+}
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing {
+    opacity: 0;
+}
+
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content {
+    opacity: 0;
+
+    -webkit-transition: all 0.15s ease-out;
+    -moz-transition: all 0.15s ease-out;
+    transition: all 0.15s ease-out;
+}
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+    opacity: 1;
+}
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+    opacity: 0;
 }
