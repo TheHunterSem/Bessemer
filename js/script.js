@@ -86,9 +86,14 @@ $(document).ready(function () {
             $('.mobile-btn-wrapper').addClass('active');
         }
         if($('.header-navigation-items').hasClass('active')) {
+            setTimeout(function () {
             $('.header-navigation-items').removeClass('active');
+            }, 400);
         } else {
-            $('.header-navigation-items').addClass('active');
+            setTimeout(function () {
+                $('.header-navigation-items').addClass('active');
+            }, 400);
+
         }
     });
 
