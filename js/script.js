@@ -76,7 +76,7 @@ $(document).ready(function () {
         $('.top-slides-content-elements').removeClass('has-active-child');
         setTimeout(function () {
             $('.top-slides-content-elements').removeClass('delay');
-        }, 1100 );
+        }, 1300 );
 
     });
 

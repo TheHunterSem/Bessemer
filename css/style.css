@@ -656,7 +656,7 @@ header {
 
 @media screen and (min-width: 1025px) {
 
-    .top-slide-content-element:hover:not(.active)::before {
+    .top-slide-content-element:hover:not(.active,.delay)::before {
         background-color: rgba(0, 0, 0, .3);
     }
 
@@ -685,8 +685,13 @@ header {
         margin-top: -100px;
     }
 
+    .top-slides-content-elements.delay .top-slide-content-element:hover:not(.active) .top-slide-content-element-preview-block .content-block,
     .top-slide-content-element:last-child:hover:not(.active) .top-slide-content-element-preview-block .content-block {
-        margin-top: 0;
+        margin-top: 0 !important;
+    }
+
+    .top-slides-content-elements.delay .top-slide-content-element:hover:not(.active) .top-slide-content-element-preview-block .content-block .description {
+        height: 0 !important;
     }
 
     .top-slides-content-elements.has-active-child .top-slide-content-element {
@@ -723,6 +728,12 @@ header {
         background: -moz-linear-gradient(top, #007144 0%, #0B8756 29.72%, #0B8756 71.54%, #007144 100%)!important;
         background: -o-linear-gradient(top, #007144 0%, #0B8756 29.72%, #0B8756 71.54%, #007144 100%)!important;
         background: linear-gradient(180deg, #007144 0%, #0B8756 29.72%, #0B8756 71.54%, #007144 100%) !important;
+    }
+
+    .top-slides-content-elements.delay .top-slide-content-element .top-slide-content-element-preview-block .content-block .description,
+    .top-slides-content-elements.delay .top-slide-content-element .top-slide-content-element-preview-block .content-block .year,
+    .top-slides-content-elements.delay .top-slide-content-element .top-slide-content-element-preview-block .read-more-block {
+        opacity: 0 !important;
     }
 
 }
@@ -847,14 +858,6 @@ header {
     bottom: initial;
     padding: 0;
     animation-name: FadeIn;
-}
-
-/*.top-slides-content-elements .top-slide-content-element .top-slide-content-element-preview-block .description {*/
-    /*opacity: 1;*/
-/*}*/
-
-.top-slides-content-elements.delay .top-slide-content-element .top-slide-content-element-preview-block .content-block .description {
-    opacity: 0 !important;
 }
 
 .top-slides-content-elements.has-active-child .top-slide-content-element.active .top-slide-content-element-preview-block .content-block .main-header {
