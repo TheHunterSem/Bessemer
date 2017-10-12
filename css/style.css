@@ -587,20 +587,15 @@ header {
 .top-slide-content-element-preview-block .read-more-block .plus-icon .icon-plus,
 .top-slides-content-elements.has-active-child .top-slide-content-element.active .top-slide-content-element-preview-block .content-block .close-button .plus-icon .icon-plus {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    top: 9px;
+    left: 14px;
     vertical-align: middle;
     font-style: normal;
     color: #fff;
     margin: 0;
     display: inline-block;
     width: initial;
-    font-size: 24px;
+    font-size: 23px;
     -webkit-transition: color .3s;
     -o-transition: color .3s;
     -moz-transition: color .3s;
@@ -617,7 +612,7 @@ header {
 }
 
 .top-slide-content-element-preview-block .read-more-block .read-more-block-title {
-    color: rgba(255, 255, 255, .0);
+    color: rgba(255, 255, 255, 1);
     -webkit-transition: .6s;
     -o-transition: .6s;
     -moz-transition: .6s;
@@ -627,6 +622,7 @@ header {
     line-height: 27px;
     font-weight: 300;
     font-family: 'NeueHaasUnicaPro-Light';
+    opacity: 0;
 }
 
 .top-slide-content-element:first-child {
@@ -648,15 +644,15 @@ header {
     height: 100%;
     background-color: rgba(0, 0, 0, .0);
     z-index: 2;
-    -webkit-transition: .8s;
-    -o-transition: .8s;
-    -moz-transition: .8s;
-    transition: .8s;
+    -webkit-transition: .65s;
+    -o-transition: .65s;
+    -moz-transition: .65s;
+    transition: .65s;
 }
 
 @media screen and (min-width: 1024px) {
 
-    .top-slide-content-element:hover:not(.active,.delay)::before {
+    .top-slide-content-element:hover:not(.active)::before {
         background-color: rgba(0, 0, 0, .3);
     }
 
@@ -664,16 +660,35 @@ header {
         cursor: pointer;
     }
 
-    .top-slide-content-element:hover:not(.active) .top-slide-content-element-preview-block .read-more-block .plus-icon {
+    .top-slide-content-element-preview-block .read-more-block .plus-icon::before {
+        position: absolute;
+        content: '';
+        top: -1px;
+        left: -1px;
+        right: 0;
+        bottom: 0;
+        transform: scale(0);
         background-color: #fff;
+        height: 43px;
+        width: 43px;
+        border-radius: 50%;
+        transition: .4s;
     }
+
+    .top-slide-content-element:hover:not(.active) .top-slide-content-element-preview-block .read-more-block .plus-icon::before  {
+        transform: scale(1);
+    }
+
 
     .top-slide-content-element:hover:not(.active) .top-slide-content-element-preview-block .read-more-block .plus-icon .icon-plus {
         color: #165C40;
     }
 
     .top-slide-content-element:hover:not(.active) .top-slide-content-element-preview-block .read-more-block .read-more-block-title {
-        color: rgba(255, 255, 255, 1);
+        animation-name: FadeIn;
+        animation-duration: .4s;
+        animation-delay: .3s;
+        animation-fill-mode: forwards ;
     }
 
     .top-slide-content-element:hover:not(.active) .top-slide-content-element-preview-block .content-block .description {
@@ -760,10 +775,10 @@ header {
 }
 
 .top-slide-content-element-preview-block .content-block .description {
-    -webkit-transition: .8s, opacity .3s;
-    -o-transition: .8s, opacity .3s;
-    -moz-transition: .8s, opacity .3s;
-    transition: .8s, opacity .3s;
+    -webkit-transition: .4s, opacity .3s;
+    -o-transition: .4s, opacity .3s;
+    -moz-transition: .4s, opacity .3s;
+    transition: .4s, opacity .3s;
     height: 0;
     opacity: 0;
     font-size: 16px;
@@ -774,10 +789,10 @@ header {
 }
 
 .top-slide-content-element-preview-block .content-block {
-    -webkit-transition: .8s;
-    -o-transition: .8s;
-    -moz-transition: .8s;
-    transition: .8s;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    -moz-transition: .4s;
+    transition: .4s;
     overflow: hidden;
     padding-left: 10px;
     margin-left: -10px;
@@ -849,7 +864,7 @@ header {
 
 .top-slides-content-elements.has-active-child .top-slide-content-element .top-slide-content-element-preview-block {
     opacity: 0;
-    animation-delay: 1s;
+    animation-delay: .5s;
     animation-duration: .7s;
     animation-fill-mode: forwards;
 }
@@ -885,7 +900,7 @@ header {
     opacity: 0;
     transition: .6s;
     animation-duration: .7s;
-    animation-delay: 1s;
+    animation-delay: .5s;
     animation-fill-mode: forwards ;
 }
 
