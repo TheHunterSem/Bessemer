@@ -3,8 +3,6 @@ body {
     font-size: 16px;
     background-color: #fff;
     font-family: 'NeueHaasUnicaPro-Regular';
-    overflow-x: hidden;
-    max-width: 1380px;
     width: 100%;
 }
 
@@ -295,6 +293,7 @@ html {
     max-width: 1380px;
     width: 100%;
     padding: 0 30px;
+    overflow-x: hidden;
 }
 
 main .wrap {
