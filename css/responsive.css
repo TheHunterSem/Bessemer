@@ -17,6 +17,11 @@
 
 @media screen and (max-width: 1023px) {
 
+    .top-slides-content-elements::before {
+        background: linear-gradient(180deg,rgba(0,0,0,.1),rgba(0,0,0,0));
+        z-index: 0;
+    }
+
     .top-slide-content-element {
         transition: height 1s;
     }
@@ -93,11 +98,7 @@
         width: 100%;
         height: 100%;
         padding-top: 100px;
-        background: -webkit-gradient(linear, left top, left bottom, from(#007144), color-stop(29.72%, #0B8756), color-stop(71.54%, #0B8756), to(#007144));
-        background: -webkit-linear-gradient(top, #007144 0%, #0B8756 29.72%, #0B8756 71.54%, #007144 100%);
-        background: -moz-linear-gradient(top, #007144 0%, #0B8756 29.72%, #0B8756 71.54%, #007144 100%);
-        background: -o-linear-gradient(top, #007144 0%, #0B8756 29.72%, #0B8756 71.54%, #007144 100%);
-        background: linear-gradient(180deg, #007144 0%, #0B8756 29.72%, #0B8756 71.54%, #007144 100%);
+        background-color: #0B8756;
         -webkit-transition: .3s;
         -o-transition: .3s;
         -moz-transition: .3s;
@@ -105,11 +106,7 @@
     }
 
     .top-slides-content-elements.has-active-child {
-        background: -webkit-gradient(linear, left top, left bottom, from(#ACAEB0), color-stop(30.83%, #B9BBB9), color-stop(71.61%, #B9BBB9), to(#ACAEB0));
-        background: -webkit-linear-gradient(top, #ACAEB0 0%, #B9BBB9 30.83%, #B9BBB9 71.61%, #ACAEB0 100%);
-        background: -moz-linear-gradient(top, #ACAEB0 0%, #B9BBB9 30.83%, #B9BBB9 71.61%, #ACAEB0 100%);
-        background: -o-linear-gradient(top, #ACAEB0 0%, #B9BBB9 30.83%, #B9BBB9 71.61%, #ACAEB0 100%);
-        background: linear-gradient(180deg, #ACAEB0 0%, #B9BBB9 30.83%, #B9BBB9 71.61%, #ACAEB0 100%);
+        background-color: #B9BBB9;
         padding-top: 0;
         transition: .7s;
     }
@@ -351,11 +348,7 @@
 
     .top-slides-content-elements.last-element-active .top-slide-content-element:last-child.active,
     .top-slides-content-elements.last-element-active {
-        background: -webkit-gradient(linear, left top, left bottom, from(#007144), color-stop(29.72%, #0B8756), color-stop(71.54%, #0B8756), to(#007144));
-        background: -webkit-linear-gradient(top, #007144 0%, #0B8756 29.72%, #0B8756 71.54%, #007144 100%);
-        background: -moz-linear-gradient(top, #007144 0%, #0B8756 29.72%, #0B8756 71.54%, #007144 100%);
-        background: -o-linear-gradient(top, #007144 0%, #0B8756 29.72%, #0B8756 71.54%, #007144 100%);
-        background: linear-gradient(180deg, #007144 0%, #0B8756 29.72%, #0B8756 71.54%, #007144 100%);
+        background-color: #0B8756;
     }
 
     .top-slides-content-elements.last-element-active .top-slide-content-element:last-child.active {
