@@ -18,7 +18,7 @@
 @media screen and (max-width: 1023px) {
 
     .top-slide-content-element {
-        transition: .4s;
+        transition: height 1s;
     }
 
     .wrap {
@@ -155,6 +155,10 @@
         transition: height 1s;
     }
 
+    .top-slides-content-elements.has-active-child .top-slide-content-element.active {
+        transition: height 1s;
+    }
+
     .top-slides-content-elements.has-active-child .top-slide-content-element.active .top-slide-content-element-preview-block .content-block .year {
         display: block;
         opacity: 1;
@@ -180,7 +184,7 @@
     }
 
     .top-slide-content-element-preview-block .content-block .main-header {
-        transition: .6s;
+        transition: .4s;
     }
 
     .top-slides-content-elements.has-active-child .top-slide-content-element:not(.active) .top-slide-content-element-preview-block .content-block .main-header {
