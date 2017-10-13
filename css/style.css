@@ -563,6 +563,11 @@ header {
     background: linear-gradient(to top,rgba(0,0,0,.1),rgba(0,0,0,0));
 }
 
+.top-slides-content-elements.has-active-child::before,
+.top-slides-content-elements.has-active-child::after {
+    z-index: 0;
+}
+
 .top-slides-content-elements .top-slides-content-elements-logo-preview {
     position: absolute;
     top: 30px;
