@@ -448,3 +448,11 @@
     }
 
 }
+
+@media (min-width: 1024px) and (max-width: 1220px){
+
+    .slider-content-block .slider-pro {
+        margin-left: 268px;
+    }
+
+}
