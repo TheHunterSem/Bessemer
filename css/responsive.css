@@ -27,6 +27,8 @@
         text-decoration: none;
         cursor: pointer;
         position: relative;
+        max-width: 640px;
+        margin: 0 auto;
     }
 
     .tab-main-description-text {
@@ -162,7 +164,7 @@
 
     .top-slides-content-elements.has-active-child .top-slide-content-element.active {
         width: 100%;
-        height: 1000px;
+        height: 1050px;
         max-height: none;
         transition: height 1s;
     }
@@ -189,6 +191,22 @@
     .top-slide-content-element-preview-block .content-block .year {
         opacity: 1;
         transition: .4s;
+    }
+
+    @keyframes FadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .top-slides-content-elements .top-slide-content-element .top-slide-content-element-preview-block .content-block .year {
+        animation-name: FadeIn;
+        animation-duration: .4s;
+        animation-delay: .5s;
+        /*animation-fill-mode: forwards ;*/
     }
 
     .top-slides-content-elements.has-active-child .top-slide-content-element-preview-block .content-block .year {
@@ -342,13 +360,9 @@
     .mfp-bg.fixed,
     .mfp-wrap.fixed {
         position: fixed !important;
-        /*top: 0 !important;*/
         height: 100vh !important;
     }
 
-    /*.mfp-container {
-        top: 10px !important;
-    }*/
     .top-slides-content-elements.has-active-child .top-slide-content-element.active .top-slide-content-element-preview-block .content-block {
         height: auto;
         margin-top: 20px;
@@ -356,7 +370,6 @@
 
     .slider-content-block .slider-pro {
         min-width: initial;
-        /*max-width: 280px;*/
         padding: 0;
         margin: 0 auto;
     }
@@ -395,18 +408,6 @@
         left: 10px;
     }
 
-    /*.mfp-content {
-        top: 50px;
-    }*/
-    /* .mfp-bg.fixed .mfp-content ,
-     .mfp-wrap.fixed .mfp-content {
-         top: 0;
-     }*/
-    /*.mfp-wrap {
-        top: 50% !important;
-        transform: translate(-50%, -50%)!important;
-        height: calc(100vh - 140px)!important;
-    }*/
     /*TABS END*/
 
 }
