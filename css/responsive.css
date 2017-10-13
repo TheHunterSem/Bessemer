@@ -145,6 +145,11 @@
         width: 100%;
     }
 
+    .top-slides-content-elements.has-active-child .top-slide-content-element .top-slide-content-element-preview-block .content-block,
+    .top-slides-content-elements.has-active-child .top-slide-content-element {
+        height: 50px;
+    }
+
     .top-slides-content-elements.has-active-child .top-slide-content-element.active {
         width: 100%;
         /*min-height: 300px;*/
@@ -162,9 +167,25 @@
 
     .top-slide-content-element-preview-block .content-block .description,
     .top-slides-content-elements.has-active-child .top-slide-content-element:not(.active) .preview-header,
-    .top-slide-content-element-preview-block .read-more-block .read-more-block-title,
-    .top-slides-content-elements.has-active-child .top-slide-content-element-preview-block .content-block .year {
+    .top-slide-content-element-preview-block .read-more-block .read-more-block-title {
         display: none;
+    }
+
+    .top-slide-content-element-preview-block .content-block .year {
+        opacity: 1;
+        transition: .4s;
+    }
+
+    .top-slides-content-elements.has-active-child .top-slide-content-element-preview-block .content-block .year {
+        opacity: 0;
+    }
+
+    .top-slide-content-element-preview-block .content-block .main-header {
+        transition: .6s;
+    }
+
+    .top-slides-content-elements.has-active-child .top-slide-content-element-preview-block .content-block .main-header {
+        margin-bottom: -20px;
     }
 
     .top-slide-content-element-preview-block .content-block .year {
@@ -224,6 +245,10 @@
         position: absolute;
         top: 18px;
         right: 10px;
+    }
+
+    .top-slides-content-elements.has-active-child .top-slide-content-element-preview-block .read-more-block {
+        top: 8px;
     }
 
     .top-slide-content-element-preview-block .content-block {
@@ -392,8 +417,8 @@
 @media screen and (max-width: 1023px) {
 
     .top-slide-content-element-preview-block .read-more-block .plus-icon .icon-plus, .top-slides-content-elements.has-active-child .top-slide-content-element.active .top-slide-content-element-preview-block .content-block .close-button .plus-icon .icon-plus {
-        top: 5px;
-        left: 10px;
+        top: 7px;
+        left: 9px;
     }
 
     .mfp-wrap {
