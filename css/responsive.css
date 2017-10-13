@@ -17,6 +17,22 @@
 
 @media screen and (max-width: 1023px) {
 
+    .description-inside-link-mobile {
+        display: block;
+        margin-top: 20px;
+        font-family: 'Times-Roman', Times;
+        font-size: 20px;
+        line-height: 22px;
+        color: #ffffff;
+        text-decoration: none;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .tab-main-description-text {
+        margin-top: 20px;
+    }
+
     .top-slides-content-elements::before {
         background: linear-gradient(180deg,rgba(0,0,0,.1),rgba(0,0,0,0));
         z-index: 0;
@@ -147,7 +163,7 @@
     .top-slides-content-elements.has-active-child .top-slide-content-element.active {
         width: 100%;
         /*min-height: 300px;*/
-        height: 950px;
+        height: 1000px;
         max-height: none;
         transition: height 1s;
     }

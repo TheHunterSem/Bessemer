@@ -910,6 +910,10 @@ header {
     position: relative;
 }
 
+.description-inside-link-mobile {
+    display: none;
+}
+
 .description-inside-link .brackets.front {
     position: absolute;
     left: -9px;
