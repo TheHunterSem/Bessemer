@@ -193,22 +193,6 @@
         transition: .4s;
     }
 
-    @keyframes FadeIn {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-
-    .top-slides-content-elements .top-slide-content-element .top-slide-content-element-preview-block .content-block .year {
-        animation-name: FadeIn;
-        animation-duration: .4s;
-        animation-delay: .5s;
-        /*animation-fill-mode: forwards ;*/
-    }
-
     .top-slides-content-elements.has-active-child .top-slide-content-element-preview-block .content-block .year {
         opacity: 0;
     }
@@ -527,10 +511,27 @@
 
 }
 
+@media screen and (max-width: 414px){
+
+    .mfp-bg, .mfp-wrap {
+        max-width: calc(414px - 20px);
+    }
+
+}
+
+
 @media screen and (max-width: 375px){
 
     .mfp-bg, .mfp-wrap {
         max-width: calc(375px - 20px);
+    }
+
+}
+
+@media screen and (max-width: 360px){
+
+    .mfp-bg, .mfp-wrap {
+        max-width: calc(360px - 20px);
     }
 
 }
