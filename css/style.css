@@ -652,13 +652,7 @@ header {
 
 @media screen and (min-width: 1024px) {
 
-    .top-slide-content-element:hover:not(.active)::before {
-        background-color: rgba(0, 0, 0, .3);
-    }
 
-    .top-slide-content-element:hover:not(.active) {
-        cursor: pointer;
-    }
 
     .top-slide-content-element-preview-block .read-more-block .plus-icon::before {
         position: absolute;
@@ -673,44 +667,6 @@ header {
         width: 43px;
         border-radius: 50%;
         transition: .4s;
-    }
-
-    .top-slide-content-element:hover:not(.active) .top-slide-content-element-preview-block .read-more-block .plus-icon::before  {
-        transform: scale(1);
-    }
-
-
-    .top-slide-content-element:hover:not(.active) .top-slide-content-element-preview-block .read-more-block .plus-icon .icon-plus {
-        color: #165C40;
-    }
-
-    .top-slide-content-element:hover:not(.active) .top-slide-content-element-preview-block .read-more-block .read-more-block-title {
-        animation-name: FadeIn;
-        animation-duration: .4s;
-        animation-delay: .3s;
-        animation-fill-mode: forwards ;
-    }
-
-    .top-slide-content-element:hover:not(.active) .top-slide-content-element-preview-block .content-block .description {
-        height: 100px;
-        opacity: 1;
-    }
-
-    .top-slide-content-element:hover:not(.active) .top-slide-content-element-preview-block .content-block {
-        margin-top: -100px;
-    }
-
-    .top-slides-content-elements.delay .top-slide-content-element:hover:not(.active) .top-slide-content-element-preview-block .content-block,
-    .top-slide-content-element:last-child:hover:not(.active) .top-slide-content-element-preview-block .content-block {
-        margin-top: 0 !important;
-    }
-    
-    .top-slide-content-element:last-child:hover:not(.active) .top-slide-content-element-preview-block .read-more-block .plus-icon .icon-plus {
-        color: #B9BBB9;
-    }
-
-    .top-slides-content-elements.delay .top-slide-content-element:hover:not(.active) .top-slide-content-element-preview-block .content-block .description {
-        height: 0 !important;
     }
 
     .top-slides-content-elements.has-active-child .top-slide-content-element {
@@ -753,6 +709,64 @@ header {
     .top-slides-content-elements.delay .top-slide-content-element:not(.active) .top-slide-content-element-preview-block .content-block .year,
     .top-slides-content-elements.delay .top-slide-content-element .top-slide-content-element-preview-block .read-more-block {
         opacity: 0 !important;
+    }
+
+}
+
+@media screen and (min-width: 1025px) {
+
+    .top-slide-content-element:hover:not(.active)::before {
+        background-color: rgba(0, 0, 0, .3);
+    }
+
+    .top-slide-content-element:hover:not(.active) {
+        cursor: pointer;
+    }
+
+    .top-slide-content-element:hover:not(.active) .top-slide-content-element-preview-block .read-more-block .plus-icon::before  {
+        transform: scale(1);
+    }
+
+
+    .top-slide-content-element:hover:not(.active) .top-slide-content-element-preview-block .read-more-block .plus-icon .icon-plus {
+        color: #165C40;
+    }
+
+    .top-slide-content-element:hover:not(.active) .top-slide-content-element-preview-block .read-more-block .read-more-block-title {
+        animation-name: FadeIn;
+        animation-duration: .4s;
+        animation-delay: .3s;
+        animation-fill-mode: forwards ;
+    }
+
+    .top-slide-content-element:hover:not(.active) .top-slide-content-element-preview-block .content-block .description {
+        height: 100px;
+        opacity: 1;
+    }
+
+    .top-slide-content-element:hover:not(.active) .top-slide-content-element-preview-block .content-block {
+        margin-top: -100px;
+    }
+
+    .top-slides-content-elements.delay .top-slide-content-element:hover:not(.active) .top-slide-content-element-preview-block .content-block,
+    .top-slide-content-element:last-child:hover:not(.active) .top-slide-content-element-preview-block .content-block {
+        margin-top: 0 !important;
+    }
+
+    .top-slide-content-element:last-child:hover:not(.active) .top-slide-content-element-preview-block .read-more-block .plus-icon .icon-plus {
+        color: #B9BBB9;
+    }
+
+    .top-slides-content-elements.delay .top-slide-content-element:hover:not(.active) .top-slide-content-element-preview-block .content-block .description {
+        height: 0 !important;
+    }
+
+}
+
+@media screen and (width: 1024px){
+
+    .top-slide-content-element .top-slide-content-element-preview-block .read-more-block .read-more-block-title {
+        opacity: 1;
     }
 
 }
