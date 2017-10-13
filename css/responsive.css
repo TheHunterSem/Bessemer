@@ -428,8 +428,9 @@
 @media screen and (max-width: 1023px) {
 
     .top-slide-content-element-preview-block .read-more-block .plus-icon .icon-plus, .top-slides-content-elements.has-active-child .top-slide-content-element.active .top-slide-content-element-preview-block .content-block .close-button .plus-icon .icon-plus {
-        top: 7px;
-        left: 9px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     .mfp-wrap {
