@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa0c892b-4e8c-4252-a1ce-9d5ec5871834" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/plugins/magnific-popup.css" afterPath="$PROJECT_DIR$/css/plugins/magnific-popup.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/responsive.css" afterPath="$PROJECT_DIR$/css/responsive.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -78,8 +76,8 @@
       <file leaf-file-name="responsive.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/responsive.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="493" column="40" lean-forward="false" selection-start-line="493" selection-start-column="40" selection-end-line="493" selection-end-column="40" />
+            <state relative-caret-position="498">
+              <caret line="540" column="38" lean-forward="false" selection-start-line="540" selection-start-column="38" selection-end-line="540" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -400,15 +398,15 @@
       <workItem from="1507661601896" duration="4895000" />
       <workItem from="1507724726157" duration="10194000" />
       <workItem from="1507796256648" duration="27644000" />
-      <workItem from="1507882147696" duration="17626000" />
+      <workItem from="1507882147696" duration="18582000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="165439000" />
+    <option name="totallyTimeSpent" value="166395000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15739386" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
@@ -1159,8 +1157,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/responsive.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="493" column="40" lean-forward="false" selection-start-line="493" selection-start-column="40" selection-end-line="493" selection-end-column="40" />
+        <state relative-caret-position="498">
+          <caret line="540" column="38" lean-forward="false" selection-start-line="540" selection-start-column="38" selection-end-line="540" selection-end-column="38" />
           <folding />
         </state>
       </provider>
