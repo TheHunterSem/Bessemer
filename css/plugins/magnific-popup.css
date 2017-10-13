@@ -541,7 +541,8 @@ img.mfp-img {
     height: 100%;
     z-index: 1042;
     overflow: hidden;
-    position: fixed;
+    /*position: fixed;*/
+    position: absolute;
     background: #0b0b0b;
     opacity: 0.8;
 }
@@ -552,7 +553,8 @@ img.mfp-img {
     width: 100%;
     height: 100%;
     z-index: 1043;
-    position: fixed;
+    /*position: fixed;*/
+    position: absolute;
     outline: none !important;
     -webkit-backface-visibility: hidden;
 }
@@ -726,7 +728,7 @@ button::-moz-focus-inner {
     background: transparent;
     background-image: url(../../img/mfp-close.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center left;
     border: 0;
     -webkit-appearance: none;
     display: block;
