@@ -522,7 +522,7 @@
 @media screen and (max-width: 425px){
 
     .mfp-bg, .mfp-wrap {
-        max-width: calc(425px - 39px);
+        max-width: calc(425px - 20px);
     }
 
 }
@@ -530,7 +530,7 @@
 @media screen and (max-width: 375px){
 
     .mfp-bg, .mfp-wrap {
-        max-width: calc(375px - 39px);
+        max-width: calc(375px - 20px);
     }
 
 }
@@ -538,7 +538,7 @@
 @media screen and (max-width: 320px){
 
     .mfp-bg, .mfp-wrap {
-        max-width: calc(320px - 36px);
+        max-width: calc(320px - 22px);
     }
 
 }
