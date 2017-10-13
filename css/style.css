@@ -245,6 +245,58 @@ html {
     font-style: normal;
 }
 
+/*font-family: 'Times-Bold';*/
+@font-face {
+    font-family: 'Times-Bold';
+    src: url('../fonts/Times/Times-Bold.eot');
+    src: url('../fonts/Times/Times-Bold.woff2') format('woff2'),
+    url('../fonts/Times/Times-Bold.woff') format('woff'),
+    url('../fonts/Times/Times-Bold.ttf') format('truetype'),
+    url('../fonts/Times/Times-Bold.svg#Times-Bold') format('svg'),
+    url('../fonts/Times/Times-Bold.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*font-family: 'Times-BoldItalic';*/
+@font-face {
+    font-family: 'Times-BoldItalic';
+    src: url('../fonts/Times/Times-BoldItalic.eot');
+    src: url('../fonts/Times/Times-BoldItalic.woff2') format('woff2'),
+    url('../fonts/Times/Times-BoldItalic.woff') format('woff'),
+    url('../fonts/Times/Times-BoldItalic.ttf') format('truetype'),
+    url('../fonts/Times/Times-BoldItalic.svg#Times-BoldItalic') format('svg'),
+    url('../fonts/Times/Times-BoldItalic.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*font-family: 'Times-Italic';*/
+@font-face {
+    font-family: 'Times-Italic';
+    src: url('../fonts/Times/Times-Italic.eot');
+    src: url('../fonts/Times/Times-Italic.woff2') format('woff2'),
+    url('../fonts/Times/Times-Italic.woff') format('woff'),
+    url('../fonts/Times/Times-Italic.ttf') format('truetype'),
+    url('../fonts/Times/Times-Italic.svg#Times-Italic') format('svg'),
+    url('../fonts/Times/Times-Italic.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*font-family: 'Times-Roman';*/
+@font-face {
+    font-family: 'Times-Roman';
+    src: url('../fonts/Times/Times-Roman.eot');
+    src: url('../fonts/Times/Times-Roman.woff2') format('woff2'),
+    url('../fonts/Times/Times-Roman.woff') format('woff'),
+    url('../fonts/Times/Times-Roman.ttf') format('truetype'),
+    url('../fonts/Times/Times-Roman.svg#Times-Roman') format('svg'),
+    url('../fonts/Times/Times-Roman.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /*font-family: 'bessemer';  (fontello-ions)  */
 @font-face {
     font-family: 'bessemer';
@@ -535,7 +587,6 @@ header {
     width: 25%;
     height: 100%;
     max-height: 800px;
-    /*background: linear-gradient(180deg, #007144 0%, #0B8756 29.72%, #0B8756 71.54%, #007144 100%);*/
     background-color: #0B8756;
     border-right: 1px solid #CECFD0;
     border-left: 1px solid #CECFD0;
@@ -546,7 +597,6 @@ header {
 }
 
 .top-slide-content-element:last-child {
-    /*background: linear-gradient(180deg, #ACAEB0 0%, #B9BBB9 30.83%, #B9BBB9 71.61%, #ACAEB0 100%);*/
     background-color: #B9BBB9;
 }
 
@@ -689,25 +739,21 @@ header {
 
     .top-slides-content-elements.has-active-child .top-slide-content-element {
         width: 5%;
-        /*background: linear-gradient(180deg, #ACAEB0 0%, #B9BBB9 30.83%, #B9BBB9 71.61%, #ACAEB0 100%);*/
         background-color: #B9BBB9;
     }
 
 
 
     .top-slides-content-elements.has-active-child .top-slide-content-element.active:last-child {
-        /*background: linear-gradient(180deg, #007144 0%, #0B8756 29.72%, #0B8756 71.54%, #007144 100%);*/
         background-color: #0B8756;
     }
 
     .top-slides-content-elements.has-active-child .top-slide-content-element.active {
         width: 85%;
-        /*background: linear-gradient(180deg, #ACAEB0 0%, #B9BBB9 30.83%, #B9BBB9 71.61%, #ACAEB0 100%);*/
         background-color: #B9BBB9;
     }
 
     .top-slides-content-elements.has-active-child .top-slide-content-element.last-element-active {
-        /*background: linear-gradient(180deg, #007144 0%, #0B8756 29.72%, #0B8756 71.54%, #007144 100%) !important;*/
         background-color: #0B8756 !important;
     }
 
@@ -855,7 +901,7 @@ header {
 .top-slides-content-elements .top-slide-content-element .top-slide-content-element-preview-block .content-block .description-inside-link {
     display: none;
     margin-top: 30px;
-    font-family: Times;
+    font-family: 'Times-Roman', Times;
     font-size: 20px;
     line-height: 26px;
     color: #ffffff;
