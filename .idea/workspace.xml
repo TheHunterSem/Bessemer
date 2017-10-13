@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa0c892b-4e8c-4252-a1ce-9d5ec5871834" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/plugins/magnific-popup.css" afterPath="$PROJECT_DIR$/css/plugins/magnific-popup.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/responsive.css" afterPath="$PROJECT_DIR$/css/responsive.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -65,11 +64,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="responsive.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="magnific-popup.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/plugins/magnific-popup.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="722" column="0" lean-forward="false" selection-start-line="722" selection-start-column="0" selection-end-line="722" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="responsive.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/responsive.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="165" column="23" lean-forward="false" selection-start-line="165" selection-start-column="23" selection-end-line="165" selection-end-column="23" />
+            <state relative-caret-position="211">
+              <caret line="163" column="20" lean-forward="false" selection-start-line="163" selection-start-column="20" selection-end-line="163" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -101,7 +110,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>open</find>
       <find>image</find>
       <find>openhand</find>
       <find>close</find>
@@ -131,6 +139,7 @@
       <find>main-content-inside</find>
       <find>.8s</find>
       <find>92px</find>
+      <find>.mfp-close</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -148,11 +157,11 @@
         <option value="$PROJECT_DIR$/css/plugins/slider-pro.min.css" />
         <option value="$USER_HOME$/Downloads/Magnific-Popup-master/dist/jquery.magnific-popup.js" />
         <option value="$PROJECT_DIR$/js/plugins/jquery.magnific-popup.min.js" />
-        <option value="$PROJECT_DIR$/css/plugins/magnific-popup.css" />
         <option value="$PROJECT_DIR$/js/script.js" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/responsive.css" />
+        <option value="$PROJECT_DIR$/css/plugins/magnific-popup.css" />
       </list>
     </option>
   </component>
@@ -194,6 +203,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Munn Rabot" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Munn Rabot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Munn Rabot" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Munn Rabot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Munn Rabot" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugins" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -326,12 +367,12 @@
       <workItem from="1507661601896" duration="4895000" />
       <workItem from="1507724726157" duration="10194000" />
       <workItem from="1507796256648" duration="27644000" />
-      <workItem from="1507882147696" duration="10585000" />
+      <workItem from="1507882147696" duration="11701000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="158398000" />
+    <option name="totallyTimeSpent" value="159514000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1029,14 +1070,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/plugins/magnific-popup.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="19" column="30" lean-forward="false" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="398">
@@ -1084,8 +1117,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/responsive.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="165" column="23" lean-forward="false" selection-start-line="165" selection-start-column="23" selection-end-line="165" selection-end-column="23" />
+        <state relative-caret-position="211">
+          <caret line="163" column="20" lean-forward="false" selection-start-line="163" selection-start-column="20" selection-end-line="163" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/plugins/magnific-popup.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="722" column="0" lean-forward="false" selection-start-line="722" selection-start-column="0" selection-end-line="722" selection-end-column="0" />
           <folding />
         </state>
       </provider>
