@@ -704,6 +704,10 @@ header {
     .top-slide-content-element:last-child:hover:not(.active) .top-slide-content-element-preview-block .content-block {
         margin-top: 0 !important;
     }
+    
+    .top-slide-content-element:last-child:hover:not(.active) .top-slide-content-element-preview-block .read-more-block .plus-icon .icon-plus {
+        color: #B9BBB9;
+    }
 
     .top-slides-content-elements.delay .top-slide-content-element:hover:not(.active) .top-slide-content-element-preview-block .content-block .description {
         height: 0 !important;
@@ -786,6 +790,7 @@ header {
     font-weight: 400;
     color: #fff;
     margin-top: 19px;
+    font-family: 'NeueHaasUnicaPro-Thin';
 }
 
 .top-slide-content-element-preview-block .content-block {
@@ -901,7 +906,8 @@ header {
     transition: .6s;
     animation-duration: .7s;
     animation-delay: .5s;
-    animation-fill-mode: forwards ;
+    animation-fill-mode: forwards;
+    font-family: 'NeueHaasUnicaPro-Thin';
 }
 
 .top-slides-content-elements.has-active-child .top-slide-content-element.active .main-content-inside {

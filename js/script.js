@@ -50,6 +50,7 @@ $(document).ready(function () {
 
         if( $(window).width() < 1023 ) {
 
+
             if( $('.top-slide-content-element:last').hasClass('active')) {
                 $('.top-slides-content-elements').addClass('last-element-active');
                 $('.top-slide-content-element:last').removeClass('last-element-active');
