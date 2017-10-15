@@ -638,6 +638,7 @@ header {
     margin-top: 60px;
 }
 
+.close-button .plus-icon,
 .top-slide-content-element-preview-block .read-more-block .plus-icon,
 .top-slides-content-elements.has-active-child .top-slide-content-element.active .top-slide-content-element-preview-block .content-block .close-button .plus-icon {
     position: relative;
@@ -658,7 +659,7 @@ header {
 }
 
 .top-slide-content-element-preview-block .read-more-block .plus-icon .icon-plus,
-.top-slides-content-elements.has-active-child .top-slide-content-element.active .top-slide-content-element-preview-block .content-block .close-button .plus-icon .icon-plus {
+.close-button .plus-icon .icon-plus {
     position: absolute;
     top: 9px;
     left: 14px;
@@ -676,12 +677,20 @@ header {
     font-family: 'bessemer';
 }
 
+.close-button .plus-icon .icon-plus {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    font-size: 18px;
+    transition: transform 0s;
+}
+
 .top-slides-content-elements.has-active-child .top-slide-content-element.active .top-slide-content-element-preview-block .content-block .close-button .plus-icon {
     background-color: transparent;
     height: 40px;
     width: 40px;
     cursor: pointer;
-    border: none;
+    /*border: none;*/
 }
 
 .top-slide-content-element-preview-block .read-more-block .read-more-block-title {
@@ -725,8 +734,7 @@ header {
 
 @media screen and (min-width: 1024px) {
 
-
-
+    .close-button .plus-icon::before,
     .top-slide-content-element-preview-block .read-more-block .plus-icon::before {
         position: absolute;
         content: '';
@@ -740,6 +748,19 @@ header {
         width: 43px;
         border-radius: 50%;
         transition: .4s;
+    }
+
+    .close-button .plus-icon::before {
+        height: 39px;
+        width: 39px;
+    }
+
+    .close-button:hover .plus-icon::before {
+        transform: scale(1);
+    }
+
+    .close-button:hover .plus-icon .icon-plus {
+        color: #B9BBB9;
     }
 
     .top-slides-content-elements.has-active-child .top-slide-content-element {
@@ -938,7 +959,7 @@ header {
 }
 
 .top-slides-content-elements.has-active-child .top-slide-content-element.active .top-slide-content-element-preview-block .content-block .close-button {
-    display: block;
+    display: inline-block;
     margin-bottom: 30px;
 }
 
