@@ -1,7 +1,13 @@
 $(document).ready(function () {
 
     $('.sp-image-link').magnificPopup({
-        type:'image'
+        type: 'image',
+        // Delay in milliseconds before popup is removed
+        removalDelay: 300,
+
+        // Class that is added to popup wrapper and background
+        // make it unique to apply your CSS animations just to this exact popup
+        mainClass: 'mfp-fade'
     });
 
     $('.slider-pro').sliderPro({
@@ -44,6 +50,7 @@ $(document).ready(function () {
 
         if( $(window).width() < 1023 ) {
 
+
             if( $('.top-slide-content-element:last').hasClass('active')) {
                 $('.top-slides-content-elements').addClass('last-element-active');
                 $('.top-slide-content-element:last').removeClass('last-element-active');
@@ -66,7 +73,7 @@ $(document).ready(function () {
     $('.top-slide-content-element').on('click', function () {
         $('.top-slide-content-element').removeClass('active');
         $(this).addClass('active');
-        $('.top-slides-content-elements').addClass('has-active-child');
+        $('.top-slides-content-elements').addClass('has-active-child delay');
         RecolorOfTabs();
     });
 
@@ -74,6 +81,10 @@ $(document).ready(function () {
         e.stopPropagation();
         $('.top-slide-content-element').removeClass('active');
         $('.top-slides-content-elements').removeClass('has-active-child');
+        setTimeout(function () {
+            $('.top-slides-content-elements').removeClass('delay');
+        }, 1300 );
+
     });
 
 
@@ -101,19 +112,19 @@ $(document).ready(function () {
 
     });
 
-    function fixedHeader() {
+    /*function fixedHeader() {
         var
             boss = $(window),
             y = boss.scrollTop();
         if (y > (70)) {
-            $('.header-navigation-items.active, .mfp-bg, .mfp-wrap').addClass('fixed');
+            $('.mfp-bg, .mfp-wrap').addClass('fixed');
         } else {
-            $('.header-navigation-items.active, .mfp-bg, .mfp-wrap').removeClass('fixed');
+            $('.mfp-bg, .mfp-wrap').removeClass('fixed');
         }
     }
     $(window).on('scroll', function() {
         fixedHeader();
-    });
+    });*/
 
     //MENU START
 
