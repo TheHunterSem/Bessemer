@@ -25,7 +25,7 @@ $(document).ready(function () {
         thumbnailWidth: 93,
         thumbnailHeight: 113,
         breakpoints: {
-            1023: {
+            960: {
                 arrows: false,
                 buttons: true,
                 orientation: 'horizontal',

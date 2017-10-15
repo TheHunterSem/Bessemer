@@ -732,7 +732,7 @@ header {
     transition: .65s;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
 
     .close-button .plus-icon::before,
     .top-slide-content-element-preview-block .read-more-block .plus-icon::before {
@@ -791,7 +791,7 @@ header {
 
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 768px) {
 
     .top-slide-content-element:hover:not(.active)::before {
         background-color: rgba(0, 0, 0, .3);
@@ -841,13 +841,13 @@ header {
 
 }
 
-@media screen and (width: 1024px){
+/*@media screen and (width: 1024px){
 
     .top-slide-content-element .top-slide-content-element-preview-block .read-more-block .read-more-block-title {
         opacity: 1;
     }
 
-}
+}*/
 
 .top-slide-content-element-preview-block .content-block .main-header {
     display: block;
