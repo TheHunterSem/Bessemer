@@ -44,6 +44,11 @@
         transition: height 1s;
     }
 
+    .top-slides-content-elements.has-active-child .top-slide-content-element.active:nth-child(2),
+    .top-slides-content-elements.has-active-child .top-slide-content-element:nth-child(2) {
+        border-top: none;
+    }
+
     .wrap {
         padding: 0 10px;
     }
@@ -652,3 +657,12 @@
     }
 
 }
+
+/*
+@media (min-width: 320px) and (max-width: 767px){
+
+    .top-slides-content-elements.has-active-child .top-slide-content-element:first-child.active {
+        border-top: none;
+    }
+
+}*/
