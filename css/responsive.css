@@ -563,8 +563,9 @@
         margin-bottom: 10px;
     }
 
-    .top-slides-content-elements .top-slide-content-element .main-content-inside {
-        margin-top: 30px;
+    .top-slides-content-elements .top-slide-content-element .main-content-inside img {
+        margin-top: 20px;
+        width: 605px;
     }
 
     .top-slides-content-elements.has-active-child .top-slide-content-element:not(.active) .preview-header {
