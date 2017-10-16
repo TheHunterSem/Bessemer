@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa0c892b-4e8c-4252-a1ce-9d5ec5871834" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/responsive.css" afterPath="$PROJECT_DIR$/css/responsive.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/script.js" afterPath="$PROJECT_DIR$/js/script.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,11 +17,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="466">
-              <caret line="1062" column="26" lean-forward="false" selection-start-line="1062" selection-start-column="26" selection-end-line="1062" selection-end-column="26" />
+            <state relative-caret-position="204">
+              <caret line="767" column="45" lean-forward="false" selection-start-line="767" selection-start-column="45" selection-end-line="767" selection-end-column="45" />
               <folding>
                 <element signature="e#285#927#0" expanded="false" />
                 <element signature="e#984#1594#0" expanded="false" />
@@ -77,11 +77,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="responsive.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="responsive.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/responsive.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
-              <caret line="648" column="0" lean-forward="false" selection-start-line="647" selection-start-column="0" selection-end-line="655" selection-end-column="0" />
+            <state relative-caret-position="362">
+              <caret line="512" column="27" lean-forward="false" selection-start-line="512" selection-start-column="27" selection-end-line="512" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -90,8 +90,8 @@
       <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="36" column="28" lean-forward="false" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+            <state relative-caret-position="289">
+              <caret line="89" column="17" lean-forward="false" selection-start-line="89" selection-start-column="17" selection-end-line="89" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -110,7 +110,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.sp-left-thumbnails,.sp-right-thumbnails</find>
       <find>250</find>
       <find>.top-slide-content-element</find>
       <find>.top-slide-content-element:hover</find>
@@ -140,6 +139,7 @@
       <find>.delay</find>
       <find>.year</find>
       <find>:last-child</find>
+      <find>light-effect</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -159,9 +159,9 @@
         <option value="$PROJECT_DIR$/js/plugins/jquery.magnific-popup.min.js" />
         <option value="$PROJECT_DIR$/css/plugins/magnific-popup.css" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/js/script.js" />
         <option value="$PROJECT_DIR$/css/responsive.css" />
+        <option value="$PROJECT_DIR$/js/script.js" />
+        <option value="$PROJECT_DIR$/css/style.css" />
       </list>
     </option>
   </component>
@@ -401,12 +401,12 @@
       <workItem from="1507796256648" duration="27644000" />
       <workItem from="1507882147696" duration="19772000" />
       <workItem from="1508096460033" duration="5031000" />
-      <workItem from="1508145919235" duration="7050000" />
+      <workItem from="1508145919235" duration="11213000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="179666000" />
+    <option name="totallyTimeSpent" value="183829000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1095,10 +1095,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/responsive.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="512" column="27" lean-forward="false" selection-start-line="512" selection-start-column="27" selection-end-line="512" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="89" column="17" lean-forward="false" selection-start-line="89" selection-start-column="17" selection-end-line="89" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="1062" column="26" lean-forward="false" selection-start-line="1062" selection-start-column="26" selection-end-line="1062" selection-end-column="26" />
+        <state relative-caret-position="204">
+          <caret line="767" column="45" lean-forward="false" selection-start-line="767" selection-start-column="45" selection-end-line="767" selection-end-column="45" />
           <folding>
             <element signature="e#285#927#0" expanded="false" />
             <element signature="e#984#1594#0" expanded="false" />
@@ -1124,22 +1140,6 @@
             <element signature="e#14003#14469#0" expanded="false" />
             <element signature="e#14530#15043#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="36" column="28" lean-forward="false" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/responsive.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="648" column="0" lean-forward="false" selection-start-line="647" selection-start-column="0" selection-end-line="655" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>

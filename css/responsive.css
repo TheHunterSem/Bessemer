@@ -507,6 +507,14 @@
 
 }
 
+@media screen and (max-width: 578px) {
+
+    .mfp-bg, .mfp-wrap {
+        max-width: calc(578px - 38px);
+    }
+
+}
+
 @media screen and (max-width: 425px){
 
     .mfp-bg, .mfp-wrap {

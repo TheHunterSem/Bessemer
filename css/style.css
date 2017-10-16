@@ -774,7 +774,7 @@ header {
 
 }
 
-.top-slide-content-element.light-effect::before {
+.top-slides-content-elements.has-active-child .top-slide-content-element.light-effect:not(.active)::before {
     position: absolute;
     content: '';
     top: 0;
@@ -783,10 +783,13 @@ header {
     bottom: 0;
     width: 100%;
     height: 100%;
-    /*background-color: rgba(255,255,255,.3);*/
     animation-name: LightEffect;
     animation-fill-mode: forwards;
     animation-duration: 1s;
+}
+
+top-slides-content-elements.has-active-child .top-slide-content-element.active.light-effect::before {
+    background-color: rgba(255,255,255,.0);
 }
 
 @media screen and (min-width: 768px) {
