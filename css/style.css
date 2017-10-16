@@ -843,14 +843,20 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
         background-color: #0B8756 !important;
     }
 
-    .top-slides-content-elements.delay .top-slide-content-element .top-slide-content-element-preview-block .content-block .main-header,
-    .top-slides-content-elements.delay .top-slide-content-element .top-slide-content-element-preview-block .content-block .description,
-    .top-slides-content-elements.delay .top-slide-content-element:not(.active) .top-slide-content-element-preview-block .content-block .year,
-    .top-slides-content-elements.delay .top-slide-content-element .top-slide-content-element-preview-block .read-more-block {
-        opacity: 0 !important;
-    }
-
 }
+
+.top-slides-content-elements.has-active-child.delay .top-slide-content-element .top-slide-content-element-preview-block .content-block .main-header{
+    opacity: 1 !important;
+}
+
+.top-slides-content-elements.delay .top-slide-content-element .top-slide-content-element-preview-block .content-block .main-header,
+.top-slides-content-elements.delay .top-slide-content-element .top-slide-content-element-preview-block .content-block .description,
+.top-slides-content-elements.delay .top-slide-content-element:not(.active) .top-slide-content-element-preview-block .content-block .year,
+.top-slides-content-elements.delay .top-slide-content-element .top-slide-content-element-preview-block .read-more-block {
+    opacity: 0 !important;
+}
+
+
 
 @media screen and (min-width: 768px) {
 
@@ -902,13 +908,6 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
 
 }
 
-/*@media screen and (width: 1024px){
-
-    .top-slide-content-element .top-slide-content-element-preview-block .read-more-block .read-more-block-title {
-        opacity: 1;
-    }
-
-}*/
 
 .top-slide-content-element-preview-block .content-block .main-header {
     display: block;
@@ -1089,4 +1088,12 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
     font-size: 16px;
     line-height: 20px;
     margin-top: 30px;
+}
+
+.top-slides-content-elements.has-active-child .top-slide-content-element.active:last-child .close-button .plus-icon .icon-plus {
+    transition: .4s;
+}
+
+.top-slides-content-elements.has-active-child .top-slide-content-element.active:last-child .close-button .plus-icon:hover .icon-plus {
+    color: #0B8756;
 }
