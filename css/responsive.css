@@ -190,6 +190,11 @@
         height: 630px;
     }
 
+    .header-logo img {
+        width: 116px;
+        height: 20px;
+    }
+
     .top-slides-content-elements.has-active-child .top-slide-content-element.active {
         transition: height 1s;
     }
