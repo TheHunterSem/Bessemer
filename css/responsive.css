@@ -462,7 +462,7 @@
     .mfp-image-holder .mfp-close, .mfp-iframe-holder .mfp-close {
         max-width: calc(1380px - 60px);
         display: block;
-        width: 100%;
+        width: 40px;
     }
 
 }
@@ -652,12 +652,3 @@
     }
 
 }
-
-/*
-@media (min-width: 768px) and (max-width: 830px) {
-
-    .slider-pro {
-        margin: 0 0 0 220px;
-    }
-
-}*/

@@ -726,17 +726,15 @@ button::-moz-focus-inner {
     overflow: visible;
     cursor: pointer;
     background: transparent;
-    background-image: url(../../img/mfp-close.png);
+    /*background-image: url(../../img/mfp-close.png);
     background-repeat: no-repeat;
-    background-position: center left;
-    border: 0;
+    background-position: center left;*/
+    /*border: 0;*/
     -webkit-appearance: none;
-    display: block;
+    /*display: block;*/
     outline: none;
     padding: 0;
     position: fixed;
-    width: 41px;
-    height: 41px;
     z-index: 1046;
     opacity: 1;
     left: 21px;
@@ -746,8 +744,71 @@ button::-moz-focus-inner {
     box-shadow: none;
     -ms-touch-action: manipulation;
     touch-action: manipulation;
+    height: 40px;
+    width: 40px;
+    /*background-color: transparent;*/
+    border: 2px solid #fff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    vertical-align: middle;
+    display: inline-block;
+    text-align: center;
+    -webkit-transition: background-color .3s;
+    -o-transition: background-color .3s;
+    -moz-transition: background-color .3s;
+    transition: background-color .3s;
+    cursor: pointer;
 }
 
+.mfp-image-holder .mfp-close::before,
+.mfp-iframe-holder .mfp-close::before {
+    position: absolute;
+    content: '';
+    top: -1px;
+    left: -1px;
+    right: 0;
+    bottom: 0;
+    transform: scale(0);
+    background-color: #fff;
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.mfp-image-holder .mfp-close:hover::before,
+.mfp-iframe-holder .mfp-close:hover::before {
+    transform: scale(1);
+}
+
+.mfp-image-holder .mfp-close::after,
+.mfp-iframe-holder .mfp-close::after {
+    position: absolute;
+    content: '\e800';
+    vertical-align: middle;
+    font-style: normal;
+    color: #fff;
+    margin: 0;
+    display: inline-block;
+    width: initial;
+    -webkit-transition: color .3s;
+    -o-transition: color .3s;
+    -moz-transition: color .3s;
+    font-family: 'bessemer';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    font-size: 18px;
+    transition: transform 0s, color .3s;
+    cursor: pointer;
+}
+
+.mfp-image-holder .mfp-close:hover::after,
+.mfp-iframe-holder .mfp-close:hover::after {
+    color: #000;
+}
 
 .mfp-counter {
     position: absolute;
