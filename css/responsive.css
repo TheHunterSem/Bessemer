@@ -572,3 +572,11 @@
     }
 
 }
+
+@media screen and (min-width: 1025px) {
+
+    .top-slides-content-elements.has-active-child .top-slide-content-element.active .top-slide-content-element-preview-block .content-block .close-button {
+        margin-bottom: 60px;
+    }
+
+}

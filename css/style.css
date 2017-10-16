@@ -384,6 +384,24 @@ html {
 .sp-right-thumbnails .sp-thumbnail-container {
     margin-bottom: 20px;
 }
+
+
+.sp-selected-thumbnail {
+    position: relative;
+}
+
+.sp-selected-thumbnail::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(47,45,45,0.3);
+    z-index: 5;
+}
 /*homepage slider end*/
 
 
@@ -732,6 +750,41 @@ header {
     transition: .65s;
 }
 
+.top-slide-content-element.light-effect {
+    position: relative;
+}
+
+@keyframes LightEffect {
+
+    0% {
+        background-color: rgba(255,255,255,.0);
+    }
+
+    50% {
+        background-color: rgba(255,255,255,.3);
+    }
+
+    100% {
+        background-color: rgba(255,255,255,.0);
+    }
+
+}
+
+.top-slide-content-element.light-effect::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    /*background-color: rgba(255,255,255,.3);*/
+    animation-name: LightEffect;
+    animation-fill-mode: forwards;
+    animation-duration: .8s;
+}
+
 @media screen and (min-width: 768px) {
 
     .close-button .plus-icon::before,
@@ -783,6 +836,7 @@ header {
         background-color: #0B8756 !important;
     }
 
+    .top-slides-content-elements.delay .top-slide-content-element .top-slide-content-element-preview-block .content-block .main-header,
     .top-slides-content-elements.delay .top-slide-content-element .top-slide-content-element-preview-block .content-block .description,
     .top-slides-content-elements.delay .top-slide-content-element:not(.active) .top-slide-content-element-preview-block .content-block .year,
     .top-slides-content-elements.delay .top-slide-content-element .top-slide-content-element-preview-block .read-more-block {
@@ -987,6 +1041,7 @@ header {
 .top-slides-content-elements.has-active-child .top-slide-content-element.active .top-slide-content-element-preview-block .content-block .main-header {
     font-size: 28px;
     line-height: 28px;
+    opacity: 1 !important;
 }
 
 .top-slides-content-elements.has-active-child .top-slide-content-element.active .top-slide-content-element-preview-block .content-block .year {
