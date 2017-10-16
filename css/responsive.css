@@ -572,6 +572,10 @@
         margin: 30px auto 0;
     }
 
+    .top-slides-content-elements .top-slide-content-element .main-content-inside {
+        margin-top: 30px;
+    }
+
 }
 
 @media screen and (min-width: 1025px) {
@@ -581,3 +585,71 @@
     }
 
 }
+
+@media (min-width: 768px) and (max-width: 990px) {
+
+    .top-slide-content-element .top-slide-content-element-preview-block {
+        padding: 0 15px;
+    }
+
+    .top-slide-content-element-preview-block .content-block .main-header,
+    .top-slides-content-elements.has-active-child .top-slide-content-element.active .top-slide-content-element-preview-block .content-block .main-header{
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .top-slide-content-element-preview-block .content-block .year,
+    .top-slides-content-elements.has-active-child .top-slide-content-element.active .top-slide-content-element-preview-block .content-block .year{
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .top-slides-content-elements .top-slide-content-element .top-slide-content-element-preview-block .content-block .description-inside-link {
+        font-size: 16px;
+    }
+
+    .top-slides-content-elements.has-active-child .top-slide-content-element.active .top-slide-content-element-preview-block {
+        max-width: 170px;
+    }
+
+    .tab-main-description-text {
+        padding: 0 10px;
+    }
+
+    .top-slides-content-elements .top-slide-content-element .main-content-inside {
+        margin-top: 30px;
+    }
+
+    .top-slide-content-element-preview-block .content-block .description {
+        font-size: 14px;
+    }
+
+    .top-slide-content-element-preview-block .read-more-block .read-more-block-title {
+        font-size: 16px;
+    }
+
+    .tab-main-description-text {
+        margin-top: 20px;
+        padding: 0 20px;
+        max-width: 100%;
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 890px) {
+
+    .slider-content-block .slider-pro {
+        min-width: 280px;
+    }
+
+}
+
+/*
+@media (min-width: 768px) and (max-width: 830px) {
+
+    .slider-pro {
+        margin: 0 0 0 220px;
+    }
+
+}*/

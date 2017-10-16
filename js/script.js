@@ -32,6 +32,15 @@ $(document).ready(function () {
                 thumbnailWidth: 0,
                 thumbnailHeight: 0
             },
+            890: {
+                width: 280,
+                height: 340,
+                arrows: false,
+                buttons: true,
+                orientation: 'horizontal',
+                thumbnailWidth: 0,
+                thumbnailHeight: 0
+            },
             320: {
                 arrows: false,
                 buttons: true,
@@ -78,11 +87,15 @@ $(document).ready(function () {
     $('.top-slide-content-element').on('click', function () {
         $('.top-slide-content-element').removeClass('active');
         $('.top-slide-content-element').addClass('light-effect');
+        setTimeout(function () {
+            $('.top-slide-content-element').removeClass('light-effect');
+        }, 1000);
         $(this).addClass('active');
         $(this).removeClass('light-effect');
         $('.top-slides-content-elements').addClass('has-active-child delay');
         RecolorOfTabs();
     });
+
 
     $('.top-slide-content-element-preview-block .content-block .close-button').on('click', function (e) {
         e.stopPropagation();

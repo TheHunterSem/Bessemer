@@ -623,6 +623,10 @@ header {
     background-color: #B9BBB9;
 }
 
+.top-slide-content-element:last-child .top-slide-content-element-preview-block .read-more-block {
+    margin-top: 80px;
+}
+
 .top-slide-content-element:last-child.active .top-slide-content-element-preview-block {
     position: relative;
 }
@@ -761,7 +765,7 @@ header {
     }
 
     50% {
-        background-color: rgba(255,255,255,.3);
+        background-color: rgba(255,255,255,.2);
     }
 
     100% {
@@ -782,7 +786,7 @@ header {
     /*background-color: rgba(255,255,255,.3);*/
     animation-name: LightEffect;
     animation-fill-mode: forwards;
-    animation-duration: .8s;
+    animation-duration: 1s;
 }
 
 @media screen and (min-width: 768px) {
@@ -912,6 +916,7 @@ header {
     font-size: 32px;
     font-weight: 100;
     line-height: 32px;
+    word-wrap: break-word;
 }
 
 .top-slide-content-element-preview-block .content-block .year {
@@ -1019,8 +1024,8 @@ header {
 
 .top-slides-content-elements.has-active-child .top-slide-content-element .top-slide-content-element-preview-block {
     opacity: 0;
-    animation-delay: .5s;
-    animation-duration: .7s;
+    animation-delay: .8s;
+    animation-duration: .8s;
     animation-fill-mode: forwards;
 }
 
@@ -1055,8 +1060,8 @@ header {
     margin-top: 60px;
     opacity: 0;
     transition: .6s;
-    animation-duration: .7s;
-    animation-delay: .5s;
+    animation-duration: .8s;
+    animation-delay: .8s;
     animation-fill-mode: forwards;
     font-family: 'NeueHaasUnicaPro-Thin';
 }
