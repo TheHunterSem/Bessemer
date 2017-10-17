@@ -1094,7 +1094,7 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
     font-size: 16px;
     line-height: 20px;
     margin-top: 30px;
-    padding: 0 15px;
+    /*padding: 0 15px;*/
 }
 
 .top-slides-content-elements.has-active-child .top-slide-content-element.active:last-child .close-button .plus-icon .icon-plus {

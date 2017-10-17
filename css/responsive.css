@@ -19,6 +19,7 @@
 
     .description-inside-link-mobile {
         display: block;
+        margin: 0 auto;
         margin-top: 20px;
         font-family: 'Times-Roman', Times;
         font-size: 20px;
@@ -28,7 +29,7 @@
         cursor: pointer;
         position: relative;
         max-width: 640px;
-        margin: 0 auto;
+        padding: 0 15px;
     }
 
     .tab-main-description-text {
@@ -44,10 +45,10 @@
         transition: height 1s;
     }
 
-    .top-slides-content-elements.has-active-child .top-slide-content-element.active:nth-child(2),
+   /* .top-slides-content-elements.has-active-child .top-slide-content-element.active:nth-child(2),
     .top-slides-content-elements.has-active-child .top-slide-content-element:nth-child(2) {
         border-top: none;
-    }
+    }*/
 
     .wrap {
         padding: 0 10px;
@@ -127,12 +128,14 @@
         -moz-transition: .3s;
         transition: .3s;
     }
+    /*
 
     .top-slides-content-elements.has-active-child {
         background-color: #B9BBB9;
         padding-top: 0;
         transition: .7s;
     }
+    */
 
     .top-slides-content-elements .top-slides-content-elements-logo-preview {
         top: 15px;
@@ -278,9 +281,9 @@
         opacity: 1;
     }
 
-    .top-slides-content-elements.has-active-child .top-slides-content-elements-logo-preview {
+    /*.top-slides-content-elements.has-active-child .top-slides-content-elements-logo-preview {
         opacity: 0;
-    }
+    }*/
 
     .top-slide-content-element-preview-block .read-more-block {
         display: block;
@@ -463,10 +466,10 @@
 
 }
 
-@media (min-width: 1024px) and (max-width: 1220px){
+@media (min-width: 1025px) and (max-width: 1220px){
 
     .slider-content-block .slider-pro {
-        margin-left: 268px;
+        margin-left: 318px;
     }
 
 }
@@ -720,11 +723,22 @@
 
 }
 
-/*
-@media (min-width: 320px) and (max-width: 767px){
+@media (max-width: 977px) and (min-width: 891px) {
 
-    .top-slides-content-elements.has-active-child .top-slide-content-element:first-child.active {
-        border-top: none;
+    .tab-main-description-text {
+        margin-top: 10px;
     }
 
-}*/
+}
+
+@media screen and (max-width: 1024px) {
+
+    .top-slides-content-elements.has-active-child .top-slide-content-element.active .top-slide-content-element-preview-block {
+        max-width: 170px;
+    }
+
+    .slider-pro {
+        margin-left: 240px;
+    }
+
+}
