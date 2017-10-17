@@ -1104,3 +1104,11 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
 .top-slides-content-elements.has-active-child .top-slide-content-element.active:last-child .close-button .plus-icon:hover .icon-plus {
     color: #0B8756;
 }
+
+.result-tab-big {
+    display: block;
+}
+
+.result-tab-mini {
+    display: none;
+}

@@ -750,6 +750,18 @@
     .top-slides-content-elements.delay .top-slide-content-element .top-slide-content-element-preview-block .read-more-block {
         opacity: 1 !important;
     }
-    
+
 }
 
+@media (min-width: 320px) and (max-width: 425px) {
+
+    .result-tab-big {
+        display: none;
+    }
+
+    .result-tab-mini {
+        display: block;
+        width: 100%;
+    }
+
+}
