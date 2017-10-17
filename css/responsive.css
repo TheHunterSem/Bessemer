@@ -599,7 +599,8 @@
 
     .top-slides-content-elements .top-slide-content-element .main-content-inside img {
         margin-top: 20px;
-        width: 605px;
+        max-width: 605px;
+        width: 100%;
     }
 
     .top-slides-content-elements.has-active-child .top-slide-content-element:not(.active) .preview-header {
@@ -700,6 +701,14 @@
         max-width: 100%;
         width: 100%;
     }*/
+
+}
+
+@media (max-width: 778px) and (min-width: 768px) {
+
+    .top-slide-content-element-preview-block .read-more-block .read-more-block-title {
+        font-size: 17px;
+    }
 
 }
 

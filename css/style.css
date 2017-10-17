@@ -628,11 +628,11 @@ header {
     background-color: #9B9B9B;
 }
 
-/*
-.top-slide-content-element:last-child .top-slide-content-element-preview-block .read-more-block {
-    margin-top: 80px;
+@media screen and (min-width: 768px){
+    .top-slide-content-element:last-child .top-slide-content-element-preview-block .read-more-block {
+        margin-top: 80px;
+    }
 }
-*/
 
 .top-slide-content-element:last-child.active .top-slide-content-element-preview-block {
     position: relative;
@@ -722,10 +722,7 @@ header {
 
 .top-slide-content-element-preview-block .read-more-block .read-more-block-title {
     color: rgba(255, 255, 255, 1);
-    -webkit-transition: .6s;
-    -o-transition: .6s;
-    -moz-transition: .6s;
-    transition: .6s;
+    transition: opacity .6s;
     margin-left: 9px;
     font-size: 18px;
     line-height: 27px;
@@ -866,7 +863,7 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
 @media screen and (min-width: 768px) {
 
     .top-slide-content-element:hover:not(.active)::before {
-        background-color: rgba(0, 0, 0, .3);
+        background-color: rgba(47,45,45,0.3);
     }
 
     .top-slide-content-element:hover:not(.active) {
@@ -978,7 +975,7 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
 }
 
 .top-slides-content-elements.has-active-child .top-slide-content-element:not(.active) .preview-header .main-header {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 18px;
     font-family: 'NeueHaasUnicaPro-Regular';
@@ -1085,6 +1082,10 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
     min-width: 356px;
 }
 
+.slider-pro {
+    margin-left: 318px;
+}
+
 .tab-main-description-text {
     max-width: 640px;
     width: 100%;
@@ -1093,6 +1094,7 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
     font-size: 16px;
     line-height: 20px;
     margin-top: 30px;
+    padding: 0 15px;
 }
 
 .top-slides-content-elements.has-active-child .top-slide-content-element.active:last-child .close-button .plus-icon .icon-plus {

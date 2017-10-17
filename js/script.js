@@ -79,19 +79,19 @@ $(document).ready(function () {
         }
     }
 
-    function LightEffect() {
-        $('.top-slide-content-element').addClass('light-effect');
-        setTimeout(function () {
-            $('.top-slide-content-element').removeClass('light-effect');
-        }, 1000);
-    }
 
     $('.top-slide-content-element').on('click', function () {
+        if(!$(this).hasClass('active')){
+            $('.top-slides-content-elements .top-slide-content-element').addClass('light-effect');
+            setTimeout(function () {
+                $('.top-slides-content-elements .top-slide-content-element').removeClass('light-effect');
+            }, 1000);
+        }
         $('.top-slide-content-element').removeClass('active');
         $(this).addClass('active');
         $('.top-slides-content-elements').addClass('has-active-child delay');
-        LightEffect();
         RecolorOfTabs();
+
     });
 
     $('.top-slide-content-element-preview-block .content-block .close-button').on('click', function (e) {
@@ -102,6 +102,7 @@ $(document).ready(function () {
             $('.top-slides-content-elements').removeClass('delay');
         }, 1000 );
         $('.top-slide-content-element').removeClass('light-effect');
+        $('.top-slide-content-element').removeClass('last-element-active');
     });
 
 
