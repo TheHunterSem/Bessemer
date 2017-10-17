@@ -751,6 +751,18 @@
         opacity: 1 !important;
     }
 
+    .top-slides-content-elements.last-element-active {
+        background-color: #0B8756 !important;
+    }
+
+    .top-slides-content-elements.has-active-child .top-slide-content-element.active .top-slide-content-element-preview-block {
+        max-width: 100%;
+    }
+
+    .top-slides-content-elements.has-active-child {
+        background-color: #B9BBB9;
+    }
+
 }
 
 @media (min-width: 320px) and (max-width: 425px) {
