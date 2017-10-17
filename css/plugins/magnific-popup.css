@@ -737,8 +737,8 @@ button::-moz-focus-inner {
     position: fixed;
     z-index: 1046;
     opacity: 1;
-    left: 21px;
-    top: 22px;
+    left: 30px;
+    top: 30px;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
@@ -935,9 +935,18 @@ img.mfp-img {
     box-sizing: border-box;
     padding: 0;
     margin: 0 auto;
-    height: 700px;
-    width: 578px;
-    max-height: none !important;
+    height: auto;
+    width: auto;
+}
+
+@media screen and (min-width: 1025px){
+
+    img.mfp-img {
+        height: 700px;
+        width: 578px;
+        max-height: none !important;
+    }
+
 }
 
 /* The shadow behind the image */
