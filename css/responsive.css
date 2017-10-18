@@ -394,7 +394,7 @@
 
     .top-slides-content-elements.last-element-active .top-slide-content-element:last-child.active,
     .top-slides-content-elements.last-element-active {
-        background-color: #0B8756;
+        background-color: #0B8756!important;
     }
 
     .top-slides-content-elements.last-element-active .top-slide-content-element:last-child.active {

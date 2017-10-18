@@ -621,7 +621,7 @@ header {
 }
 
 .top-slide-content-element:last-child {
-    background-color: #B9BBB9;
+    background-color: #B9BBB9!important;
 }
 
 .top-slides-content-elements.has-active-child .top-slide-content-element:last-child {
