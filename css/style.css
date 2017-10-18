@@ -860,6 +860,11 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
     opacity: 0 !important;
 }
 
+.top-slides-content-elements.has-active-child .top-slide-content-element.active .top-slide-content-element-preview-block .read-more-block {
+    margin: 0;
+    display: none;
+}
+
 
 
 @media screen and (min-width: 768px) {
