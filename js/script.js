@@ -104,12 +104,20 @@ $(document).ready(function () {
         $(this).addClass('active');
         $('.top-slides-content-elements').addClass('has-active-child delay');
         RecolorOfTabs();
-        /*FindContentHeight();
-        console.log(FindContentHeight());*/
-
-
+        setTimeout(function () {
+            $('.read-more-block-mobile').removeClass('rotate');
+        }, 1000);
+        setTimeout(function () {
+            $('.top-slide-content-element.active .read-more-block-mobile').addClass('rotate');
+        }, 1000);
     });
 
+    $('.read-more-block-mobile').on('click', function (e) {
+        e.stopPropagation();
+        $('.top-slide-content-element-preview-block .content-block .close-button').trigger('click',function () {
+        });
+
+    });
 
     $('.top-slide-content-element-preview-block .content-block .close-button').on('click', function (e) {
         e.stopPropagation();
@@ -120,6 +128,9 @@ $(document).ready(function () {
         }, 1000 );
         $('.top-slide-content-element').removeClass('light-effect');
         $('.top-slides-content-elements').removeClass('last-element-active');
+        setTimeout(function () {
+            $('.read-more-block-mobile').removeClass('rotate');
+        }, 1000);
     });
 
 
