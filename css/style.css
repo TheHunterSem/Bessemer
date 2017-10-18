@@ -827,7 +827,7 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
 
     .top-slides-content-elements.has-active-child .top-slide-content-element {
         width: 5%;
-        background-color: #d4d4d4;
+        background-color: #B9BBB9;
     }
 
     .top-slides-content-elements.has-active-child .top-slide-content-element.active:last-child {
@@ -864,7 +864,11 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
 
 @media screen and (min-width: 768px) {
 
-    .top-slide-content-element:hover:not(.active)::before {
+    .top-slides-content-elements.has-active-child .top-slide-content-element:hover:not(.active)::before {
+        background-color: #d4d4d4;
+    }
+
+    .top-slides-content-elements.has-active-child .top-slide-content-element:last-child:hover:not(.active)::before {
         background-color: rgba(47,45,45,0.3);
     }
 

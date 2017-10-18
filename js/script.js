@@ -81,9 +81,7 @@ jQuery(document).ready(function () {
 
     }
 
-/*    var ContentInsideHeight = jQuery('.top-slide-content-element').outerHeight();
 
-    */
 
 
     jQuery('.top-slides-content-elements .top-slide-content-element').on('click', function () {
@@ -104,15 +102,11 @@ jQuery(document).ready(function () {
             jQuery('.top-slide-content-element.active .read-more-block-mobile').addClass('rotate');
         }, 1000);
 
-        // jQuery(this).css({'height': 'auto'});
-        var ContentInsideHeight = jQuery('.main-content-inside',this).outerHeight();
-        var SectionHeight = ContentInsideHeight + 134;
-        jQuery('.top-slides-content-elements.has-active-child .top-slide-content-element.active').css({'height': SectionHeight});
-
-
-        // console.log(ContentInsideHeight);
-        // console.log(SectionHeight);
-
+        if( jQuery(window).width() <= 767 ) {
+            var ContentInsideHeight = jQuery('.main-content-inside',this).outerHeight();
+            var SectionHeight = ContentInsideHeight + 134;
+            jQuery('.top-slides-content-elements.has-active-child .top-slide-content-element.active').css({'height': SectionHeight});
+        }
 
 
     });
