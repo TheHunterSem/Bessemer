@@ -758,6 +758,10 @@
         background-color: #0B8756 !important;
     }
 
+    .top-slide-content-element:last-child {
+        background-color: #B9BBB9;
+    }
+
     .top-slides-content-elements.has-active-child .top-slide-content-element.active .top-slide-content-element-preview-block {
         max-width: 100%;
     }
