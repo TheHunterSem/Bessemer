@@ -806,6 +806,10 @@
         top: 8px;
     }
 
+    .top-slides-content-elements.has-active-child .top-slide-content-element.active .read-more-block-mobile {
+        top: 18px;
+    }
+
 
 }
 
