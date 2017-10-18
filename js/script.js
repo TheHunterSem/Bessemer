@@ -81,6 +81,17 @@ $(document).ready(function () {
 
     }
 
+/*    var ContentInsideHeight = $('.top-slide-content-element').outerHeight();
+
+    console.log(ContentInsideHeight);*/
+
+    function FindContentHeight() {
+        var ElementToFind = $('.top-slides-content-elements.has-active-child .top-slide-content-element.active');
+        $(ElementToFind).each(function (index, elem) {
+            $(this).find('.main-content-inside').outerHeight();
+        });
+    }
+
 
     $('.top-slide-content-element').on('click', function () {
         if(!$(this).hasClass('active')){
@@ -93,7 +104,8 @@ $(document).ready(function () {
         $(this).addClass('active');
         $('.top-slides-content-elements').addClass('has-active-child delay');
         RecolorOfTabs();
-
+        FindContentHeight();
+        console.log(FindContentHeight());
 
 
     });

@@ -824,13 +824,11 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
     .close-button:hover .plus-icon .icon-plus {
         color: #B9BBB9;
     }
-
+    
     .top-slides-content-elements.has-active-child .top-slide-content-element {
         width: 5%;
-        background-color: #B9BBB9;
+        background-color: #d4d4d4;
     }
-
-
 
     .top-slides-content-elements.has-active-child .top-slide-content-element.active:last-child {
         background-color: #0B8756;
