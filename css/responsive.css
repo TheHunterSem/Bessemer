@@ -804,6 +804,9 @@
     .top-slide-content-element .read-more-block-mobile .plus-icon .icon-plus {
         font-size: 15px;
         color: #fff;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     .top-slides-content-elements.has-active-child .top-slide-content-element .read-more-block-mobile {
