@@ -94,6 +94,9 @@ jQuery(document).ready(function () {
         jQuery('.top-slide-content-element').removeClass('active');
         jQuery(this).addClass('active');
         jQuery('.top-slides-content-elements').addClass('has-active-child delay');
+        setTimeout(function () {
+            jQuery('.top-slides-content-elements').removeClass('delay');
+        }, 1000);
         RecolorOfTabs();
         setTimeout(function () {
             jQuery('.read-more-block-mobile').removeClass('rotate');
@@ -121,6 +124,7 @@ jQuery(document).ready(function () {
         e.stopPropagation();
         jQuery('.top-slide-content-element').removeClass('active');
         jQuery('.top-slides-content-elements').removeClass('has-active-child');
+        jQuery('.top-slides-content-elements').addClass('delay');
         setTimeout(function () {
             jQuery('.top-slides-content-elements').removeClass('delay');
         }, 1000 );

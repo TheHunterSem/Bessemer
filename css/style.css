@@ -849,14 +849,19 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
 
 }
 
-.top-slides-content-elements.has-active-child.delay .top-slide-content-element .top-slide-content-element-preview-block .content-block .main-header{
-    opacity: 1 !important;
+@media screen and (min-width: 768px) {
+    .top-slides-content-elements.has-active-child.delay .top-slide-content-element .top-slide-content-element-preview-block .content-block .main-header{
+        opacity: 1 !important;
+    }
+
+    .top-slides-content-elements.delay .top-slide-content-element .top-slide-content-element-preview-block .content-block .main-header,
+    .top-slides-content-elements.delay .top-slide-content-element .top-slide-content-element-preview-block .content-block .description,
+    .top-slides-content-elements.delay .top-slide-content-element .top-slide-content-element-preview-block .read-more-block {
+        opacity: 0 !important;
+    }
 }
 
-.top-slides-content-elements.delay .top-slide-content-element .top-slide-content-element-preview-block .content-block .main-header,
-.top-slides-content-elements.delay .top-slide-content-element .top-slide-content-element-preview-block .content-block .description,
-.top-slides-content-elements.delay .top-slide-content-element:not(.active) .top-slide-content-element-preview-block .content-block .year,
-.top-slides-content-elements.delay .top-slide-content-element .top-slide-content-element-preview-block .read-more-block {
+.top-slides-content-elements.delay .top-slide-content-element .top-slide-content-element-preview-block .content-block .year {
     opacity: 0 !important;
 }
 
@@ -1023,10 +1028,6 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
     display: block;
 }
 
-/*.top-slides-content-elements.has-active-child .top-slide-content-element.active .top-slide-content-element-preview-block .read-more-block {
-    display: none;
-}*/
-
 .top-slides-content-elements.has-active-child .top-slide-content-element:not(.active) .top-slide-content-element-preview-block,
 .top-slides-content-elements .top-slide-content-element .top-slide-content-element-preview-block .content-block .close-button {
     display: none;
@@ -1037,7 +1038,7 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
     margin-bottom: 30px;
 }
 
-
+@media screen and (min-width: 768px) {
     .top-slides-content-elements.has-active-child .top-slide-content-element .top-slide-content-element-preview-block{
         opacity: 0;
         animation-delay: .8s;
@@ -1058,7 +1059,7 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
         padding: 0;
         animation-name: FadeIn;
     }
-
+}
 
 .top-slides-content-elements.has-active-child .top-slide-content-element.active .top-slide-content-element-preview-block .content-block .main-header {
     font-size: 28px;
@@ -1107,7 +1108,6 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
     font-size: 16px;
     line-height: 20px;
     margin-top: 30px;
-    /*padding: 0 15px;*/
 }
 
 .top-slides-content-elements.has-active-child .top-slide-content-element.active:last-child .close-button .plus-icon .icon-plus {
@@ -1125,34 +1125,6 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
 .result-tab-mini {
     display: none;
 }
-
-/*
-.top-slides-content-elements.has-active-child .top-slide-content-element.active .top-slide-content-element-preview-block .content-block .close-button {
-    display: none !important;
-}
-*/
-
-/*
-@keyframes RotatePlus {
-
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-
-    }
-
-}
-
-.top-slides-content-elements .top-slide-content-element .top-slide-content-element-preview-block .read-more-block {
-    transform: rotate(0deg);
-    transition: 1s;
-}
-
-.top-slides-content-elements.has-active-child .top-slide-content-element.active .top-slide-content-element-preview-block .read-more-block {
-    transform: rotate(45deg);
-}*/
 
 .top-slide-content-element .read-more-block-mobile {
     display: none;
