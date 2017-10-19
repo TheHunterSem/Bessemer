@@ -237,6 +237,7 @@
 
     .top-slides-content-elements.has-active-child .top-slide-content-element:not(.active) .top-slide-content-element-preview-block .content-block .main-header {
         margin-bottom: -20px;
+        font-size: 22px;
     }
 
     .top-slide-content-element-preview-block .content-block .year {
