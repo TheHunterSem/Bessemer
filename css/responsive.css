@@ -784,11 +784,12 @@
         right: 10px;
         transition: .5s;
         transform: rotate(0deg);
-        z-index: 50;
+        /*z-index: 50;*/
     }
 
     .top-slide-content-element .read-more-block-mobile.rotate {
         transform: rotate(45deg);
+        z-index: 5;
     }
 
     .top-slide-content-element .read-more-block-mobile .plus-icon {

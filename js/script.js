@@ -108,7 +108,6 @@ jQuery(document).ready(function () {
             jQuery('.top-slides-content-elements.has-active-child .top-slide-content-element.active').css({'height': SectionHeight});
         }
 
-
     });
 
     jQuery('.read-more-block-mobile').on('click', function (e) {
