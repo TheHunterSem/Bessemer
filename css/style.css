@@ -1037,7 +1037,7 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
     margin-bottom: 30px;
 }
 
-@media screen and (min-width: 768px) {
+
     .top-slides-content-elements.has-active-child .top-slide-content-element .top-slide-content-element-preview-block{
         opacity: 0;
         animation-delay: .8s;
@@ -1058,7 +1058,7 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
         padding: 0;
         animation-name: FadeIn;
     }
-}
+
 
 .top-slides-content-elements.has-active-child .top-slide-content-element.active .top-slide-content-element-preview-block .content-block .main-header {
     font-size: 28px;
