@@ -203,7 +203,6 @@
     }
 
     .top-slides-content-elements.has-active-child .top-slide-content-element.active {
-        /*transition: height 1s;*/
         transition: height 1.2s;
     }
 
@@ -838,3 +837,7 @@
     }
 
 }
+
+/*.top-slides-content-elements.has-active-child .top-slide-content-element.active .top-slide-content-element-preview-block .content-block .year {
+    opacity: 1 !important;
+}*/

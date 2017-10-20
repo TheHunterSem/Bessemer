@@ -861,8 +861,16 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
     }
 }
 
-.top-slides-content-elements.delay .top-slide-content-element .top-slide-content-element-preview-block .content-block .year {
+.top-slides-content-elements.delay .top-slide-content-element:not(.active) .top-slide-content-element-preview-block .content-block .year {
     opacity: 0 !important;
+}
+
+.top-slides-content-elements.has-active-child .top-slide-content-element.active .top-slide-content-element-preview-block .content-block .year {
+    opacity: 0;
+    animation-name: FadeIn;
+    animation-fill-mode: forwards;
+    animation-delay: .1s;
+    animation-duration: 3.2s;
 }
 
 .top-slides-content-elements.has-active-child .top-slide-content-element.active .top-slide-content-element-preview-block .read-more-block {
