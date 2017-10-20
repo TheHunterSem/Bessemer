@@ -116,6 +116,10 @@ jQuery(document).ready(function () {
 
     });
 
+    jQuery('body').on('click', '.sp-arrow', function(e){
+        e.stopPropagation();
+    });
+
     jQuery('body').on('click', '.sp-button', function (e) {
         e.stopPropagation();
     });
