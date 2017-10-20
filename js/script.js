@@ -83,8 +83,12 @@ jQuery(document).ready(function () {
 
     //ВІДКРИТТЯ СЕКЦІЇ
 
+    jQuery('body').on('click', '.sp-thumbnail', function(e){
+        e.stopPropagation();
+    });
+
     jQuery('.top-slides-content-elements .top-slide-content-element').on('click', function () {
-        
+
         if(!jQuery(this).hasClass('active')){
             jQuery('.top-slides-content-elements .top-slide-content-element').addClass('light-effect');
             setTimeout(function () {
@@ -112,13 +116,13 @@ jQuery(document).ready(function () {
 
     });
 
-  /*  jQuery('body').on('click', '.sp-button', function(e){
+    jQuery('body').on('click', '.sp-button', function(e){
         e.stopPropagation();
     });
     jQuery('body').on('click', '.top-slides-content-elements .top-slide-content-element', function(e){
         e.stopPropagation();
         jQuery('.top-slide-content-element').eq($(this).index()-1).find('.sp-button').eq(0).trigger('click');
-    });*/
+    });
 
     jQuery('.read-more-block-mobile').on('click', function (e) {
         e.stopPropagation();
