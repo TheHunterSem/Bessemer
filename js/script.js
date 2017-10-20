@@ -57,9 +57,9 @@ jQuery(document).ready(function () {
 
     function RecolorOfTabs() {
 
-        if( jQuery(window).width() > 767 ) {
+        if (jQuery(window).width() > 767) {
 
-            if( jQuery('.top-slide-content-element:last').hasClass('active')) {
+            if (jQuery('.top-slide-content-element:last').hasClass('active')) {
                 jQuery('.top-slides-content-elements').addClass('last-element-active');
                 jQuery('.top-slide-content-element:last').addClass('last-element-active');
             } else {
@@ -69,7 +69,7 @@ jQuery(document).ready(function () {
 
         } else {
 
-            if(jQuery('.top-slide-content-element:last').hasClass('active')) {
+            if (jQuery('.top-slide-content-element:last').hasClass('active')) {
                 jQuery('.top-slides-content-elements').addClass('last-element-active');
                 jQuery('.top-slide-content-element:last').addClass('last-element-active');
             } else {
@@ -83,13 +83,13 @@ jQuery(document).ready(function () {
 
     //ВІДКРИТТЯ СЕКЦІЇ
 
-    jQuery('body').on('click', '.sp-thumbnail', function(e){
+    jQuery('body').on('click', '.sp-thumbnail', function (e) {
         e.stopPropagation();
     });
 
     jQuery('.top-slides-content-elements .top-slide-content-element').on('click', function () {
 
-        if(!jQuery(this).hasClass('active')){
+        if (!jQuery(this).hasClass('active')) {
             jQuery('.top-slides-content-elements .top-slide-content-element').addClass('light-effect');
             setTimeout(function () {
                 jQuery('.top-slides-content-elements .top-slide-content-element').removeClass('light-effect');
@@ -108,25 +108,25 @@ jQuery(document).ready(function () {
 
         RecolorOfTabs();
 
-        if( jQuery(window).width() <= 767 ) {
-            var ContentInsideHeight = jQuery('.main-content-inside',this).outerHeight();
+        if (jQuery(window).width() <= 767) {
+            var ContentInsideHeight = jQuery('.main-content-inside', this).outerHeight();
             var SectionHeight = ContentInsideHeight + 134;
             jQuery('.top-slides-content-elements.has-active-child .top-slide-content-element.active').css({'height': SectionHeight});
         }
 
     });
 
-    jQuery('body').on('click', '.sp-button', function(e){
+    jQuery('body').on('click', '.sp-button', function (e) {
         e.stopPropagation();
     });
-    jQuery('body').on('click', '.top-slides-content-elements .top-slide-content-element', function(e){
+    jQuery('body').on('click', '.top-slides-content-elements .top-slide-content-element', function (e) {
         e.stopPropagation();
-        jQuery('.top-slide-content-element').eq($(this).index()-1).find('.sp-button').eq(0).trigger('click');
+        jQuery('.top-slide-content-element').eq($(this).index() - 1).find('.sp-button').eq(0).trigger('click');
     });
 
     jQuery('.read-more-block-mobile').on('click', function (e) {
         e.stopPropagation();
-        jQuery('.top-slide-content-element-preview-block .content-block .close-button').trigger('click',function () {
+        jQuery('.top-slide-content-element-preview-block .content-block .close-button').trigger('click', function () {
         });
 
     });
@@ -138,7 +138,7 @@ jQuery(document).ready(function () {
         jQuery('.top-slides-content-elements').addClass('delay');
         setTimeout(function () {
             jQuery('.top-slides-content-elements').removeClass('delay');
-        }, 1000 );
+        }, 1000);
         jQuery('.top-slide-content-element').removeClass('light-effect');
         jQuery('.top-slides-content-elements').removeClass('last-element-active');
         setTimeout(function () {
@@ -151,7 +151,7 @@ jQuery(document).ready(function () {
 
     function ActivationMobileMenu() {
 
-        if(jQuery('.mobile-btn-wrapper').hasClass('active')) {
+        if (jQuery('.mobile-btn-wrapper').hasClass('active')) {
             jQuery('.mobile-btn-wrapper').removeClass('active');
             setTimeout(function () {
                 jQuery('.header-navigation-items').removeClass('active');
