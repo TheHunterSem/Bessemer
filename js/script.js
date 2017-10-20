@@ -18,7 +18,7 @@ jQuery(document).ready(function () {
         orientation: 'vertical',
         loop: false,
         arrows: true,
-        buttons: false,
+        buttons: true,
         thumbnailsPosition: 'right',
         thumbnailPointer: false,
         thumbnailArrows: true,
@@ -81,29 +81,28 @@ jQuery(document).ready(function () {
 
     }
 
-
-
+    //ВІДКРИТТЯ СЕКЦІЇ
 
     jQuery('.top-slides-content-elements .top-slide-content-element').on('click', function () {
+        
         if(!jQuery(this).hasClass('active')){
             jQuery('.top-slides-content-elements .top-slide-content-element').addClass('light-effect');
             setTimeout(function () {
                 jQuery('.top-slides-content-elements .top-slide-content-element').removeClass('light-effect');
             }, 1000);
         }
+
         jQuery('.top-slide-content-element').removeClass('active');
         jQuery(this).addClass('active');
         jQuery('.top-slides-content-elements').addClass('has-active-child delay');
+
         setTimeout(function () {
             jQuery('.top-slides-content-elements').removeClass('delay');
-        }, 1000);
-        RecolorOfTabs();
-        setTimeout(function () {
             jQuery('.read-more-block-mobile').removeClass('rotate');
-        }, 1000);
-        setTimeout(function () {
             jQuery('.top-slide-content-element.active .read-more-block-mobile').addClass('rotate');
         }, 1000);
+
+        RecolorOfTabs();
 
         if( jQuery(window).width() <= 767 ) {
             var ContentInsideHeight = jQuery('.main-content-inside',this).outerHeight();
@@ -112,6 +111,14 @@ jQuery(document).ready(function () {
         }
 
     });
+
+  /*  jQuery('body').on('click', '.sp-button', function(e){
+        e.stopPropagation();
+    });
+    jQuery('body').on('click', '.top-slides-content-elements .top-slide-content-element', function(e){
+        e.stopPropagation();
+        jQuery('.top-slide-content-element').eq($(this).index()-1).find('.sp-button').eq(0).trigger('click');
+    });*/
 
     jQuery('.read-more-block-mobile').on('click', function (e) {
         e.stopPropagation();
