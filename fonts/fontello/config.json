@@ -1,0 +1,70 @@
+{
+  "name": "munnrabot",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "4257a945d9fda2e53e8de5c1575da3af",
+      "css": "plus",
+      "code": 59392,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M550 450Q580 450 580 500T550 550L340 550 340 760Q340 790 290 790T240 760L240 550 30 550Q0 550 0 500T30 450L240 450 240 240Q240 210 290 210T340 240L340 450 550 450Z",
+        "width": 580
+      },
+      "search": [
+        "plus"
+      ]
+    },
+    {
+      "uid": "69db2439ef5bb555b07a5eefa16b3303",
+      "css": "play-button",
+      "code": 59393,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M0 1000L1000 500 0 0V1000Z",
+        "width": 1000
+      },
+      "search": [
+        "play-button"
+      ]
+    },
+    {
+      "uid": "8e04c98c8f5ca0a035776e3001ad2638",
+      "css": "facebook",
+      "code": 61594,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "b1ec8e90c2c85cf0035849980a3789b3",
+      "css": "twitter",
+      "code": 59394,
+      "src": "zocial"
+    },
+    {
+      "uid": "8b86d87522facadc2016d233bfe4a9ec",
+      "css": "instagram",
+      "code": 59395,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M906.3 0H93.8C42 0 0 42 0 93.8V906.3C0 958 42 1000 93.8 1000H906.3C958 1000 1000 958 1000 906.3V93.8C1000 42 958 0 906.3 0ZM683.6 152.9C683.6 118.5 711.7 90.4 746.1 90.4H824.2C858.6 90.4 886.7 118.5 886.7 152.9V247.5C886.7 281.9 858.6 310 824.2 310H746.1C711.7 310 683.6 281.9 683.6 247.5V152.9ZM500 279.5C621.6 279.5 720.5 378.5 720.5 500S621.6 720.5 500 720.5 279.5 621.5 279.5 500 378.4 279.5 500 279.5ZM906.3 937.5H93.8C76.5 937.5 62.5 923.5 62.5 906.3V424.1H93.8 197.5 227.9C221.1 448.3 217 473.7 217 500 217 656 344 783 500 783S783 656 783 500C783 473.7 778.9 448.3 772.1 424.1H802.5 906.3 937.5V906.3C937.5 923.5 923.5 937.5 906.3 937.5Z",
+        "width": 1000
+      },
+      "search": [
+        "instagram"
+      ]
+    },
+    {
+      "uid": "47a1f80457068fbeab69fdb83d7d0817",
+      "css": "youtube-play",
+      "code": 61802,
+      "src": "fontawesome"
+    }
+  ]
+}

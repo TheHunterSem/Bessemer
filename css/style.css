@@ -297,21 +297,21 @@ html {
     font-style: normal;
 }
 
-/*font-family: 'bessemer';  (fontello-ions)  */
+/*font-family: 'munnrabot';  (fontello-icons)  */
 @font-face {
-    font-family: 'bessemer';
-    src: url('../fonts/fontello/bessemer.eot?50008918');
-    src: url('../fonts/fontello/bessemer.eot?50008918#iefix') format('embedded-opentype'),
-    url('../fonts/fontello/bessemer.woff2?50008918') format('woff2'),
-    url('../fonts/fontello/bessemer.woff?50008918') format('woff'),
-    url('../fonts/fontello/bessemer.ttf?50008918') format('truetype'),
-    url('../fonts/fontello/bessemer.svg?50008918#bessemer') format('svg');
+    font-family: 'munnrabot';
+    src: url('../fonts/fontello/munnrabot.eot?58053360');
+    src: url('../fonts/fontello/munnrabot.eot?58053360#iefix') format('embedded-opentype'),
+    url('../fonts/fontello/munnrabot.woff2?58053360') format('woff2'),
+    url('../fonts/fontello/munnrabot.woff?58053360') format('woff'),
+    url('../fonts/fontello/munnrabot.ttf?58053360') format('truetype'),
+    url('../fonts/fontello/munnrabot.svg?58053360#munnrabot') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 [class^="icon-"]:before, [class*=" icon-"]:before {
-    font-family: "bessemer";
+    font-family: "munnrabot";
     font-style: normal;
     font-weight: normal;
     speak: none;
@@ -324,9 +324,12 @@ html {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-plus:before {
-    content: '\e800';
-}
+.icon-plus:before { content: '\e800'; } /* '' */
+.icon-play-button:before { content: '\e801'; } /* '' */
+.icon-twitter:before { content: '\e802'; } /* '' */
+.icon-instagram:before { content: '\e803'; } /* '' */
+.icon-facebook:before { content: '\f09a'; } /* '' */
+.icon-youtube-play:before { content: '\f16a'; } /* '' */
 
 * {
     -webkit-box-sizing: border-box;
@@ -732,7 +735,7 @@ header {
     -o-transition: color .3s;
     -moz-transition: color .3s;
     transition: color .3s;
-    font-family: 'bessemer';
+    font-family: 'munnrabot';
 }
 
 .close-button .plus-icon .icon-plus {
