@@ -1321,6 +1321,10 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
     height: 943px;
 }
 
+.main-content-element-video {
+    margin-top: 30px;
+}
+
 .main-content-element:first-child {
     margin-top: 0;
 }
@@ -1362,4 +1366,26 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
     line-height: 33px;
     color: #000000;
     font-family: 'NeueHaasUnicaPro-Thin';
+}
+
+.main-content-element-video .video-button-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    height: 103px;
+    width: 103px;
+    border-radius: 50%;
+    border: 3px solid #FFFFFF;
+    cursor: pointer;
+}
+
+.main-content-element-video .video-button-play .play-icon {
+    position: absolute;
+    top: 50%;
+    left: 63px;
+    transform: translate(-50%,-50%);
+    border: 20px solid transparent;
+    border-left: 43px solid #fff;
 }
