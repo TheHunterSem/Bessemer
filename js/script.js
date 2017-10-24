@@ -108,6 +108,7 @@ jQuery(document).ready(function () {
 
         RecolorOfTabs();
 
+        // Формування висоти секції в залежності від висоти контенту (мобільна версія)
         if (jQuery(window).width() <= 767) {
             var ContentInsideHeight = jQuery('.main-content-inside', this).outerHeight();
             var SectionHeight = ContentInsideHeight + 134;
@@ -119,7 +120,6 @@ jQuery(document).ready(function () {
     jQuery('body').on('click', '.sp-arrow', function(e){
         e.stopPropagation();
     });
-
     jQuery('body').on('click', '.sp-button', function (e) {
         e.stopPropagation();
     });
@@ -127,12 +127,10 @@ jQuery(document).ready(function () {
         e.stopPropagation();
         jQuery('.top-slide-content-element').eq($(this).index() - 1).find('.sp-button').eq(0).trigger('click');
     });
-
     jQuery('.read-more-block-mobile').on('click', function (e) {
         e.stopPropagation();
         jQuery('.top-slide-content-element-preview-block .content-block .close-button').trigger('click', function () {
         });
-
     });
 
     jQuery('.top-slide-content-element-preview-block .content-block .close-button').on('click', function (e) {
@@ -176,6 +174,6 @@ jQuery(document).ready(function () {
     });
 
 
-    //MENU START
+    //MENU END
 
 });

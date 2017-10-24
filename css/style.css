@@ -1302,3 +1302,61 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
 .top-slide-content-element .read-more-block-mobile {
     display: none;
 }
+
+/* ============================= CONTACTS ============================= */
+
+.main-content-element {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.main-content-element-picture,
+.main-content-element-video {
+    width: 100%;
+    position: relative;
+    background-color: grey;
+    height: 943px;
+}
+
+.main-content-element:first-child {
+    margin-top: 0;
+}
+
+.main-content-element-picture .red-text-block {
+    position: absolute;
+    top: 81px;
+    right: 81px;
+    padding: 26px 12px;
+    max-width: 242px;
+    width: 100%;
+    background-color: #EE3324;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 31px;
+    font-family: 'NeueHaasUnicaPro-Bold';
+    letter-spacing: 1px;
+}
+
+.main-content-element .text-block {
+    text-align: center;
+    width: 100%;
+    max-width: 765px;
+    margin: 0 auto;
+}
+
+.main-content-element .text-block-header {
+    color: #1D1D1D;
+    font-size: 28px;
+    line-height: 43px;
+    font-weight: inherit;
+    font-family: inherit;
+    margin-bottom: 20px;
+}
+
+.main-content-element .text-block p {
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 33px;
+    color: #000000;
+    font-family: 'NeueHaasUnicaPro-Thin';
+}
