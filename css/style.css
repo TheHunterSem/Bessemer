@@ -1493,3 +1493,7 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
     opacity: 1;
     transform: translate(-50%,-50%) scale(1);
 }
+
+footer {
+    margin-top: 90px;
+}
