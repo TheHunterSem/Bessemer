@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa0c892b-4e8c-4252-a1ce-9d5ec5871834" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clients.html" afterPath="$PROJECT_DIR$/clients.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,8 +19,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="1393" column="27" lean-forward="true" selection-start-line="1393" selection-start-column="27" selection-end-line="1393" selection-end-column="27" />
+            <state relative-caret-position="262">
+              <caret line="1319" column="27" lean-forward="true" selection-start-line="1319" selection-start-column="27" selection-end-line="1319" selection-end-column="27" />
               <folding>
                 <element signature="e#285#927#0" expanded="false" />
                 <element signature="e#984#1594#0" expanded="false" />
@@ -51,8 +53,8 @@
       <file leaf-file-name="clients.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/clients.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="80" column="28" lean-forward="true" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="65" />
+            <state relative-caret-position="476">
+              <caret line="90" column="61" lean-forward="true" selection-start-line="90" selection-start-column="61" selection-end-line="90" selection-end-column="61" />
               <folding>
                 <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
@@ -184,7 +186,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="fonts" />
+              <option name="myItemId" value="img" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -198,11 +200,11 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="fonts" />
+              <option name="myItemId" value="img" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="fontello" />
+              <option name="myItemId" value="clients" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -346,12 +348,12 @@
       <workItem from="1508488976392" duration="17234000" />
       <workItem from="1508518847324" duration="374000" />
       <workItem from="1508745714389" duration="4626000" />
-      <workItem from="1508834534582" duration="6463000" />
+      <workItem from="1508834534582" duration="10784000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="266462000" />
+    <option name="totallyTimeSpent" value="270783000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -974,8 +976,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/clients.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="80" column="28" lean-forward="true" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="65" />
+        <state relative-caret-position="476">
+          <caret line="90" column="61" lean-forward="true" selection-start-line="90" selection-start-column="61" selection-end-line="90" selection-end-column="61" />
           <folding>
             <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
@@ -984,8 +986,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="1393" column="27" lean-forward="true" selection-start-line="1393" selection-start-column="27" selection-end-line="1393" selection-end-column="27" />
+        <state relative-caret-position="262">
+          <caret line="1319" column="27" lean-forward="true" selection-start-line="1319" selection-start-column="27" selection-end-line="1319" selection-end-column="27" />
           <folding>
             <element signature="e#285#927#0" expanded="false" />
             <element signature="e#984#1594#0" expanded="false" />
