@@ -1430,6 +1430,7 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
 
 .prefooter-content-element-items {
     margin-top: 23px;
+    display: flex;
 }
 
 .prefooter-content-element-item {
@@ -1440,7 +1441,15 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
     height: 315px;
     overflow: hidden;
     padding: 0;
-    margin: 0;
+    margin: 0 15px;
+}
+
+.prefooter-content-element-item:first-child {
+    margin-left: 0;
+}
+
+.prefooter-content-element-item:last-child {
+    margin-right: 0;
 }
 
 .prefooter-content-element-item img{
