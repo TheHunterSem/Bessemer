@@ -1412,3 +1412,75 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
 .main-content-element-picture.notebook {
     background-color: #F7F6F6;
 }
+
+.prefooter-content-elements {
+    margin-top: 45px;
+}
+
+.prefooter-content-elements-header {
+    margin: 0 auto;
+    display: block;
+    max-width: 490px;
+    width: 100%;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 33px;
+    font-family: 'NeueHaasUnicaPro-Light';
+}
+
+.prefooter-content-element-items {
+    margin-top: 23px;
+}
+
+.prefooter-content-element-item {
+    position: relative;
+    display: inline-block;
+    max-width: 440px;
+    width: 100%;
+    height: 315px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.prefooter-content-element-item img{
+    max-width: 100%;
+    height: 100%;
+}
+
+.prefooter-content-element-item::before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0);
+    transition: width .5s, height .5s, background-color .6s;
+}
+
+.prefooter-content-element-item:hover::before {
+    background-color: rgba(255,255,255,0.6);
+    width: 90%;
+    height: 90%;
+}
+
+.prefooter-content-element-item .name {
+    opacity: 0;
+    transition: .4s;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1.5);
+    color: #000000;
+    font-family: 'NeueHaasUnicaPro-Light';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 27px;
+}
+
+.prefooter-content-element-item:hover .name {
+    opacity: 1;
+    transform: translate(-50%,-50%) scale(1);
+}
