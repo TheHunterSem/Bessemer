@@ -300,12 +300,12 @@ html {
 /*font-family: 'munnrabot';  (fontello-icons)  */
 @font-face {
     font-family: 'munnrabot';
-    src: url('../fonts/fontello/munnrabot.eot?58053360');
-    src: url('../fonts/fontello/munnrabot.eot?58053360#iefix') format('embedded-opentype'),
-    url('../fonts/fontello/munnrabot.woff2?58053360') format('woff2'),
-    url('../fonts/fontello/munnrabot.woff?58053360') format('woff'),
-    url('../fonts/fontello/munnrabot.ttf?58053360') format('truetype'),
-    url('../fonts/fontello/munnrabot.svg?58053360#munnrabot') format('svg');
+    src: url('../fonts/fontello/munnrabot.eot?18332336');
+    src: url('../fonts/fontello/munnrabot.eot?18332336#iefix') format('embedded-opentype'),
+    url('../fonts/fontello/munnrabot.woff2?18332336') format('woff2'),
+    url('../fonts/fontello/munnrabot.woff?18332336') format('woff'),
+    url('../fonts/fontello/munnrabot.ttf?18332336') format('truetype'),
+    url('../fonts/fontello/munnrabot.svg?18332336#munnrabot') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -1559,7 +1559,7 @@ footer {
 .footer-first-part-social-list li a {
     color: #706F72;
     vertical-align: middle;
-    transition: .5s;
+    transition: .4s;
 }
 
 .footer-first-part-social-list li a.facebook-link-icon {
@@ -1592,4 +1592,57 @@ footer {
 
 .footer-first-part-social-list li a:hover.youtube-play-link-icon {
     color: #ff0000;
+}
+
+.footer-second-part {
+    display: block;
+    margin-top: 48px;
+    float: left;
+    width: 100%;
+}
+
+.footer-second-part .footer-header {
+    color: #2f3131;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    font-family:  "NeueHaasUnicaPro-Medium";
+}
+
+.footer-second-part .contacts-wrapper {
+    margin-top: 40px;
+}
+
+.footer-second-part .contact-items-list {
+    display: inline-block;
+    width: 24%;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-second-part .contact-items-list * {
+    font-size: 14px;
+    line-height: 21px;
+    font-family:  "NeueHaasUnicaPro-Regular";
+    font-weight: 400;
+    color: #2F3131;
+    text-decoration: none;
+}
+
+.footer-second-part .contact-items-list .incumbency {
+    font-size: 15px;
+    font-family:  "NeueHaasUnicaPro-Bold";
+    font-weight: 700;
+}
+
+.footer-second-part .contact-items-list li {
+    list-style: none;
+}
+
+.copyright-block {
+    padding: 40px 0;
+    color: #706f72;
+    font-size: 14px;
+    line-height: 21px;
 }
