@@ -1,5 +1,7 @@
 jQuery(document).ready(function () {
 
+
+
     jQuery('.sp-image-link').magnificPopup({
         type: 'image',
         // Delay in milliseconds before popup is removed
@@ -175,5 +177,12 @@ jQuery(document).ready(function () {
 
 
     //MENU END
+
+
+
+
+    //  ------------  CLIENTS PAGE  ------------
+
+
 
 });

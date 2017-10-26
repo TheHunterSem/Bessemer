@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa0c892b-4e8c-4252-a1ce-9d5ec5871834" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fonts/fontello/munnrabot.eot" afterPath="$PROJECT_DIR$/fonts/fontello/munnrabot.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fonts/fontello/munnrabot.ttf" afterPath="$PROJECT_DIR$/fonts/fontello/munnrabot.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fonts/fontello/munnrabot.woff" afterPath="$PROJECT_DIR$/fonts/fontello/munnrabot.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fonts/fontello/munnrabot.woff2" afterPath="$PROJECT_DIR$/fonts/fontello/munnrabot.woff2" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clients.html" afterPath="$PROJECT_DIR$/clients.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fonts/fontello/config.json" afterPath="$PROJECT_DIR$/fonts/fontello/config.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fonts/fontello/munnrabot.svg" afterPath="$PROJECT_DIR$/fonts/fontello/munnrabot.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/script.js" afterPath="$PROJECT_DIR$/js/script.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,8 +20,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="501">
-              <caret line="1646" column="22" lean-forward="true" selection-start-line="1645" selection-start-column="0" selection-end-line="1647" selection-end-column="0" />
+            <state relative-caret-position="212">
+              <caret line="1666" column="1" lean-forward="false" selection-start-line="1666" selection-start-column="1" selection-end-line="1666" selection-end-column="17" />
               <folding>
                 <element signature="e#285#927#0" expanded="false" />
                 <element signature="e#984#1594#0" expanded="false" />
@@ -59,21 +54,55 @@
       <file leaf-file-name="clients.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/clients.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="200" column="88" lean-forward="false" selection-start-line="200" selection-start-column="88" selection-end-line="200" selection-end-column="88" />
+            <state relative-caret-position="320">
+              <caret line="105" column="154" lean-forward="false" selection-start-line="105" selection-start-column="154" selection-end-line="105" selection-end-column="154" />
               <folding>
                 <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#section#0;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="e#9105#9111#0" expanded="true" />
-                <element signature="e#9142#9148#0" expanded="true" />
-                <element signature="e#9149#9155#0" expanded="true" />
-                <element signature="e#9156#9162#0" expanded="true" />
-                <element signature="e#9165#9171#0" expanded="true" />
-                <element signature="e#9172#9178#0" expanded="true" />
-                <element signature="e#9179#9185#0" expanded="true" />
-                <marker date="1508943470780" expanded="false" signature="5321:6170" ph="..." />
+                <element signature="n#div#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#section#1;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="e#8507#8513#0" expanded="true" />
+                <element signature="e#8544#8550#0" expanded="true" />
+                <element signature="e#8551#8557#0" expanded="true" />
+                <element signature="e#8558#8564#0" expanded="true" />
+                <element signature="e#8567#8573#0" expanded="true" />
+                <element signature="e#8574#8580#0" expanded="true" />
+                <element signature="e#8581#8587#0" expanded="true" />
+                <element signature="n#script#4;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/script.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="473">
+              <caret line="185" column="0" lean-forward="true" selection-start-line="185" selection-start-column="0" selection-end-line="185" selection-end-column="0" />
+              <folding>
+                <element signature="e#83#371#0" expanded="false" />
+                <element signature="e#411#1541#0" expanded="false" />
+                <element signature="e#1605#2647#0" expanded="false" />
+                <element signature="e#2734#2770#0" expanded="false" />
+                <element signature="e#2868#4148#0" expanded="false" />
+                <element signature="e#4207#4243#0" expanded="false" />
+                <element signature="e#4304#4340#0" expanded="false" />
+                <element signature="e#4446#4594#0" expanded="false" />
+                <element signature="e#4660#4827#0" expanded="false" />
+                <element signature="e#4940#5591#0" expanded="false" />
+                <element signature="e#5650#6138#0" expanded="false" />
+                <element signature="e#6198#6239#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="script-mobile.js" pinned="false" current-in-tab="false">
+        <entry file="file://E:/Soft/OpenServer/domains/bomond/skin/frontend/bomond/default/js/script-mobile.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="881">
+              <caret line="220" column="0" lean-forward="false" selection-start-line="220" selection-start-column="0" selection-end-line="220" selection-end-column="3" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -91,7 +120,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>sp-button</find>
       <find>main-content-inside</find>
       <find>.8s</find>
       <find>mfp-container</find>
@@ -121,6 +149,7 @@
       <find>bessemer</find>
       <find>clients-1.jpg</find>
       <find>58053360</find>
+      <find>main-content-element-video</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -146,8 +175,8 @@
         <option value="$PROJECT_DIR$/css/responsive.css" />
         <option value="$PROJECT_DIR$/css/plugins/magnific-popup.css" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/js/script.js" />
         <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/js/script.js" />
         <option value="$PROJECT_DIR$/clients.html" />
       </list>
     </option>
@@ -182,7 +211,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -205,30 +233,13 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Munn Rabot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Munn Rabot" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clients" />
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -239,15 +250,15 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Василий\Desktop\Munn Rabot\js\plugins" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Василий\Desktop\Munn Rabot\fonts\Times" />
       <recent name="C:\Users\Василий\Desktop\Munn Rabot\img" />
       <recent name="C:\Users\Василий\Desktop\Munn Rabot\img\home-page-slider\big-pictures" />
       <recent name="C:\Users\Василий\Desktop\Munn Rabot\js\plugins" />
       <recent name="C:\Users\Василий\Desktop\Munn Rabot\css\plugins" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Василий\Desktop\Munn Rabot\js\plugins" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -367,12 +378,13 @@
       <workItem from="1508518847324" duration="374000" />
       <workItem from="1508745714389" duration="4626000" />
       <workItem from="1508834534582" duration="17148000" />
-      <workItem from="1508927028764" duration="11029000" />
+      <workItem from="1508927028764" duration="16892000" />
+      <workItem from="1509005704849" duration="9758000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="288176000" />
+    <option name="totallyTimeSpent" value="303797000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -876,24 +888,10 @@
     <entry file="file://$USER_HOME$/Downloads/slider-pro-master/examples/example5.html" />
     <entry file="file://$USER_HOME$/Downloads/slider-pro-master/dist/js/jquery.sliderPro.js" />
     <entry file="file://$USER_HOME$/Downloads/Magnific-Popup-master/dist/jquery.magnific-popup.js" />
-    <entry file="file://E:/Soft/OpenServer/domains/bomond/skin/frontend/bomond/default/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-20031">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://E:/Soft/OpenServer/domains/bomond/skin/frontend/bomond/default/js/brands.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/Soft/OpenServer/domains/bomond/skin/frontend/bomond/default/js/script-mobile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3740">
-          <caret line="220" column="0" lean-forward="false" selection-start-line="220" selection-start-column="0" selection-end-line="220" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -939,13 +937,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
@@ -955,8 +946,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="1646" column="22" lean-forward="true" selection-start-line="1645" selection-start-column="0" selection-end-line="1647" selection-end-column="0" />
+        <state relative-caret-position="212">
+          <caret line="1666" column="1" lean-forward="false" selection-start-line="1666" selection-start-column="1" selection-end-line="1666" selection-end-column="17" />
           <folding>
             <element signature="e#285#927#0" expanded="false" />
             <element signature="e#984#1594#0" expanded="false" />
@@ -985,22 +976,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://E:/Soft/OpenServer/domains/bomond/skin/frontend/bomond/default/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-29733">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Soft/OpenServer/domains/bomond/skin/frontend/bomond/default/js/script-mobile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="881">
+          <caret line="220" column="0" lean-forward="false" selection-start-line="220" selection-start-column="0" selection-end-line="220" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="185" column="0" lean-forward="true" selection-start-line="185" selection-start-column="0" selection-end-line="185" selection-end-column="0" />
+          <folding>
+            <element signature="e#83#371#0" expanded="false" />
+            <element signature="e#411#1541#0" expanded="false" />
+            <element signature="e#1605#2647#0" expanded="false" />
+            <element signature="e#2734#2770#0" expanded="false" />
+            <element signature="e#2868#4148#0" expanded="false" />
+            <element signature="e#4207#4243#0" expanded="false" />
+            <element signature="e#4304#4340#0" expanded="false" />
+            <element signature="e#4446#4594#0" expanded="false" />
+            <element signature="e#4660#4827#0" expanded="false" />
+            <element signature="e#4940#5591#0" expanded="false" />
+            <element signature="e#5650#6138#0" expanded="false" />
+            <element signature="e#6198#6239#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/clients.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="200" column="88" lean-forward="false" selection-start-line="200" selection-start-column="88" selection-end-line="200" selection-end-column="88" />
+        <state relative-caret-position="320">
+          <caret line="105" column="154" lean-forward="false" selection-start-line="105" selection-start-column="154" selection-end-line="105" selection-end-column="154" />
           <folding>
             <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#0;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#9105#9111#0" expanded="true" />
-            <element signature="e#9142#9148#0" expanded="true" />
-            <element signature="e#9149#9155#0" expanded="true" />
-            <element signature="e#9156#9162#0" expanded="true" />
-            <element signature="e#9165#9171#0" expanded="true" />
-            <element signature="e#9172#9178#0" expanded="true" />
-            <element signature="e#9179#9185#0" expanded="true" />
-            <marker date="1508943470780" expanded="false" signature="5321:6170" ph="..." />
+            <element signature="n#div#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#1;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#8507#8513#0" expanded="true" />
+            <element signature="e#8544#8550#0" expanded="true" />
+            <element signature="e#8551#8557#0" expanded="true" />
+            <element signature="e#8558#8564#0" expanded="true" />
+            <element signature="e#8567#8573#0" expanded="true" />
+            <element signature="e#8574#8580#0" expanded="true" />
+            <element signature="e#8581#8587#0" expanded="true" />
+            <element signature="n#script#4;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
