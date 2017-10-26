@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa0c892b-4e8c-4252-a1ce-9d5ec5871834" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clients.html" afterPath="$PROJECT_DIR$/clients.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/clients/notebook.png" afterPath="$PROJECT_DIR$/img/clients/notebook.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/clients/tablet.png" afterPath="$PROJECT_DIR$/img/clients/tablet.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/script.js" afterPath="$PROJECT_DIR$/js/script.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,11 +16,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="1666" column="1" lean-forward="false" selection-start-line="1666" selection-start-column="1" selection-end-line="1666" selection-end-column="17" />
+            <state relative-caret-position="466">
+              <caret line="1412" column="34" lean-forward="true" selection-start-line="1412" selection-start-column="34" selection-end-line="1412" selection-end-column="34" />
               <folding>
                 <element signature="e#285#927#0" expanded="false" />
                 <element signature="e#984#1594#0" expanded="false" />
@@ -51,10 +50,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="clients.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="clients.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/clients.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
+            <state relative-caret-position="14">
               <caret line="105" column="154" lean-forward="false" selection-start-line="105" selection-start-column="154" selection-end-line="105" selection-end-column="154" />
               <folding>
                 <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -120,7 +119,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>main-content-inside</find>
       <find>.8s</find>
       <find>mfp-container</find>
       <find>.mfp-close</find>
@@ -150,6 +148,7 @@
       <find>clients-1.jpg</find>
       <find>58053360</find>
       <find>main-content-element-video</find>
+      <find>943</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -175,9 +174,9 @@
         <option value="$PROJECT_DIR$/css/responsive.css" />
         <option value="$PROJECT_DIR$/css/plugins/magnific-popup.css" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/js/script.js" />
         <option value="$PROJECT_DIR$/clients.html" />
+        <option value="$PROJECT_DIR$/css/style.css" />
       </list>
     </option>
   </component>
@@ -379,12 +378,12 @@
       <workItem from="1508745714389" duration="4626000" />
       <workItem from="1508834534582" duration="17148000" />
       <workItem from="1508927028764" duration="16892000" />
-      <workItem from="1509005704849" duration="9758000" />
+      <workItem from="1509005704849" duration="10660000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="303797000" />
+    <option name="totallyTimeSpent" value="304699000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -944,38 +943,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="1666" column="1" lean-forward="false" selection-start-line="1666" selection-start-column="1" selection-end-line="1666" selection-end-column="17" />
-          <folding>
-            <element signature="e#285#927#0" expanded="false" />
-            <element signature="e#984#1594#0" expanded="false" />
-            <element signature="e#1649#2243#0" expanded="false" />
-            <element signature="e#2304#2946#0" expanded="false" />
-            <element signature="e#3007#3649#0" expanded="false" />
-            <element signature="e#3708#4334#0" expanded="false" />
-            <element signature="e#4391#5001#0" expanded="false" />
-            <element signature="e#5059#5677#0" expanded="false" />
-            <element signature="e#5735#6353#0" expanded="false" />
-            <element signature="e#6409#7011#0" expanded="false" />
-            <element signature="e#7072#7714#0" expanded="false" />
-            <element signature="e#7769#8363#0" expanded="false" />
-            <element signature="e#8421#9039#0" expanded="false" />
-            <element signature="e#9095#9697#0" expanded="false" />
-            <element signature="e#9754#10364#0" expanded="false" />
-            <element signature="e#10422#11040#0" expanded="false" />
-            <element signature="e#11096#11695#0" expanded="false" />
-            <element signature="e#11754#12380#0" expanded="false" />
-            <element signature="e#12424#12882#0" expanded="false" />
-            <element signature="e#12932#13438#0" expanded="false" />
-            <element signature="e#13484#13958#0" expanded="false" />
-            <element signature="e#14003#14469#0" expanded="false" />
-            <element signature="e#14532#15053#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://E:/Soft/OpenServer/domains/bomond/skin/frontend/bomond/default/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-29733">
@@ -1015,7 +982,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/clients.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
+        <state relative-caret-position="14">
           <caret line="105" column="154" lean-forward="false" selection-start-line="105" selection-start-column="154" selection-end-line="105" selection-end-column="154" />
           <folding>
             <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -1030,6 +997,38 @@
             <element signature="e#8574#8580#0" expanded="true" />
             <element signature="e#8581#8587#0" expanded="true" />
             <element signature="n#script#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="1412" column="34" lean-forward="true" selection-start-line="1412" selection-start-column="34" selection-end-line="1412" selection-end-column="34" />
+          <folding>
+            <element signature="e#285#927#0" expanded="false" />
+            <element signature="e#984#1594#0" expanded="false" />
+            <element signature="e#1649#2243#0" expanded="false" />
+            <element signature="e#2304#2946#0" expanded="false" />
+            <element signature="e#3007#3649#0" expanded="false" />
+            <element signature="e#3708#4334#0" expanded="false" />
+            <element signature="e#4391#5001#0" expanded="false" />
+            <element signature="e#5059#5677#0" expanded="false" />
+            <element signature="e#5735#6353#0" expanded="false" />
+            <element signature="e#6409#7011#0" expanded="false" />
+            <element signature="e#7072#7714#0" expanded="false" />
+            <element signature="e#7769#8363#0" expanded="false" />
+            <element signature="e#8421#9039#0" expanded="false" />
+            <element signature="e#9095#9697#0" expanded="false" />
+            <element signature="e#9754#10364#0" expanded="false" />
+            <element signature="e#10422#11040#0" expanded="false" />
+            <element signature="e#11096#11695#0" expanded="false" />
+            <element signature="e#11754#12380#0" expanded="false" />
+            <element signature="e#12424#12882#0" expanded="false" />
+            <element signature="e#12932#13438#0" expanded="false" />
+            <element signature="e#13484#13958#0" expanded="false" />
+            <element signature="e#14003#14469#0" expanded="false" />
+            <element signature="e#14532#15053#0" expanded="false" />
           </folding>
         </state>
       </provider>
