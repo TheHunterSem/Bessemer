@@ -184,5 +184,26 @@ jQuery(document).ready(function () {
     //  ------------  CLIENTS PAGE  ------------
 
 
+ /*   var SectionHeight = ContentInsideHeight + 134;
+    jQuery('.top-slides-content-elements.has-active-child .top-slide-content-element.active').css({'height': SectionHeight});*/
+
+/*    var NotebookImgWidth = jQuery('.main-content-element .main-content-element-picture.notebook').find('img').outerWidth();
+    var lorem = jQuery('.main-content-element .main-content-element-picture.notebook').find('div.content-inside-notebook-block').outerWidth();
+    NotebookImgWidth = lorem;
+
+    console.log('Ширина картінки : ' + NotebookImgWidth);
+    console.log('Ширина контента : ' + lorem);
+
+    $( window ).resize(function() {
+        var NotebookImgWidth = jQuery('.main-content-element .main-content-element-picture.notebook').find('img').outerWidth();
+        var lorem = jQuery('.main-content-element .main-content-element-picture.notebook').find('div.content-inside-notebook-block').outerWidth();
+        NotebookImgWidth = lorem;
+        lorem = lorem - 50;
+
+        console.log('Ширина картінки : ' + NotebookImgWidth);
+        console.log('Ширина контента : ' + lorem);
+    });*/
+
+
 
 });
