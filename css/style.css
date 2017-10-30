@@ -1440,12 +1440,12 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
 .main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .wrapper {
     position: absolute;
     top: 6%;
-    bottom: 11.2%;
+    bottom: 11.5%;
     left: 12.5%;
     right: 12.5%;
-    background-color: red;
-    opacity: .3;
-    overflow: auto;
+    padding: 5px 15px;
+    overflow-x: hidden;
+    overflow-y: scroll;
     /*width: 100%;*/
     /*height: 100%;*/
 }
@@ -1455,15 +1455,15 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
     top: 0;
 }
 
-.content-inside-notebook-block {
+/*.content-inside-notebook-block {
     position: absolute;
     top: 15%;
     left: 14%;
     right: 14%;
-    /* transform: translateY(-50%); */
-    /* max-width: 950px; */
-    /* width: 100%; */
-}
+    !* transform: translateY(-50%); *!
+    !* max-width: 950px; *!
+    !* width: 100%; *!
+}*/
 
 .prefooter-content-elements {
     margin-top: 45px;
