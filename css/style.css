@@ -297,21 +297,21 @@ html {
     font-style: normal;
 }
 
-/*font-family: 'bessemer';  (fontello-ions)  */
+/*font-family: 'munnrabot';  (fontello-icons)  */
 @font-face {
-    font-family: 'bessemer';
-    src: url('../fonts/fontello/bessemer.eot?50008918');
-    src: url('../fonts/fontello/bessemer.eot?50008918#iefix') format('embedded-opentype'),
-    url('../fonts/fontello/bessemer.woff2?50008918') format('woff2'),
-    url('../fonts/fontello/bessemer.woff?50008918') format('woff'),
-    url('../fonts/fontello/bessemer.ttf?50008918') format('truetype'),
-    url('../fonts/fontello/bessemer.svg?50008918#bessemer') format('svg');
+    font-family: 'munnrabot';
+    src: url('../fonts/fontello/munnrabot.eot?18332336');
+    src: url('../fonts/fontello/munnrabot.eot?18332336#iefix') format('embedded-opentype'),
+    url('../fonts/fontello/munnrabot.woff2?18332336') format('woff2'),
+    url('../fonts/fontello/munnrabot.woff?18332336') format('woff'),
+    url('../fonts/fontello/munnrabot.ttf?18332336') format('truetype'),
+    url('../fonts/fontello/munnrabot.svg?18332336#munnrabot') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 [class^="icon-"]:before, [class*=" icon-"]:before {
-    font-family: "bessemer";
+    font-family: "munnrabot";
     font-style: normal;
     font-weight: normal;
     speak: none;
@@ -324,9 +324,12 @@ html {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-plus:before {
-    content: '\e800';
-}
+.icon-plus:before { content: '\e800'; } /* '' */
+.icon-play-button:before { content: '\e801'; } /* '' */
+.icon-twitter:before { content: '\e802'; } /* '' */
+.icon-instagram:before { content: '\e803'; } /* '' */
+.icon-facebook:before { content: '\f09a'; } /* '' */
+.icon-youtube-play:before { content: '\f16a'; } /* '' */
 
 * {
     -webkit-box-sizing: border-box;
@@ -732,7 +735,7 @@ header {
     -o-transition: color .3s;
     -moz-transition: color .3s;
     transition: color .3s;
-    font-family: 'bessemer';
+    font-family: 'munnrabot';
 }
 
 .close-button .plus-icon .icon-plus {
@@ -1301,4 +1304,444 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
 
 .top-slide-content-element .read-more-block-mobile {
     display: none;
+}
+
+/* ============================= CONTACTS PAGE ============================= */
+
+.main-content-element {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.main-content-element-picture,
+.main-content-element-video {
+    width: 100%;
+    position: relative;
+    /*background-color: grey;*/
+    /*height: 943px;*/
+    height: 100vh;
+}
+
+.main-content-element-picture img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+    /*height: 100%;*/
+}
+
+.main-content-element-video {
+    margin-top: 30px;
+}
+
+.main-content-element-video .youtube {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+}
+
+.main-content-element-video iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.main-content-element:first-child {
+    margin-top: 0;
+}
+
+.main-content-element-picture .red-text-block {
+    position: absolute;
+    top: 81px;
+    right: 81px;
+    padding: 26px 12px;
+    max-width: 242px;
+    width: 100%;
+    background-color: #EE3324;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 31px;
+    font-family: 'NeueHaasUnicaPro-Bold';
+    letter-spacing: 1px;
+}
+
+.main-content-element .text-block {
+    text-align: center;
+    width: 100%;
+    max-width: 765px;
+    margin: 0 auto;
+}
+
+.main-content-element .text-block-header {
+    color: #1D1D1D;
+    font-size: 28px;
+    line-height: 43px;
+    font-weight: inherit;
+    font-family: inherit;
+    margin-bottom: 20px;
+}
+
+.main-content-element .text-block p {
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 33px;
+    color: #000000;
+    font-family: 'NeueHaasUnicaPro-Thin';
+}
+
+.video-button-play {
+    position: relative;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    height: 103px;
+    width: 103px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    cursor: pointer;
+    background-color: transparent;
+    transition: .4s;
+}
+
+.video-button-play:hover {
+    background-color: rgba(255,255,255,.4);
+    border: 3px solid transparent;
+}
+
+.video-button-play::before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 63px;
+    transform: translate(-50%,-50%);
+    border: 20px solid transparent;
+    border-left: 43px solid #fff;
+}
+
+.main-content-element-picture.notebook {
+    background-color: #F7F5F6;
+    overflow: hidden;
+}
+
+.main-content-element-picture.notebook .main-content-element-picture-notebook-img-block {
+    padding: 0 10px;
+    max-width: 100%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    /*z-index: 10;*/
+}
+
+.main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .wrapper {
+    position: absolute;
+    top: 6%;
+    bottom: 11.5%;
+    left: 12.5%;
+    right: 12.5%;
+    padding: 5px 15px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    /*width: 100%;*/
+    /*height: 100%;*/
+}
+
+.main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .wrapper .content-inside-notebook-block {
+    position: relative;
+    top: 0;
+}
+
+/*.content-inside-notebook-block {
+    position: absolute;
+    top: 15%;
+    left: 14%;
+    right: 14%;
+    !* transform: translateY(-50%); *!
+    !* max-width: 950px; *!
+    !* width: 100%; *!
+}*/
+
+.prefooter-content-elements {
+    margin-top: 45px;
+}
+
+.prefooter-content-elements-header {
+    margin: 0 auto;
+    display: block;
+    max-width: 490px;
+    width: 100%;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 33px;
+    font-family: 'NeueHaasUnicaPro-Light';
+}
+
+.prefooter-content-element-items {
+    margin-top: 23px;
+    display: flex;
+}
+
+.prefooter-content-element-item {
+    position: relative;
+    display: inline-block;
+    max-width: 440px;
+    width: 100%;
+    height: 315px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0 15px;
+}
+
+.prefooter-content-element-item:first-child {
+    margin-left: 0;
+}
+
+.prefooter-content-element-item:last-child {
+    margin-right: 0;
+}
+
+.prefooter-content-element-item img{
+    max-width: 100%;
+    height: 100%;
+}
+
+.prefooter-content-element-item::before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0);
+    transition: width .5s, height .5s, background-color .6s;
+}
+
+.prefooter-content-element-item:hover::before {
+    background-color: rgba(255,255,255,0.6);
+    width: 90%;
+    height: 90%;
+}
+
+.prefooter-content-element-item .name {
+    opacity: 0;
+    transition: .4s;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1.5);
+    color: #000000;
+    font-family: 'NeueHaasUnicaPro-Light';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 27px;
+}
+
+.prefooter-content-element-item:hover .name {
+    opacity: 1;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+footer {
+    margin-top: 62px;
+}
+
+.footer-logo {
+    max-width: 168px;
+    height: 30px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footer-logo img {
+    max-width: 100% ;
+}
+
+.footer-first-part {
+    padding: 28px 0;
+    border-bottom: 2px solid #4A4A4A;
+    clear: both;
+    float: left;
+    width: 100%;
+}
+
+.footer-first-part .left {
+    display: inline-block;
+    float: left;
+}
+
+.footer-first-part .right {
+    display: inline-block;
+    float: right;
+}
+
+.footer-first-part .address-info {
+    margin-left: 160px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footer-first-part .address-info .text {
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    font-family: "NeueHaasUnicaPro-Light";
+    color: #000000;
+}
+
+.footer-first-part-social-list {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.footer-first-part-social-list li {
+    display: inline-block;
+    margin: 0 15px;
+    vertical-align: middle;
+}
+
+.footer-first-part-social-list li:first-child {
+    margin-left: 0;
+}
+
+.footer-first-part-social-list li:last-child {
+    margin-right: 0;
+}
+
+.footer-first-part-social-list li a {
+    color: #706F72;
+    vertical-align: middle;
+    transition: .4s;
+}
+
+.footer-first-part-social-list li a.facebook-link-icon {
+    font-size: 20px;
+}
+
+.footer-first-part-social-list li a.twitter-link-icon {
+    font-size: 19px;
+}
+
+.footer-first-part-social-list li a.instagram-link-icon {
+    font-size: 20px;
+}
+
+.footer-first-part-social-list li a.youtube-play-link-icon {
+    font-size: 28px;
+}
+
+.footer-first-part-social-list li a:hover.facebook-link-icon {
+    color: #3b5998;
+}
+
+.footer-first-part-social-list li a:hover.twitter-link-icon {
+    color: #55acee;
+}
+
+.footer-first-part-social-list li a:hover.instagram-link-icon {
+    color: #e95950;
+}
+
+.footer-first-part-social-list li a:hover.youtube-play-link-icon {
+    color: #ff0000;
+}
+
+.footer-second-part {
+    display: block;
+    margin-top: 48px;
+    float: left;
+    width: 100%;
+}
+
+.footer-second-part .footer-header {
+    color: #2f3131;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    font-family:  "NeueHaasUnicaPro-Medium";
+}
+
+.footer-second-part .contacts-wrapper {
+    margin-top: 40px;
+}
+
+.footer-second-part .contact-items-list {
+    display: inline-block;
+    width: 24%;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-second-part .contact-items-list * {
+    font-size: 14px;
+    line-height: 21px;
+    font-family:  "NeueHaasUnicaPro-Regular";
+    font-weight: 400;
+    color: #2F3131;
+    text-decoration: none;
+}
+
+.footer-second-part .contact-items-list .incumbency {
+    font-size: 15px;
+    font-family:  "NeueHaasUnicaPro-Bold";
+    font-weight: 700;
+}
+
+.footer-second-part .contact-items-list li {
+    list-style: none;
+}
+
+.copyright-block {
+    padding: 40px 0;
+    color: #706f72;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.video-responsive {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow:hidden;
+}
+
+.video-responsive iframe,
+.video-responsive object,
+.video-responsive embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.header-content-elements .left-block a {
+    color: #e12621;
+    font-size: 24px;
+    text-decoration: none;
+    text-transform: capitalize;
+    display: inline-block;
+    font-family: "NeueHaasUnicaPro-Bold";
+}
+
+.header-content-elements .left-block,
+.header-content-elements .right-block {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header-content-elements .right-block {
+    float: right;
+}
+
+.header-content-elements .right-block span {
+    display: block;
 }

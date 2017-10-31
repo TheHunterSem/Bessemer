@@ -1,5 +1,7 @@
 jQuery(document).ready(function () {
 
+
+
     jQuery('.sp-image-link').magnificPopup({
         type: 'image',
         // Delay in milliseconds before popup is removed
@@ -108,6 +110,7 @@ jQuery(document).ready(function () {
 
         RecolorOfTabs();
 
+        // Формування висоти секції в залежності від висоти контенту (мобільна версія)
         if (jQuery(window).width() <= 767) {
             var ContentInsideHeight = jQuery('.main-content-inside', this).outerHeight();
             var SectionHeight = ContentInsideHeight + 134;
@@ -119,7 +122,6 @@ jQuery(document).ready(function () {
     jQuery('body').on('click', '.sp-arrow', function(e){
         e.stopPropagation();
     });
-
     jQuery('body').on('click', '.sp-button', function (e) {
         e.stopPropagation();
     });
@@ -127,12 +129,10 @@ jQuery(document).ready(function () {
         e.stopPropagation();
         jQuery('.top-slide-content-element').eq($(this).index() - 1).find('.sp-button').eq(0).trigger('click');
     });
-
     jQuery('.read-more-block-mobile').on('click', function (e) {
         e.stopPropagation();
         jQuery('.top-slide-content-element-preview-block .content-block .close-button').trigger('click', function () {
         });
-
     });
 
     jQuery('.top-slide-content-element-preview-block .content-block .close-button').on('click', function (e) {
@@ -176,6 +176,34 @@ jQuery(document).ready(function () {
     });
 
 
-    //MENU START
+    //MENU END
+
+
+
+
+    //  ------------  CLIENTS PAGE  ------------
+
+
+ /*   var SectionHeight = ContentInsideHeight + 134;
+    jQuery('.top-slides-content-elements.has-active-child .top-slide-content-element.active').css({'height': SectionHeight});*/
+
+/*    var NotebookImgWidth = jQuery('.main-content-element .main-content-element-picture.notebook').find('img').outerWidth();
+    var lorem = jQuery('.main-content-element .main-content-element-picture.notebook').find('div.content-inside-notebook-block').outerWidth();
+    NotebookImgWidth = lorem;
+
+    console.log('Ширина картінки : ' + NotebookImgWidth);
+    console.log('Ширина контента : ' + lorem);
+
+    $( window ).resize(function() {
+        var NotebookImgWidth = jQuery('.main-content-element .main-content-element-picture.notebook').find('img').outerWidth();
+        var lorem = jQuery('.main-content-element .main-content-element-picture.notebook').find('div.content-inside-notebook-block').outerWidth();
+        NotebookImgWidth = lorem;
+        lorem = lorem - 50;
+
+        console.log('Ширина картінки : ' + NotebookImgWidth);
+        console.log('Ширина контента : ' + lorem);
+    });*/
+
+
 
 });

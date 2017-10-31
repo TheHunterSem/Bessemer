@@ -826,3 +826,25 @@
     }
 
 }
+
+
+
+/* ============================= CONTACTS PAGE ============================= */
+
+
+@media screen and (max-width: 1023px) {
+
+    .copyright-block {
+        padding: 15px 0 40px 0;
+    }
+
+    .footer-second-part .contact-items-list {
+        margin-bottom: 25px;
+        width: 49%;
+    }
+
+    .footer-first-part .address-info {
+        margin-left: 55px;
+    }
+
+}
