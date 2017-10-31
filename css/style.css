@@ -1549,6 +1549,8 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
 
 footer {
     margin-top: 62px;
+    display: block;
+    float: left;
 }
 
 .footer-logo {
