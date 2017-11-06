@@ -5,22 +5,10 @@ body {
     font-family: 'NeueHaasUnicaPro-Regular';
     font-weight: 400;
 }
-.wrapper {
+/*.wrapper {
   display: none;
-}
-.main-content-element{
-    position: fixed;
-    /*top: 0;*/
-    left: 0%;
-    right: 0;
-    height: 100%;
-    width: 80%;
-    max-width: 1380px;
-    margin: 0 auto;
-    color: #fff;
-    text-align: center;
-    text-transform: uppercase;
-}
+}*/
+
 .prefooter-content-elements{
   position: fixed;
   max-width: 1380px;

@@ -11,11 +11,12 @@
     <link rel="stylesheet" href="css/plugins/magnific-popup.css">
     <link rel="stylesheet" href="css/plugins/gallery-styles.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/scroll.css">
     <link rel="stylesheet" href="css/responsive.css">
     <script src="js/plugins/gallery-scripts/modernizr-custom.js"></script>
 
 </head>
-<body>
+<body data-hijacking="off" data-animation="fixed" >
 
 <div class="wrap">
 
@@ -53,33 +54,41 @@
         </div>
     </header>
 
-    <main>
+    <main >
 
         <div class="main-content-elements">
 
-            <div class="main-content-element  wrapper" id="intro">
+            <div class="main-content-element cd-section" id="intro" data-scroll='bottom'>
+
                 <div class="main-content-element-picture">
                     <img src="img/clients/clients-main-1.png" alt="" height="100%">
+                </div>
+
+
                     <div class="red-text-block">
                         <p>amazing things are happening here</p>
                     </div>
-                </div>
+
+
             </div>
 
-            <div class="main-content-element wrapper" id="explosion">
+            <div class="main-content-element cd-section" id="explosion" data-scroll='bottom'>
+
                 <div class="text-block">
                     <h2 class="text-block-header">NewYork-Presbyterian</h2>
                     <p>Copy explaining the situaiton. Sam doluptat quas mincti arumqui dolorepro beatia eum quia
                         sedignihil id quidell orruntisin persper umquiam in prorecta vit aut ullaborrum hilia quidebitio
                         vendusd andipsunt voluptatum voluptae nobis ant.</p>
                 </div>
+
                 <div class="main-content-element-video">
                     <div class="youtube" id="C9XVFRWrM7U"
                          data-params="rel=0&amp;enablejsapi=1&amp;controls=0&amp;showinfo=0&amp;volume=0&amp;iv_load_policy=3&amp;modestbranding=1"></div>
                 </div>
+
             </div>
 
-            <div class="main-content-element  wrapper" id="explosion1">
+            <div class="main-content-element  cd-section" id="explosion1">
                 <div class="main-content-element-picture notebook">
                     <div class="main-content-element-picture-notebook-img-block">
                         <img class="notebook-img" src="img/clients/notebook.png" alt="">
@@ -285,14 +294,14 @@
                 </div>
             </div>-->
 
-            <div class="main-content-element  wrapper">
+            <div class="main-content-element   cd-section">
                 <div class="main-content-element-video">
                     <div class="youtube" id="C9XVFRWrM7U"
                          data-params="rel=0&amp;enablejsapi=1&amp;controls=0&amp;showinfo=0&amp;volume=0&amp;iv_load_policy=3&amp;modestbranding=1"></div>
                 </div>
             </div>
 
-            <div class="main-content-element  wrapper">
+            <div class="main-content-element   cd-section">
                 <div class="text-block">
                     <p>Copy explaining the situaiton. Sam doluptat quas mincti arumqui dolorepro beatia eum quia
                         sedignihil id quidell orruntisin persper umquiam in prorecta vit aut ullaborrum hilia quidebitio
@@ -394,6 +403,7 @@
     <script src="js/plugins/gallery-scripts/main.js"></script>
     <script>
         (function() {
+
             // create SVG circle overlay and append it to the preview element
             function createCircleOverlay(previewEl) {
                 var dummy = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
@@ -444,6 +454,10 @@
 <script src="js/plugins/jquery.magnific-popup.min.js"></script>
 <script src="js/script.js"></script>
 <script src="js/picasso.js"></script>
+<script src="js/velocity.min.js"></script>
+<script src="js/velocity.ui.min.js"></script>
+<script src="js/_main.js"></script>
+
 
 <!--Script for YouTube-->
 <script>
@@ -451,6 +465,14 @@
         /in/.test(document.readyState) ? setTimeout('r(' + f + ')', 9) : f()
     }
     r(function () {
+
+  $.Velocity
+      .RegisterEffect("translateNone", {
+      	defaultDuration: 800,
+          calls: [
+              [ { opacity: '0', scale: '0.7', boxShadowBlur: '40px' }, 1]
+          ]
+      });
         if (!document.getElementsByClassName) {
             // IE8 support
             var getElementsByClassName = function (node, classname) {

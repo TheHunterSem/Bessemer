@@ -12,346 +12,21 @@
         currentWrapper =           null,
         scrollTimeoutID =          0,
         bodyHeight =               100,
-        windowHeight =             0,
+        windowHeight =             500,
         windowWidth =              0,
         prevKeyframesDurations =   0,
         scrollTop =                12,
         relativeScrollTop =        0,
         currentKeyframe =          0,
         keyframes = [
-          {
-              'wrapper' : '#intro',
-              'duration' : '150%',
-              'animations' :  [
-                {
-                  'selector'    : '.main-content-element-picture',
-                  'translateY'  : '-15%',
-                  'opacity'     : 0
-                }
-              ]
-            },
-            {
-            'wrapper' : '#explosion',
-            'duration' : '150%',
-            'animations' :  [
-              {
-                'selector'    : '.text-block',
-                'translateY'  : '-25%',
-                'opacity'     : [0,2] // hack to accelrate opacity speed
-              } , {
-                'selector'    : '.main-content-element-video',
-                'translateY'  : '-25%',
-                'opacity'     : [0,2] // hack to accelrate opacity speed
-              }
-            ]
-          },
-          {
-              'wrapper' : '#explosion',
-              'duration' : '150%',
-              'animations' :  [
-                {
-                  'selector'    : '.text-block',
-                  'translateY'  : ['-25%', '-45%'],
-                  'opacity'     : [1, 0] // hack to accelrate opacity speed
-                },
-                {
-                  'selector'    : '.main-content-element-video',
-                  'translateY'  : ['-25%', '-45%'],
-                  'opacity'     : [1, 0] // hack to accelrate opacity speed
-                }
-              ]
-            },
-            {
-            'wrapper' : '#explosion1',
-            'duration' : '150%',
-            'animations' :  [
-              {
-                'selector'    : '.main-content-element-picture ',
-                'translateY'  : '-15%',
-                'opacity'     : [0,1] // hack to accelrate opacity speed
-              }
-            ]
-          },
-          //   {
-          //   'wrapper' : '#explosion1',
-          //   'duration' : '100%',
-          //   'animations' :  [
-          //     {
-          //       'selector'    : '.main-content-element-picture',
-          //       // 'translateY'  : -50,
-          //       'opacity'     : [0,1.75] // hack to accelrate opacity speed
-          //     }
-          //   ]
-          // },
+        
 
-          // {
-          //   'wrapper' : '#explosion',
-          //   'duration' : '100%',
-          //   'animations' :  [
-          //      {
-          //       'selector'    : '.text-block',
-          //       // 'translateY'  : -5,
-          //       'translateY'  : 0,
-          //
-          //       'opacity'     : 1
-          //     } ,
-          //      {
-          //       'selector'    : '.main-content-element-video',
-          //       'translateY'  : 0,
-          //
-          //       // 'translateY'  : -70,
-          //       'opacity'     : 1
-          //     }
-          //   ]
-          // },
-
-            // {
-            //     'wrapper' : '.main-content-element',
-            //     'duration' : '150%',
-            //     'animations' :  [
-            //       {
-            //         'selector'    : '.text-block',
-            //         'translateY'  : '-25%',
-            //         'opacity'     : [0, 1.75] // hack to accelrate opacity speed
-            //       } , {
-            //         'selector'    : '.main-content-element-video',
-            //         'translateY'  : '-70%',
-            //         'opacity'     : [0, 1] // hack to accelrate opacity speed
-            //       }
-            //     ]
-            //   },
-              {
-                 'duration' : '50%',
-                 'animations' :  []
-               }
-          ]
-        //    , {
-        //     'wrapper' : '#explosion',
-        //     'duration' : '150%',
-        //     'animations' :  [
-        //       {
-        //         'selector'    : '.explosion-byline',
-        //         'translateY'  : '-25%',
-        //         'opacity'     : [0, 1.75] // hack to accelrate opacity speed
-        //       } , {
-        //         'selector'    : '#domExplosionList',
-        //         'translateY'  : '-70%',
-        //         'opacity'     : [0, 1] // hack to accelrate opacity speed
-        //       }
-        //     ]
-        //   } , {
-        //     'wrapper' : '#explosion',
-        //     'duration' : '150%',
-        //     'animations' :  [
-        //       {
-        //         'selector'    : '.dei-1',
-        //         'translateY'  : '-15%',
-        //         'translateX'  : '-10%',
-        //         'opacity'     : [1, 0],
-        //         'scale'       : 2,
-        //       } , {
-        //         'selector'    : '.dei-2',
-        //         'translateY'  : '-5%',
-        //         'translateX'  : '-4%',
-        //         'opacity'     : [1, 0] // hack to decelrate opacity speed
-        //       } , {
-        //         'selector'    : '.dei-3',
-        //         'translateY'  : '-9%',
-        //         'translateX'  : '2%',
-        //         'opacity'     : [1, 0], // hack to accelrate opacity speed
-        //         'scale'       : 1.2,
-        //       } , {
-        //         'selector'    : '.dei-4',
-        //         'translateY'  : '-17%',
-        //         'translateX'  : '8%',
-        //         'opacity'     : [1, 0], // hack to accelrate opacity speed
-        //         'scale'       : 1.5,
-        //       } , {
-        //         'selector'    : '.dei-5',
-        //         'translateY'  : '-2%',
-        //         'translateX'  : '-15%',
-        //         'opacity'     : [1, 0],
-        //         'scale'       : 2,
-        //       } , {
-        //         'selector'    : '.dei-6',
-        //         'translateY'  : '-1%',
-        //         'translateX'  : '-7%',
-        //         'opacity'     : [1, 0], // hack to decelrate opacity speed
-        //         'scale'       : 1.2,
-        //       } , {
-        //         'selector'    : '.dei-7',
-        //         'translateY'  : '-4%',
-        //         'translateX'  : '2%',
-        //         'opacity'     : [1, 0], // hack to accelrate opacity speed
-        //         'scale'       : 1.1,
-        //       } , {
-        //         'selector'    : '.dei-8',
-        //         'translateY'  : '-3%',
-        //         'translateX'  : '12%',
-        //         'opacity'     : [1, 0], // hack to accelrate opacity speed
-        //         'scale'       : 1.8,
-        //       } , {
-        //         'selector'    : '.dei-9',
-        //         'translateY'  : '3%',
-        //         'translateX'  : '-12%',
-        //         'opacity'     : [1, 0],
-        //         'scale'       : 1.5,
-        //       } , {
-        //         'selector'    : '.dei-10',
-        //         'translateY'  : '5%',
-        //         'translateX'  : '-4%',
-        //         'opacity'     : [1, 0] // hack to decelrate opacity speed
-        //       } , {
-        //         'selector'    : '.dei-11',
-        //         'translateY'  : '8%',
-        //         'translateX'  : '6%',
-        //         'opacity'     : [1, 0], // hack to accelrate opacity speed
-        //         'scale'       : 1.4,
-        //       } , {
-        //         'selector'    : '.dei-12',
-        //         'translateY'  : '1%',
-        //         'translateX'  : '20%',
-        //         'opacity'     : [1, 0], // hack to accelrate opacity speed
-        //         'scale'       : 1.9,
-        //       } , {
-        //         'selector'    : '.dei-13',
-        //         'translateY'  : '8%',
-        //         'translateX'  : '-12%',
-        //         'opacity'     : [1, 0],
-        //         'scale'       : 1.8,
-        //       } , {
-        //         'selector'    : '.dei-14',
-        //         'translateY'  : '4%',
-        //         'translateX'  : '-3%',
-        //         'opacity'     : [1, 0], // hack to decelrate opacity speed
-        //         'scale'       : 1.3,
-        //       } , {
-        //         'selector'    : '.dei-15',
-        //         'translateY'  : '14%',
-        //         'translateX'  : '5%',
-        //         'opacity'     : [1, 0], // hack to accelrate opacity speed
-        //         'scale'       : 1.7,
-        //       } , {
-        //         'selector'    : '.dei-16',
-        //         'translateY'  : '6%',
-        //         'translateX'  : '9%',
-        //         'opacity'     : [1, 0], // hack to accelrate opacity speed
-        //         'scale'       : 2,
-        //       }
-        //     ]
-        //   } , {
-        //     'wrapper' : '#explosion',
-        //     'duration' : '100%',
-        //     'animations' :  [
-        //       {
-        //         'selector'    : '.explosion-byline',
-        //         'translateY'  : ['-25%', '-40%'],
-        //         'opacity'     : [1, 0] // hack to accelrate opacity speed
-        //       }
-        //     ]
-        //   } , {
-        //     'wrapper' : '#images',
-        //     'duration' : '150%',
-        //     'animations' :  [
-        //       {
-        //         'selector'    : '.images-byline',
-        //         'translateY'  : '-25%',
-        //         'opacity'     : [0, 1.75] // hack to accelrate opacity speed
-        //       } , {
-        //         'selector'    : '#mediumHomepage',
-        //         'translateY'  : '-90%'
-        //       } , {
-        //         'selector'    : '.iphone',
-        //         'translateY'  : '-66%'
-        //       }
-        //     ]
-        //   } , {
-        //     'wrapper' : '#images',
-        //     'duration' : '75%',
-        //     'animations' :  []
-        //   } , {
-        //     'wrapper' : '#images',
-        //     'duration' : '150%',
-        //     'animations' :  [
-        //       {
-        //         'selector'    : '.images-byline',
-        //         'translateY'  : ['-25%', '-25%'],
-        //         'scale'       : .7,
-        //         'opacity'     : [1.75, -.75] // hack to accelrate opacity speed
-        //       } , {
-        //         'selector'    : '.images-byline-2',
-        //         'opacity'     : [0, 1],
-        //         'translateY'  : '-15%'
-        //       } , {
-        //         'selector'    : '#mediumHomepage',
-        //         'translateY'  : ['-90%', '-90%'],
-        //         'scale'       : .8,
-        //         'opacity'     : -.75
-        //       } , {
-        //         'selector'    : '.iphone',
-        //         'translateY'  : ['-66%', '-90%'],
-        //         'translateX'  : '-2%',
-        //         'rotate'      : -90,
-        //         'scale'       : 1.3
-        //       } , {
-        //         'selector'    : '#medium-profile-iphone',
-        //         'scale'       : .9,
-        //         'translateX'  : '20%',
-        //       } , {
-        //         'selector'    : '#davegamache-dot-com',
-        //         'scale'       : [.5, 1]
-        //       }
-        //     ]
-        //   } , {
-        //     'wrapper' : '#images',
-        //     'duration' : '40%',
-        //     'animations' :  []
-        //   } , {
-        //     'wrapper' : '#images',
-        //     'duration' : '150%',
-        //     'animations' :  [
-        //       {
-        //         'selector'    : '.images-byline-2',
-        //         'opacity'     : [1, .5],
-        //         'translateY'  : ['-15%', '50%'],
-        //         'opacity'     : [1, -2]
-        //       } , {
-        //         'selector'    : '.iphone',
-        //         'translateY'  : ['-90%', '5%'],
-        //         'translateX'  : ['-2%', '-2%'],
-        //         'rotate'      : [-90, -90],
-        //         'scale'       : [1.3, 1.3]
-        //       } , {
-        //         'selector'    : '#medium-profile-iphone',
-        //         'translateX'  : ['20%', '20%']
-        //       } , {
-        //         'selector'    : '#davegamache-dot-com',
-        //         'scale'       : [1, 1]
-        //       }
-        //     ]
-        //   } , {
-        //     'wrapper' : '#links',
-        //     'duration' : '100%',
-        //     'animations' :  [
-        //       {
-        //         'selector'    : '#links',
-        //         'opacity'     : [0, 2],
-        //         'scale'       : [.8, 1]
-        //       } , {
-        //         'selector'    : '.twitter',
-        //         'opacity'     : [0, 1]
-        //       }
-        //     ]
-        //   } , {
-        //     'duration' : '100%',
-        //     'animations' :  []
-        //   }
-        // ]
+      ]
 
     /*  Construction
     -------------------------------------------------- */
     init = function() {
-      scrollIntervalID = setInterval(updatePage, 10);
+      scrollIntervalID = setInterval(updatePage, 5);
       setupValues();
       $window.resize(throwError)
       if(isTouchDevice) {
@@ -371,6 +46,7 @@
       var i, j, k;
       for(i=0;i<keyframes.length;i++) { // loop keyframes
           bodyHeight += keyframes[i].duration;
+          console.log(keyframes[i]);
           if($.inArray(keyframes[i].wrapper, wrappers) == -1) {
             wrappers.push(keyframes[i].wrapper);
           }
@@ -389,7 +65,9 @@
       $body.height(bodyHeight);
       $window.scroll(0);
       currentWrapper = wrappers[0];
+      console.log(currentWrapper);
       $(currentWrapper).show();
+      // $(currentWrapper).next().show();
     }
 
     convertAllPropsToPx = function() {
@@ -438,6 +116,8 @@
           return 0;
         case 'opacity':
           return 1;
+        case 'z-index':
+          return 0;
         default:
           return null;
       }
@@ -469,11 +149,16 @@
         scale       = calcPropValue(animation, 'scale');
         rotate      = calcPropValue(animation, 'rotate');
         opacity     = calcPropValue(animation, 'opacity');
+        Zindex     = calcPropValue(animation, 'z-index');
 
         $(animation.selector).css({
           'transform':    'translate3d(' + translateX +'px, ' + translateY + 'px, 0) scale('+ scale +') rotate('+ rotate +'deg)',
+          // 'z-index': Zindex,
           'opacity' : opacity
-        })
+        });
+          $(animation.selector).parent().css({
+              'z-index': Zindex
+          });
       }
     }
 
@@ -510,7 +195,7 @@
     showCurrentWrappers = function() { //return;
       var i;
       if(keyframes[currentKeyframe].wrapper != currentWrapper) {
-        $(currentWrapper).hide();
+        //$(currentWrapper).hide();
         $(keyframes[currentKeyframe].wrapper).show();
         currentWrapper = keyframes[currentKeyframe].wrapper;
       }
