@@ -5,9 +5,35 @@ body {
     font-family: 'NeueHaasUnicaPro-Regular';
     font-weight: 400;
 }
-/*.wrapper {
+
+.wrapper, .cd-section {
   display: none;
-}*/
+}
+
+.main-content-element{
+    position: fixed;
+    /*top: 0;*/
+    left: 0%;
+    right: 0;
+    height: 100%;
+    width: 80%;
+    max-width: 1380px;
+    margin: 0 auto;
+    color: #000;
+    text-align: center;
+    text-transform: uppercase;
+}
+.main-content-element-picture{
+	width: 100%!important;
+    height: 70%!important;
+    margin-top: 7%!important;
+}
+
+.prefooter-content-elements{
+  position: fixed;
+  max-width: 1380px;
+  bottom: 0;
+}
 
 .prefooter-content-elements{
   position: fixed;
@@ -1319,7 +1345,7 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
 
 .main-content-element {
     width: 100%;
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 
 .main-content-element-picture,

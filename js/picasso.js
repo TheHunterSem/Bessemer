@@ -18,15 +18,52 @@
         scrollTop =                12,
         relativeScrollTop =        0,
         currentKeyframe =          0,
-        keyframes = [
-        
+        keyframes = [        
+		  {
+            'wrapper' : '#anim1',
+            'duration' : '200%',
+            'animations' :  [
+              {
+				'selector'    : '.main-content-element-picture',
+                'opacity'     : 0,
+				'start'		  : 0,
+				'end'		  : 50
+              },
+              {
+				'selector'    : '.red-text-block',
+                'opacity'     : 0,
+				'start'		  : 50,
+				'end'		  : 100
+              },
+            ]
+          },        
+		  {
+            'wrapper' : '#anim2',
+            'duration' : '150%',
+            'animations' :  [
+              {
+				'selector'    : '.main-content-element-picture',
+                'opacity'     : 0
+              }
+            ]
+          },        
+		  {
+            'wrapper' : '#anim3',
+            'duration' : '100%',
+            'animations' :  [
+              {
+				'selector'    : '.main-content-element-picture',
+                'opacity'     : 0
+              }
+            ]
+          }
+		  
+		]
 
-      ]
-
-    /*  Construction
+ /*  Construction
     -------------------------------------------------- */
     init = function() {
-      scrollIntervalID = setInterval(updatePage, 5);
+      scrollIntervalID = setInterval(updatePage, 10);
       setupValues();
       $window.resize(throwError)
       if(isTouchDevice) {
@@ -46,7 +83,6 @@
       var i, j, k;
       for(i=0;i<keyframes.length;i++) { // loop keyframes
           bodyHeight += keyframes[i].duration;
-          console.log(keyframes[i]);
           if($.inArray(keyframes[i].wrapper, wrappers) == -1) {
             wrappers.push(keyframes[i].wrapper);
           }
@@ -65,9 +101,7 @@
       $body.height(bodyHeight);
       $window.scroll(0);
       currentWrapper = wrappers[0];
-      console.log(currentWrapper);
       $(currentWrapper).show();
-      // $(currentWrapper).next().show();
     }
 
     convertAllPropsToPx = function() {
@@ -87,7 +121,7 @@
                       value[k] = convertPercentToPx(value[k], 'x');
                     }
                   }
-                }
+                } 
               } else {
                 if(typeof value === "string") { // if single value is a %
                   if(key === 'translateY') {
@@ -116,8 +150,10 @@
           return 0;
         case 'opacity':
           return 1;
-        case 'z-index':
+        case 'start':
           return 0;
+        case 'end':
+          return 100;
         default:
           return null;
       }
@@ -149,28 +185,29 @@
         scale       = calcPropValue(animation, 'scale');
         rotate      = calcPropValue(animation, 'rotate');
         opacity     = calcPropValue(animation, 'opacity');
-        Zindex     = calcPropValue(animation, 'z-index');
 
         $(animation.selector).css({
           'transform':    'translate3d(' + translateX +'px, ' + translateY + 'px, 0) scale('+ scale +') rotate('+ rotate +'deg)',
-          // 'z-index': Zindex,
           'opacity' : opacity
-        });
-          $(animation.selector).parent().css({
-              'z-index': Zindex
-          });
+        })
       }
     }
 
     calcPropValue = function(animation, property) {
       var value = animation[property];
-      if(value) {
-        value = easeInOutQuad(relativeScrollTop, value[0], (value[1]-value[0]), keyframes[currentKeyframe].duration);
-      } else {
-        value = getDefaultPropertyValue(property);
-      }
-      // value = +value.toFixed(2)
-      // TEMPORARILY REMOVED CAUSE SCALE DOESN'T WORK WITHA AGRESSIVE ROUNDING LIKE THIS
+      var start = animation['start'];
+      var end 	= animation['end'];
+	  var relativePos = Math.round(relativeScrollTop / keyframes[currentKeyframe].duration * 100).toFixed(2);
+	  
+	  if (start) {start = start[1];}else{start = 0;}
+	  if (end) {end = end[1];}else{end = 100;}
+	  if (relativePos < end){
+		  if(value && relativePos >= start) {
+			value = easeInOutQuad(relativeScrollTop - (keyframes[currentKeyframe].duration*start/100).toFixed(0), value[0], (value[1]-value[0]), (keyframes[currentKeyframe].duration * (end - start)/100).toFixed(0)  );
+		  } else {
+			value = getDefaultPropertyValue(property);
+		  }
+	  }
       return value;
     }
 
@@ -189,13 +226,12 @@
           prevKeyframesDurations -= keyframes[currentKeyframe].duration;
           showCurrentWrappers();
       }
-      console.log(prevKeyframesDurations)
     }
 
-    showCurrentWrappers = function() { //return;
+    showCurrentWrappers = function() {
       var i;
       if(keyframes[currentKeyframe].wrapper != currentWrapper) {
-        //$(currentWrapper).hide();
+        $(currentWrapper).hide();
         $(keyframes[currentKeyframe].wrapper).show();
         currentWrapper = keyframes[currentKeyframe].wrapper;
       }
@@ -217,7 +253,7 @@
     }
 
     isTouchDevice = function() {
-      return 'ontouchstart' in window // works on most browsers
+      return 'ontouchstart' in window // works on most browsers 
       || 'onmsgesturechange' in window; // works on ie10
     }
 
