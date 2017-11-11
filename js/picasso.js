@@ -1,6 +1,5 @@
 (function() {
   $(function() {
-
     /*  Globals
     -------------------------------------------------- */
 
@@ -104,7 +103,7 @@
  /*  Construction
     -------------------------------------------------- */
     init = function() {
-      scrollIntervalID = setInterval(updatePage, 10);
+      scrollIntervalID = setInterval(updatePage, 1);
       setupValues();
       $window.resize(throwError)
       if(isTouchDevice) {
