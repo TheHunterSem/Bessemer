@@ -87,7 +87,7 @@
                 <div class="main-content-element-picture notebook">
                     <div class="main-content-element-picture-notebook-img-block">
                         <img class="notebook-img" src="img/clients/notebook.png" alt="">
-                        <div class="wrapper">
+                        <div class="wrapper note-wrapper" style="overflow:hidden;">
                             <div class="content-inside-notebook-block">
                                 <!--<div class="items-block">
                                     <div class="item small"></div>
@@ -516,13 +516,18 @@ jQuery(function($){
 	// Initialize correct dimensions for blocks
 	var j = $('.main-content-element.wrapper').length;
 	$('.main-content-element.wrapper').each(function(){
-		$(this).css({'z-index': j, 'opacity':0});
+		$(this).css({'z-index': j, 'opacity':1});
+		$(this).data('property', -1*$(this).height());
 		j--;
 	});
-	$('.main-content-element.wrapper').eq(0).css({'opacity':1});
+	//$('.main-content-element.wrapper').eq(0).css({'opacity':1});
 	
 	
 	$('.red-text-block').data('property', $('.red-text-block').height());
+	$('#anim2 .text-block').data('property', -1*$('#anim2 .text-block').height());
+	$('.main-content-element-video').data('property', $('.main-content-element-video').height());
+	$('.main-content-element-picture.notebook').data('property', $('.main-content-element-picture.notebook').height());
+	
 	
 	
 });

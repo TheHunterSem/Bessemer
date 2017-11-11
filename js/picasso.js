@@ -4,7 +4,7 @@
     /*  Globals
     -------------------------------------------------- */
 
-    var PROPERTIES =               ['translateX', 'translateY', 'opacity', 'rotate', 'scale', 'height'],
+    var PROPERTIES =               ['translateX', 'translateY', 'opacity', 'rotate', 'scale', 'height', 'margin-top'],
 
         $window =                  $(window),
         $body =                    $('body'),
@@ -20,72 +20,85 @@
         currentKeyframe =          0,
         keyframes = [        
 		  {
-            'wrapper' : '#anim1',
-            'duration' : '300%',
+            'wrapper' : '.main-content-elements',
+            'duration' : '1500%',
             'animations' :  [
-              {
-				'selector'    : '.main-content-element-picture',
+			
+			  // 1 screen
+			  {
+				'selector'    : '#anim1 .main-content-element-picture',
                 'opacity'     : [1, 0.5],
-				'start'		  : 15,
-				'end'		  : 50
+				'start'		  : 5,
+				'end'		  : 10
               },
               {
 				'selector'    : '.red-text-block',
                 'height'      : ['initial', 0],
-				'start'		  : 10,
-				'end'		  : 35
+				'start'		  : 2,
+				'end'		  : 7
               },
               {
 				'selector'    : '#anim1',
-                'translateY'  : [0, '-100%'],
-				'start'		  : 50,
-				'end'		  : 100,
+                'margin-top'  : [0, 'initial'],
+				'start'		  : 10,
+				'end'		  : 13
+              },
+			  
+			  
+			  // 2 screen
+			  {
+				'selector'    : '#anim2 .text-block',
+                'margin-top'  : [0, 'initial'],
+				'start'		  : 15,
+				'end'		  : 18
               },
               {
-				'selector'    : '#anim2',
-                'translateY'  : ['100%', '0'],
-				'start'		  : 50,
-				'end'		  : 100
-              },
-            ]
-          },        
-		  {
-            'wrapper' : '#anim2',
-            'duration' : '300%',
-            'animations' :  [
-			  {
 				'selector'    : '.video-button-play',
                 'opacity' 	  : [0.25, 1],
-				'start'		  : 20,
-				'end'		  : 55
+				'start'		  : 18,
+				'end'		  : 20
               },
-			  {
+              {
+				'selector'    : '.main-content-element-video',
+                'height' 	  : ['initial', 250],
+                'opacity' 	  : [1, 0.3],
+				'start'		  : 21,
+				'end'		  : 24
+              },
+              {
 				'selector'    : '#anim2',
-                'translateY'  : [0, '-100%'],
-				'start'		  : 20,
-				'end'		  : 100
+                'margin-top'  : [0, 'height'],
+				'start'		  : 25,
+				'end'		  : 30
+              },
+			  
+			  
+			  
+			  // 3 screen
+              {
+				'selector'    : '.notebook-img',
+                'opacity'  	  : [0.1, 1],
+				'start'		  : 29,
+				'end'		  : 33
+              },
+			  /// inner images
+              {
+				'selector'    : '.main-content-element-picture.notebook',
+                'height'  	  : ['initial', 300],
+				'start'		  : 36,
+				'end'		  : 40
               },
               {
 				'selector'    : '#anim3',
-                'translateY'  : ['100%', '0'],
-				'start'		  : 75,
-				'end'		  : 100
+                'margin-top'  : [0, 'height'],
+				'start'		  : 41,
+				'end'		  : 45
               },
+			  
+			  
+			  
             ]
-          },        
-		  {
-            'wrapper' : '#anim3',
-            'duration' : '100%',
-            'animations' :  [
-			  {
-				'selector'    : '#anim3',
-                'translateY'  : [0, '-100%'],
-				'start'		  : 50,
-				'end'		  : 100
-              }
-            ]
-          }
-		  
+          }		  
 		]
 
  /*  Construction
@@ -180,6 +193,8 @@
           return 1;
         case 'height':
           return 'initial';
+        case 'margin-top':
+          return 'initial';
         case 'start':
           return 0;
         case 'end':
@@ -224,6 +239,9 @@
 		if (animation['height']){
 			 $(animation.selector).css({'height': calcPropValue(animation, 'height')});
 		}
+		if (animation['margin-top']){
+			 $(animation.selector).css({'margin-top': calcPropValue(animation, 'margin-top')});
+		}
       }
     }
 
@@ -231,7 +249,7 @@
       var value = animation[property];
       var start = animation['start'];
       var end 	= animation['end'];
-	  var relativePos = Math.round(relativeScrollTop / keyframes[currentKeyframe].duration * 100).toFixed(2);
+	  var relativePos = (relativeScrollTop / keyframes[currentKeyframe].duration * 100);
 	  
 	  if (start) {start = start[1];}else{start = 0;}
 	  if (end) {end = end[1];}else{end = 100;}
@@ -245,6 +263,10 @@
 	  if (relativePos < end){
 		  if(value) {
 			if (relativePos >= start){
+				  if (value && value[1]=='height'){
+					  value[1] = -1*$(animation.selector).height();
+				  }
+				
 				value = easeInOutQuad(relativeScrollTop - (keyframes[currentKeyframe].duration*start/100).toFixed(0), value[0], (value[1]-value[0]), (keyframes[currentKeyframe].duration * (end - start)/100).toFixed(0)  );
 			}else{
 				value = value[0];
@@ -252,6 +274,8 @@
 		  } else {
 			value = getDefaultPropertyValue(property);
 		  }
+	  }else{
+		  //value = value[1];
 	  }
       return value;
     }
