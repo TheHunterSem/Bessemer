@@ -4,7 +4,7 @@
     /*  Globals
     -------------------------------------------------- */
 
-    var PROPERTIES =               ['translateX', 'translateY', 'opacity', 'rotate', 'scale'],
+    var PROPERTIES =               ['translateX', 'translateY', 'opacity', 'rotate', 'scale', 'height'],
 
         $window =                  $(window),
         $body =                    $('body'),
@@ -21,17 +21,29 @@
         keyframes = [        
 		  {
             'wrapper' : '#anim1',
-            'duration' : '200%',
+            'duration' : '300%',
             'animations' :  [
               {
 				'selector'    : '.main-content-element-picture',
-                'opacity'     : 0,
-				'start'		  : 0,
+                'opacity'     : [1, 0.5],
+				'start'		  : 15,
 				'end'		  : 50
               },
               {
 				'selector'    : '.red-text-block',
-                'opacity'     : 0,
+                'height'      : ['initial', 0],
+				'start'		  : 10,
+				'end'		  : 35
+              },
+              {
+				'selector'    : '#anim1',
+                'translateY'  : [0, '-100%'],
+				'start'		  : 50,
+				'end'		  : 100,
+              },
+              {
+				'selector'    : '#anim2',
+                'translateY'  : ['100%', '0'],
 				'start'		  : 50,
 				'end'		  : 100
               },
@@ -39,21 +51,37 @@
           },        
 		  {
             'wrapper' : '#anim2',
-            'duration' : '150%',
+            'duration' : '300%',
             'animations' :  [
+			  {
+				'selector'    : '.video-button-play',
+                'opacity' 	  : [0.25, 1],
+				'start'		  : 20,
+				'end'		  : 55
+              },
+			  {
+				'selector'    : '#anim2',
+                'translateY'  : [0, '-100%'],
+				'start'		  : 20,
+				'end'		  : 100
+              },
               {
-				'selector'    : '.main-content-element-picture',
-                'opacity'     : 0
-              }
+				'selector'    : '#anim3',
+                'translateY'  : ['100%', '0'],
+				'start'		  : 75,
+				'end'		  : 100
+              },
             ]
           },        
 		  {
             'wrapper' : '#anim3',
             'duration' : '100%',
             'animations' :  [
-              {
-				'selector'    : '.main-content-element-picture',
-                'opacity'     : 0
+			  {
+				'selector'    : '#anim3',
+                'translateY'  : [0, '-100%'],
+				'start'		  : 50,
+				'end'		  : 100
               }
             ]
           }
@@ -150,6 +178,8 @@
           return 0;
         case 'opacity':
           return 1;
+        case 'height':
+          return 'initial';
         case 'start':
           return 0;
         case 'end':
@@ -189,7 +219,11 @@
         $(animation.selector).css({
           'transform':    'translate3d(' + translateX +'px, ' + translateY + 'px, 0) scale('+ scale +') rotate('+ rotate +'deg)',
           'opacity' : opacity
-        })
+        });
+		
+		if (animation['height']){
+			 $(animation.selector).css({'height': calcPropValue(animation, 'height')});
+		}
       }
     }
 
@@ -201,9 +235,20 @@
 	  
 	  if (start) {start = start[1];}else{start = 0;}
 	  if (end) {end = end[1];}else{end = 100;}
+	  
+	  if (value && value[1]=='initial'){
+		  value[1] = $(animation.selector).data('property');
+	  }else if (value && value[0]=='initial'){
+		  value[0] = $(animation.selector).data('property');
+	  }
+	  
 	  if (relativePos < end){
-		  if(value && relativePos >= start) {
-			value = easeInOutQuad(relativeScrollTop - (keyframes[currentKeyframe].duration*start/100).toFixed(0), value[0], (value[1]-value[0]), (keyframes[currentKeyframe].duration * (end - start)/100).toFixed(0)  );
+		  if(value) {
+			if (relativePos >= start){
+				value = easeInOutQuad(relativeScrollTop - (keyframes[currentKeyframe].duration*start/100).toFixed(0), value[0], (value[1]-value[0]), (keyframes[currentKeyframe].duration * (end - start)/100).toFixed(0)  );
+			}else{
+				value = value[0];
+			}
 		  } else {
 			value = getDefaultPropertyValue(property);
 		  }
@@ -231,7 +276,8 @@
     showCurrentWrappers = function() {
       var i;
       if(keyframes[currentKeyframe].wrapper != currentWrapper) {
-        $(currentWrapper).hide();
+        //$(currentWrapper).hide();
+        $(currentWrapper).css('opacity', 0);
         $(keyframes[currentKeyframe].wrapper).show();
         currentWrapper = keyframes[currentKeyframe].wrapper;
       }
