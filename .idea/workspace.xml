@@ -68,7 +68,7 @@
       <file leaf-file-name="responsive.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/responsive.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="583">
+            <state relative-caret-position="532">
               <caret line="890" column="4" lean-forward="false" selection-start-line="890" selection-start-column="4" selection-end-line="890" selection-end-column="4" />
               <folding />
             </state>
@@ -372,12 +372,12 @@
       <workItem from="1509089810753" duration="660000" />
       <workItem from="1509092611052" duration="12319000" />
       <workItem from="1509358494803" duration="12160000" />
-      <workItem from="1509437017050" duration="8283000" />
+      <workItem from="1509437017050" duration="8880000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="342391000" />
+    <option name="totallyTimeSpent" value="342988000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -973,7 +973,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/responsive.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="583">
+        <state relative-caret-position="532">
           <caret line="890" column="4" lean-forward="false" selection-start-line="890" selection-start-column="4" selection-end-line="890" selection-end-column="4" />
           <folding />
         </state>
