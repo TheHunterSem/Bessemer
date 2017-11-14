@@ -1,3 +1,4 @@
+.idea
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
@@ -47,3 +48,5 @@ Temporary Items
 .apdisk
 .idea/workspace.xml
 *.iml
+.idea/workspace.xml
+.idea/workspace.xml
