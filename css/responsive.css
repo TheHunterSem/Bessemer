@@ -484,9 +484,7 @@
         height: -webkit-calc(100% - 187px);
         height: -moz-calc(100% - 187px);
         height: calc(100% - 187px);
-        max-width: -webkit-calc(1380px - 60px);
-        max-width: -moz-calc(1380px - 60px);
-        max-width: calc(1380px - 60px);
+        max-width: 1380px;
     }
 
     .mfp-image-holder .mfp-close, .mfp-iframe-holder .mfp-close {
@@ -512,9 +510,7 @@
 @media screen and (max-width: 1366px) {
 
     .mfp-bg, .mfp-wrap {
-        max-width: -webkit-calc(1380px - 76px);
-        max-width: -moz-calc(1380px - 76px);
-        max-width: calc(1380px - 76px);
+        max-width: 1380px;
     }
 
 }
@@ -643,7 +639,7 @@
 @media screen and (min-width: 1025px) {
 
     .top-slides-content-elements.has-active-child .top-slide-content-element.active .top-slide-content-element-preview-block .content-block .close-button {
-        margin-bottom: 60px;
+        margin-bottom: 30px;
     }
 
 }
