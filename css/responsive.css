@@ -16,7 +16,9 @@
         display: block;
         margin: 0 auto;
         margin-top: 20px;
-        font-family: 'Times-Roman', Times;
+        /*font-family: 'Times-Roman', Times;*/
+        font-family: 'Rasa', serif;
+        font-weight: 300;
         font-size: 20px;
         line-height: 22px;
         color: #ffffff;
@@ -835,8 +837,12 @@
     }
 
     .footer-second-part .contact-items-list {
-        margin-bottom: 25px;
+        margin-bottom: 20px;
         width: 49%;
+    }
+
+    .footer-second-part .contact-items-list:last-child {
+        margin-bottom: 0;
     }
 
     .footer-first-part .address-info {
@@ -845,11 +851,79 @@
 
 }
 
-/*
-@media screen and (max-width: 1400px){
 
-    .main-content-element {
-        width: auto;
+@media screen and (max-width: 614px) {
+
+    .footer-first-part {
+        border-bottom: none;
+        padding: 26px 0 20px 0;
     }
 
-}*/
+    .footer-first-part .left {
+        display: block;
+        width: 100%;
+    }
+
+    .footer-first-part .right {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+        padding-top: 10px;
+        border-top: 2px solid #2F3131;
+    }
+
+    .footer-first-part .address-info {
+        margin-left: 0;
+        float: right;
+    }
+
+    .footer-logo {
+        max-width: 116px;
+        height: 20px;
+    }
+
+    .footer-second-part {
+        margin-top: 0;
+    }
+
+    footer {
+        margin-top: 0;
+    }
+
+    .footer-logo {
+        vertical-align: top;
+    }
+
+    .footer-first-part .address-info {
+        vertical-align: bottom;
+    }
+
+    .footer-first-part .address-info .text {
+        line-height: 21px;
+    }
+
+    .footer-second-part .contacts-wrapper {
+        margin-top: 20px;
+    }
+
+    .copyright-block {
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .footer-second-part .contact-items-list {
+        width: 100%;
+    }
+
+    .copyright-block {
+        padding: 15px 0 20px 0;
+    }
+
+}
+
