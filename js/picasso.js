@@ -163,6 +163,12 @@
                             'margin-top': [0, 'height'],
                             'start': 76,
                             'end': 79
+                        },
+                        {
+                            'selector': '#anim7',
+                            'margin-top': [0, 'height'],
+                            'start': 80,
+                            'end': 84
                         }
 
 
