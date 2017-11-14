@@ -449,7 +449,8 @@ html {
 }
 
 .top-slides-content-wrapper {
-    padding-bottom: 30px;
+    /*padding-bottom: 30px;*/
+    padding: 0 30px 30px 30px;
 }
 
 /*homepage slider start*/
