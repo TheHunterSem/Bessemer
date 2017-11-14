@@ -26,7 +26,7 @@ body {
 .main-content-element{
     /*position: fixed;*/
     /*top: 0;*/
-    left: 0%;
+    left: 0;
     right: 0;
     height: 100%;
     width: 80%;
@@ -40,8 +40,19 @@ body {
 main {padding-top: 70px;}
 
 #anim1 .main-content-element-picture{
-	width: 100%!important;
+	width: inherit;
     height: 70%!important;
+    max-width: 1380px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+@media (min-width: 1400px){
+
+    #anim1 .main-content-element-picture{
+        width: 100%!important;
+    }
+
 }
 
 .prefooter-content-elements{
@@ -393,7 +404,7 @@ html {
     margin: 0 auto;
     max-width: 1380px;
     width: 100%;
-    padding: 0 30px;
+    /*padding: 0 30px;*/
     overflow: hidden;
 }
 
@@ -491,8 +502,10 @@ header {
 
 .header-wrapper {
     position: fixed;
-    width: 98%;
+    width: 100%;
+    max-width: 1380px;
     height: 70px;
+    padding: 0 30px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -1360,8 +1373,17 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
 
 /* ============================= CONTACTS PAGE ============================= */
 
+@media (min-width: 1400px){
+
+    .main-content-element {
+        width: 100%;
+    }
+
+}
+
 .main-content-element {
-    width: 100%;
+    /*width: 100%;*/
+    max-width: 100%;
     /* margin-top: 50px; */
 }
 
@@ -1374,6 +1396,11 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
     height: 100vh;
 }
 
+.main-content-element-picture {
+    max-height: calc(100vh - 70px);
+}
+
+
 .main-content-element-picture img {
     display: block;
     margin: 0 auto;
@@ -1384,7 +1411,10 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
 }
 
 .main-content-element-video {
-    margin-top: 30px;
+    /*margin-top: 30px;*/
+    margin-top: 0;
+    max-height: calc(100vh - 70px);
+    padding: 0 30px;
 }
 
 .main-content-element-video .youtube {
@@ -1478,7 +1508,8 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
     border-left: 43px solid #fff;
 }
 
-.main-content-element-picture.notebook {
+.main-content-element-picture.notebook,
+.main-content-element-picture.tablet {
     /* background-color: #F7F5F6; */
     overflow: hidden;
 }
@@ -1492,17 +1523,31 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
     /*z-index: 10;*/
 }
 
+.main-content-element-picture.notebook .main-content-element-picture-notebook-img-block img,
+.main-content-element-picture.tablet .main-content-element-picture-tablet-img-block img {
+    max-height: calc(100vh - 70px);
+    object-fit: contain;
+    width: auto;
+}
+
 .main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .wrapper {
     position: absolute;
-    top: 6%;
-    bottom: 11.5%;
+    top: 5%;
+    bottom: 22%;
     left: 12.5%;
     right: 12.5%;
     padding: 5px 15px;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    /*width: 100%;*/
-    /*height: 100%;*/
+    overflow: hidden;
+}
+
+.main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .wrapper {
+    position: absolute;
+    top: 9%;
+    bottom: 10%;
+    left: 30.8%;
+    right: 30.5%;
+    padding: 5px 15px;
+    overflow: hidden;
 }
 
 .main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .wrapper .content-inside-notebook-block {
@@ -1765,6 +1810,8 @@ footer {
     padding-bottom: 56.25%;
     height: 0;
     overflow:hidden;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .video-responsive iframe,
@@ -1798,4 +1845,75 @@ footer {
 
 .header-content-elements .right-block span {
     display: block;
+}
+
+.main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .wrapper .grid-items-elements {
+    height: 100%;
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+}
+
+.main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .wrapper .grid-items-elements .column {
+    float: left;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .wrapper .grid-items-elements .column:last-child {
+    margin-right: 0;
+}
+
+.main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .wrapper .grid-items-elements .column .item-element {
+    height: 165px;
+    width: 165px;
+    background-color: grey;
+    display: block;
+    margin-top: 10px;
+}
+
+.main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .wrapper .grid-items-elements .column .item-element:first-child {
+    margin-top: 0;
+}
+
+.main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .wrapper .grid-items-elements .column .item-element.big {
+    height: 340px;
+}
+
+
+
+
+.main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .wrapper .grid-items-elements {
+    height: 100%;
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+}
+
+.main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .wrapper .grid-items-elements .column {
+    float: left;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .wrapper .grid-items-elements .column:last-child {
+    margin-right: 0;
+}
+
+.main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .wrapper .grid-items-elements .column .item-element {
+    height: 164px;
+    width: 162px;
+    background-color: grey;
+    display: block;
+    margin-top: 8px;
+}
+
+.main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .wrapper .grid-items-elements .column .item-element:first-child {
+    margin-top: 0;
+}
+
+.main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .wrapper .grid-items-elements .column .item-element.big {
+    height: 336px;
 }

@@ -51,12 +51,12 @@
 				'start'		  : 15,
 				'end'		  : 18
               },
-              {
+              /*{
 				'selector'    : '.video-button-play',
                 'opacity' 	  : [0.25, 1],
 				'start'		  : 18,
 				'end'		  : 20
-              },
+              },*/
               {
 				'selector'    : '.main-content-element-video',
                 'height' 	  : ['initial', 250],
@@ -93,9 +93,30 @@
 				'start'		  : 41,
 				'end'		  : 45
               },
-			  
-			  
-			  
+
+
+                // 4 screen
+                {
+                    'selector'    : '#anim4',
+                    'height'  	  : ['initial', 300],
+                    'opacity'  	  : [0.4, 1],
+                    'margin-top'  : [0, 'height'],
+                    'start'		  : 47,
+                    'end'		  : 50
+                }/*,
+                /// inner images
+                {
+                    'selector'    : '.main-content-element-picture.tablet',
+                    'height'  	  : ['initial', 300],
+                    'start'		  : 36,
+                    'end'		  : 40
+                },
+                {
+                    'selector'    : '#anim4',
+                    'margin-top'  : [0, 'height'],
+                    'start'		  : 41,
+                    'end'		  : 45
+                }*/
             ]
           }		  
 		]
