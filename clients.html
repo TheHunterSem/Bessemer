@@ -66,7 +66,7 @@
                     </div>
                 </div>
 			</div>
-			
+
             <div class="main-content-element wrapper" id="anim2">
 
                 <div class="text-block">
@@ -286,7 +286,8 @@
                                                 </span>
                                             </a>
                                             <a href="#" class="item-element">
-                                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPhLV7snl8EdNkZEhaG8b7igwgD3SUzl6-L_s36n7KgmZCJM0" alt="">
+                                                <!--<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPhLV7snl8EdNkZEhaG8b7igwgD3SUzl6-L_s36n7KgmZCJM0" alt="">-->
+                                                <img src="img/notebook-images/notebook-img-man.jpg" alt="">
                                                 <span class="name-wrapper">
                                                     <span class="name">Nicole Marquez</span>
                                                 </span>
@@ -302,6 +303,9 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="absolute-man-block">
+                        <img src="img/man1.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -331,8 +335,7 @@
                 </div>
             </div>
 
-            <div class="main-content-element wrapper" id="anim7">
-
+            <div class="footer-wrapper" id="anim7">
                     <h3 class="prefooter-content-elements-header">See our other campaigns for NewYork-Presbyterian</h3>
                     <div class="prefooter-content-element-items">
                         <a class="prefooter-content-element-item" href="#">
@@ -348,7 +351,67 @@
                             <span class="name">Ed Koch</span>
                         </a>
                     </div>
-
+                <footer>
+                    <section class="footer-first-part">
+                        <div class="left">
+                            <a href="index.html" class="footer-logo">
+                                <img src="img/footer-logo.png" alt="logo">
+                            </a>
+                            <div class="address-info">
+                                <span class="text">33 West 17th Street</span>
+                                <span class="text">New York, NY 10011</span>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <ul class="footer-first-part-social-list">
+                                <li>
+                                    <a href="#" class="facebook-link-icon"><i class="icon-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="twitter-link-icon"><i class="icon-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="instagram-link-icon"><i class="icon-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="youtube-play-link-icon"><i class="icon-youtube-play"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="footer-second-part">
+                        <h3 class="footer-header">Contact</h3>
+                        <div class="contacts-wrapper">
+                            <ul class="contact-items-list">
+                                <li><span class="incumbency">New Business Opportunities</span></li>
+                                <li><span>Meghan Tucker</span></li>
+                                <li><a href="mailto:meghant@munnrabot.com">meghant@munnrabot.com</a></li>
+                                <li><a href="tel:212.220.6210">212.220.6210</a></li>
+                            </ul>
+                            <ul class="contact-items-list">
+                                <li><span class="incumbency">Media Planning and Buying</span></li>
+                                <li><span>Geraldine Gately</span></li>
+                                <li><a href="mailto:geraldine@munnrabot.com">geraldine@munnrabot.com</a></li>
+                                <li><a href="tel:212.220.6219">212.220.6219</a></li>
+                            </ul>
+                            <ul class="contact-items-list">
+                                <li><span class="incumbency">Human Resources</span></li>
+                                <li><span>Deb Velazquez</span></li>
+                                <li><a href="mailto:deb@munnrabot.com">deb@munnrabot.com</a></li>
+                                <li><a href="tel:212.220.6242">212.220.6242</a></li>
+                            </ul>
+                            <ul class="contact-items-list">
+                                <li><span class="incumbency">General Inquiries</span></li>
+                                <li><span>Ashley Sather</span></li>
+                                <li><a href="mailto:ashley@munnrabot.com">ashley@munnrabot.com</a></li>
+                                <li><a href="tel:212.727.3900">212.727.3900</a></li>
+                            </ul>
+                        </div>
+                        <div class="copyright-block">
+                            <span>&copy; 1995-2016 All Rights Reserved &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp; Terms of Use</span>
+                        </div>
+                    </section>
+                </footer>
             </div>
 
         </div>
@@ -507,7 +570,7 @@
     r(function () {
 
 
-	  
+
         if (!document.getElementsByClassName) {
             // IE8 support
             var getElementsByClassName = function (node, classname) {
@@ -566,15 +629,15 @@ jQuery(function($){
 		j--;
 	});
 	//$('.main-content-element.wrapper').eq(0).css({'opacity':1});
-	
-	
+
+
 	$('.red-text-block').data('property', $('.red-text-block').height());
 	$('#anim2 .text-block').data('property', -1*$('#anim2 .text-block').height());
 	$('.main-content-element-video').data('property', $('.main-content-element-video').height());
 	$('.main-content-element-picture.notebook').data('property', $('.main-content-element-picture.notebook').height());
-	
-	
-	
+
+
+
 });
 </script>
 

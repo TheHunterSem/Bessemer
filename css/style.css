@@ -23,7 +23,8 @@ body {
 	/*transform: translate3d(0px, 0px, 0px);*/
 }
 
-.main-content-element{
+.main-content-element,
+.footer-wrapper {
     /*position: fixed;*/
     /*top: 0;*/
     left: 0;
@@ -35,6 +36,12 @@ body {
     color: #000;
     text-align: center;
     text-transform: uppercase;
+}
+
+.footer-wrapper {
+    width: 100%;
+    padding: 0 30px;
+    height: 100vh;
 }
 
 main {padding-top: 70px;}
@@ -1494,7 +1501,6 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
     cursor: pointer;
     background-color: transparent;
     transition: .4s;
-	/* opacity: 0; */
 }
 
 .video-button-play:hover {
@@ -1514,17 +1520,25 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
 
 .main-content-element-picture.notebook,
 .main-content-element-picture.tablet {
-    /* background-color: #F7F5F6; */
     overflow: hidden;
+}
+
+.main-content-element-picture.tablet {
+    position: relative;
+}
+
+.main-content-element-picture.tablet .absolute-man-block {
+    position: absolute;
+    height: 164px;
+    width: 162px;
+    z-index: -1;
+    bottom: 24.1%;
+    right: 31.6%;
 }
 
 .main-content-element-picture.notebook .main-content-element-picture-notebook-img-block {
     padding: 0 10px;
     max-width: 100%;
-/*     position: relative;
-    top: 50%;
-    transform: translateY(-50%); */
-    /*z-index: 10;*/
 }
 
 .main-content-element-picture.notebook .main-content-element-picture-notebook-img-block img,
@@ -1559,16 +1573,6 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
     top: 0;
 }
 
-/*.content-inside-notebook-block {
-    position: absolute;
-    top: 15%;
-    left: 14%;
-    right: 14%;
-    !* transform: translateY(-50%); *!
-    !* max-width: 950px; *!
-    !* width: 100%; *!
-}*/
-
 .prefooter-content-elements {
     margin-top: 45px;
 }
@@ -1587,6 +1591,7 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
 .prefooter-content-element-items {
     margin-top: 23px;
     display: flex;
+    /*height: calc(100vh - 70px);*/
 }
 
 .prefooter-content-element-item {
@@ -1809,6 +1814,7 @@ footer {
     color: #706f72;
     font-size: 14px;
     line-height: 21px;
+    text-align: left;
 }
 
 .video-responsive {
@@ -1962,4 +1968,11 @@ footer {
 
 .main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .wrapper .grid-items-elements .column .item-element.big {
     height: 336px;
+}
+
+.prefooter-wrapperrrr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 70px);
 }

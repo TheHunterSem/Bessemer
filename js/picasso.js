@@ -166,7 +166,9 @@
                         },
                         {
                             'selector': '#anim7',
+                            'height': ["100vh"],
                             'margin-top': [0, 'height'],
+                            'opacity': [0.3, 1],
                             'start': 80,
                             'end': 84
                         }
