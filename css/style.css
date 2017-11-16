@@ -1830,6 +1830,18 @@ footer {
     height: 100%;
 }
 
+.header-content-elements {
+    /* float: left; */
+    width: 100%;
+    max-width: 857px;
+    display: inline-block;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 65px 15px 0;
+}
+
 .header-content-elements .left-block a {
     color: #e12621;
     font-size: 24px;
@@ -1845,8 +1857,21 @@ footer {
     vertical-align: middle;
 }
 
+.header-content-elements .left-block {
+    float: left;
+}
+
 .header-content-elements .right-block {
     float: right;
+    text-align: left;
+    color: #8D8D8D;
+    font-size: 10px;
+    text-transform: none;
+}
+
+.header-content-elements .right-block a {
+    color: #8D8D8D;
+    text-decoration: none;
 }
 
 .header-content-elements .right-block span {
@@ -1938,43 +1963,3 @@ footer {
 .main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .wrapper .grid-items-elements .column .item-element.big {
     height: 336px;
 }
-
-
-/*.main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .wrapper .grid-items-elements {
-    height: 100%;
-    float: none;
-    margin: 0 auto;
-    text-align: center;
-    display: inline-block;
-}*/
-
-/*
-.main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .wrapper .grid-items-elements .column {
-    float: left;
-    display: inline-block;
-    margin-right: 8px;
-}
-*/
-
-/*.main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .wrapper .grid-items-elements .column:last-child {
-    margin-right: 0;
-}*/
-
-/*
-.main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .wrapper .grid-items-elements .column .item-element {
-    height: 164px;
-    width: 162px;
-    background-color: grey;
-    display: block;
-    margin-top: 8px;
-}
-*/
-
-/*.main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .wrapper .grid-items-elements .column .item-element:first-child {
-    margin-top: 0;
-}*/
-
-/*
-.main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .wrapper .grid-items-elements .column .item-element.big {
-    height: 336px;
-}*/
