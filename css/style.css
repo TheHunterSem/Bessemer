@@ -1853,43 +1853,7 @@ footer {
     display: block;
 }
 
-.main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .wrapper .grid-items-elements {
-    height: 100%;
-    float: none;
-    margin: 0 auto;
-    text-align: center;
-    display: inline-block;
-}
-
-.main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .wrapper .grid-items-elements .column {
-    float: left;
-    display: inline-block;
-    margin-right: 8px;
-}
-
-.main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .wrapper .grid-items-elements .column:last-child {
-    margin-right: 0;
-}
-
-.main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .wrapper .grid-items-elements .column .item-element {
-    height: 165px;
-    width: 165px;
-    background-color: grey;
-    display: block;
-    margin-top: 10px;
-}
-
-.main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .wrapper .grid-items-elements .column .item-element:first-child {
-    margin-top: 0;
-}
-
-.main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .wrapper .grid-items-elements .column .item-element.big {
-    height: 340px;
-}
-
-
-
-
+.main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .wrapper .grid-items-elements,
 .main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .wrapper .grid-items-elements {
     height: 100%;
     float: none;
@@ -1898,16 +1862,105 @@ footer {
     display: inline-block;
 }
 
+.main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .wrapper .grid-items-elements .column,
 .main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .wrapper .grid-items-elements .column {
     float: left;
     display: inline-block;
     margin-right: 8px;
 }
 
+.main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .wrapper .grid-items-elements .column:last-child,
 .main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .wrapper .grid-items-elements .column:last-child {
     margin-right: 0;
 }
 
+.main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .wrapper .grid-items-elements .column .item-element,
+.main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .wrapper .grid-items-elements .column .item-element {
+    height: 165px;
+    width: 165px;
+    background-color: grey;
+    display: block;
+    margin-top: 10px;
+    position: relative;
+}
+
+.main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .wrapper .grid-items-elements .column .item-element {
+    height: 164px;
+    width: 162px;
+    margin-top: 8px;
+}
+
+.main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .wrapper .grid-items-elements .column .item-element img,
+.main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .wrapper .grid-items-elements .column .item-element img {
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .wrapper .grid-items-elements .column .item-element .name-wrapper,
+.main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .wrapper .grid-items-elements .column .item-element .name-wrapper{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0, .9);
+    display: inline-block;
+    padding: 5px 7px;
+    text-align: left;
+    height: 23px;
+    vertical-align: middle;
+}
+
+.main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .wrapper .grid-items-elements .column .item-element .name-wrapper .name,
+.main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .wrapper .grid-items-elements .column .item-element .name-wrapper .name{
+    color: #fff;
+    font-size: 9px;
+    margin: 0;
+    text-transform: none;
+    display: inline-block;
+    vertical-align: top;
+    height: 13px;
+    width: 100%;
+    padding: 0;
+}
+
+.main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .wrapper .grid-items-elements .column .item-element:first-child,
+.main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .wrapper .grid-items-elements .column .item-element:first-child {
+    margin-top: 0;
+}
+
+.main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .wrapper .grid-items-elements .column .item-element.big {
+    height: 340px;
+}
+
+.main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .wrapper .grid-items-elements .column .item-element.big {
+    height: 336px;
+}
+
+
+/*.main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .wrapper .grid-items-elements {
+    height: 100%;
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+}*/
+
+/*
+.main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .wrapper .grid-items-elements .column {
+    float: left;
+    display: inline-block;
+    margin-right: 8px;
+}
+*/
+
+/*.main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .wrapper .grid-items-elements .column:last-child {
+    margin-right: 0;
+}*/
+
+/*
 .main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .wrapper .grid-items-elements .column .item-element {
     height: 164px;
     width: 162px;
@@ -1915,11 +1968,13 @@ footer {
     display: block;
     margin-top: 8px;
 }
+*/
 
-.main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .wrapper .grid-items-elements .column .item-element:first-child {
+/*.main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .wrapper .grid-items-elements .column .item-element:first-child {
     margin-top: 0;
-}
+}*/
 
+/*
 .main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .wrapper .grid-items-elements .column .item-element.big {
     height: 336px;
-}
+}*/
