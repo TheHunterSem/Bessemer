@@ -1531,9 +1531,10 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
     position: absolute;
     height: 164px;
     width: 162px;
-    z-index: -1;
+    z-index: 0;
     bottom: 24.1%;
     right: 31.6%;
+    opacity: 0;
 }
 
 .main-content-element-picture.notebook .main-content-element-picture-notebook-img-block {
