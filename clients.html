@@ -304,17 +304,31 @@
                             </div>
                         </div>
                     </div>
+					
                     <div class="absolute-man-block">
-                        <img src="img/man1.jpg" alt="">
+                        <img src="img/man1.jpg" class="absolute-man-block-image" alt="">
+						<!-- TODO: додай відео і кнопку плей -->
                     </div>
+					
                 </div>
             </div>
-
+			
             <div class="main-content-element wrapper" id="anim5">
-                <div class="main-content-element-video">
-                    <div class="youtube" id="C9XVFRWrM7U"
-                         data-params="rel=0&amp;enablejsapi=1&amp;controls=0&amp;showinfo=0&amp;volume=0&amp;iv_load_policy=3&amp;modestbranding=1"></div>
-                </div>
+				<div class="prefooter-content-element-items bigimages">
+					<a class="prefooter-content-element-item" href="#">
+						<img src="img/clients/prefooter-item-1.png" alt="">
+						<span class="name">Ed Koch</span>
+					</a>
+					<a class="prefooter-content-element-item" href="#">
+						<img src="img/clients/prefooter-item-2.png" alt="">
+						<span class="name">Ed Koch</span>
+					</a>
+					<a class="prefooter-content-element-item" href="#">
+						<img src="img/clients/prefooter-item-3.png" alt="">
+						<span class="name">Ed Koch</span>
+					</a>
+				</div>
+                <!-- TODO: слайдер як на макеті замість того що вище. PS здається на всю ширину екрану треба зробити -->
             </div>
 
             <div class="main-content-element wrapper" id="anim6">
@@ -407,7 +421,6 @@
                     </section>
                 </footer>
             </div>
-
         </div>
     </main>
 </div>
@@ -535,8 +548,8 @@
 jQuery(function($){
 
 	// Initialize correct dimensions for blocks
-	var j = $('.main-content-element.wrapper').length;
-	$('.main-content-element.wrapper').each(function(){
+	var j = $('.main-content-elements > div').length;
+	$('.main-content-elements > div').each(function(){
 		$(this).css({'z-index': j, 'opacity':1});
 		$(this).data('property', -1*$(this).height());
 		j--;
@@ -552,7 +565,15 @@ jQuery(function($){
 		$(this).data('property', $(this).height());
 	});
 	$('#anim4 .absolute-man-block').data('property', $('#anim4 .absolute-man-block').height());
+	$('#anim4 .main-content-element-picture.tablet').data('property', $('#anim4 .main-content-element-picture.tablet').height());
 
+	$('#anim1').data('property', -1*$('#anim1').height() - 5);
+	$('#anim5').data('property', $('#anim5').height());
+	$('#anim6').data('property', $('#anim6').height());
+	$('#anim6 .youtube').data('property', $('#anim6 .youtube').height());
+	
+	$('#anim7').data('property', -1*($('#anim7').height() - $(window).height() + 70));
+	
 	$(window).on('resize', function(){
 		$(window).scrollTop(0);
 		location.reload();

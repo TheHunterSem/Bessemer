@@ -20,7 +20,7 @@
             keyframes = [
                 {
                     'wrapper': '.main-content-elements',
-                    'duration': '1500%',
+                    'duration': '1700%',
                     'animations': [
 
                         // 1 screen
@@ -31,14 +31,14 @@
                             'end': 10
                         },
                         {
-                            'selector': '.red-text-block',
+                            'selector': '#anim1 .red-text-block',
                             'height': ['initial', 0],
                             'start': 2,
                             'end': 7
                         },
                         {
                             'selector': '#anim1',
-                            'margin-top': [0, 'height'],
+                            'margin-top': [0, 'initial'],
                             'start': 10,
                             'end': 13
                         },
@@ -52,13 +52,13 @@
                             'end': 18
                         },
                         {
-                          'selector'    : '.video-button-play',
+                          'selector'    : '#anim2 .video-button-play',
                           'opacity' 	  : [0.25, 1],
                           'start'		  : 16,
                           'end'		 	 : 19
                         },
                         {
-                            'selector': '.main-content-element-video',
+                            'selector': '#anim2 .main-content-element-video',
                             'height': ['initial', 250],
                             'opacity': [1, 0.3],
                             'start': 21,
@@ -74,120 +74,120 @@
 
                         // 3 screen
                         {
-                            'selector': '.notebook-img',
+                            'selector': '#anim3 .notebook-img',
                             'opacity': [0.1, 1],
                             'start': 29,
                             'end': 33
                         },
 						
 
-                        /// inner images
-                        {
-                            'selector': '#anim3 .column:nth-child(1) .item-element:nth-child(1)',
-                            'margin-top': [40, 0],
-                            'height': [65, 'initial'],
-                            'start': 29,
-                            'end': 33
-                        },
-                        {
-                            'selector': '#anim3 .column:nth-child(1) .item-element:nth-child(2)',
-                            'margin-top': [60, 10],
-                            'height': [65, 'initial'],
-                            'start': 29,
-                            'end': 33
-                        },
-                        {
-                            'selector': '#anim3 .column:nth-child(1) .item-element:nth-child(3)',
-                            'margin-top': [80, 10],
-                            'height': [65, 'initial'],
-                            'start': 29,
-                            'end': 33
-                        },
+							/// inner images
+							{
+								'selector': '#anim3 .column:nth-child(1) .item-element:nth-child(1)',
+								'margin-top': [40, 0],
+								'height': [65, 'initial'],
+								'start': 29,
+								'end': 33
+							},
+							{
+								'selector': '#anim3 .column:nth-child(1) .item-element:nth-child(2)',
+								'margin-top': [60, 10],
+								'height': [65, 'initial'],
+								'start': 29,
+								'end': 33
+							},
+							{
+								'selector': '#anim3 .column:nth-child(1) .item-element:nth-child(3)',
+								'margin-top': [80, 10],
+								'height': [65, 'initial'],
+								'start': 29,
+								'end': 33
+							},
+							
+							{
+								'selector': '#anim3 .column:nth-child(2) .item-element:nth-child(1)',
+								'margin-top': [60, 0],
+								'height': [65, 'initial'],
+								'start': 30,
+								'end': 34
+							},
+							{
+								'selector': '#anim3 .column:nth-child(2) .item-element:nth-child(2)',
+								'margin-top': [60, 10],
+								'height': [65, 'initial'],
+								'start': 30,
+								'end': 34
+							},
+							
+							{
+								'selector': '#anim3 .column:nth-child(3) .item-element:nth-child(1)',
+								'margin-top': [80, 0],
+								'height': [65, 'initial'],
+								'start': 31,
+								'end': 35
+							},
+							{
+								'selector': '#anim3 .column:nth-child(3) .item-element:nth-child(2)',
+								'margin-top': [80, 10],
+								'height': [65, 'initial'],
+								'start': 31,
+								'end': 35
+							},
+							{
+								'selector': '#anim3 .column:nth-child(3) .item-element:nth-child(3)',
+								'margin-top': [80, 10],
+								'height': [65, 'initial'],
+								'start': 31,
+								'end': 35
+							},
+							
+							{
+								'selector': '#anim3 .column:nth-child(4) .item-element:nth-child(1)',
+								'margin-top': [120, 0],
+								'height': [65, 'initial'],
+								'start': 31,
+								'end': 35
+							},
+							{
+								'selector': '#anim3 .column:nth-child(4) .item-element:nth-child(2)',
+								'margin-top': [120, 10],
+								'height': [65, 'initial'],
+								'start': 31,
+								'end': 35
+							},
+							{
+								'selector': '#anim3 .column:nth-child(4) .item-element:nth-child(3)',
+								'margin-top': [120, 10],
+								'height': [65, 'initial'],
+								'start': 31,
+								'end': 35
+							},
+							
+							{
+								'selector': '#anim3 .column:nth-child(5) .item-element:nth-child(1)',
+								'margin-top': [140, 0],
+								'height': [65, 'initial'],
+								'start': 31,
+								'end': 35
+							},
+							{
+								'selector': '#anim3 .column:nth-child(5) .item-element:nth-child(2)',
+								'margin-top': [140, 10],
+								'height': [65, 'initial'],
+								'start': 31,
+								'end': 35
+							},
+							{
+								'selector': '#anim3 .column:nth-child(5) .item-element:nth-child(3)',
+								'margin-top': [140, 10],
+								'height': [65, 'initial'],
+								'start': 31,
+								'end': 35
+							},
+						
 						
                         {
-                            'selector': '#anim3 .column:nth-child(2) .item-element:nth-child(1)',
-                            'margin-top': [60, 0],
-                            'height': [65, 'initial'],
-                            'start': 30,
-                            'end': 34
-                        },
-                        {
-                            'selector': '#anim3 .column:nth-child(2) .item-element:nth-child(2)',
-                            'margin-top': [60, 10],
-                            'height': [65, 'initial'],
-                            'start': 30,
-                            'end': 34
-                        },
-						
-                        {
-                            'selector': '#anim3 .column:nth-child(3) .item-element:nth-child(1)',
-                            'margin-top': [80, 0],
-                            'height': [65, 'initial'],
-                            'start': 31,
-                            'end': 35
-                        },
-                        {
-                            'selector': '#anim3 .column:nth-child(3) .item-element:nth-child(2)',
-                            'margin-top': [80, 10],
-                            'height': [65, 'initial'],
-                            'start': 31,
-                            'end': 35
-                        },
-                        {
-                            'selector': '#anim3 .column:nth-child(3) .item-element:nth-child(3)',
-                            'margin-top': [80, 10],
-                            'height': [65, 'initial'],
-                            'start': 31,
-                            'end': 35
-                        },
-						
-                        {
-                            'selector': '#anim3 .column:nth-child(4) .item-element:nth-child(1)',
-                            'margin-top': [120, 0],
-                            'height': [65, 'initial'],
-                            'start': 31,
-                            'end': 35
-                        },
-                        {
-                            'selector': '#anim3 .column:nth-child(4) .item-element:nth-child(2)',
-                            'margin-top': [120, 10],
-                            'height': [65, 'initial'],
-                            'start': 31,
-                            'end': 35
-                        },
-                        {
-                            'selector': '#anim3 .column:nth-child(4) .item-element:nth-child(3)',
-                            'margin-top': [120, 10],
-                            'height': [65, 'initial'],
-                            'start': 31,
-                            'end': 35
-                        },
-						
-                        {
-                            'selector': '#anim3 .column:nth-child(5) .item-element:nth-child(1)',
-                            'margin-top': [140, 0],
-                            'height': [65, 'initial'],
-                            'start': 31,
-                            'end': 35
-                        },
-                        {
-                            'selector': '#anim3 .column:nth-child(5) .item-element:nth-child(2)',
-                            'margin-top': [140, 10],
-                            'height': [65, 'initial'],
-                            'start': 31,
-                            'end': 35
-                        },
-                        {
-                            'selector': '#anim3 .column:nth-child(5) .item-element:nth-child(3)',
-                            'margin-top': [140, 10],
-                            'height': [65, 'initial'],
-                            'start': 31,
-                            'end': 35
-                        },
-						
-						
-                        {
-                            'selector': '.main-content-element-picture.notebook',
+                            'selector': '#anim3 .main-content-element-picture.notebook',
                             'height': ['initial', 300],
                             'start': 37,
                             'end': 41
@@ -220,77 +220,70 @@
                             'start': 51,
                             'end': 55
                         },
-
 						
-						
-						
-
-                        //5 screen
                         {
-                            'selector': '#anim5 .text-block',
-                            'margin-top': [0, 'initial'],
-                            'start': 57,
-                            'end': 60
-                        },
-                        /*{
-                            'selector': '.main-content-element-video',
+                            'selector': '#anim4 .main-content-element-picture.tablet',
                             'height': ['initial', 250],
-                            'opacity': [1, 0.3],
-                            'start': 61,
-                            'end': 64
-                        },*/
+                            'opacity': [1, 0.4],
+                            'start': 60,
+                            'end': 65
+                        },
+                        {
+                            'selector': '#anim4',
+                            'margin-top': [0, 'height'],
+                            'start': 67,
+                            'end': 69
+                        },
+						
+						// 5 screen
+                        {
+                            'selector': '#anim5',
+                            'height': ['initial', 300],
+                            'start': 73,
+                            'end': 77
+                        },
                         {
                             'selector': '#anim5',
                             'margin-top': [0, 'height'],
-                            'start': 65,
-                            'end': 68
+                            'start': 77,
+                            'end': 80
                         },
-
-                        // 6 screen
+						
+						// 6 screen
+                        {
+                            'selector': '#anim6 .main-content-element-video',
+                            'opacity': [0.35, 1],
+                            'start': 79,
+                            'end': 82
+                        },
                         {
                             'selector': '#anim6 .text-block',
-                            'margin-top': [0, 'initial'],
-                            'start': 69,
-                            'end': 72
+                            'margin-top': [0, 'height'],
+                            'start': 84,
+                            'end': 87
                         },
-                        /*{
-                            'selector': '.main-content-element-video',
-                            'height': ['initial', 250],
-                            'opacity': [1, 0.3],
-                            'start': 73,
-                            'end': 75
-                        },*/
+                        {
+                            'selector': '#anim6 .youtube',
+                            'height': ['initial', 500],
+                            'opacity': [1, 0.35],
+                            'start': 89,
+                            'end': 93
+                        },
                         {
                             'selector': '#anim6',
                             'margin-top': [0, 'height'],
-                            'start': 76,
-                            'end': 79
+                            'start': 92,
+                            'end': 95
                         },
+						
                         {
                             'selector': '#anim7',
-                            'height': ["100vh"],
-                            'margin-top': [0, 'height'],
-                            'opacity': [0.3, 1],
-                            'start': 80,
-                            'end': 84
+                            'margin-top': [0, 'initial'],
+                            'start': 93,
+                            'end': 95
                         }
-
-
-                        /*,
-                /// inner images
-                {
-                    'selector'    : '.main-content-element-picture.tablet',
-                    'height'  	  : ['initial', 300],
-                    'start'		  : 36,
-                    'end'		  : 40
-                },
-                {
-                    'selector'    : '#anim4',
-                    'margin-top'  : [0, 'height'],
-                    'start'		  : 41,
-                    'end'		  : 45
-                }*/
-                    ]
+						
+					]
                 }
             ]
 

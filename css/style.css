@@ -12,6 +12,7 @@ body {
 
 .main-content-elements {
 	position:fixed;
+	top: 70px;
 }
 
 
@@ -41,7 +42,9 @@ body {
 .footer-wrapper {
     width: 100%;
     padding: 0 30px;
-    height: 100vh;
+    /* height: 100vh; */
+	height: initial;
+    display: table;
 }
 
 main {padding-top: 70px;}
@@ -1615,6 +1618,12 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
     padding: 0;
     margin: 0 15px;
 }
+
+	.bigimages .prefooter-content-element-item {
+		height: calc(100vh - 100px);
+	}
+	#anim5 {overflow: hidden;}
+	#anim6 {overflow: hidden;}
 
 .prefooter-content-element-item:first-child {
     margin-left: 0;
