@@ -3,7 +3,7 @@
         /*  Globals
         -------------------------------------------------- */
 
-        var PROPERTIES = ['translateX', 'translateY', 'opacity', 'rotate', 'scale', 'height', 'width', 'margin-top', 'top'],
+        var PROPERTIES = ['translateX', 'translateY', 'opacity', 'rotate', 'scale', 'height', 'width', 'margin-top', 'margin-left', 'top', 'left'],
 
             $window = $(window),
             $body = $('body'),
@@ -217,6 +217,8 @@
                             'selector': '#anim4 .absolute-man-block',
                             'width': ['initial', '50%'],
                             'height': ['initial', '50%'],
+                            'margin-left': [0, '-30%'],
+                            'margin-top': [0, '-20%'],
                             'start': 51,
                             'end': 55
                         },
@@ -264,7 +266,7 @@
                         },
                         {
                             'selector': '#anim6 .youtube',
-                            'height': ['initial', 500],
+                            'height': ['initial', 400],
                             'opacity': [1, 0.35],
                             'start': 89,
                             'end': 93
@@ -383,8 +385,12 @@
                     return 'initial';
                 case 'margin-top':
                     return 'initial';
+                case 'margin-left':
+                    return 'initial';
                 case 'top':
-                    return '0';
+                    return 'initial';
+                case 'left':
+                    return 'initial';
                 case 'start':
                     return 0;
                 case 'end':
@@ -435,8 +441,14 @@
                 if (animation['margin-top']) {
                     $(animation.selector).css({'margin-top': calcPropValue(animation, 'margin-top')});
                 }
+                if (animation['margin-left']) {
+                    $(animation.selector).css({'margin-left': calcPropValue(animation, 'margin-left')});
+                }
                 if (animation['top']) {
                     $(animation.selector).css({'top': calcPropValue(animation, 'top')});
+                }
+                if (animation['left']) {
+                    $(animation.selector).css({'left': calcPropValue(animation, 'left')});
                 }
             }
         }
@@ -536,8 +548,10 @@
             return 'ontouchstart' in window // works on most browsers
                 || 'onmsgesturechange' in window; // works on ie10
         }
-
-        init();
+		
+		//if ($(window).width() > 900){
+			init();
+		//}
 
     })
 }).call(this);

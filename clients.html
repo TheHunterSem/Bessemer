@@ -285,7 +285,7 @@
                                                     <span class="name">Dawn Flemming</span>
                                                 </span>
                                             </a>
-                                            <a href="#" class="item-element">
+                                            <a href="#" class="item-element item-brazzers">
                                                 <!--<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPhLV7snl8EdNkZEhaG8b7igwgD3SUzl6-L_s36n7KgmZCJM0" alt="">-->
                                                 <img src="img/notebook-images/notebook-img-man.jpg" alt="">
                                                 <span class="name-wrapper">
@@ -546,39 +546,43 @@
 
 <script>
 jQuery(function($){
+	//if ($(window).width() > 900){
+		// Initialize correct dimensions for blocks
+		var j = $('.main-content-elements > div').length;
+		$('.main-content-elements > div').each(function(){
+			$(this).css({'z-index': j, 'opacity':1});
+			$(this).data('property', -1*$(this).height());
+			j--;
+		});
 
-	// Initialize correct dimensions for blocks
-	var j = $('.main-content-elements > div').length;
-	$('.main-content-elements > div').each(function(){
-		$(this).css({'z-index': j, 'opacity':1});
-		$(this).data('property', -1*$(this).height());
-		j--;
-	});
-	//$('.main-content-element.wrapper').eq(0).css({'opacity':1});
+		$('.red-text-block').data('property', $('.red-text-block').height());
+		$('#anim2 .text-block').data('property', -1*$('#anim2 .text-block').height());
+		$('.main-content-element-video').data('property', $('.main-content-element-video').height());
+		$('.main-content-element-picture.notebook').data('property', $('.main-content-element-picture.notebook').height());
+		$('#anim3 .item-element').each(function(){
+			$(this).data('property', $(this).height());
+		});
+		$('#anim4 .main-content-element-picture.tablet').data('property', $('#anim4 .main-content-element-picture.tablet').height());
+				
+		$('#anim4 .absolute-man-block').data('property', $('.item-brazzers').width());
+		$('.absolute-man-block').css('left', $('.item-brazzers').offset().left - $('.main-content-element-picture.tablet').offset().left);
+		$('.absolute-man-block').css('top',  $('.item-brazzers').position().top + 70 - 9);
+		$('.absolute-man-block').css('width',  $('.item-brazzers').width());
+		$('.absolute-man-block').css('height',  $('.item-brazzers').height() - $('.item-brazzers .name-wrapper').height());
 
-
-	$('.red-text-block').data('property', $('.red-text-block').height());
-	$('#anim2 .text-block').data('property', -1*$('#anim2 .text-block').height());
-	$('.main-content-element-video').data('property', $('.main-content-element-video').height());
-	$('.main-content-element-picture.notebook').data('property', $('.main-content-element-picture.notebook').height());
-	$('#anim3 .item-element').each(function(){
-		$(this).data('property', $(this).height());
-	});
-	$('#anim4 .absolute-man-block').data('property', $('#anim4 .absolute-man-block').height());
-	$('#anim4 .main-content-element-picture.tablet').data('property', $('#anim4 .main-content-element-picture.tablet').height());
-
-	$('#anim1').data('property', -1*$('#anim1').height() - 5);
-	$('#anim5').data('property', $('#anim5').height());
-	$('#anim6').data('property', $('#anim6').height());
-	$('#anim6 .youtube').data('property', $('#anim6 .youtube').height());
-	
-	$('#anim7').data('property', -1*($('#anim7').height() - $(window).height() + 70));
-	
-	$(window).on('resize', function(){
-		$(window).scrollTop(0);
-		location.reload();
-	});
-
+		$('#anim1').data('property', -1*$('#anim1').height() - 5);
+		$('#anim5').data('property', $('#anim5').height());
+		$('#anim6').data('property', $('#anim6').height());
+		$('#anim6 .youtube').data('property', $('#anim6 .youtube').height());
+		
+		$('#anim7').data('property', -1*($('#anim7').height() - $(window).height() + 70));
+		
+		
+		$(window).on('resize', function(){
+			$(window).scrollTop(0);
+			location.reload();
+		});
+	//}
 });
 </script>
 
