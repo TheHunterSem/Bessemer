@@ -48,7 +48,7 @@ main {padding-top: 70px;}
 
 #anim1 .main-content-element-picture{
 	width: inherit;
-    height: 70%!important;
+    height: calc(100vh - 70px);
     max-width: 1380px;
     padding: 0 30px;
     margin: 0 auto;
@@ -1425,7 +1425,7 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
     /*margin-top: 30px;*/
     margin-top: 0;
     max-height: calc(100vh - 70px);
-    padding: 0 30px;
+    padding: 10px 30px;
 }
 
 .main-content-element-video .youtube {
@@ -1518,6 +1518,7 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
     border-left: 43px solid #fff;
 }
 
+
 .main-content-element-picture.notebook,
 .main-content-element-picture.tablet {
     overflow: hidden;
@@ -1534,17 +1535,26 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
     z-index: 0;
     bottom: 24.1%;
     right: 31.6%;
-    opacity: 0;
+    opacity: 1;
+	
+    top: 15%;
+    left: 15%;
 }
 
 .main-content-element-picture.notebook .main-content-element-picture-notebook-img-block {
-    padding: 0 10px;
+    padding: 20px 70px;
     max-width: 100%;
+}
+.main-content-element-picture.notebook {
+	background-color: #F7F6F6;
+}
+.main-content-element-picture.tablet .main-content-element-picture-tablet-img-block {
+	padding: 15px;
 }
 
 .main-content-element-picture.notebook .main-content-element-picture-notebook-img-block img,
 .main-content-element-picture.tablet .main-content-element-picture-tablet-img-block img {
-    max-height: calc(100vh - 70px);
+    max-height: calc(100vh - 100px);
     object-fit: contain;
     width: auto;
 }
@@ -1976,4 +1986,14 @@ footer {
     align-items: center;
     justify-content: center;
     height: calc(100vh - 70px);
+}
+
+
+
+
+.red-text-block {
+	transition: height 0.3s;
+}
+#anim1 .main-content-element-picture{
+	transition: opacity 0.3s;
 }
