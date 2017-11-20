@@ -210,7 +210,7 @@
                         {
                             'selector': '#anim4 .main-content-element-picture-tablet-img-block',
                             'opacity': [1, 0],
-                            'start': 47,
+                            'start': 49,
                             'end': 53
                         },
                         {
@@ -219,6 +219,7 @@
                             'height': ['initial', '50%'],
                             'margin-left': [0, '-30%'],
                             'margin-top': [0, '-20%'],
+                            'opacity':[1],
                             'start': 51,
                             'end': 55
                         },

@@ -1397,7 +1397,7 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
 
 .main-content-element {
     /*width: 100%;*/
-    max-width: 100%;
+    /*max-width: 100%;*/
     /* margin-top: 50px; */
 }
 
@@ -1539,7 +1539,6 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
     bottom: 24.1%;
     right: 31.6%;
     opacity: 1;
-	
     top: 15%;
     left: 15%;
 }
@@ -1553,6 +1552,8 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
 }
 .main-content-element-picture.tablet .main-content-element-picture-tablet-img-block {
 	padding: 15px;
+    z-index: 10;
+    position: relative;
 }
 
 .main-content-element-picture.notebook .main-content-element-picture-notebook-img-block img,
