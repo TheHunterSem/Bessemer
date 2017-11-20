@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="HandheldFriendly" content="true">
     <title>Bessemer</title>
+    <link rel="stylesheet" href="css/plugins/slick-slider/slick.css">
+    <link rel="stylesheet" href="css/plugins/slick-slider/slick-theme.css">
     <link rel="stylesheet" href="css/plugins/slider-pro.min.css">
     <link rel="stylesheet" href="css/plugins/magnific-popup.css">
     <link rel="stylesheet" href="css/plugins/gallery-styles.css">
@@ -316,42 +318,12 @@
             <div class="main-content-element wrapper" id="anim5">
 				<div class="prefooter-content-element-items bigimages">
                     <div class="prefooter-slider-wrapper">
-                        <a class="prefooter-content-element-item" href="#">
-                            <img src="img/clients/prefooter-item-1.png" alt="">
-                            <span class="name">Ed Koch</span>
-                        </a>
-                        <a class="prefooter-content-element-item" href="#">
-                            <img src="img/clients/prefooter-item-2.png" alt="">
-                            <span class="name">Ed Koch</span>
-                        </a>
-                        <a class="prefooter-content-element-item" href="#">
-                            <img src="img/clients/prefooter-item-3.png" alt="">
-                            <span class="name">Ed Koch</span>
-                        </a>
-                        <a class="prefooter-content-element-item" href="#">
-                            <img src="img/clients/prefooter-item-1.png" alt="">
-                            <span class="name">Ed Koch</span>
-                        </a>
-                        <a class="prefooter-content-element-item" href="#">
-                            <img src="img/clients/prefooter-item-2.png" alt="">
-                            <span class="name">Ed Koch</span>
-                        </a>
-                        <a class="prefooter-content-element-item" href="#">
-                            <img src="img/clients/prefooter-item-3.png" alt="">
-                            <span class="name">Ed Koch</span>
-                        </a>
-                        <a class="prefooter-content-element-item" href="#">
-                            <img src="img/clients/prefooter-item-1.png" alt="">
-                            <span class="name">Ed Koch</span>
-                        </a>
-                        <a class="prefooter-content-element-item" href="#">
-                            <img src="img/clients/prefooter-item-2.png" alt="">
-                            <span class="name">Ed Koch</span>
-                        </a>
-                        <a class="prefooter-content-element-item" href="#">
-                            <img src="img/clients/prefooter-item-3.png" alt="">
-                            <span class="name">Ed Koch</span>
-                        </a>
+                        <div class="prefooter-slider-item"></div>
+                        <div class="prefooter-slider-item"></div>
+                        <div class="prefooter-slider-item"></div>
+                        <div class="prefooter-slider-item"></div>
+                        <div class="prefooter-slider-item"></div>
+                        <div class="prefooter-slider-item"></div>
                     </div>
 				</div>
                 <!-- TODO: слайдер як на макеті замість того що вище. PS здається на всю ширину екрану треба зробити -->
@@ -452,59 +424,60 @@
 </div>
 
 
-    <script src="js/plugins/gallery-scripts/imagesloaded.pkgd.min.js"></script>
-    <script src="js/plugins/gallery-scripts/masonry.pkgd.min.js"></script>
-    <script src="js/plugins/gallery-scripts/classie.js"></script>
-    <script src="js/plugins/gallery-scripts/main.js"></script>
-    <script>
-        (function() {
+<script src="js/plugins/gallery-scripts/imagesloaded.pkgd.min.js"></script>
+<script src="js/plugins/gallery-scripts/masonry.pkgd.min.js"></script>
+<script src="js/plugins/gallery-scripts/classie.js"></script>
+<script src="js/plugins/gallery-scripts/main.js"></script>
+<script>
+    (function() {
 
-            // create SVG circle overlay and append it to the preview element
-            function createCircleOverlay(previewEl) {
-                var dummy = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-                dummy.setAttributeNS(null, 'version', '1.1');
-                dummy.setAttributeNS(null, 'width', '100%');
-                dummy.setAttributeNS(null, 'height', '100%');
-                dummy.setAttributeNS(null, 'class', 'overlay');
-                var g = document.createElementNS('http://www.w3.org/2000/svg', 'g');
-                var circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
-                circle.setAttributeNS(null, 'cx', 0);
-                circle.setAttributeNS(null, 'cy', 0);
-                circle.setAttributeNS(null, 'r', Math.sqrt(Math.pow(previewEl.offsetWidth,2) + Math.pow(previewEl.offsetHeight,2)));
-                dummy.appendChild(g);
-                g.appendChild(circle);
-                previewEl.appendChild(dummy);
-            }
+        // create SVG circle overlay and append it to the preview element
+        function createCircleOverlay(previewEl) {
+            var dummy = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+            dummy.setAttributeNS(null, 'version', '1.1');
+            dummy.setAttributeNS(null, 'width', '100%');
+            dummy.setAttributeNS(null, 'height', '100%');
+            dummy.setAttributeNS(null, 'class', 'overlay');
+            var g = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+            var circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+            circle.setAttributeNS(null, 'cx', 0);
+            circle.setAttributeNS(null, 'cy', 0);
+            circle.setAttributeNS(null, 'r', Math.sqrt(Math.pow(previewEl.offsetWidth,2) + Math.pow(previewEl.offsetHeight,2)));
+            dummy.appendChild(g);
+            g.appendChild(circle);
+            previewEl.appendChild(dummy);
+        }
 
-            new GridFx(document.querySelector('.grid'), {
-                onInit : function(instance) {
-                    createCircleOverlay(instance.previewEl);
-                },
-                onResize : function(instance) {
-                    instance.previewEl.querySelector('svg circle').setAttributeNS(null, 'r', Math.sqrt(Math.pow(instance.previewEl.offsetWidth,2) + Math.pow(instance.previewEl.offsetHeight,2)));
-                },
-                onOpenItem : function(instance, item) {
-                    // item's image
-                    var gridImg = item.querySelector('img'),
-                        gridImgOffset = gridImg.getBoundingClientRect(),
-                        win = {width: document.documentElement.clientWidth, height: window.innerHeight},
-                        SVGCircleGroupEl = instance.previewEl.querySelector('svg > g'),
-                        SVGCircleEl = SVGCircleGroupEl.querySelector('circle');
+        new GridFx(document.querySelector('.grid'), {
+            onInit : function(instance) {
+                createCircleOverlay(instance.previewEl);
+            },
+            onResize : function(instance) {
+                instance.previewEl.querySelector('svg circle').setAttributeNS(null, 'r', Math.sqrt(Math.pow(instance.previewEl.offsetWidth,2) + Math.pow(instance.previewEl.offsetHeight,2)));
+            },
+            onOpenItem : function(instance, item) {
+                // item's image
+                var gridImg = item.querySelector('img'),
+                    gridImgOffset = gridImg.getBoundingClientRect(),
+                    win = {width: document.documentElement.clientWidth, height: window.innerHeight},
+                    SVGCircleGroupEl = instance.previewEl.querySelector('svg > g'),
+                    SVGCircleEl = SVGCircleGroupEl.querySelector('circle');
 
-                    SVGCircleEl.setAttributeNS(null, 'r', Math.sqrt(Math.pow(instance.previewEl.offsetWidth,2) + Math.pow(instance.previewEl.offsetHeight,2)));
-                    // set the transform for the SVG g node. This will animate the circle overlay. The origin of the circle depends on the position of the clicked item.
-                    if( gridImgOffset.left + gridImg.offsetWidth/2 < win.width/2 ) {
-                        SVGCircleGroupEl.setAttributeNS(null, 'transform', 'translate(' + win.width + ', ' + (gridImgOffset.top + gridImg.offsetHeight/2 < win.height/2 ? win.height : 0) + ')');
-                    }
-                    else {
-                        SVGCircleGroupEl.setAttributeNS(null, 'transform', 'translate(0, ' + (gridImgOffset.top + gridImg.offsetHeight/2 < win.height/2 ? win.height : 0) + ')');
-                    }
+                SVGCircleEl.setAttributeNS(null, 'r', Math.sqrt(Math.pow(instance.previewEl.offsetWidth,2) + Math.pow(instance.previewEl.offsetHeight,2)));
+                // set the transform for the SVG g node. This will animate the circle overlay. The origin of the circle depends on the position of the clicked item.
+                if( gridImgOffset.left + gridImg.offsetWidth/2 < win.width/2 ) {
+                    SVGCircleGroupEl.setAttributeNS(null, 'transform', 'translate(' + win.width + ', ' + (gridImgOffset.top + gridImg.offsetHeight/2 < win.height/2 ? win.height : 0) + ')');
                 }
-            });
-        })();
-    </script>
+                else {
+                    SVGCircleGroupEl.setAttributeNS(null, 'transform', 'translate(0, ' + (gridImgOffset.top + gridImg.offsetHeight/2 < win.height/2 ? win.height : 0) + ')');
+                }
+            }
+        });
+    })();
+</script>
 
 <script src="js/jquery-3.2.1.slim.min.js"></script>
+<script src="js/plugins/slick-slider/slick.js"></script>
 <script src="js/plugins/jquery.sliderPro.min.js"></script>
 <script src="js/plugins/jquery.magnific-popup.min.js"></script>
 <script src="js/script.js"></script>

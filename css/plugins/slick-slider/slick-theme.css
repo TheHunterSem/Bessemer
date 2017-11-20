@@ -12,8 +12,11 @@
     font-weight: normal;
     font-style: normal;
 
-    src: url('./fonts/slick.eot');
-    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
+    src: url('/Bessemer/fonts/slick-fonts/slick.eot');
+    src: url('/Bessemer/fonts/slick-fonts/slick.eot?#iefix') format('embedded-opentype'),
+    url('/Bessemer/fonts/slick-fonts/slick.woff') format('woff'),
+    url('/Bessemer/fonts/slick-fonts/slick.ttf') format('truetype'),
+    url('/Bessemer/fonts/slick-fonts/slick.svg#slick') format('svg');
 }
 /* Arrows */
 .slick-prev,
@@ -114,7 +117,7 @@
 }
 
 /* Dots */
-.slick-dotted.slick-slider
+.slick-dotted.slick-fonts
 {
     margin-bottom: 30px;
 }

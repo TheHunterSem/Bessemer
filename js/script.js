@@ -57,8 +57,9 @@ jQuery(document).ready(function () {
 
     jQuery('.prefooter-slider-wrapper').slick({
         centerMode: true,
-        centerPadding: '60px',
-        slidesToShow: 3
+        variableWidth: true,
+        centerPadding: '0px',
+        slidesToShow: 1
         /*responsive: [
             {
                 breakpoint: 768,

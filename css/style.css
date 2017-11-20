@@ -1623,7 +1623,10 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
 	.bigimages .prefooter-content-element-item {
 		height: calc(100vh - 100px);
 	}
-	#anim5 {overflow: hidden;}
+	#anim5 {
+        overflow: hidden;
+    }
+
 	#anim6 {overflow: hidden;}
 
 .prefooter-content-element-item:first-child {
@@ -1998,12 +2001,27 @@ footer {
     height: calc(100vh - 70px);
 }
 
-
-
-
 .red-text-block {
 	transition: height 0.3s;
 }
 #anim1 .main-content-element-picture{
 	transition: opacity 0.3s;
+}
+
+.prefooter-slider-wrapper {
+    width: 100%;
+    height: 600px;
+    display: block;
+}
+
+.prefooter-slider-item {
+    height: 590px;
+    /*width: 400px;*/
+    background-color: grey;
+    margin: 0 20px;
+}
+
+.prefooter-slider-wrapper .slick-slide
+{
+    width: 590px;
 }
