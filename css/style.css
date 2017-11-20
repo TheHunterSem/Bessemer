@@ -1543,6 +1543,15 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
     left: 15%;
 }
 
+.absolute-man-block .main-content-element-video {
+    /*display: none;*/
+    position: absolute;
+    top: 0;
+    max-height: 636px;
+    padding: 0;
+    /*opacity: 0;*/
+}
+
 .main-content-element-picture.notebook .main-content-element-picture-notebook-img-block {
     padding: 20px 70px;
     max-width: 100%;
@@ -2013,6 +2022,7 @@ footer {
     height: 600px;
     display: block;
 }
+
 
 .prefooter-slider-item {
     height: 590px;

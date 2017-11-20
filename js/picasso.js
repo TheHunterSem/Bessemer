@@ -219,9 +219,16 @@
                             'height': ['initial', '50%'],
                             'margin-left': [0, '-30%'],
                             'margin-top': [0, '-20%'],
-                            'opacity':[1],
+                            'opacity':[0, 1],
                             'start': 51,
                             'end': 55
+                        },
+
+                        {
+                            'selector': '#anim4 .absolute-man-block .main-content-element-video',
+                            'opacity':[0, 1],
+                            'start': 55,
+                            'end': 58
                         },
 						
                         {
