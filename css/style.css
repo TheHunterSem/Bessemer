@@ -58,7 +58,7 @@ main {padding-top: 70px;}
 	width: inherit;
     height: calc(100vh - 70px);
     max-width: 1380px;
-    padding: 0 30px;
+    padding: 0 0;
     margin: 0 auto;
 }
 
@@ -1433,7 +1433,8 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
     /*margin-top: 30px;*/
     margin-top: 0;
     max-height: calc(100vh - 70px);
-    padding: 10px 30px;
+    /*padding: 10px 30px;*/
+    padding: 10px 0;
 }
 
 .main-content-element-video .youtube {
@@ -1483,8 +1484,8 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
     text-align: center;
     width: 100%;
     max-width: 765px;
-    margin: 0 auto;
-    padding: 35px 0 40px 0;
+    /*margin: 0 auto;*/
+    margin: 35px auto 40px auto;
     text-transform: none;
 }
 
@@ -1556,6 +1557,7 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
     opacity: 1;
     top: 15%;
     left: 15%;
+    overflow: hidden;
 }
 
 .absolute-man-block .main-content-element-video {
@@ -1600,7 +1602,7 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
 .main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .wrapper {
     position: absolute;
     top: 9%;
-    bottom: 10%;
+    bottom: 12%;
     left: 30.8%;
     right: 30.5%;
     padding: 5px 15px;
