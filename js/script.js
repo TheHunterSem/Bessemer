@@ -116,22 +116,10 @@ jQuery(document).ready(function () {
     // Формування висоти секції в залежності від висоти контенту (мобільна версія)
     function HeightMainSections() {
 
-        /*if (jQuery(window).width() <= 767) {
-            jQuery('.top-slides-content-elements .top-slide-content-element').trigger('click',function (e) {
-                e.stopPropagation();
-            });
-        }*/
-
-        /*if (jQuery(window).width() >= 768) {
-            jQuery('.top-slides-content-elements.has-active-child .top-slide-content-element.active,.top-slides-content-elements .top-slide-content-element').css({'height': '700'});
-        }
-
-        if (jQuery(window).width() >= 1025) {
-            jQuery('.top-slides-content-elements.has-active-child .top-slide-content-element.active,.top-slides-content-elements .top-slide-content-element').css({'height': '800'});
-        }*/
-
         if (jQuery(window).width() >= 768) {
-            jQuery('.top-slides-content-elements.has-active-child .top-slide-content-element.active').css({'height': 'inherit'});
+            jQuery('.top-slides-content-elements.has-active-child .top-slide-content-element.active,.top-slides-content-elements .top-slide-content-element').css({'height': 'inherit'});
+        } else {
+            jQuery('.top-slides-content-elements.has-active-child .top-slide-content-element.active,.top-slides-content-elements .top-slide-content-element').css({'height': SectionHeight});
         }
 
     }
@@ -140,13 +128,16 @@ jQuery(document).ready(function () {
         HeightMainSections();
     }).resize();
 
+    
+
     //ВІДКРИТТЯ СЕКЦІЇ
 
     jQuery('body').on('click', '.sp-thumbnail', function (e) {
         e.stopPropagation();
     });
 
-    jQuery('.top-slides-content-elements .top-slide-content-element').on('click', function () {
+    jQuery('.top-slides-content-elements .top-slide-content-element').on('click', function (e) {
+        e.stopPropagation();
 
         if (!jQuery(this).hasClass('active')) {
             jQuery('.top-slides-content-elements .top-slide-content-element').addClass('light-effect');
@@ -167,9 +158,10 @@ jQuery(document).ready(function () {
 
         RecolorOfTabs();
 
+        var ContentInsideHeight = jQuery('.main-content-inside', this).outerHeight();
+        var SectionHeight = ContentInsideHeight + 134;
+
         if (jQuery(window).width() <= 767) {
-            var ContentInsideHeight = jQuery('.main-content-inside', this).outerHeight();
-            var SectionHeight = ContentInsideHeight + 134;
             jQuery('.top-slides-content-elements.has-active-child .top-slide-content-element.active').css({'height': SectionHeight});
         } else {
             jQuery('.top-slides-content-elements.has-active-child .top-slide-content-element.active').css({'height': 'inherit'});
