@@ -20,7 +20,7 @@
             keyframes = [
                 {
                     'wrapper': '.main-content-elements',
-                    'duration': '1700%',
+                    'duration': '2000%',
                     'animations': [
 
                         // 1 screen
@@ -219,17 +219,16 @@
                             'height': ['initial', '50%'],
                             'margin-left': [0, '-30%'],
                             'margin-top': [0, '-20%'],
-                            'opacity':[0, 1],
-                            'start': 51,
-                            'end': 55
+                            'start': 54,
+                            'end': 57
                         },
 
-                        {
+                        /* {
                             'selector': '#anim4 .absolute-man-block .main-content-element-video',
                             'opacity':[0, 1],
-                            'start': 55,
+                            'start': 56,
                             'end': 58
-                        },
+                        }, */
 						
                         {
                             'selector': '#anim4 .main-content-element-picture.tablet',
@@ -468,12 +467,12 @@
             var relativePos = (relativeScrollTop / keyframes[currentKeyframe].duration * 100);
 
             if (start) {
-                start = start[1];
+                start = start[1]-1;
             } else {
                 start = 0;
             }
             if (end) {
-                end = end[1];
+                end = end[1]-1;
             } else {
                 end = 100;
             }
