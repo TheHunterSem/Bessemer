@@ -128,7 +128,7 @@ jQuery(document).ready(function () {
         HeightMainSections();
     }).resize();
 
-    
+
 
     //ВІДКРИТТЯ СЕКЦІЇ
 
