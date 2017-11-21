@@ -1455,15 +1455,23 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
     top: 81px;
     right: 81px;
    /*  padding: 26px 12px; */
+    padding: 0 10px;
     max-width: 242px;
     width: 100%;
     background-color: #EE3324;
     text-transform: uppercase;
     color: #ffffff;
-    font-size: 31px;
+    font-size: 36px;
     font-family: 'NeueHaasUnicaPro-Bold';
     letter-spacing: 1px;
 	overflow: hidden;
+    text-align: left;
+    line-height: 37px;
+}
+
+.red-text-block p{
+    display: block;
+    margin: 25px 0;
 }
 
 .main-content-element .text-block {
