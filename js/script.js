@@ -1,7 +1,6 @@
 jQuery(document).ready(function () {
 
 
-
     jQuery('.sp-image-link').magnificPopup({
         type: 'image',
         // Delay in milliseconds before popup is removed
@@ -12,6 +11,8 @@ jQuery(document).ready(function () {
         mainClass: 'mfp-fade'
     });
 
+
+    //slider on main page inside the section
     jQuery('.slider-pro').sliderPro({
         width: 356,
         height: 430,
@@ -55,6 +56,7 @@ jQuery(document).ready(function () {
         }
     });
 
+    //clients page big images slider
     jQuery('.prefooter-slider-wrapper').slick({
         centerMode: true,
         variableWidth: true,
@@ -110,13 +112,32 @@ jQuery(document).ready(function () {
 
     }
 
+
+    // Формування висоти секції в залежності від висоти контенту (мобільна версія)
+    function HeightMainSections() {
+
+        if (jQuery(window).width() >= 768) {
+            jQuery('.top-slides-content-elements.has-active-child .top-slide-content-element.active,.top-slides-content-elements .top-slide-content-element').css({'height': 'inherit'});
+        } else {
+            jQuery('.top-slides-content-elements.has-active-child .top-slide-content-element.active,.top-slides-content-elements .top-slide-content-element').css({'height': SectionHeight});
+        }
+
+    }
+
+    jQuery(window).resize(function () {
+        HeightMainSections();
+    }).resize();
+
+
+
     //ВІДКРИТТЯ СЕКЦІЇ
 
     jQuery('body').on('click', '.sp-thumbnail', function (e) {
         e.stopPropagation();
     });
 
-    jQuery('.top-slides-content-elements .top-slide-content-element').on('click', function () {
+    jQuery('.top-slides-content-elements .top-slide-content-element').on('click', function (e) {
+        e.stopPropagation();
 
         if (!jQuery(this).hasClass('active')) {
             jQuery('.top-slides-content-elements .top-slide-content-element').addClass('light-effect');
@@ -137,12 +158,17 @@ jQuery(document).ready(function () {
 
         RecolorOfTabs();
 
-        // Формування висоти секції в залежності від висоти контенту (мобільна версія)
+        var ContentInsideHeight = jQuery('.main-content-inside', this).outerHeight();
+        var SectionHeight = ContentInsideHeight + 134;
+
         if (jQuery(window).width() <= 767) {
-            var ContentInsideHeight = jQuery('.main-content-inside', this).outerHeight();
-            var SectionHeight = ContentInsideHeight + 134;
             jQuery('.top-slides-content-elements.has-active-child .top-slide-content-element.active').css({'height': SectionHeight});
+        } else {
+            jQuery('.top-slides-content-elements.has-active-child .top-slide-content-element.active').css({'height': 'inherit'});
         }
+
+        HeightMainSections();
+
 
     });
 
