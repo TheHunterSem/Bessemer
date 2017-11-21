@@ -15,6 +15,11 @@ body {
 	top: 70px;
 }
 
+* {
+	transition-timing-function:  ease-out;
+	transition-duration:  0.2s;
+	transition-property: opacity,top,left;
+}
 
 .main-content-element.wrapper {
 	/*transform: translate3d(0px, 100%, 0px);*/
@@ -1543,7 +1548,7 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
     position: absolute;
     height: 164px;
     width: 162px;
-    z-index: 0;
+    z-index: 10;
     bottom: 24.1%;
     right: 31.6%;
     opacity: 1;
@@ -2016,13 +2021,6 @@ footer {
     align-items: center;
     justify-content: center;
     height: calc(100vh - 70px);
-}
-
-.red-text-block {
-	transition: height 0.3s;
-}
-#anim1 .main-content-element-picture{
-	transition: opacity 0.3s;
 }
 
 .prefooter-slider-wrapper {
