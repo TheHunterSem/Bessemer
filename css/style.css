@@ -1484,6 +1484,8 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
     width: 100%;
     max-width: 765px;
     margin: 0 auto;
+    padding: 35px 0 40px 0;
+    text-transform: none;
 }
 
 .main-content-element .text-block-header {
