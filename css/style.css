@@ -1644,6 +1644,12 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
     /*height: calc(100vh - 70px);*/
 }
 
+.prefooter-content-element-items.bigimages {
+    display: block;
+    margin: 0;
+    height: calc(100vh - 70px);
+}
+
 .prefooter-content-element-item {
     position: relative;
     display: inline-block;
@@ -2039,18 +2045,35 @@ footer {
 .prefooter-slider-wrapper {
     width: 100%;
     height: 600px;
+    /*height: calc(100vh - 70px);*/
     display: block;
 }
 
 
 .prefooter-slider-item {
     height: 590px;
+    width: 806px;
     /*width: 400px;*/
-    background-color: grey;
-    margin: 0 20px;
+    background-color: #fff;
+    /* margin: 0 40px; */
+    padding: 0 40px;
 }
 
-.prefooter-slider-wrapper .slick-slide
-{
-    width: 590px;
+.prefooter-slider-wrapper .slick-slide {
+    width: 806px;
+}
+
+.prefooter-slider-wrapper .slick-slide img {
+    max-width: 100%;
+}
+
+.prefooter-content-element-items.bigimages .prefooter-slider-text {
+    font-family: "NeueHaasUnicaPro-UltraLight";
+    font-size: 22px;
+    line-height: 33px;
+    color: #000;
+    text-transform: none;
+    font-weight: 200;
+    max-width: 740px;
+    margin: 35px auto 0 auto;
 }
