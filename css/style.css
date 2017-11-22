@@ -1507,7 +1507,7 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
 }
 
 .video-button-play {
-    position: relative;
+    position: absolute;
     display: block;
     top: 50%;
     left: 50%;
@@ -1560,8 +1560,17 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
     overflow: hidden;
 }
 
-.absolute-man-block .main-content-element-video {
-    /*display: none;*/
+.main-content-element-picture.tablet .absolute-man-block .absolute-block-img {
+    position: relative;
+    min-height: 141px;
+}
+
+.main-content-element-picture.tablet .absolute-man-block .absolute-block-img img {
+    min-height: 141px;
+}
+
+.main-content-element-picture.tablet .absolute-man-block .main-content-element-video {
+    display: none;
     position: absolute;
     top: 0;
     max-height: 636px;
@@ -1592,7 +1601,7 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
 .main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .wrapper {
     position: absolute;
     top: 5%;
-    bottom: 22%;
+    bottom: 14%;
     left: 12.5%;
     right: 12.5%;
     padding: 5px 15px;

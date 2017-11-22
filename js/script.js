@@ -230,5 +230,16 @@ jQuery(document).ready(function () {
 	
 
     //MENU END
+
+
+    //show video in absolute man block
+    jQuery('.absolute-block-img .video-button-play', this).on('click',function (e) {
+        e.stopPropagation();
+        jQuery('.absolute-block-img').hide();
+        jQuery('.main-content-element-video','.absolute-man-block').show();
+        jQuery('.main-content-element-video .youtube .video-button-play','.absolute-man-block').trigger('click',function (e) {
+            e.stopPropagation();
+        });
+    });
 	
 });

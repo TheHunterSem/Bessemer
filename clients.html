@@ -289,7 +289,7 @@
                                             </a>
                                             <a href="#" class="item-element item-brazzers">
                                                 <!--<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPhLV7snl8EdNkZEhaG8b7igwgD3SUzl6-L_s36n7KgmZCJM0" alt="">-->
-                                                <img src="img/notebook-images/notebook-img-man.jpg" alt="" style="opacity:0;">
+                                                <img src="img/notebook-images/notebook-img-man.jpg" alt="" <!--style="opacity:0;-->">
                                                 <span class="name-wrapper">
                                                     <span class="name">Nicole Marquez</span>
                                                 </span>
@@ -306,19 +306,22 @@
                             </div>
                         </div>
                     </div>
-					
+
                     <div class="absolute-man-block">
-                        <img src="img/man1.jpg" class="absolute-man-block-image" alt="">
+                        <div class="absolute-block-img">
+                            <img src="img/man1.png" class="absolute-man-block-image" alt="">
+                            <div class="video-button-play"></div>
+                        </div>
                         <div class="main-content-element-video">
                             <div class="youtube" id="C9XVFRWrM7U"
                                  data-params="rel=0&amp;enablejsapi=1&amp;controls=0&amp;showinfo=0&amp;volume=0&amp;iv_load_policy=3&amp;modestbranding=1"></div>
                         </div>
 						<!-- TODO: додай відео і кнопку плей -->
                     </div>
-					
+
                 </div>
             </div>
-			
+
             <div class="main-content-element wrapper" id="anim5">
 				<div class="prefooter-content-element-items bigimages">
                     <div class="prefooter-slider-wrapper">
@@ -566,7 +569,7 @@ jQuery(function($){
 			$(this).data('property', $(this).height());
 		});
 		$('#anim4 .main-content-element-picture.tablet').data('property', $('#anim4 .main-content-element-picture.tablet').height());
-				
+
 		$('#anim4 .absolute-man-block').data('property', $('.item-brazzers').width());
 		$('.absolute-man-block').css('left', $('.item-brazzers').offset().left - $('.main-content-element-picture.tablet').offset().left);
 		$('.absolute-man-block').css('top',  $('.item-brazzers').position().top + 70 + 19);
@@ -577,10 +580,10 @@ jQuery(function($){
 		$('#anim5').data('property', $('#anim5').height());
 		$('#anim6').data('property', $('#anim6').height());
 		$('#anim6 .youtube').data('property', $('#anim6 .youtube').height());
-		
+
 		$('#anim7').data('property', -1*($('#anim7').height() - $(window).height() + 70));
-		
-		
+
+
 		$(window).on('resize', function(){
 			$(window).scrollTop(0);
 			location.reload();
