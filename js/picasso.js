@@ -26,9 +26,9 @@
                         // 1 screen
                         {
                             'selector': '#anim1 .main-content-element-picture',
-                            'opacity': [1, 0.5],
+                            'opacity': [1, 0],
                             'start': 5,
-                            'end': 10
+                            'end': 16
                         },
                         {
                             'selector': '#anim1 .red-text-block',
@@ -223,12 +223,12 @@
                             'end': 57
                         },
 
-                        /* {
-                            'selector': '#anim4 .absolute-man-block .main-content-element-video',
+                         {
+                            'selector': '#anim4 .absolute-man-block .video-button-play ',
                             'opacity':[0, 1],
-                            'start': 56,
-                            'end': 58
-                        }, */
+                             'start': 56,
+                             'end': 57
+                        },
 						
                         {
                             'selector': '#anim4 .main-content-element-picture.tablet',

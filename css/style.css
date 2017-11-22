@@ -15,7 +15,7 @@ body {
 	top: 70px;
 }
 
-* {
+.main-content-elements > * {
 	transition-timing-function:  ease-out;
 	transition-duration:  0.2s;
 	transition-property: opacity,top,left;
@@ -1569,6 +1569,10 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
 
 .main-content-element-picture.tablet .absolute-man-block .absolute-block-img img {
     min-height: 141px;
+}
+
+.main-content-element-picture.tablet .absolute-man-block .absolute-block-img .video-button-play {
+    opacity: 0;
 }
 
 .main-content-element-picture.tablet .absolute-man-block .main-content-element-video {
