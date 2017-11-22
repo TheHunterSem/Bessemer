@@ -41,15 +41,17 @@ body {
     margin: 0 auto;
     color: #000;
     text-align: center;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 
 .footer-wrapper {
     width: 100%;
-    padding: 0 30px;
+    padding: 0;
     /* height: 100vh; */
-	height: initial;
+    height: initial;
     display: table;
+    background-color: #fff;
+    margin: 0 auto;
 }
 
 main {padding-top: 70px;}
@@ -1511,7 +1513,7 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
     display: block;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%)!important;
     box-sizing: border-box;
     height: 103px;
     width: 103px;
@@ -1724,6 +1726,7 @@ footer {
     margin-top: 62px;
     display: block;
     float: left;
+    width: 100%;
 }
 
 .footer-logo {
@@ -1756,7 +1759,7 @@ footer {
 }
 
 .footer-first-part .address-info {
-    margin-left: 160px;
+    margin-left: 80px;
     display: inline-block;
     vertical-align: middle;
 }
@@ -1841,15 +1844,17 @@ footer {
     font-weight: 500;
     line-height: 30px;
     font-family:  "NeueHaasUnicaPro-Medium";
+    text-align: left;
 }
 
 .footer-second-part .contacts-wrapper {
     margin-top: 40px;
+    display: flex;
 }
 
 .footer-second-part .contact-items-list {
     display: inline-block;
-    width: 24%;
+    width: 25%;
     text-align: left;
     margin: 0;
     padding: 0;
