@@ -986,3 +986,15 @@
     }
 
 }
+
+@media (min-width: 768px) {
+
+    .tab-main-description-text {
+        padding: 0 10px;
+    }
+
+    .top-slide-content-element .top-slide-content-element-preview-block {
+        padding: 0 10px;
+    }
+
+}
