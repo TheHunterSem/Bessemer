@@ -969,3 +969,11 @@
     }
 
 }
+
+@media (max-width: 767px) {
+
+    .top-slides-content-wrapper {
+        padding: 0 0 30px 0;
+    }
+
+}
