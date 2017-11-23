@@ -995,6 +995,78 @@
 
     .top-slide-content-element .top-slide-content-element-preview-block {
         padding: 0 10px;
+        background: black;
+    }
+
+}
+
+
+/* ================================= CLIENTS PAGE ================================= */
+
+@media (max-width: 1600px) and (max-height: 1024px){
+
+    .main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .wrapper {
+        top: 8%;
+        left: 16%;
+        right: 16%;
+    }
+
+    .main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .wrapper .grid-items-elements .column .item-element {
+        max-height: 163px;
+    }
+
+    .main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .wrapper .grid-items-elements .column .item-element.big {
+        max-height: 338px;
+    }
+
+}
+
+@media (max-width: 1600px) and (max-height: 900px){
+
+    .main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .wrapper {
+        top: 10%;
+        bottom: 11.2%;
+        left: 32.4%;
+        right: 32.2%;
+    }
+
+    .main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .wrapper .grid-items-elements .column .item-element {
+        width: 147px;
+    }
+
+}
+
+@media (max-width: 1400px) and (max-height: 1050px) {
+
+    .main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .wrapper {
+        top: 8.4%;
+        bottom: 13.2%;
+        left: 15.8%;
+        right: 15.8%;
+    }
+
+    .main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .wrapper .grid-items-elements .column .item-element {
+        max-height: 155px;
+    }
+
+    .main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .wrapper .grid-items-elements .column .item-element.big {
+        max-height: 320px;
+    }
+
+}
+
+@media (max-width: 1366px) and (max-height: 768px) {
+
+    .main-content-element {
+        width: 87%;
+    }
+
+    .red-text-block {
+        top: 41px;
+        right: 41px;
+        font-size: 30px;
+        max-width: 207px;
+        line-height: 30px;
     }
 
 }
