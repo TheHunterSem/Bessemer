@@ -2093,3 +2093,7 @@ footer {
     max-width: 740px;
     margin: 35px auto 0 auto;
 }
+
+.client-page-animations-footer.footer-wrapper {
+    padding: 0 15px;
+}
