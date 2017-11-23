@@ -197,3 +197,104 @@
         right: 32.2%;
     }
 }
+
+@media (max-width: 1200px) and (max-height: 600px) {
+
+    .main-content-element {
+        width: 82%;
+    }
+
+    .main-content-element .text-block {
+        margin: 35px auto 12px auto;
+    }
+
+    .main-content-element-video {
+        padding: 0;
+        margin-top: 12px;
+    }
+
+    .main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .wrapper {
+        top: 9.5%;
+        bottom: 14.4%;
+        left: 17.5%;
+        right: 17.5%;
+    }
+
+    .main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .wrapper .grid-items-elements .column .item-element {
+        width: 144px;
+    }
+
+    .main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .wrapper .grid-items-elements .column .item-element {
+        max-height: 95px;
+    }
+
+    .main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .wrapper .grid-items-elements .column .item-element.big {
+        max-height: 200px;
+    }
+
+    .main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .wrapper .grid-items-elements .column .item-element {
+        width: 115px;
+    }
+
+    .main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .wrapper .grid-items-elements .column .item-element {
+        width: 103px;
+        height: 88px;
+    }
+
+    .main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .wrapper .grid-items-elements .column .item-element.big {
+        height: 184px;
+    }
+
+    .prefooter-slider-wrapper {
+        height: 350px;
+    }
+
+    .prefooter-slider-item {
+        height: 350px;
+    }
+
+    .prefooter-slider-wrapper .slick-slide {
+        width: 511px;
+    }
+
+    .prefooter-content-element-items.bigimages .prefooter-slider-text {
+        max-width: 695px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .main-content-element .text-block {
+        max-width: 765px;
+    }
+
+    .main-content-element .text-block p {
+        font-weight: 200;
+        line-height: 30px;
+    }
+
+    .client-page-animations-footer .copyright-block {
+        padding: 15px 0;
+    }
+
+    .footer-second-part .contacts-wrapper {
+        margin-top: 15px;
+    }
+
+    .client-page-animations-footer .footer-second-part {
+        margin-top: 15px;
+    }
+
+    .footer-first-part {
+        padding: 14px 0;
+    }
+
+    .client-page-animations-footer footer {
+        margin-top: 23px;
+    }
+
+    .client-page-animations-footer .prefooter-content-element-item {
+        max-width: 300px;
+        height: 230px;
+    }
+
+}
