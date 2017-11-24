@@ -556,7 +556,7 @@
                 || 'onmsgesturechange' in window; // works on ie10
         }
 		
-		if ($(window).width() > 900){
+		if ($(window).width() > 1000){
 			init();
 		}
 

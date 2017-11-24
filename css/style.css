@@ -1611,10 +1611,10 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
 
 .main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .wrapper {
     position: absolute;
-    top: 5%;
-    bottom: 14%;
-    left: 12.5%;
-    right: 12.5%;
+    top: 8.2%;
+    bottom: 13.2%;
+    left: 15.8%;
+    right: 15.8%;
     padding: 5px 15px;
     overflow: hidden;
     background-color: #fff;
@@ -1622,10 +1622,10 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
 
 .main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .wrapper {
     position: absolute;
-    top: 9%;
-    bottom: 12%;
-    left: 30.8%;
-    right: 30.5%;
+    top: 10.1%;
+    bottom: 11.1%;
+    left: 31%;
+    right: 30.7%;
     padding: 5px 15px;
     overflow: hidden;
     background-color: #fff;
@@ -1634,6 +1634,9 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
 .main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .wrapper .content-inside-notebook-block {
     position: relative;
     top: 0;
+    left: 0;
+    right: 0;
+    border: 0;
 }
 
 .prefooter-content-elements {
@@ -1661,6 +1664,7 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
     display: block;
     margin: 0;
     height: calc(100vh - 70px);
+    margin-top: 5px;
 }
 
 .prefooter-content-element-item {
@@ -1998,7 +2002,7 @@ footer {
 
 .main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .wrapper .grid-items-elements .column .item-element {
     height: 164px;
-    width: 162px;
+    width: 160px;
     margin-top: 8px;
 }
 
@@ -2096,4 +2100,8 @@ footer {
 
 .client-page-animations-footer.footer-wrapper {
     padding: 0 15px;
+}
+
+.main-content-element-picture.tablet .absolute-man-block {
+    top: 50% !important;
 }
