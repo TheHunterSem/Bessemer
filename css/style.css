@@ -1611,8 +1611,8 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
 
 .main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .wrapper {
     position: absolute;
-    top: 8.2%;
-    bottom: 13.2%;
+    top: 8.4%;
+    bottom: 13.5%;
     left: 15.8%;
     right: 15.8%;
     padding: 5px 15px;
@@ -1998,6 +1998,14 @@ footer {
     display: block;
     margin-top: 10px;
     position: relative;
+}
+
+.main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .wrapper .grid-items-elements .column .item-element {
+    max-height: 160px;
+}
+
+.main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .wrapper .grid-items-elements .column .item-element.big {
+    max-height: 330px;
 }
 
 .main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .wrapper .grid-items-elements .column .item-element {

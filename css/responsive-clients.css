@@ -116,14 +116,16 @@
     }
 
     .main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .wrapper .grid-items-elements .column .item-element {
-        width: 136px;
+        width: 130px;
     }
 
     .main-content-element-picture.notebook .header-content-elements,
     .main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .wrapper .grid-items-elements {
-        max-width: 772px;
-        width: 100%;
+        max-width: 700px;
+        width: auto;
         height: 100%;
+        text-align: center;
+        margin: 0 auto;
     }
 
     .main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .wrapper {
