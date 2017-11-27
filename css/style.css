@@ -1636,7 +1636,8 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
     top: 0;
     left: 0;
     right: 0;
-    border: 0;
+    bottom: 0;
+    height: 100%;
 }
 
 .prefooter-content-elements {
