@@ -58,7 +58,7 @@ body {
 
 main {padding-top: 70px;}
 
-#anim1 .main-content-element-picture{
+.main-content-element-picture{
 	width: inherit;
     height: calc(100vh - 70px);
     max-width: 1380px;
@@ -525,7 +525,7 @@ header {
     width: 100%;
     max-width: 1380px;
     height: 70px;
-    padding: 0 30px;
+    padding: 0;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -2083,6 +2083,7 @@ footer {
     height: 600px;
     /*height: calc(100vh - 70px);*/
     display: block;
+    position: relative;
 }
 
 
