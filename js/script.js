@@ -61,27 +61,20 @@ jQuery(document).ready(function () {
         centerMode: true,
         variableWidth: true,
         centerPadding: '0px',
-        slidesToShow: 1
-        /*responsive: [
+        slidesToShow: 1,
+        dots: false,
+        responsive: [
             {
-                breakpoint: 768,
+                breakpoint: 960,
                 settings: {
                     arrows: false,
-                    centerMode: true,
-                    centerPadding: '40px',
-                    slidesToShow: 3
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    arrows: false,
-                    centerMode: true,
-                    centerPadding: '40px',
-                    slidesToShow: 1
+                    centerMode: false,
+                    variableWidth: false,
+                    slidesToShow: 1,
+                    dots: true
                 }
             }
-        ]*/
+        ]
     });
 
     //top slides content tabs
