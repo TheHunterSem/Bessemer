@@ -1464,24 +1464,30 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
     position: absolute;
     top: 81px;
     right: 81px;
-   /*  padding: 26px 12px; */
-    padding: 0 10px;
-    max-width: 242px;
-    width: 100%;
-    background-color: #EE3324;
+    /* padding: 26px 12px; */
+    padding: 0;
+    width: 242px;
+    /* width: 100%; */
+    /* background-color: #EE3324; */
     text-transform: uppercase;
     color: #ffffff;
     font-size: 36px;
     font-family: 'NeueHaasUnicaPro-Bold';
     letter-spacing: 1px;
-	overflow: hidden;
+    overflow: hidden;
     text-align: left;
     line-height: 37px;
+    height: 242px;
 }
 
 .red-text-block p{
     display: block;
     margin: 25px 0;
+}
+
+.red-text-block img {
+    height: 100%;
+    width: 100%;
 }
 
 .main-content-element .text-block {
@@ -1938,7 +1944,7 @@ footer {
 }
 
 .main-content-element-picture.tablet .header-content-elements {
-
+    padding: 0 45px 5px 0;
 }
 
 .header-content-elements .left-block a {
@@ -2120,5 +2126,5 @@ footer {
 }
 
 .main-content-element-picture.tablet .absolute-man-block {
-    top: 50% !important;
+    top: calc(50% + 41px) !important;
 }
