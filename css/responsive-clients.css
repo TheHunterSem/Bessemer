@@ -794,6 +794,19 @@
         max-height: none;
     }
 
+    #anim2 .text-block,
+    #anim2 .main-content-element-video{
+        opacity: .3;
+    }
+
+    .prefooter-content-element-items.bigimages {
+        height: auto;
+    }
+
+    body {
+        height: auto!important;
+    }
+
 }
 
 @media (max-width: 960px) and (max-height: 540px) {

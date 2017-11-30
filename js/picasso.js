@@ -558,7 +558,97 @@
 		
 		if ($(window).width() > 1000){
 			init();
-		}
+		} else {
+            keyframes = [
+                {
+                    'wrapper': '.main-content-elements',
+                    'duration': '2000%',
+                    'animations': [
+
+                        // 1 screen
+                        {
+                            'selector': '#anim1',
+                            'opacity': [1, 0.3],
+                            'start': 1,
+                            'end': 3
+                        },
+                        {
+                            'selector': '#anim2 .text-block',
+                            'opacity': [0.3, 1],
+                            'start': 2,
+                            'end': 3
+                        },
+                        {
+                            'selector': '#anim2 .main-content-element-video',
+                            'opacity': [0.3, 1],
+                            'start': 4,
+                            'end': 6
+                        },
+                        {
+                            'selector': '#anim2',
+                            'opacity': [1, 0.3],
+                            'start': 7,
+                            'end': 9
+                        },
+                        {
+                            'selector': '#anim3 .main-content-element-picture.notebook',
+                            'opacity': [0.3, 1],
+                            'start': 9,
+                            'end': 11
+                        },
+                        {
+                            'selector': '#anim3',
+                            'opacity': [1, 0.3],
+                            'start': 11,
+                            'end': 13
+                        },
+                        {
+                            'selector': '#anim4 .main-content-element-picture.tablet',
+                            'opacity': [0.3, 1],
+                            'start': 13,
+                            'end': 15
+                        },
+                        {
+                            'selector': '#anim4',
+                            'opacity': [1, 0.3],
+                            'start': 16,
+                            'end': 17
+                        },
+                        {
+                            'selector': '#anim5 .prefooter-content-element-items.bigimages',
+                            'opacity': [0.3, 1],
+                            'start': 17,
+                            'end': 19
+                        },
+                        {
+                            'selector': '#anim5',
+                            'opacity': [1, 0.3],
+                            'start': 19,
+                            'end': 21
+                        },
+                        {
+                            'selector': '#anim6 .main-content-element-video',
+                            'opacity': [0.3, 1],
+                            'start': 22,
+                            'end': 23
+                        },
+                        {
+                            'selector': '#anim6',
+                            'opacity': [1, 0.3],
+                            'start': 25,
+                            'end': 26
+                        },
+                        {
+                            'selector': '#anim7',
+                            'opacity': [0.3, 1],
+                            'start': 26,
+                            'end': 28
+                        }
+                    ]
+                }
+            ];
+            init();
+        }
 
     })
 }).call(this);
