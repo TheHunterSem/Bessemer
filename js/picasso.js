@@ -647,7 +647,7 @@
                     ]
                 }
             ];
-            init();
+            //init();
 
             var ArrSelectors = [
                 '#anim1',

@@ -893,6 +893,7 @@
 
     .footer-logo {
         vertical-align: top;
+        float: left;
     }
 
     .footer-first-part .address-info {
@@ -910,19 +911,6 @@
     .copyright-block {
         font-size: 10px;
         line-height: 15px;
-    }
-
-}
-
-
-@media screen and (max-width: 500px) {
-
-    .footer-second-part .contact-items-list {
-        width: 100%;
-    }
-
-    .copyright-block {
-        padding: 15px 0 20px 0;
     }
 
 }
