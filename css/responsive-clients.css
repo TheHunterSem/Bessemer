@@ -807,6 +807,22 @@
         height: auto!important;
     }
 
+    .main-content-element {
+        padding: 0;
+    }
+
+    .wrap {
+        padding: 0 10px;
+    }
+
+    .header-wrapper {
+        padding: 0;
+    }
+
+    .main-content-element-video {
+        height: 300px;
+    }
+
 }
 
 @media (max-width: 960px) and (max-height: 540px) {

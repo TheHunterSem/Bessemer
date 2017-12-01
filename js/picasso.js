@@ -648,6 +648,38 @@
                 }
             ];
             init();
+
+            var ArrSelectors = [
+                '#anim1',
+                '#anim2 .text-block',
+                '#anim2 .main-content-element-video',
+                '#anim2',
+                '#anim3 .main-content-element-picture.notebook',
+                '#anim3',
+                '#anim4 .main-content-element-picture.tablet',
+                '#anim4',
+                '#anim5 .prefooter-content-element-items.bigimages',
+                '#anim5',
+                '#anim6 .main-content-element-video',
+                '#anim6',
+                '#anim7'
+            ];
+
+            var heights = [];
+            var centers = [];
+
+            $(ArrSelectors).each(function(index, value){
+                var $this = $(value);
+
+                var height = $this.height();
+                var centerY = height / 2;
+                centers.push(centerY);
+                heights.push(height);
+            });
+            console.log('Элемент : ' + ArrSelectors);
+            console.log('Высота : ' + heights);
+            console.log('Центр : ' + centers);
+
         }
 
     })
