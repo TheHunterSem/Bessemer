@@ -1430,7 +1430,7 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
     max-width: 100%;
     width: 100%;
     object-fit: cover;
-    /*height: 100%;*/
+    height: 100%;
 }
 
 .main-content-element-video {
