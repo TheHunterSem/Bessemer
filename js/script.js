@@ -117,10 +117,7 @@ jQuery(document).ready(function () {
 
     }
 
-    /*jQuery(window).resize(function () {
-        HeightMainSections();
-    }).resize();
-*/
+
 
 
     //ВІДКРИТТЯ СЕКЦІЇ
@@ -234,4 +231,19 @@ jQuery(document).ready(function () {
             e.stopPropagation();
         });
     });
+    
+    
+    
+function NoteTabletContentWidth() {
+
+    var NoteWidth = jQuery('.main-content-element-picture-notebook-img-block .notebook-img').width();
+    var Noteheight = jQuery('.main-content-element-picture-notebook-img-block .notebook-img').height();
+    jQuery('.main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .wrapper').width(NoteWidth / 1.38).height(Noteheight / 1.25);
+
+}
+
+    jQuery(window).resize(function () {
+        NoteTabletContentWidth();
+    }).resize();
+
 });

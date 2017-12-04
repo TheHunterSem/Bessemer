@@ -676,9 +676,9 @@
                 centers.push(centerY);
                 heights.push(height);
             });
-            console.log('Элемент : ' + ArrSelectors);
-            console.log('Высота : ' + heights);
-            console.log('Центр : ' + centers);
+            // console.log('Элемент : ' + ArrSelectors);
+            // console.log('Высота : ' + heights);
+            // console.log('Центр : ' + centers);
 
         }
 

@@ -929,9 +929,9 @@
         height: 236px;
     }
 
-    .main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .wrapper .grid-items-elements .column .item-element {
+    /*.main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .wrapper .grid-items-elements .column .item-element {
         width: 130px;
-    }
+    }*/
 
     .main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .wrapper .grid-items-elements .column .item-element {
         height: 88px;
