@@ -935,7 +935,7 @@
 
     .main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .wrapper .grid-items-elements .column .item-element {
         height: 88px;
-        width: 100px;
+        /*width: 100px;*/
     }
 
     .main-content-element-picture.notebook .header-content-elements,
