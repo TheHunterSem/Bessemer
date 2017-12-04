@@ -1636,7 +1636,7 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
     position: absolute;
     top: 50% !important;
     left: 50% !important;
-    transform: translate(-50%, -51%) !important;
+    transform: translate(-50%, -50.8%) !important;
     right: initial !important;
     box-sizing: content-box;
     padding: 5px 15px;
