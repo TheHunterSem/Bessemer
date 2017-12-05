@@ -1567,19 +1567,20 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
     /*opacity: 1;*/
     top: 15%;
     left: 15%;
-    overflow: hidden;
+    /*overflow: hidden;*/
+    overflow: visible;
     opacity: 0;
     z-index: 0;
 }
 
-.main-content-element-picture.tablet .absolute-man-block .absolute-block-img {
+/*.main-content-element-picture.tablet .absolute-man-block .absolute-block-img {
     position: relative;
-    min-height: 141px;
+    min-height: 163px;
 }
 
 .main-content-element-picture.tablet .absolute-man-block .absolute-block-img img {
-    min-height: 141px;
-}
+    min-height: 163px;
+}*/
 
 .main-content-element-picture.tablet .absolute-man-block .absolute-block-img .video-button-play {
     opacity: 0;
@@ -1625,19 +1626,19 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
     padding: 5px 15px;
     overflow: hidden;
     background-color: #fff;
-    top: 50% !important;
-    left: 50% !important;
-    transform: translate(-50%, -53.5%) !important;
-    right: initial !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -53.5%);
+    right: initial;
     box-sizing: content-box;
 }
 
 .main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .wrapper {
     position: absolute;
-    top: 50% !important;
-    left: 50% !important;
-    transform: translate(-50%, -50.8%) !important;
-    right: initial !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50.8%);
+    right: initial;
     box-sizing: content-box;
     padding: 5px 15px;
     overflow: hidden;
@@ -2149,4 +2150,17 @@ footer {
 
 .main-content-element-picture.tablet .absolute-man-block {
     top: calc(50% + 41px) !important;
+}
+
+.main-content-element-picture.tablet .absolute-man-block .absolute-block-img {
+    width: 100%;
+    /*height: 100%;*/
+    position: relative;
+}
+
+.main-content-element-picture.tablet .absolute-man-block .absolute-block-img .absolute-man-block-image {
+    max-width: 100%;
+    width:  100%;
+    display: block;
+    height: 100%;
 }
