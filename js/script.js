@@ -59,6 +59,8 @@ jQuery(document).ready(function () {
     //clients page big images slider
     jQuery('.prefooter-slider-wrapper').slick({
         centerMode: true,
+        autoplay: true,
+        loop: true,
         variableWidth: true,
         centerPadding: '0px',
         slidesToShow: 1,
@@ -231,8 +233,7 @@ jQuery(document).ready(function () {
             e.stopPropagation();
         });
     });
-    
-    
+
     
 function NoteTabletContentWidth() {
 
@@ -240,16 +241,13 @@ function NoteTabletContentWidth() {
     var NotebookContent = jQuery('.main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .wrapper');
     var NoteWidth = jQuery(Notebook).width();
     var NoteHeight = jQuery(Notebook).height();
-    jQuery(NotebookContent).width(NoteWidth / 1.38).height(NoteHeight / 1.25);
+    jQuery(NotebookContent).width(NoteWidth / 1.38).height(NoteHeight / 1.35);
 
     var Tablet = jQuery('.main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .tablet-img');
     var TabletContent = jQuery('.main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .wrapper');
     var TabletWidth = jQuery(Tablet).width();
     var TabletHeight = jQuery(Tablet).height();
     jQuery(TabletContent).width(TabletWidth / 1.34).height(TabletHeight / 1.25);
-
-    console.log(TabletWidth);
-    console.log(TabletHeight);
 
 }
 
