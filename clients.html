@@ -293,7 +293,7 @@
                                             </a>
                                             <a href="#" class="item-element item-brazzers">
                                                 <!--<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPhLV7snl8EdNkZEhaG8b7igwgD3SUzl6-L_s36n7KgmZCJM0" alt="">-->
-                                                <img src="img/notebook-images/notebook-img-man.jpg" alt="" <!--style="opacity:0;-->">
+                                                <img src="img/brazzers-item-img.png" alt="" <!--style="opacity:0;-->">
                                                 <span class="name-wrapper">
                                                     <span class="name">Nicole Marquez</span>
                                                 </span>
@@ -313,7 +313,7 @@
 
                     <div class="absolute-man-block">
                         <div class="absolute-block-img">
-                            <img src="img/man1.png" class="absolute-man-block-image" alt="">
+                            <img src="img/brazzers-item-img.png" class="absolute-man-block-image" alt="">
                             <div class="video-button-play"></div>
                         </div>
                         <div class="main-content-element-video">
@@ -410,27 +410,27 @@
                         <div class="contacts-wrapper">
                             <ul class="contact-items-list">
                                 <li><span class="incumbency">New Business Opportunities</span></li>
-                                <li><span>Meghan Tucker</span></li>
-                                <li><a href="mailto:meghant@munnrabot.com">meghant@munnrabot.com</a></li>
-                                <li><a href="tel:212.220.6210">212.220.6210</a></li>
+                                <li><span>Orson Munn</span></li>
+                                <li><a href="mailto:orson@munnrabot.com">orson@munnrabot.com</a></li>
+                                <li><a href="tel:2122206214">212.220.6214</a></li>
                             </ul>
                             <ul class="contact-items-list">
                                 <li><span class="incumbency">Media Planning and Buying</span></li>
                                 <li><span>Geraldine Gately</span></li>
                                 <li><a href="mailto:geraldine@munnrabot.com">geraldine@munnrabot.com</a></li>
-                                <li><a href="tel:212.220.6219">212.220.6219</a></li>
+                                <li><a href="tel:2122206219">212.220.6219</a></li>
                             </ul>
                             <ul class="contact-items-list">
                                 <li><span class="incumbency">Human Resources</span></li>
-                                <li><span>Deb Velazquez</span></li>
-                                <li><a href="mailto:deb@munnrabot.com">deb@munnrabot.com</a></li>
-                                <li><a href="tel:212.220.6242">212.220.6242</a></li>
+                                <li><span>Rachel Lubertine</span></li>
+                                <li><a href="mailto:rachel@munnrabot.com">rachel@munnrabot.com</a></li>
+                                <li><a href="tel:2122206241">212.220.6241</a></li>
                             </ul>
                             <ul class="contact-items-list">
                                 <li><span class="incumbency">General Inquiries</span></li>
                                 <li><span>Ashley Sather</span></li>
                                 <li><a href="mailto:ashley@munnrabot.com">ashley@munnrabot.com</a></li>
-                                <li><a href="tel:212.727.3900">212.727.3900</a></li>
+                                <li><a href="tel:2127273900">212.727.3900</a></li>
                             </ul>
                         </div>
                         <div class="copyright-block">
@@ -538,9 +538,12 @@ jQuery(function($){
 
 		$('#anim4 .absolute-man-block').data('property', $('.item-brazzers').width());
 		$('.absolute-man-block').css('left', $('.item-brazzers').offset().left - $('.main-content-element-picture.tablet').offset().left);
-		$('.absolute-man-block').css('top',  $('.item-brazzers').position().top + 70 - 19);
+        $('.absolute-man-block').css('top',  $('.item-brazzers').position().top + $('.content-inside-notebook-block .header-content-elements').eq(1).outerHeight() + 5);
 		$('.absolute-man-block').css('width',  $('.item-brazzers').width());
-		$('.absolute-man-block').css('height',  $('.item-brazzers').height() - $('.item-brazzers .name-wrapper').height());
+		$('.absolute-man-block').css('height',  $('.item-brazzers').height() + $('.content-inside-notebook-block .item-brazzers .name-wrapper').height());
+		$('.absolute-block-img').css('min-height',  $('.item-brazzers').height() + $('.content-inside-notebook-block .item-brazzers .name-wrapper').height());
+		$('.absolute-block-img').css('min-height',  $('.absolute-man-block').height() - 11);
+		$('.absolute-man-block-image').css('min-height',  $('.absolute-man-block').height() - 11);
 
 		$('#anim1').data('property', -1*$('#anim1').height() - 5);
 		$('#anim5').data('property', $('#anim5').height());
