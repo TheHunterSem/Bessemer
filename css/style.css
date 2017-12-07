@@ -1437,8 +1437,7 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
     /*margin-top: 30px;*/
     margin-top: 0;
     max-height: calc(100vh - 70px);
-    /*padding: 10px 30px;*/
-    padding: 10px 0;
+    /* padding: 10px 0; */
 }
 
 .main-content-element-video .youtube {
@@ -2035,6 +2034,7 @@ footer {
     display: block;
     margin-top: 10px;
     position: relative;
+	overflow: hidden;
 }
 
 .main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .wrapper .grid-items-elements .column .item-element {
@@ -2150,10 +2150,6 @@ footer {
 
 .client-page-animations-footer.footer-wrapper {
     padding: 0 15px;
-}
-
-.main-content-element-picture.tablet .absolute-man-block {
-    top: calc(50% + 41px) !important;
 }
 
 .main-content-element-picture.tablet .absolute-man-block .absolute-block-img {

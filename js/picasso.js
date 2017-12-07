@@ -28,29 +28,37 @@
                             'selector': '#anim1 .main-content-element-picture',
                             'opacity': [1, 0],
                             'start': 5,
-                            'end': 16
+                            'end': 11
                         },
                         {
                             'selector': '#anim1 .red-text-block',
                             'height': ['initial', 0],
-                            'start': 2,
-                            'end': 7
+                            'start': 5,
+                            'end': 11
                         },
                         {
                             'selector': '#anim1',
                             'margin-top': [0, 'initial'],
-                            'start': 10,
+                            'start': 9,
                             'end': 13
                         },
 
 
                         // 2 screen
                         {
+                            'selector': '#anim2 .text-block h2, #anim2 .text-block p',
+							'opacity': [0, 1],
+                            'start': 9,
+                            'end': 14
+                        },
+						
+                        {
                             'selector': '#anim2 .text-block',
                             'margin-top': [0, 'initial'],
+							'opacity': [1, 0],
                             'start': 15,
                             'end': 18
-                        },
+                        },						
                         {
                           'selector'    : '#anim2 .video-button-play',
                           'opacity' 	  : [0.25, 1],
@@ -59,17 +67,17 @@
                         },
                         {
                             'selector': '#anim2 .main-content-element-video',
-                            'height': ['initial', 250],
+                            'height': ['initial', 0],
                             'opacity': [1, 0.3],
-                            'start': 21,
-                            'end': 24
+                            'start': 23,
+                            'end': 29
                         },
-                        {
+                        /* {
                             'selector': '#anim2',
                             'margin-top': [0, 'height'],
                             'start': 25,
                             'end': 30
-                        },
+                        }, */
 
 
                         // 3 screen
@@ -85,21 +93,21 @@
 							{
 								'selector': '#anim3 .column:nth-child(1) .item-element:nth-child(1)',
 								'margin-top': [40, 0],
-								'height': [65, 'initial'],
+								'height': [0, 'initial'],
 								'start': 29,
 								'end': 33
 							},
 							{
 								'selector': '#anim3 .column:nth-child(1) .item-element:nth-child(2)',
 								'margin-top': [60, 10],
-								'height': [65, 'initial'],
+								'height': [0, 'initial'],
 								'start': 29,
 								'end': 33
 							},
 							{
 								'selector': '#anim3 .column:nth-child(1) .item-element:nth-child(3)',
 								'margin-top': [80, 10],
-								'height': [65, 'initial'],
+								'height': [0, 'initial'],
 								'start': 29,
 								'end': 33
 							},
@@ -107,14 +115,14 @@
 							{
 								'selector': '#anim3 .column:nth-child(2) .item-element:nth-child(1)',
 								'margin-top': [60, 0],
-								'height': [65, 'initial'],
+								'height': [0, 'initial'],
 								'start': 30,
 								'end': 34
 							},
 							{
 								'selector': '#anim3 .column:nth-child(2) .item-element:nth-child(2)',
 								'margin-top': [60, 10],
-								'height': [65, 'initial'],
+								'height': [0, 'initial'],
 								'start': 30,
 								'end': 34
 							},
@@ -122,21 +130,21 @@
 							{
 								'selector': '#anim3 .column:nth-child(3) .item-element:nth-child(1)',
 								'margin-top': [80, 0],
-								'height': [65, 'initial'],
+								'height': [0, 'initial'],
 								'start': 31,
 								'end': 35
 							},
 							{
 								'selector': '#anim3 .column:nth-child(3) .item-element:nth-child(2)',
 								'margin-top': [80, 10],
-								'height': [65, 'initial'],
+								'height': [0, 'initial'],
 								'start': 31,
 								'end': 35
 							},
 							{
 								'selector': '#anim3 .column:nth-child(3) .item-element:nth-child(3)',
 								'margin-top': [80, 10],
-								'height': [65, 'initial'],
+								'height': [0, 'initial'],
 								'start': 31,
 								'end': 35
 							},
@@ -144,21 +152,21 @@
 							{
 								'selector': '#anim3 .column:nth-child(4) .item-element:nth-child(1)',
 								'margin-top': [120, 0],
-								'height': [65, 'initial'],
+								'height': [0, 'initial'],
 								'start': 31,
 								'end': 35
 							},
 							{
 								'selector': '#anim3 .column:nth-child(4) .item-element:nth-child(2)',
 								'margin-top': [120, 10],
-								'height': [65, 'initial'],
+								'height': [0, 'initial'],
 								'start': 31,
 								'end': 35
 							},
 							{
 								'selector': '#anim3 .column:nth-child(4) .item-element:nth-child(3)',
 								'margin-top': [120, 10],
-								'height': [65, 'initial'],
+								'height': [0, 'initial'],
 								'start': 31,
 								'end': 35
 							},
@@ -166,21 +174,21 @@
 							{
 								'selector': '#anim3 .column:nth-child(5) .item-element:nth-child(1)',
 								'margin-top': [140, 0],
-								'height': [65, 'initial'],
+								'height': [0, 'initial'],
 								'start': 31,
 								'end': 35
 							},
 							{
 								'selector': '#anim3 .column:nth-child(5) .item-element:nth-child(2)',
 								'margin-top': [140, 10],
-								'height': [65, 'initial'],
+								'height': [0, 'initial'],
 								'start': 31,
 								'end': 35
 							},
 							{
 								'selector': '#anim3 .column:nth-child(5) .item-element:nth-child(3)',
 								'margin-top': [140, 10],
-								'height': [65, 'initial'],
+								'height': [0, 'initial'],
 								'start': 31,
 								'end': 35
 							},

@@ -63,10 +63,10 @@
 
             <div class="main-content-element wrapper" id="anim1">
 				<div class="main-content-element-picture">
-                    <img src="img/clients/clients-main-1.png">
+                    <img src="img/clients/clients-main-1.png" style="opacity:0;">
                     <div class="red-text-block">
                         <!--<p>amazing things are happening here</p>-->
-                        <img src="img/red-text-img.svg" alt="">
+                        <img src="img/red-text-img.svg" style="opacity:0;">
                     </div>
                 </div>
 			</div>
@@ -449,15 +449,13 @@
 <script src="js/plugins/gallery-scripts/masonry.pkgd.min.js"></script>
 <script src="js/plugins/gallery-scripts/classie.js"></script>
 <script src="js/plugins/gallery-scripts/main.js"></script>
-<script src="js/jquery-3.2.1.slim.min.js"></script>
+<!-- <script src="js/jquery-3.2.1.slim.min.js"></script> -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script src="js/plugins/slick-slider/slick.js"></script>
 <script src="js/plugins/jquery.sliderPro.min.js"></script>
 <script src="js/plugins/jquery.magnific-popup.min.js"></script>
 <script src="js/script.js"></script>
-<script src="js/picasso.js"></script>
-<!-- <script src="js/velocity.min.js"></script>
-<script src="js/velocity.ui.min.js"></script>
-<script src="js/_main.js"></script> -->
+<script src="js/picasso.js"></script
 
 
 <!--Script for YouTube-->
@@ -528,7 +526,7 @@ jQuery(function($){
 		});
 
 		$('.red-text-block').data('property', $('.red-text-block').outerHeight());
-		$('#anim2 .text-block').data('property', -1*$('#anim2 .text-block').height());
+		$('#anim2 .text-block').data('property', -1*$('#anim2 .text-block').height() - 35);
 		$('.main-content-element-video').data('property', $('.main-content-element-video').height());
 		$('.main-content-element-picture.notebook').data('property', $('.main-content-element-picture.notebook').height());
 		$('#anim3 .item-element').each(function(){
@@ -552,6 +550,10 @@ jQuery(function($){
 
 		$('#anim7').data('property', -1*($('#anim7').height() - $(window).height() + 70));
 
+		// positions & animations
+		$('#anim1 .main-content-element-picture img').animate({opacity: 1}, 1300);
+		$('#anim1 .red-text-block').css({top: 45, left: $('#anim1 .main-content-element-picture > img').outerWidth(true) - ($('#anim1 .main-content-element-picture > img').outerWidth(true) - $('#anim1 .main-content-element-picture > img').width())/2 - $('#anim1 .red-text-block').width() - 30});
+		
 
 		$(window).on('resize', function(){
 			$(window).scrollTop(0);
