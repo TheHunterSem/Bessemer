@@ -55,9 +55,9 @@
                         {
                             'selector': '#anim2 .text-block',
                             'margin-top': [0, 'initial'],
-							'opacity': [1, 0],
+							'opacity': [0.75, 0],
                             'start': 15,
-                            'end': 18
+                            'end': 21
                         },						
                         {
                           'selector'    : '#anim2 .video-button-play',
