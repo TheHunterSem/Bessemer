@@ -59,7 +59,7 @@ jQuery(document).ready(function () {
     //clients page big images slider
     jQuery('.prefooter-slider-wrapper').slick({
         centerMode: true,
-        autoplay: true,
+        autoplay: false,
         loop: true,
         variableWidth: true,
         centerPadding: '0px',

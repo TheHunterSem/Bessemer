@@ -254,7 +254,7 @@
     }
 
     .prefooter-slider-wrapper, .prefooter-slider-item {
-        height: 400px;
+        height: 550px;
     }
 
     .prefooter-slider-wrapper .slick-slide {
@@ -1026,3 +1026,9 @@
     }
 
 }
+
+
+
+
+
+.prefooter-slider-wrapper .slick-slide {width: initial;}

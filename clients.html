@@ -76,15 +76,17 @@
 
                 <div class="text-block">
                     <h2 class="text-block-header">NewYork-Presbyterian</h2>
-                    <p>Copy explaining the situaiton. Sam doluptat quas mincti arumqui dolorepro beatia eum quia
-                        sedignihil id quidell orruntisin persper umquiam in prorecta vit aut ullaborrum hilia quidebitio
-                        vendusd andipsunt voluptatum voluptae nobis ant.</p>
+                    <p>As one of the nation’s best academic medical centers, NewYork-Presbyterian is well  known for its pioneering research and leading-edge medicine.</p>
+					<p>During our interviews with patients, we heard that their experience with the hospital’s staff consistently went well beyond the expectations typical of a large metropolitan hospital.</p>
+					<p>These incredible medical journeys needed to be translated into authentic and personal stories of the “amazing” care provided at NewYork-Presbyterian.</p>
+					<p>Advertising recall went from 11% to 24%, and positive word-of-mouth increased from 17% to 26%. Viewers found the campaign to be “much more differentiating” compared to the leading competitive advertiser (74% vs. 46%). Telephone inquiries increased by approximately 25%, and unique website visits increased by 40%.</p>
                 </div>
 
                 <div class="main-content-element-video">
-                    <div class="youtube" id="C9XVFRWrM7U"
-                         data-params="rel=0&amp;enablejsapi=1&amp;controls=0&amp;showinfo=0&amp;volume=0&amp;iv_load_policy=3&amp;modestbranding=1">
+                    <div class="youtube">
                         <img class="youtube-img" src="img/clients/NYP-girl-video-img.jpg" alt="">
+						<iframe src="https://player.vimeo.com/video/141100079" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+						<div class="video-button-play"></div>
                     </div>
                 </div>
 
@@ -320,9 +322,10 @@
                             <div class="video-button-play"></div>
                         </div>
                         <div class="main-content-element-video">
-                            <div class="youtube" id="C9XVFRWrM7U"
-                                 data-params="rel=0&amp;enablejsapi=1&amp;controls=0&amp;showinfo=0&amp;volume=0&amp;iv_load_policy=3&amp;modestbranding=1">
+                            <div class="youtube">
                                 <img src="img/clients/bald-guy-video-img.jpg" alt="" class="youtube-img">
+								<iframe src="https://player.vimeo.com/video/243195873" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+								<div class="video-button-play"></div>
                             </div>
                         </div>
                     </div>
@@ -334,7 +337,7 @@
 				<div class="prefooter-content-element-items bigimages">
                     <div class="prefooter-slider-wrapper">
                         <div class="prefooter-slider-item">
-                            <img src="img/slider-element1.png" alt="">
+                            <img src="img/centerfb.jpg" alt="">
                         </div>
                         <div class="prefooter-slider-item">
                             <img src="img/slider-element1.png" alt="">
@@ -343,11 +346,11 @@
                             <img src="img/slider-element1.png" alt="">
                         </div>
                     </div>
-                    <p class="prefooter-slider-text">
+                    <!--<p class="prefooter-slider-text">
                         Copy explaining the situaiton. Sam doluptat quas mincti arumqui dolorepro beatia eum quia
                         sedignihil id quidell orruntisin persper umquiam in prorecta vit aut ullaborrum hilia quidebitio
                         vendusd andipsunt voluptatum voluptae nobis ant.
-                    </p>
+                    </p>-->
 				</div>
             </div>
 
@@ -358,15 +361,16 @@
                         vendusd andipsunt voluptatum voluptae nobis ant.</p>
                 </div>-->
                 <div class="main-content-element-video">
-                    <div class="youtube" id="C9XVFRWrM7U"
-                         data-params="rel=0&amp;enablejsapi=1&amp;controls=0&amp;showinfo=0&amp;volume=0&amp;iv_load_policy=3&amp;modestbranding=1">
+                    <div class="youtube">
                         <img class="youtube-img" src="img/clients/nyp-old-lady-video.jpg" alt="">
+						<iframe src="https://player.vimeo.com/video/141100253" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+						<div class="video-button-play"></div>
                     </div>
                 </div>
             </div>
 
             <div class="footer-wrapper client-page-animations-footer" id="anim7">
-				<h3 class="prefooter-content-elements-header">See our other campaigns for NewYork-Presbyterian</h3>
+				<!--<h3 class="prefooter-content-elements-header">See our other campaigns for NewYork-Presbyterian</h3>
 				<div class="prefooter-content-element-items">
 					<a class="prefooter-content-element-item" href="#">
 						<img src="img/clients/prefooter-item-1.png" alt="">
@@ -380,7 +384,7 @@
 						<img src="img/clients/prefooter-item-3.png" alt="">
 						<span class="name">Ed Koch</span>
 					</a>
-				</div>
+				</div>-->
                 <footer>
                     <section class="footer-first-part">
                         <div class="left">
@@ -460,110 +464,62 @@
 <script src="js/plugins/jquery.magnific-popup.min.js"></script>
 <script src="js/script.js"></script>
 <script src="js/picasso.js"></script>
-
-
-<!--Script for YouTube-->
-<script>
-    function r(f) {
-        /in/.test(document.readyState) ? setTimeout('r(' + f + ')', 9) : f()
-    }
-    r(function () {
-
-
-
-        if (!document.getElementsByClassName) {
-            // IE8 support
-            var getElementsByClassName = function (node, classname) {
-                var a = [];
-                var re = new RegExp('(^| )' + classname + '( |$)');
-                var els = node.getElementsByTagName("*");
-                for (var i = 0, j = els.length; i < j; i++)
-                    if (re.test(els[i].className)) a.push(els[i]);
-                return a;
-            }
-            var videos = getElementsByClassName(document.body, "youtube");
-        }
-        else {
-            var videos = document.getElementsByClassName("youtube");
-        }
-
-        var nb_videos = videos.length;
-        for (var i = 0; i < nb_videos; i++) {
-            // Based on the YouTube ID, we can easily find the thumbnail image
-            videos[i].style.backgroundImage = 'url(http://i.ytimg.com/vi/' + videos[i].id + '/sddefault.jpg)';
-
-            // Overlay the Play icon to make it look like a video player
-            var play = document.createElement("div");
-            play.setAttribute("class", "video-button-play");
-            videos[i].appendChild(play);
-
-            videos[i].onclick = function () {
-                // Create an iFrame with autoplay set to true
-                var VideoResponsive = document.createElement("div");
-                VideoResponsive.setAttribute("class", "video-responsive");
-                var iframe = document.createElement("iframe");
-                var iframe_url = "https://www.youtube.com/embed/" + this.id + "?autoplay=1&autohide=1";
-                if (this.getAttribute("data-params")) iframe_url += '&' + this.getAttribute("data-params");
-                iframe.setAttribute("src", iframe_url);
-                iframe.setAttribute("frameborder", '0');
-
-                // The height and width of the iFrame should be the same as parent
-                iframe.style.width = this.style.width;
-                iframe.style.height = this.style.height;
-
-                VideoResponsive.appendChild(iframe);
-                this.parentNode.replaceChild(VideoResponsive, this);
-            }
-        }
-    });
-</script>
+<script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
 
 <script>
 jQuery(function($){
-	//if ($(window).width() > 900){
-		// Initialize correct dimensions for blocks
-		var j = $('.main-content-elements > div').length;
-		$('.main-content-elements > div').each(function(){
-			$(this).css({'z-index': j, 'opacity':1});
-			$(this).data('property', -1*$(this).height());
-			j--;
-		});
+	var j = $('.main-content-elements > div').length;
+	$('.main-content-elements > div').each(function(){
+		$(this).css({'z-index': j, 'opacity':1});
+		$(this).data('property', -$(this).height());
+		j--;
+	});
 
-		$('.red-text-block').data('property', $('.red-text-block').outerHeight());
-		$('#anim2 .text-block').data('property', -1*$('#anim2 .text-block').height() - 35);
-		$('.main-content-element-video').data('property', $('.main-content-element-video').height());
-		$('.main-content-element-picture.notebook').data('property', $('.main-content-element-picture.notebook').height());
-		$('#anim3 .item-element').each(function(){
-			$(this).data('property', $(this).height());
-		});
-		$('#anim4 .main-content-element-picture.tablet').data('property', $('#anim4 .main-content-element-picture.tablet').height());
+	$('#anim1 .main-content-element-picture img').animate({opacity: 1}, 1300);
+	$('#anim1 .red-text-block').css({top: 45, left: $('#anim1 .main-content-element-picture > img').outerWidth(true) - ($('#anim1 .main-content-element-picture > img').outerWidth(true) - $('#anim1 .main-content-element-picture > img').width())/2 - $('#anim1 .red-text-block').width() - 30});
+	
+	$('.red-text-block').height( $('.red-text-block img').height() );
+	$('.red-text-block img').css('height', 'inherit');
+	
+	$('.red-text-block').data('property', $('.red-text-block').outerHeight());
+	$('.red-text-block').data('other', $('.red-text-block').outerHeight() / 2 + 45);
+	$('#anim2 .text-block').data('property', -$('#anim2 .text-block').height() - 35);
+	$('.main-content-element-video').data('property', $('.main-content-element-video').height());
+	$('.main-content-element-picture.notebook').data('property', $('.main-content-element-picture.notebook').height());
+	$('#anim3 .item-element').each(function(){
+		$(this).data('property', $(this).height());
+	});
+	$('#anim4 .main-content-element-picture.tablet').data('property', $('#anim4 .main-content-element-picture.tablet').height());
 
-		$('#anim4 .absolute-man-block').data('property', $('.item-brazzers').width());
-		$('.absolute-man-block').css('left', $('.item-brazzers').offset().left - $('.main-content-element-picture.tablet').offset().left);
-        $('.absolute-man-block').css('top',  $('.item-brazzers').position().top + $('.content-inside-notebook-block .header-content-elements').eq(1).outerHeight() + 5);
-		$('.absolute-man-block').css('width',  $('.item-brazzers').width());
-		$('.absolute-man-block').css('height',  $('.item-brazzers').height() + $('.content-inside-notebook-block .item-brazzers .name-wrapper').height());
-		$('.absolute-block-img').css('min-height',  $('.item-brazzers').height() + $('.content-inside-notebook-block .item-brazzers .name-wrapper').height());
-		$('.absolute-block-img').css('min-height',  $('.absolute-man-block').height() - 11);
-		$('.absolute-man-block-image').css('min-height',  $('.absolute-man-block').height() - 11);
+	$('#anim4 .absolute-man-block').data('property', $('.item-brazzers').width());
+	$('.absolute-man-block').css('left', $('.item-brazzers').offset().left - $('.main-content-element-picture.tablet').offset().left);
+	$('.absolute-man-block').css('top',  $('.item-brazzers').position().top + $('.content-inside-notebook-block .header-content-elements').eq(1).outerHeight() + 5);
+	$('.absolute-man-block').css('width',  $('.item-brazzers').width());
+	$('.absolute-man-block').css('height',  $('.item-brazzers').height() + $('.content-inside-notebook-block .item-brazzers .name-wrapper').height());
+	$('.absolute-block-img').css('min-height',  $('.item-brazzers').height() + $('.content-inside-notebook-block .item-brazzers .name-wrapper').height());
+	$('.absolute-block-img').css('min-height',  $('.absolute-man-block').height() - 11);
+	$('.absolute-man-block-image').css('min-height',  $('.absolute-man-block').height() - 11);
 
-		$('#anim1').data('property', -1*$('#anim1').height() - 5);
-		$('#anim5').data('property', $('#anim5').height());
-		$('#anim6').data('property', $('#anim6').height());
-		$('#anim6 .youtube').data('property', $('#anim6 .youtube').height());
+	$('#anim1').data('property', -$('#anim1').height() - 5);
+	$('#anim5').data('property', $('#anim5').height());
+	$('#anim6').data('property', $('#anim6').height());
+	$('#anim6').data('other', -$('#anim7').height());
+	$('#anim6 .youtube').data('property', $('#anim6 .youtube').height());
 
-		$('#anim7').data('property', -1*($('#anim7').height() - $(window).height() + 70));
+	$('#anim7').data('other', $('#anim7').height() - $(window).height() + 70); // -1*...	
 
-		// positions & animations
-		$('#anim1 .main-content-element-picture img').animate({opacity: 1}, 1300);
-		$('#anim1 .red-text-block').css({top: 45, left: $('#anim1 .main-content-element-picture > img').outerWidth(true) - ($('#anim1 .main-content-element-picture > img').outerWidth(true) - $('#anim1 .main-content-element-picture > img').width())/2 - $('#anim1 .red-text-block').width() - 30});
-		
+	$(window).on('resize', function(){
+		$(window).scrollTop(0);
+		location.reload();
+	});
 
-		$(window).on('resize', function(){
-			$(window).scrollTop(0);
-			location.reload();
-		});
-	//}
+	$(".video-button-play").on("click",function(){
+		$(this).closest('.youtube').find('.youtube-img').fadeOut();
+		$(this).fadeOut();
+		var player=$f($(this).closest('.youtube').find('iframe')[0]);
+		player.api("play");
+	});	
+	
 });
 </script>
 

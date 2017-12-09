@@ -27,13 +27,14 @@
                         {
                             'selector': '#anim1 .main-content-element-picture',
                             'opacity': [1, 0],
-                            'start': 5,
+                            'start': 3,
                             'end': 11
                         },
                         {
                             'selector': '#anim1 .red-text-block',
+                            'top': [45, 'other'],
                             'height': ['initial', 0],
-                            'start': 5,
+                            'start': 3,
                             'end': 11
                         },
                         {
@@ -72,12 +73,6 @@
                             'start': 23,
                             'end': 29
                         },
-                        /* {
-                            'selector': '#anim2',
-                            'margin-top': [0, 'height'],
-                            'start': 25,
-                            'end': 30
-                        }, */
 
 
                         // 3 screen
@@ -196,7 +191,7 @@
 						
                         {
                             'selector': '#anim3 .main-content-element-picture.notebook',
-                            'height': ['initial', 300],
+                            'height': ['initial', 0],
                             'start': 37,
                             'end': 41
                         },						
@@ -204,14 +199,8 @@
                             'selector': '#anim3 .main-content-element-picture-notebook-img-block',
                             'opacity': [1, 0.35],
                             'start': 37,
-                            'end': 41
-                        },
-                        {
-                            'selector': '#anim3',
-                            'margin-top': [0, 'height'],
-                            'start': 44,
                             'end': 49
-                        },			
+                        },	
 
 
                         // 4 screen
@@ -226,43 +215,31 @@
                             'width': ['initial', '50%'],
                             'height': ['initial', '50%'],
                             'margin-left': [0, '-30%'],
-                            'margin-top': [0, '-20%'],
+                            'margin-top': [0, '-25%'],
                             'start': 54,
-                            'end': 57
+                            'end': 61
                         },
 
-                         {
+                        {
                             'selector': '#anim4 .absolute-man-block .video-button-play ',
                             'opacity':[0, 1],
                              'start': 56,
-                             'end': 57
+                             'end': 60
                         },
 						
                         {
                             'selector': '#anim4 .main-content-element-picture.tablet',
-                            'height': ['initial', 250],
+                            'height': ['initial', 00],
                             'opacity': [1, 0.4],
-                            'start': 60,
-                            'end': 65
-                        },
-                        {
-                            'selector': '#anim4',
-                            'margin-top': [0, 'height'],
-                            'start': 67,
+                            'start': 62,
                             'end': 69
                         },
 						
 						// 5 screen
                         {
                             'selector': '#anim5',
-                            'height': ['initial', 300],
+                            'height': ['initial', 0],
                             'start': 73,
-                            'end': 77
-                        },
-                        {
-                            'selector': '#anim5',
-                            'margin-top': [0, 'height'],
-                            'start': 77,
                             'end': 80
                         },
 						
@@ -274,30 +251,10 @@
                             'end': 82
                         },
                         {
-                            'selector': '#anim6 .text-block',
-                            'margin-top': [0, 'height'],
-                            'start': 84,
-                            'end': 87
-                        },
-                        {
-                            'selector': '#anim6 .youtube',
-                            'height': ['initial', 400],
-                            'opacity': [1, 0.35],
-                            'start': 89,
-                            'end': 93
-                        },
-                        {
                             'selector': '#anim6',
-                            'margin-top': [0, 'height'],
-                            'start': 92,
-                            'end': 95
-                        },
-						
-                        {
-                            'selector': '#anim7',
-                            'margin-top': [0, 'initial'],
-                            'start': 93,
-                            'end': 95
+                            'margin-top': [0, 'other'],
+                            'start': 85,
+                            'end': 89
                         }
 						
 					]
@@ -489,6 +446,12 @@
                 value[1] = $(animation.selector).data('property');
             } else if (value && value[0] == 'initial') {
                 value[0] = $(animation.selector).data('property');
+            }
+			
+            if (value && value[1] == 'other') {
+                value[1] = $(animation.selector).data('other');
+            } else if (value && value[0] == 'other') {
+                value[0] = $(animation.selector).data('other');
             }
 
             if (relativePos < end) {
