@@ -1568,15 +1568,8 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
 
 .main-content-element-picture.tablet .absolute-man-block {
     position: absolute;
-    height: 164px;
-    width: 162px;
-    /*z-index: 10;*/
-    bottom: 24.1%;
-    right: 31.6%;
-    /*opacity: 1;*/
     top: 15%;
     left: 15%;
-    /*overflow: hidden;*/
     overflow: visible;
     opacity: 0;
     z-index: 9999999;

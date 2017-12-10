@@ -493,6 +493,10 @@ jQuery(function($){
 
 	$('#anim4 .absolute-man-block').data('property', $('.item-brazzers').width());
 	$('.absolute-man-block').css('left', $('.item-brazzers').offset().left - $('.main-content-element-picture.tablet').offset().left);
+	
+	setInterval(function(){
+		console.log(jQuery('.item-brazzers').position().top + jQuery('.content-inside-notebook-block .header-content-elements').eq(1).outerHeight() + 5);
+	}, 500);
 	$('.absolute-man-block').css('top',  $('.item-brazzers').position().top + $('.content-inside-notebook-block .header-content-elements').eq(1).outerHeight() + 5);
 	$('.absolute-man-block').css('width',  $('.item-brazzers').width());
 	$('.absolute-man-block').css('height',  $('.item-brazzers').height() + $('.content-inside-notebook-block .item-brazzers .name-wrapper').height());
