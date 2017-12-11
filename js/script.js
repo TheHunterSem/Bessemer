@@ -56,29 +56,6 @@ jQuery(document).ready(function () {
         }
     });
 
-    //clients page big images slider
-    jQuery('.prefooter-slider-wrapper').slick({
-        centerMode: true,
-        autoplay: false,
-        loop: true,
-        variableWidth: true,
-        centerPadding: '0px',
-        slidesToShow: 1,
-        dots: false,
-        responsive: [
-            {
-                breakpoint: 960,
-                settings: {
-                    arrows: false,
-                    centerMode: false,
-                    variableWidth: false,
-                    slidesToShow: 1,
-                    dots: true
-                }
-            }
-        ]
-    });
-
     //top slides content tabs
 
     function RecolorOfTabs() {
@@ -223,36 +200,5 @@ jQuery(document).ready(function () {
 
     //MENU END
 
-
-    //show video in absolute man block
-    jQuery('.absolute-block-img .video-button-play', this).on('click',function (e) {
-        e.stopPropagation();
-        jQuery('.absolute-block-img').hide();
-        jQuery('.main-content-element-video','.absolute-man-block').show();
-        jQuery('.main-content-element-video .youtube .video-button-play','.absolute-man-block').trigger('click',function (e) {
-            e.stopPropagation();
-        });
-    });
-
-    
-function NoteTabletContentWidth() {
-
-    var Notebook = jQuery('.main-content-element-picture-notebook-img-block .notebook-img');
-    var NotebookContent = jQuery('.main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .wrapper');
-    var NoteWidth = jQuery(Notebook).width();
-    var NoteHeight = jQuery(Notebook).height();
-    jQuery(NotebookContent).width(NoteWidth / 1.38).height(NoteHeight / 1.35);
-
-    var Tablet = jQuery('.main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .tablet-img');
-    var TabletContent = jQuery('.main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .wrapper');
-    var TabletWidth = jQuery(Tablet).width();
-    var TabletHeight = jQuery(Tablet).height();
-    jQuery(TabletContent).width(TabletWidth / 1.34).height(TabletHeight / 1.25);
-
-}
-
-    jQuery(window).resize(function () {
-        NoteTabletContentWidth();
-    }).resize();
 
 });

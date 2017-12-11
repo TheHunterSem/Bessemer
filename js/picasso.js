@@ -47,17 +47,10 @@
 
                         // 2 screen
                         {
-                            'selector': '#anim2 .text-block h2, #anim2 .text-block p',
-							'opacity': [0, 1],
-                            'start': 9,
-                            'end': 14
-                        },
-						
-                        {
                             'selector': '#anim2 .text-block',
                             'margin-top': [0, 'initial'],
 							'opacity': [0.75, 0],
-                            'start': 15,
+                            'start': 13,
                             'end': 21
                         },						
                         {
@@ -71,7 +64,7 @@
                             'height': ['initial', 0],
                             'opacity': [1, 0.3],
                             'start': 23,
-                            'end': 29
+                            'end': 30
                         },
 
 
@@ -79,8 +72,8 @@
                         {
                             'selector': '#anim3 .notebook-img',
                             'opacity': [0.1, 1],
-                            'start': 29,
-                            'end': 33
+                            'start': 28,
+                            'end': 31
                         },
 						
 
@@ -89,103 +82,103 @@
 								'selector': '#anim3 .column:nth-child(1) .item-element:nth-child(1)',
 								'margin-top': [40, 0],
 								'height': [0, 'initial'],
-								'start': 29,
-								'end': 33
+								'start': 26,
+								'end': 30
 							},
 							{
 								'selector': '#anim3 .column:nth-child(1) .item-element:nth-child(2)',
 								'margin-top': [60, 10],
 								'height': [0, 'initial'],
-								'start': 29,
-								'end': 33
+								'start': 26,
+								'end': 30
 							},
 							{
 								'selector': '#anim3 .column:nth-child(1) .item-element:nth-child(3)',
 								'margin-top': [80, 10],
 								'height': [0, 'initial'],
-								'start': 29,
-								'end': 33
+								'start': 26,
+								'end': 30
 							},
 							
 							{
 								'selector': '#anim3 .column:nth-child(2) .item-element:nth-child(1)',
 								'margin-top': [60, 0],
 								'height': [0, 'initial'],
-								'start': 30,
-								'end': 34
+								'start': 26,
+								'end': 30
 							},
 							{
 								'selector': '#anim3 .column:nth-child(2) .item-element:nth-child(2)',
 								'margin-top': [60, 10],
 								'height': [0, 'initial'],
-								'start': 30,
-								'end': 34
+								'start': 26,
+								'end': 30
 							},
 							
 							{
 								'selector': '#anim3 .column:nth-child(3) .item-element:nth-child(1)',
 								'margin-top': [80, 0],
 								'height': [0, 'initial'],
-								'start': 31,
-								'end': 35
+								'start': 26,
+								'end': 30
 							},
 							{
 								'selector': '#anim3 .column:nth-child(3) .item-element:nth-child(2)',
 								'margin-top': [80, 10],
 								'height': [0, 'initial'],
-								'start': 31,
-								'end': 35
+								'start': 26,
+								'end': 30
 							},
 							{
 								'selector': '#anim3 .column:nth-child(3) .item-element:nth-child(3)',
 								'margin-top': [80, 10],
 								'height': [0, 'initial'],
-								'start': 31,
-								'end': 35
+								'start': 26,
+								'end': 30
 							},
 							
 							{
 								'selector': '#anim3 .column:nth-child(4) .item-element:nth-child(1)',
 								'margin-top': [120, 0],
 								'height': [0, 'initial'],
-								'start': 31,
-								'end': 35
+								'start': 26,
+								'end': 30
 							},
 							{
 								'selector': '#anim3 .column:nth-child(4) .item-element:nth-child(2)',
 								'margin-top': [120, 10],
 								'height': [0, 'initial'],
-								'start': 31,
-								'end': 35
+								'start': 26,
+								'end': 30
 							},
 							{
 								'selector': '#anim3 .column:nth-child(4) .item-element:nth-child(3)',
 								'margin-top': [120, 10],
 								'height': [0, 'initial'],
-								'start': 31,
-								'end': 35
+								'start': 26,
+								'end': 30
 							},
 							
 							{
 								'selector': '#anim3 .column:nth-child(5) .item-element:nth-child(1)',
 								'margin-top': [140, 0],
 								'height': [0, 'initial'],
-								'start': 31,
-								'end': 35
+								'start': 26,
+								'end': 30
 							},
 							{
 								'selector': '#anim3 .column:nth-child(5) .item-element:nth-child(2)',
 								'margin-top': [140, 10],
 								'height': [0, 'initial'],
-								'start': 31,
-								'end': 35
+								'start': 26,
+								'end': 30
 							},
 							{
 								'selector': '#anim3 .column:nth-child(5) .item-element:nth-child(3)',
 								'margin-top': [140, 10],
 								'height': [0, 'initial'],
-								'start': 31,
-								'end': 35
+								'start': 26,
+								'end': 30
 							},
 						
 						
@@ -193,7 +186,7 @@
                             'selector': '#anim3 .main-content-element-picture.notebook',
                             'height': ['initial', 0],
                             'start': 37,
-                            'end': 41
+                            'end': 43
                         },						
                         {
                             'selector': '#anim3 .main-content-element-picture-notebook-img-block',
@@ -205,18 +198,18 @@
 
                         // 4 screen
                         {
-                            'selector': '#anim4 .main-content-element-picture-tablet-img-block',
+                            'selector': '#anim4 .main-content-element-picture-tablet-img-block, #anim4 .absolute-block-img .name-wrapper',
                             'opacity': [1, 0],
                             'start': 49,
-                            'end': 53
+                            'end': 55
                         },
                         {
                             'selector': '#anim4 .absolute-man-block',
-                            'width': ['initial', '50%'],
-                            'height': ['initial', '50%'],
-                            'margin-left': [0, '-30%'],
-                            'margin-top': [0, '-25%'],
-                            'start': 54,
+                            'width': ['initial', '82%'],
+                            'height': ['initial', '40%'],
+                            'margin-left': [0, '-45%'],
+                            'margin-top': [0, '-27%'],
+                            'start': 52,
                             'end': 61
                         },
 
@@ -229,7 +222,7 @@
 						
                         {
                             'selector': '#anim4 .main-content-element-picture.tablet',
-                            'height': ['initial', 00],
+                            'height': ['initial', 0],
                             'opacity': [1, 0.4],
                             'start': 62,
                             'end': 69
@@ -529,6 +522,22 @@
 		
 		if ($(window).width() > 1000){
 			init();
+
+			var wow = new WOW(
+			  {
+				boxClass:     'wow',      // animated element css class (default is wow)
+				animateClass: 'animated', // animation css class (default is animated)
+				offset:       0,          // distance to the element when triggering the animation (default is 0)
+				mobile:       true,       // trigger animations on mobile devices (default is true)
+				live:         true,       // act on asynchronously loaded content (default is true)
+				callback:     function(box) {
+				  // the callback is fired every time an animation is started
+				  // the argument that is passed in is the DOM node being animated
+				},
+				scrollContainer: null // optional scroll container selector, otherwise use window
+			  }
+			);
+			wow.init();			
 		} else {
             keyframes = [
                 {
