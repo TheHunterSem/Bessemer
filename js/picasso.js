@@ -32,7 +32,7 @@
                         },
                         {
                             'selector': '#anim1 .red-text-block',
-                            'top': [45, 'other'],
+                            'top': [60, 'other'],
                             'height': ['initial', 0],
                             'start': 3,
                             'end': 9
@@ -55,9 +55,15 @@
                         },						
                         {
                           'selector'    : '#anim2 .video-button-play',
-                          'opacity' 	  : [0.25, 1],
+                          'opacity' 	  : [0.35, 1],
                           'start'		  : 16,
                           'end'		 	 : 19
+                        },				
+                        {
+                          'selector'    : '#anim2 .youtube',
+                          'opacity' 	  : [0.25, 1],
+                          'start'		  : 18,
+                          'end'		 	 : 21
                         },
                         {
                             'selector': '#anim2 .main-content-element-video',
@@ -185,14 +191,14 @@
                         {
                             'selector': '#anim3 .main-content-element-picture.notebook',
                             'height': ['initial', 0],
-                            'start': 37,
-                            'end': 43
+                            'start': 33,
+                            'end': 40
                         },						
                         {
                             'selector': '#anim3 .main-content-element-picture-notebook-img-block',
                             'opacity': [1, 0.35],
-                            'start': 37,
-                            'end': 49
+                            'start': 34,
+                            'end': 42
                         },	
 
 
@@ -200,8 +206,8 @@
                         {
                             'selector': '#anim4 .main-content-element-picture-tablet-img-block, #anim4 .absolute-block-img .name-wrapper',
                             'opacity': [1, 0],
-                            'start': 49,
-                            'end': 55
+                            'start': 42,
+                            'end': 48
                         },
                         {
                             'selector': '#anim4 .absolute-man-block',
@@ -209,45 +215,45 @@
                             'height': ['initial', '40%'],
                             'margin-left': [0, '-45%'],
                             'margin-top': [0, '-27%'],
-                            'start': 52,
-                            'end': 61
+                            'start': 48,
+                            'end': 57
                         },
 
                         {
                             'selector': '#anim4 .absolute-man-block .video-button-play ',
                             'opacity':[0, 1],
-                             'start': 56,
-                             'end': 60
+                             'start': 52,
+                             'end': 56
                         },
 						
                         {
                             'selector': '#anim4 .main-content-element-picture.tablet',
                             'height': ['initial', 0],
                             'opacity': [1, 0.4],
-                            'start': 62,
-                            'end': 69
+                            'start': 58,
+                            'end': 65
                         },
 						
 						// 5 screen
                         {
                             'selector': '#anim5',
                             'height': ['initial', 0],
-                            'start': 73,
-                            'end': 80
+                            'start': 69,
+                            'end': 76
                         },
 						
 						// 6 screen
                         {
                             'selector': '#anim6 .main-content-element-video',
                             'opacity': [0.35, 1],
-                            'start': 79,
-                            'end': 82
+                            'start': 75,
+                            'end': 78
                         },
                         {
                             'selector': '#anim6',
                             'margin-top': [0, 'other'],
-                            'start': 85,
-                            'end': 89
+                            'start': 79,
+                            'end': 83
                         }
 						
 					]
