@@ -55,9 +55,9 @@
                         },						
                         {
                           'selector'    : '#anim2 .video-button-play',
-                          'opacity' 	  : [0.35, 1],
-                          'start'		  : 16,
-                          'end'		 	 : 19
+                          'opacity' 	  : [0, 1],
+                          'start'		  : 18,
+                          'end'		 	 : 22
                         },				
                         {
                           'selector'    : '#anim2 .youtube',
@@ -250,10 +250,16 @@
                             'end': 78
                         },
                         {
+                            'selector': '#anim6 .video-button-play',
+                            'opacity': [0.1, 1],
+                            'start': 73,
+                            'end': 79
+                        },
+                        {
                             'selector': '#anim6',
                             'margin-top': [0, 'other'],
-                            'start': 79,
-                            'end': 83
+                            'start': 80,
+                            'end': 84
                         }
 						
 					]
