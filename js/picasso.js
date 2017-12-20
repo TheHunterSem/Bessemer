@@ -531,117 +531,32 @@
             return 'ontouchstart' in window // works on most browsers
                 || 'onmsgesturechange' in window; // works on ie10
         }
+
+		var wow = new WOW(
+		  {
+			boxClass:     'wow',      // animated element css class (default is wow)
+			animateClass: 'animated', // animation css class (default is animated)
+			offset:       0,          // distance to the element when triggering the animation (default is 0)
+			mobile:       true,       // trigger animations on mobile devices (default is true)
+			live:         true,       // act on asynchronously loaded content (default is true)
+			callback:     function(box) {
+			  // the callback is fired every time an animation is started
+			  // the argument that is passed in is the DOM node being animated
+			},
+			scrollContainer: null // optional scroll container selector, otherwise use window
+		  }
+		);
 		
 		if ($(window).width() > 1000){			
 			init();
 
-			var wow = new WOW(
-			  {
-				boxClass:     'wow',      // animated element css class (default is wow)
-				animateClass: 'animated', // animation css class (default is animated)
-				offset:       0,          // distance to the element when triggering the animation (default is 0)
-				mobile:       true,       // trigger animations on mobile devices (default is true)
-				live:         true,       // act on asynchronously loaded content (default is true)
-				callback:     function(box) {
-				  // the callback is fired every time an animation is started
-				  // the argument that is passed in is the DOM node being animated
-				},
-				scrollContainer: null // optional scroll container selector, otherwise use window
-			  }
-			);
-			wow.init();			
+			$('#anim1, #anim2, #anim3, #anim4, #anim5, #anim6, #anim7').removeClass('wow fadeIn');
+			
+			wow.init();
+			
 		} else {
-            keyframes = [
-                {
-                    'wrapper': '.main-content-elements',
-                    'duration': '2000%',
-                    'animations': [
 
-                        // 1 screen
-                        {
-                            'selector': '#anim1',
-                            'opacity': [1, 0.3],
-                            'start': 1,
-                            'end': 3
-                        },
-                        {
-                            'selector': '#anim2 .text-block',
-                            'opacity': [0.3, 1],
-                            'start': 2,
-                            'end': 3
-                        },
-                        {
-                            'selector': '#anim2 .main-content-element-video',
-                            'opacity': [0.3, 1],
-                            'start': 4,
-                            'end': 6
-                        },
-                        {
-                            'selector': '#anim2',
-                            'opacity': [1, 0.3],
-                            'start': 7,
-                            'end': 9
-                        },
-                        {
-                            'selector': '#anim3 .main-content-element-picture.notebook',
-                            'opacity': [0.3, 1],
-                            'start': 9,
-                            'end': 11
-                        },
-                        {
-                            'selector': '#anim3',
-                            'opacity': [1, 0.3],
-                            'start': 11,
-                            'end': 13
-                        },
-                        {
-                            'selector': '#anim4 .main-content-element-picture.tablet',
-                            'opacity': [0.3, 1],
-                            'start': 13,
-                            'end': 15
-                        },
-                        {
-                            'selector': '#anim4',
-                            'opacity': [1, 0.3],
-                            'start': 16,
-                            'end': 17
-                        },
-                        {
-                            'selector': '#anim5 .prefooter-content-element-items.bigimages',
-                            'opacity': [0.3, 1],
-                            'start': 17,
-                            'end': 19
-                        },
-                        {
-                            'selector': '#anim5',
-                            'opacity': [1, 0.3],
-                            'start': 19,
-                            'end': 21
-                        },
-                        {
-                            'selector': '#anim6 .main-content-element-video',
-                            'opacity': [0.3, 1],
-                            'start': 22,
-                            'end': 23
-                        },
-                        {
-                            'selector': '#anim6',
-                            'opacity': [1, 0.3],
-                            'start': 25,
-                            'end': 26
-                        },
-                        {
-                            'selector': '#anim7',
-                            'opacity': [0.3, 1],
-                            'start': 26,
-                            'end': 28
-                        }
-                    ]
-                }
-            ];
-            //init();
-
-            var ArrSelectors = [
+            var AnimSelectors = [
                 '#anim1',
                 '#anim2 .text-block',
                 '#anim2 .main-content-element-video',
@@ -657,20 +572,19 @@
                 '#anim7'
             ];
 
-            var heights = [];
-            var centers = [];
-
-            $(ArrSelectors).each(function(index, value){
+            /* $(AnimSelectors).each(function(index, value){
                 var $this = $(value);
 
                 var height = $this.height();
                 var centerY = height / 2;
                 centers.push(centerY);
                 heights.push(height);
-            });
-            // console.log('Элемент : ' + ArrSelectors);
-            // console.log('Высота : ' + heights);
-            // console.log('Центр : ' + centers);
+            }); */
+			
+			$('#anim1, #anim2 .text-block.wow-animate, #anim2 .main-content-element-video, #anim3, #anim4, #anim5, #anim6, #anim7').addClass('wow fadeIn');
+			$('#anim2 .text-block.wow-animate').css('opacity', 1).removeClass('wow-animate');
+			
+			wow.init();
 
         }
 

@@ -299,7 +299,7 @@
                                             </a>
                                             <a href="#" class="item-element item-brazzers">
                                                 <!--<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPhLV7snl8EdNkZEhaG8b7igwgD3SUzl6-L_s36n7KgmZCJM0" alt="">-->
-                                                <img src="img/brazzers-item-img.png" alt="" <!--style="opacity:0;"-->>
+                                                <img src="img/brazzers-item-img.png" alt="" />
                                                 <span class="name-wrapper">
                                                     <span class="name">Nicole Marquez</span>
                                                 </span>
@@ -497,29 +497,41 @@ jQuery(function($){
     });
 
     //show video in absolute man block
-    jQuery('.absolute-block-img .video-button-play', this).on('click',function (e) {
+    $('.absolute-block-img .video-button-play', this).on('click',function (e) {
         e.stopPropagation();
-        jQuery('.absolute-block-img').hide();
-        jQuery('.main-content-element-video','.absolute-man-block').show();
-        jQuery('.main-content-element-video .youtube .video-button-play','.absolute-man-block').trigger('click',function (e) {
+        $('.absolute-block-img').hide();
+        $('.main-content-element-video','.absolute-man-block').show();
+        $('.main-content-element-video .youtube .video-button-play','.absolute-man-block').trigger('click',function (e) {
             e.stopPropagation();
         });
     });
+	$(".video-button-play").on("click",function(){
+		$(this).closest('.youtube').find('.youtube-img').fadeOut();
+		$(this).fadeOut();
+		var player=$f($(this).closest('.youtube').find('iframe')[0]);
+		player.api("play");
+	});		
 
-    
+if ($(window).width() > 1000){
+    // img 1341x774
+	//correct w 874
+	// inner 633x405
+	//w coef = 1,53
+	//orig h = 620
 	function NoteTabletContentWidth() {
 
-		var Notebook = jQuery('.main-content-element-picture-notebook-img-block .notebook-img');
-		var NotebookContent = jQuery('.main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .wrapper');
-		var NoteWidth = jQuery(Notebook).width();
-		var NoteHeight = jQuery(Notebook).height();
-		jQuery(NotebookContent).width(NoteWidth / 1.38).height(NoteHeight / 1.35);
+		var Notebook = $('.main-content-element-picture-notebook-img-block .notebook-img');
+		var NotebookContent = $('.main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .wrapper');
+		var NoteWidth = $(Notebook).width();
+		var NoteHeight = $(Notebook).height();
+		
+		$(NotebookContent).width(NoteWidth / 1.38).height(620 / (1341/NoteWidth));
 
-		var Tablet = jQuery('.main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .tablet-img');
-		var TabletContent = jQuery('.main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .wrapper');
-		var TabletWidth = jQuery(Tablet).width();
-		var TabletHeight = jQuery(Tablet).height();
-		jQuery(TabletContent).width(TabletWidth / 1.34).height(TabletHeight / 1.25);
+		var Tablet = $('.main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .tablet-img');
+		var TabletContent = $('.main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .wrapper');
+		var TabletWidth = $(Tablet).width();
+		var TabletHeight = $(Tablet).height();
+		$(TabletContent).width(TabletWidth / 1.34).height(TabletHeight / 1.25);
 
 	}
 	$(window).resize(function () {
@@ -559,6 +571,7 @@ jQuery(function($){
 		absoluteTimerId = setInterval(function(){
 			$('.absolute-man-block').css('top',  $('.item-brazzers').position().top + $('.wrapper.note-wrapper').eq(1).position().top + 5);
 		}, 500);
+		
 		clearInterval(timerId);
 		timerId = setInterval(function(){
 			if ( ($('.wow-animate').offset().top - ($(window).scrollTop() + $(window).height()))  <= -500){
@@ -582,18 +595,11 @@ jQuery(function($){
 
 		$('#anim7').data('other', $('#anim7').height() - $(window).height() + 70);
 
-	
-		//$(window).scrollTop(0);
-		//location.reload();
 	}).resize();
 
-
-	$(".video-button-play").on("click",function(){
-		$(this).closest('.youtube').find('.youtube-img').fadeOut();
-		$(this).fadeOut();
-		var player=$f($(this).closest('.youtube').find('iframe')[0]);
-		player.api("play");
-	});	
+}else{
+	$('#anim1 img, #anim2 .main-content-element-video').css('opacity', 1);
+}
 	
 });
 </script>
