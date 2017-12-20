@@ -527,13 +527,13 @@ header {
 .header-wrapper {
     position: fixed;
     width: 100%;
-    /*max-width: 1380px;*/
-    max-width: 100vw;
+    max-width: 1380px;
+    /*max-width: 100vw;*/
     height: 70px;
-    /*padding: 0;*/
-    padding: 0 15px;
-    left: 0;
-    right: 0;
+    padding: 0;
+    /*padding: 0 15px;*/
+    /*left: 0;*/
+    /*right: 0;*/
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -551,6 +551,9 @@ header {
     justify-content: space-between;
     background-color: #fff;
 	z-index: 999;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 }
 
 .header-logo {
@@ -2181,4 +2184,9 @@ footer {
     width:  100%;
     display: block;
     height: 100%;
+}
+
+.main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .notebook-img-mobile,
+.main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .tablet-img-mobile {
+    display: none;
 }
