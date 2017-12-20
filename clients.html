@@ -620,9 +620,11 @@ if (wWidth > 1000){
 			$('.mobile-btn-wrapper').removeClass('active');
 			setTimeout(function () {
 				$('.header-navigation-items').removeClass('active');
+                $('body').removeClass('disable-scroll');
 			}, 400);
 		} else {
 			$('.mobile-btn-wrapper').addClass('active');
+			$('body').addClass('disable-scroll');
 			setTimeout(function () {
 				$('.header-navigation-items').addClass('active');
 			}, 400);
