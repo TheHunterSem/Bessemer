@@ -527,9 +527,13 @@ header {
 .header-wrapper {
     position: fixed;
     width: 100%;
-    max-width: 1380px;
+    /*max-width: 1380px;*/
+    max-width: 100vw;
     height: 70px;
-    padding: 0;
+    /*padding: 0;*/
+    padding: 0 15px;
+    left: 0;
+    right: 0;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;

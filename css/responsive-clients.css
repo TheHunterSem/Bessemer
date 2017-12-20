@@ -163,7 +163,8 @@
 @media (max-width: 1390px) {
 
     .header-wrapper {
-        padding: 0 30px;
+        /*padding: 0 30px;*/
+        padding: 0 15px;
     }
 
 }
@@ -840,7 +841,8 @@
     }
 
     .header-wrapper {
-        padding: 0;
+        /*padding: 0;*/
+        padding: 0 10px;
     }
 
     .main-content-element-video {
