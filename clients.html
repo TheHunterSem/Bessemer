@@ -569,6 +569,7 @@ if (wWidth > 1000){
 
 		$('#anim4 .absolute-man-block').data('property', $('.item-brazzers').width());
 		$('.absolute-man-block').css('left', $('.item-brazzers').offset().left - $('.main-content-element-picture.tablet').offset().left);
+		$('.absolute-man-block').data('other', -1 * ($('.item-brazzers').offset().left - $('.main-content-element-picture.tablet').offset().left));
 		
 		clearInterval(absoluteTimerId);
 		absoluteTimerId = setInterval(function(){
@@ -593,7 +594,7 @@ if (wWidth > 1000){
 		$('#anim1').data('property', -$('#anim1').height() - 5);
 		$('#anim5').data('property', $('#anim5').height());
 		$('#anim6').data('property', $('#anim6').height());
-		$('#anim6').data('other', -$('#anim7').height());
+		$('#anim6').data('other', - $('#anim7').height() - 20);
 		$('#anim6 .youtube').data('property', $('#anim6 .youtube').height());
 
 		$('#anim7').data('other', $('#anim7').height() - $(window).height() + 70);
@@ -634,7 +635,7 @@ if (wWidth > 1000){
 
 
 	//MENU END
-	
+
 });
 </script>
 

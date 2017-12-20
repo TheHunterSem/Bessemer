@@ -211,10 +211,12 @@
                         },
                         {
                             'selector': '#anim4 .absolute-man-block',
-                            'width': ['initial', '82%'],
-                            'height': ['initial', '40%'],
-                            'margin-left': [0, '-45%'],
-                            'margin-top': [0, '-27%'],
+                            'width': ['initial', 'width'],
+                            'height': ['initial', 'height'],
+                            //'margin-left': [0, '-45%'],
+                            //'margin-top': [0, '-27%'],
+                            'margin-left': [0, 'other'],
+                            'margin-top': [0, 'bald'],
                             'start': 48,
                             'end': 57
                         },
@@ -458,6 +460,24 @@
             } else if (value && value[0] == 'other') {
                 value[0] = $(animation.selector).data('other');
             }
+			
+			// тупо костыли bald guy
+            if (value && value[1] == 'bald') {
+                value[1] = -1 * ($('.item-brazzers').position().top + $('.wrapper.note-wrapper').eq(1).position().top + 5);
+            } else if (value && value[0] == 'bald') {
+                value[0] = 0;
+            }
+            if (value && value[1] == 'width') {
+                value[1] = $('#anim4').width();
+            } else if (value && value[0] == 'width') {
+                value[0] = 0;
+            }
+            if (value && value[1] == 'height') {
+                value[1] = $(window).height() - 75;
+            } else if (value && value[0] == 'height') {
+                value[0] = 0;
+            }
+			// end
 
             if (relativePos < end) {
                 if (value) {
