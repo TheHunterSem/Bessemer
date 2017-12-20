@@ -7,12 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="HandheldFriendly" content="true">
     <title>Bessemer</title>
+    <link rel="stylesheet" href="css/plugins/slick-slider/slick.css">
+    <link rel="stylesheet" href="css/plugins/slick-slider/slick-theme.css">
     <link rel="stylesheet" href="css/plugins/slider-pro.min.css">
     <link rel="stylesheet" href="css/plugins/magnific-popup.css">
     <link rel="stylesheet" href="css/plugins/gallery-styles.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="css/scroll.css"> -->
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/responsive-clients.css">
     <script src="js/plugins/gallery-scripts/modernizr-custom.js"></script>
 
 </head>
@@ -60,25 +64,31 @@
 
             <div class="main-content-element wrapper" id="anim1">
 				<div class="main-content-element-picture">
-                    <img src="img/clients/clients-main-1.png">
+                    <!--<img src="img/clients/clients-main-1.png" style="opacity:0;">-->
+                    <img src="img/clients/NYP-hero-image.jpg" style="opacity:0;">
                     <div class="red-text-block">
-                        <p>amazing things are happening here</p>
+                        <!--<p>amazing things are happening here</p>-->
+                        <img src="img/red-text-img.svg" style="opacity:0;">
                     </div>
                 </div>
 			</div>
 
             <div class="main-content-element wrapper" id="anim2">
 
-                <div class="text-block">
+                <div class="text-block wow-animate">
                     <h2 class="text-block-header">NewYork-Presbyterian</h2>
-                    <p>Copy explaining the situaiton. Sam doluptat quas mincti arumqui dolorepro beatia eum quia
-                        sedignihil id quidell orruntisin persper umquiam in prorecta vit aut ullaborrum hilia quidebitio
-                        vendusd andipsunt voluptatum voluptae nobis ant.</p>
+                    <p>As one of the nation’s best academic medical centers, NewYork-Presbyterian is well  known for its pioneering research and leading-edge medicine.</p>
+					<p>During our interviews with patients, we heard that their experience with the hospital’s staff consistently went well beyond the expectations typical of a large metropolitan hospital.</p>
+					<p>These incredible medical journeys needed to be translated into authentic and personal stories of the “amazing” care provided at NewYork-Presbyterian.</p>
+					<p>Advertising recall went from 11% to 24%, and positive word-of-mouth increased from 17% to 26%. Viewers found the campaign to be “much more differentiating” compared to the leading competitive advertiser (74% vs. 46%). Telephone inquiries increased by approximately 25%, and unique website visits increased by 40%.</p>
                 </div>
 
                 <div class="main-content-element-video">
-                    <div class="youtube" id="C9XVFRWrM7U"
-                         data-params="rel=0&amp;enablejsapi=1&amp;controls=0&amp;showinfo=0&amp;volume=0&amp;iv_load_policy=3&amp;modestbranding=1"></div>
+                    <div class="youtube">
+                        <img class="youtube-img" src="img/clients/NYP-girl-video-img.jpg" alt="">
+						<iframe src="https://player.vimeo.com/video/141100079" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+						<div class="video-button-play"></div>
+                    </div>
                 </div>
 
             </div>
@@ -87,6 +97,7 @@
                 <div class="main-content-element-picture notebook">
                     <div class="main-content-element-picture-notebook-img-block">
                         <img class="notebook-img" src="img/clients/notebook.png" alt="">
+                        <img class="notebook-img-mobile" src="img/notebook-img-mobile.jpg" alt="">
                         <div class="wrapper note-wrapper" style="overflow:hidden;">
                             <div class="content-inside-notebook-block">
                                 <div class="content">
@@ -111,7 +122,8 @@
                                                 </span>
                                             </a>
                                             <a href="#" class="item-element">
-                                                <img src="img/notebook-images/notebook-img-red.PNG" alt="">
+                                                <!--<img src="img/notebook-images/notebook-img-red.PNG" alt="">-->
+                                                <img src="img/red-text-img.svg" alt="">
                                             </a>
                                             <a href="#" class="item-element">
                                                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqm3XqF6yqCpnpeA0u3mtWdOzasmeLhESxhzZJPfR8lthCu0ILFA" alt="">
@@ -212,6 +224,7 @@
                 <div class="main-content-element-picture tablet">
                     <div class="main-content-element-picture-tablet-img-block">
                         <img class="tablet-img" src="img/clients/tablet.png" alt="">
+                        <img class="tablet-img-mobile" src="img/tablet-img-mobile.jpg" alt="">
                         <div class="wrapper note-wrapper" style="overflow:hidden;">
                             <div class="content-inside-notebook-block">
                                 <div class="content">
@@ -236,13 +249,14 @@
                                                 </span>
                                             </a>
                                             <a href="#" class="item-element">
-                                                <img src="img/notebook-images/notebook-img-red.PNG" alt="">
-                                            </a>
-                                            <a href="#" class="item-element">
                                                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqm3XqF6yqCpnpeA0u3mtWdOzasmeLhESxhzZJPfR8lthCu0ILFA" alt="">
                                                 <span class="name-wrapper">
                                                     <span class="name">Heather McNamara</span>
                                                 </span>
+                                            </a>
+                                            <a href="#" class="item-element">
+                                                <!--<img src="img/notebook-images/notebook-img-red.PNG" alt="">-->
+                                                <img src="img/red-text-img.svg" alt="">
                                             </a>
                                             <a href="#" class="item-element">
                                                 <img src="http://phototalents.ru/wp-content/uploads/2012/01/5351747719_4b7257335d_z.jpg" alt="">
@@ -285,9 +299,9 @@
                                                     <span class="name">Dawn Flemming</span>
                                                 </span>
                                             </a>
-                                            <a href="#" class="item-element">
+                                            <a href="#" class="item-element item-brazzers">
                                                 <!--<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPhLV7snl8EdNkZEhaG8b7igwgD3SUzl6-L_s36n7KgmZCJM0" alt="">-->
-                                                <img src="img/notebook-images/notebook-img-man.jpg" alt="">
+                                                <img src="img/brazzers-item-img.png" alt="" />
                                                 <span class="name-wrapper">
                                                     <span class="name">Nicole Marquez</span>
                                                 </span>
@@ -304,53 +318,79 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="absolute-man-block">
-                        <img src="img/man1.jpg" alt="">
+                        <div class="absolute-block-img">
+                            <img src="img/brazzers-item-img.png" class="absolute-man-block-image" />							
+							<span class="name-wrapper">
+								<span class="name">Nicole Marquez</span>
+							</span>
+                            <div class="video-button-play"></div>
+                        </div>
+                        <div class="main-content-element-video">
+                            <div class="youtube">
+                                <img src="img/clients/bald-guy-video-img.jpg" alt="" class="youtube-img" />
+								<iframe src="https://player.vimeo.com/video/243195873" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+								<div class="video-button-play"></div>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
             </div>
 
-            <!--<div class="main-content-element  wrapper">
-                <div class="main-content-element-picture">
-                    <img src="img/clients/tablet.png" alt="">
-                </div>
-            </div>-->
-
             <div class="main-content-element wrapper" id="anim5">
-                <div class="main-content-element-video">
-                    <div class="youtube" id="C9XVFRWrM7U"
-                         data-params="rel=0&amp;enablejsapi=1&amp;controls=0&amp;showinfo=0&amp;volume=0&amp;iv_load_policy=3&amp;modestbranding=1"></div>
-                </div>
+				<div class="prefooter-content-element-items bigimages">
+                    <div class="prefooter-slider-wrapper">
+                        <div class="prefooter-slider-item">
+                            <img src="img/centerfb.jpg" alt="">
+                        </div>
+                        <div class="prefooter-slider-item">
+                            <img src="img/slider-element1.png" alt="">
+                        </div>
+                        <div class="prefooter-slider-item">
+                            <img src="img/slider-element1.png" alt="">
+                        </div>
+                    </div>
+                    <!--<p class="prefooter-slider-text">
+                        Copy explaining the situaiton. Sam doluptat quas mincti arumqui dolorepro beatia eum quia
+                        sedignihil id quidell orruntisin persper umquiam in prorecta vit aut ullaborrum hilia quidebitio
+                        vendusd andipsunt voluptatum voluptae nobis ant.
+                    </p>-->
+				</div>
             </div>
 
             <div class="main-content-element wrapper" id="anim6">
-                <div class="text-block">
+                <!--<div class="text-block">
                     <p>Copy explaining the situaiton. Sam doluptat quas mincti arumqui dolorepro beatia eum quia
                         sedignihil id quidell orruntisin persper umquiam in prorecta vit aut ullaborrum hilia quidebitio
                         vendusd andipsunt voluptatum voluptae nobis ant.</p>
-                </div>
+                </div>-->
                 <div class="main-content-element-video">
-                    <div class="youtube" id="C9XVFRWrM7U"
-                         data-params="rel=0&amp;enablejsapi=1&amp;controls=0&amp;showinfo=0&amp;volume=0&amp;iv_load_policy=3&amp;modestbranding=1"></div>
+                    <div class="youtube">
+                        <img class="youtube-img" src="img/clients/nyp-old-lady-video.jpg" alt="">
+						<iframe src="https://player.vimeo.com/video/141100253" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+						<div class="video-button-play"></div>
+                    </div>
                 </div>
             </div>
 
-            <div class="footer-wrapper" id="anim7">
-                    <h3 class="prefooter-content-elements-header">See our other campaigns for NewYork-Presbyterian</h3>
-                    <div class="prefooter-content-element-items">
-                        <a class="prefooter-content-element-item" href="#">
-                            <img src="img/clients/prefooter-item-1.png" alt="">
-                            <span class="name">Ed Koch</span>
-                        </a>
-                        <a class="prefooter-content-element-item" href="#">
-                            <img src="img/clients/prefooter-item-2.png" alt="">
-                            <span class="name">Ed Koch</span>
-                        </a>
-                        <a class="prefooter-content-element-item" href="#">
-                            <img src="img/clients/prefooter-item-3.png" alt="">
-                            <span class="name">Ed Koch</span>
-                        </a>
-                    </div>
+            <div class="footer-wrapper client-page-animations-footer" id="anim7">
+				<!--<h3 class="prefooter-content-elements-header">See our other campaigns for NewYork-Presbyterian</h3>
+				<div class="prefooter-content-element-items">
+					<a class="prefooter-content-element-item" href="#">
+						<img src="img/clients/prefooter-item-1.png" alt="">
+						<span class="name">Ed Koch</span>
+					</a>
+					<a class="prefooter-content-element-item" href="#">
+						<img src="img/clients/prefooter-item-2.png" alt="">
+						<span class="name">Ed Koch</span>
+					</a>
+					<a class="prefooter-content-element-item" href="#">
+						<img src="img/clients/prefooter-item-3.png" alt="">
+						<span class="name">Ed Koch</span>
+					</a>
+				</div>-->
                 <footer>
                     <section class="footer-first-part">
                         <div class="left">
@@ -384,27 +424,27 @@
                         <div class="contacts-wrapper">
                             <ul class="contact-items-list">
                                 <li><span class="incumbency">New Business Opportunities</span></li>
-                                <li><span>Meghan Tucker</span></li>
-                                <li><a href="mailto:meghant@munnrabot.com">meghant@munnrabot.com</a></li>
-                                <li><a href="tel:212.220.6210">212.220.6210</a></li>
+                                <li><span>Orson Munn</span></li>
+                                <li><a href="mailto:orson@munnrabot.com">orson@munnrabot.com</a></li>
+                                <li><a href="tel:2122206214">212.220.6214</a></li>
                             </ul>
                             <ul class="contact-items-list">
                                 <li><span class="incumbency">Media Planning and Buying</span></li>
                                 <li><span>Geraldine Gately</span></li>
                                 <li><a href="mailto:geraldine@munnrabot.com">geraldine@munnrabot.com</a></li>
-                                <li><a href="tel:212.220.6219">212.220.6219</a></li>
+                                <li><a href="tel:2122206219">212.220.6219</a></li>
                             </ul>
                             <ul class="contact-items-list">
                                 <li><span class="incumbency">Human Resources</span></li>
-                                <li><span>Deb Velazquez</span></li>
-                                <li><a href="mailto:deb@munnrabot.com">deb@munnrabot.com</a></li>
-                                <li><a href="tel:212.220.6242">212.220.6242</a></li>
+                                <li><span>Rachel Lubertine</span></li>
+                                <li><a href="mailto:rachel@munnrabot.com">rachel@munnrabot.com</a></li>
+                                <li><a href="tel:2122206241">212.220.6241</a></li>
                             </ul>
                             <ul class="contact-items-list">
                                 <li><span class="incumbency">General Inquiries</span></li>
                                 <li><span>Ashley Sather</span></li>
                                 <li><a href="mailto:ashley@munnrabot.com">ashley@munnrabot.com</a></li>
-                                <li><a href="tel:212.727.3900">212.727.3900</a></li>
+                                <li><a href="tel:2127273900">212.727.3900</a></li>
                             </ul>
                         </div>
                         <div class="copyright-block">
@@ -419,224 +459,184 @@
 </div>
 
 
-        <!--<div class="prefooter-content-elements">
-            <h3 class="prefooter-content-elements-header">See our other campaigns for NewYork-Presbyterian</h3>
-            <div class="prefooter-content-element-items">
-                <a class="prefooter-content-element-item" href="#">
-                    <img src="img/clients/prefooter-item-1.png" alt="">
-                    <span class="name">Ed Koch</span>
-                </a>
-                <a class="prefooter-content-element-item" href="#">
-                    <img src="img/clients/prefooter-item-2.png" alt="">
-                    <span class="name">Ed Koch</span>
-                </a>
-                <a class="prefooter-content-element-item" href="#">
-                    <img src="img/clients/prefooter-item-3.png" alt="">
-                    <span class="name">Ed Koch</span>
-                </a>
-            </div>
-        </div>-->
-
-
-    <!-- <footer>
-        <section class="footer-first-part">
-            <div class="left">
-                <a href="index.html" class="footer-logo">
-                    <img src="img/footer-logo.png" alt="logo">
-                </a>
-                <div class="address-info">
-                    <span class="text">33 West 17th Street</span>
-                    <span class="text">New York, NY 10011</span>
-                </div>
-            </div>
-            <div class="right">
-                <ul class="footer-first-part-social-list">
-                    <li>
-                        <a href="#" class="facebook-link-icon"><i class="icon-facebook"></i></a>
-                    </li>
-                    <li>
-                        <a href="#" class="twitter-link-icon"><i class="icon-twitter"></i></a>
-                    </li>
-                    <li>
-                        <a href="#" class="instagram-link-icon"><i class="icon-instagram"></i></a>
-                    </li>
-                    <li>
-                        <a href="#" class="youtube-play-link-icon"><i class="icon-youtube-play"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="footer-second-part">
-            <h3 class="footer-header">Contact</h3>
-            <div class="contacts-wrapper">
-                <ul class="contact-items-list">
-                    <li><span class="incumbency">New Business Opportunities</span></li>
-                    <li><span>Meghan Tucker</span></li>
-                    <li><a href="mailto:meghant@munnrabot.com">meghant@munnrabot.com</a></li>
-                    <li><a href="tel:212.220.6210">212.220.6210</a></li>
-                </ul>
-                <ul class="contact-items-list">
-                    <li><span class="incumbency">Media Planning and Buying</span></li>
-                    <li><span>Geraldine Gately</span></li>
-                    <li><a href="mailto:geraldine@munnrabot.com">geraldine@munnrabot.com</a></li>
-                    <li><a href="tel:212.220.6219">212.220.6219</a></li>
-                </ul>
-                <ul class="contact-items-list">
-                    <li><span class="incumbency">Human Resources</span></li>
-                    <li><span>Deb Velazquez</span></li>
-                    <li><a href="mailto:deb@munnrabot.com">deb@munnrabot.com</a></li>
-                    <li><a href="tel:212.220.6242">212.220.6242</a></li>
-                </ul>
-                <ul class="contact-items-list">
-                    <li><span class="incumbency">General Inquiries</span></li>
-                    <li><span>Ashley Sather</span></li>
-                    <li><a href="mailto:ashley@munnrabot.com">ashley@munnrabot.com</a></li>
-                    <li><a href="tel:212.727.3900">212.727.3900</a></li>
-                </ul>
-            </div>
-            <div class="copyright-block">
-                <span>&copy; 1995-2016 All Rights Reserved &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp; Terms of Use</span>
-            </div>
-        </section>
-    </footer> -->
-
-    <script src="js/plugins/gallery-scripts/imagesloaded.pkgd.min.js"></script>
-    <script src="js/plugins/gallery-scripts/masonry.pkgd.min.js"></script>
-    <script src="js/plugins/gallery-scripts/classie.js"></script>
-    <script src="js/plugins/gallery-scripts/main.js"></script>
-    <script>
-        (function() {
-
-            // create SVG circle overlay and append it to the preview element
-            function createCircleOverlay(previewEl) {
-                var dummy = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-                dummy.setAttributeNS(null, 'version', '1.1');
-                dummy.setAttributeNS(null, 'width', '100%');
-                dummy.setAttributeNS(null, 'height', '100%');
-                dummy.setAttributeNS(null, 'class', 'overlay');
-                var g = document.createElementNS('http://www.w3.org/2000/svg', 'g');
-                var circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
-                circle.setAttributeNS(null, 'cx', 0);
-                circle.setAttributeNS(null, 'cy', 0);
-                circle.setAttributeNS(null, 'r', Math.sqrt(Math.pow(previewEl.offsetWidth,2) + Math.pow(previewEl.offsetHeight,2)));
-                dummy.appendChild(g);
-                g.appendChild(circle);
-                previewEl.appendChild(dummy);
-            }
-
-            new GridFx(document.querySelector('.grid'), {
-                onInit : function(instance) {
-                    createCircleOverlay(instance.previewEl);
-                },
-                onResize : function(instance) {
-                    instance.previewEl.querySelector('svg circle').setAttributeNS(null, 'r', Math.sqrt(Math.pow(instance.previewEl.offsetWidth,2) + Math.pow(instance.previewEl.offsetHeight,2)));
-                },
-                onOpenItem : function(instance, item) {
-                    // item's image
-                    var gridImg = item.querySelector('img'),
-                        gridImgOffset = gridImg.getBoundingClientRect(),
-                        win = {width: document.documentElement.clientWidth, height: window.innerHeight},
-                        SVGCircleGroupEl = instance.previewEl.querySelector('svg > g'),
-                        SVGCircleEl = SVGCircleGroupEl.querySelector('circle');
-
-                    SVGCircleEl.setAttributeNS(null, 'r', Math.sqrt(Math.pow(instance.previewEl.offsetWidth,2) + Math.pow(instance.previewEl.offsetHeight,2)));
-                    // set the transform for the SVG g node. This will animate the circle overlay. The origin of the circle depends on the position of the clicked item.
-                    if( gridImgOffset.left + gridImg.offsetWidth/2 < win.width/2 ) {
-                        SVGCircleGroupEl.setAttributeNS(null, 'transform', 'translate(' + win.width + ', ' + (gridImgOffset.top + gridImg.offsetHeight/2 < win.height/2 ? win.height : 0) + ')');
-                    }
-                    else {
-                        SVGCircleGroupEl.setAttributeNS(null, 'transform', 'translate(0, ' + (gridImgOffset.top + gridImg.offsetHeight/2 < win.height/2 ? win.height : 0) + ')');
-                    }
-                }
-            });
-        })();
-    </script>
-
-<script src="js/jquery-3.2.1.slim.min.js"></script>
+<script src="js/plugins/gallery-scripts/imagesloaded.pkgd.min.js"></script>
+<script src="js/plugins/gallery-scripts/masonry.pkgd.min.js"></script>
+<script src="js/plugins/gallery-scripts/classie.js"></script>
+<script src="js/plugins/gallery-scripts/main.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="js/plugins/slick-slider/slick.js"></script>
 <script src="js/plugins/jquery.sliderPro.min.js"></script>
 <script src="js/plugins/jquery.magnific-popup.min.js"></script>
-<script src="js/script.js"></script>
 <script src="js/picasso.js"></script>
-<!-- <script src="js/velocity.min.js"></script>
-<script src="js/velocity.ui.min.js"></script>
-<script src="js/_main.js"></script> -->
-
-
-<!--Script for YouTube-->
-<script>
-    function r(f) {
-        /in/.test(document.readyState) ? setTimeout('r(' + f + ')', 9) : f()
-    }
-    r(function () {
-
-
-
-        if (!document.getElementsByClassName) {
-            // IE8 support
-            var getElementsByClassName = function (node, classname) {
-                var a = [];
-                var re = new RegExp('(^| )' + classname + '( |$)');
-                var els = node.getElementsByTagName("*");
-                for (var i = 0, j = els.length; i < j; i++)
-                    if (re.test(els[i].className)) a.push(els[i]);
-                return a;
-            }
-            var videos = getElementsByClassName(document.body, "youtube");
-        }
-        else {
-            var videos = document.getElementsByClassName("youtube");
-        }
-
-        var nb_videos = videos.length;
-        for (var i = 0; i < nb_videos; i++) {
-            // Based on the YouTube ID, we can easily find the thumbnail image
-            videos[i].style.backgroundImage = 'url(http://i.ytimg.com/vi/' + videos[i].id + '/sddefault.jpg)';
-
-            // Overlay the Play icon to make it look like a video player
-            var play = document.createElement("div");
-            play.setAttribute("class", "video-button-play");
-            videos[i].appendChild(play);
-
-            videos[i].onclick = function () {
-                // Create an iFrame with autoplay set to true
-                var VideoResponsive = document.createElement("div");
-                VideoResponsive.setAttribute("class", "video-responsive");
-                var iframe = document.createElement("iframe");
-                var iframe_url = "https://www.youtube.com/embed/" + this.id + "?autoplay=1&autohide=1";
-                if (this.getAttribute("data-params")) iframe_url += '&' + this.getAttribute("data-params");
-                iframe.setAttribute("src", iframe_url);
-                iframe.setAttribute("frameborder", '0');
-
-                // The height and width of the iFrame should be the same as parent
-                iframe.style.width = this.style.width;
-                iframe.style.height = this.style.height;
-
-                VideoResponsive.appendChild(iframe);
-                this.parentNode.replaceChild(VideoResponsive, this);
-            }
-        }
-    });
-</script>
+<script src="js/wow.js"></script>
+<script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
 
 <script>
 jQuery(function($){
 
-	// Initialize correct dimensions for blocks
-	var j = $('.main-content-element.wrapper').length;
-	$('.main-content-element.wrapper').each(function(){
-		$(this).css({'z-index': j, 'opacity':1});
-		$(this).data('property', -1*$(this).height());
-		j--;
+
+    //clients page big images slider
+    jQuery('.prefooter-slider-wrapper').slick({
+        centerMode: true,
+        autoplay: false,
+        loop: true,
+        variableWidth: true,
+        centerPadding: '0px',
+        slidesToShow: 1,
+        dots: false,
+        responsive: [
+            {
+                breakpoint: 960,
+                settings: {
+                    arrows: false,
+                    centerMode: false,
+                    variableWidth: false,
+                    slidesToShow: 1,
+                    dots: true
+                }
+            }
+        ]
+    });
+
+    //show video in absolute man block
+    $('.absolute-block-img .video-button-play', this).on('click',function (e) {
+        e.stopPropagation();
+        $('.absolute-block-img').hide();
+        $('.main-content-element-video','.absolute-man-block').show();
+        $('.main-content-element-video .youtube .video-button-play','.absolute-man-block').trigger('click',function (e) {
+            e.stopPropagation();
+        });
+    });
+	$(".video-button-play").on("click",function(){
+		$(this).closest('.youtube').find('.youtube-img').fadeOut();
+		$(this).fadeOut();
+		var player=$f($(this).closest('.youtube').find('iframe')[0]);
+		player.api("play");
 	});
-	//$('.main-content-element.wrapper').eq(0).css({'opacity':1});
+	
+var wWidth = $(window).width();
+if (wWidth > 1000){
+    // img 1341x774
+	//correct w 874
+	// inner 633x405
+	//w coef = 1,53
+	//orig h = 620
+	function NoteTabletContentWidth() {
+
+		var Notebook = $('.main-content-element-picture-notebook-img-block .notebook-img');
+		var NotebookContent = $('.main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .wrapper');
+		var NoteWidth = $(Notebook).width();
+		var NoteHeight = $(Notebook).height();
+		
+		$(NotebookContent).width(NoteWidth / 1.38).height(620 / (1341/NoteWidth));
+
+		var Tablet = $('.main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .tablet-img');
+		var TabletContent = $('.main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .wrapper');
+		var TabletWidth = $(Tablet).width();
+		var TabletHeight = $(Tablet).height();
+		$(TabletContent).width(TabletWidth / 1.34).height(TabletHeight / 1.25);
+
+	}
+	$(window).resize(function () {
+		NoteTabletContentWidth();
+	}).resize();
+
+	var absoluteTimerId, timerId;
+	$(window).on('resize', function(){
+		var j = $('.main-content-elements > div').length;
+		$('.main-content-elements > div').each(function(){
+			$(this).css({'z-index': j, 'opacity':1});
+			$(this).data('property', -$(this).height());
+			j--;
+		});
+
+		$('#anim1 .main-content-element-picture img').animate({opacity: 1}, 1300);
+		$('#anim1 .red-text-block').css({top: 60, left: $('#anim1 .main-content-element-picture > img').outerWidth(true) - ($('#anim1 .main-content-element-picture > img').outerWidth(true) - $('#anim1 .main-content-element-picture > img').width())/2 - $('#anim1 .red-text-block').width() - 30});
+		
+		$('.red-text-block img').css('height', 'auto');
+		$('.red-text-block').height( $('.red-text-block img').height() );
+		$('.red-text-block img').css('height', 'inherit');
+		
+		$('.red-text-block').data('property', $('.red-text-block').outerHeight());
+		$('.red-text-block').data('other', $('.red-text-block').outerHeight() / 2 + 45);
+		$('#anim2 .text-block').data('property', -$('#anim2 .text-block').height() - 35);
+		$('.main-content-element-video').data('property', $('.main-content-element-video').height());
+		$('.main-content-element-picture.notebook').data('property', $('.main-content-element-picture.notebook').height());
+		$('#anim3 .item-element').each(function(){
+			$(this).data('property', $(this).height());
+		});
+		$('#anim4 .main-content-element-picture.tablet').data('property', $('#anim4 .main-content-element-picture.tablet').height());
+
+		$('#anim4 .absolute-man-block').data('property', $('.item-brazzers').width());
+		$('.absolute-man-block').css('left', $('.item-brazzers').offset().left - $('.main-content-element-picture.tablet').offset().left);
+		$('.absolute-man-block').data('other', -1 * ($('.item-brazzers').offset().left - $('.main-content-element-picture.tablet').offset().left));
+		
+		clearInterval(absoluteTimerId);
+		absoluteTimerId = setInterval(function(){
+			$('.absolute-man-block').css('top',  $('.item-brazzers').position().top + $('.wrapper.note-wrapper').eq(1).position().top + 5);
+		}, 500);
+		
+		clearInterval(timerId);
+		timerId = setInterval(function(){
+			if ( ($('.wow-animate').offset().top - ($(window).scrollTop() + $(window).height()))  <= -500){
+				$(".wow-animate").toggleClass("fadeInUp animated");
+				clearInterval(timerId);
+			}
+		}, 100);
+		
+		$('.absolute-man-block').css('width',  $('.item-brazzers').width());
+		$('.absolute-man-block').css('height',  $('.item-brazzers').height() + $('.content-inside-notebook-block .item-brazzers .name-wrapper').height());
+		$('.absolute-block-img').css('min-height',  $('.item-brazzers').height() + $('.content-inside-notebook-block .item-brazzers .name-wrapper').height());
+		$('.absolute-block-img').css('min-height',  $('.absolute-man-block').height() - 11);
+		$('.absolute-man-block-image').css('min-height',  $('.absolute-man-block').height() - 11);
+		$('.absolute-man-block-image').css('max-height',  'calc(100vh - 90px)');
+
+		$('#anim1').data('property', -$('#anim1').height() - 5);
+		$('#anim5').data('property', $('#anim5').height());
+		$('#anim6').data('property', $('#anim6').height());
+		$('#anim6').data('other', - $('#anim7').height() - 20);
+		$('#anim6 .youtube').data('property', $('#anim6 .youtube').height());
+
+		$('#anim7').data('other', $('#anim7').height() - $(window).height() + 70);
+
+	}).resize();
+
+}else{
+	$('#anim1 img, #anim2 .main-content-element-video').css('opacity', 1);
+}
+	
+	$(window).resize(function () {
+		if (wWidth <= 1000 && $(window).width() > 1000){
+			location.reload();
+		}else if (wWidth > 1000 && $(window).width() <= 1000){
+			location.reload();
+		}
+	});
+	
+	//MENU START
+
+	function ActivateMobileMenu() {
+		if ($('.mobile-btn-wrapper').hasClass('active')) {
+			$('.mobile-btn-wrapper').removeClass('active');
+			setTimeout(function () {
+				$('.header-navigation-items').removeClass('active');
+                $('body').removeClass('disable-scroll');
+			}, 400);
+		} else {
+			$('.mobile-btn-wrapper').addClass('active');
+			$('body').addClass('disable-scroll');
+			setTimeout(function () {
+				$('.header-navigation-items').addClass('active');
+			}, 400);
+		}
+	}
+
+	$('.mobile-btn-wrapper').on('click', function () {
+		ActivateMobileMenu();
+	});
 
 
-	$('.red-text-block').data('property', $('.red-text-block').height());
-	$('#anim2 .text-block').data('property', -1*$('#anim2 .text-block').height());
-	$('.main-content-element-video').data('property', $('.main-content-element-video').height());
-	$('.main-content-element-picture.notebook').data('property', $('.main-content-element-picture.notebook').height());
-
-
+	//MENU END
 
 });
 </script>
