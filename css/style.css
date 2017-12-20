@@ -54,6 +54,7 @@ body.disable-scroll {
     text-align: center;
     /*text-transform: uppercase;*/
     padding: 0 30px;
+    overflow: hidden;
 }
 
 .footer-wrapper {
@@ -1465,7 +1466,7 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
     background-size: 100% auto;
     background-position: center center;
     position: relative;
-	padding-bottom: 70px;
+	/*padding-bottom: 70px;*/
 }
 
 .main-content-element-video .youtube .youtube-img {
@@ -1474,8 +1475,9 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
     left: 0;
     right: 0;
     bottom: 0;    
-	height: calc(100% - 70px);
+	/*height: calc(100% - 70px);*/
     width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
