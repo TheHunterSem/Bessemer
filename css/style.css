@@ -2156,6 +2156,16 @@ footer {
     /* margin: 0 40px; */
     padding: 0 20px;
 }
+.prefooter-slider-item.slick-slide.slick-current,
+.prefooter-slider-item.slick-slide.slick-next2,
+.prefooter-slider-item.slick-slide.slick-prev2
+{
+	opacity: 1;
+}
+.prefooter-slider-item.slick-slide{
+	opacity: 0;
+	transition: opacity 0.3s;
+}
 
 .prefooter-slider-wrapper .slick-slide {
     width: 806px;

@@ -885,7 +885,7 @@
         if (_.$slides) {
 
             _.$slides
-                .removeClass('slick-slide slick-active slick-center slick-visible slick-current')
+                .removeClass('slick-slide slick-active slick-center slick-visible slick-current slick-next2 slick-prev2')
                 .removeAttr('aria-hidden')
                 .removeAttr('data-slick-index')
                 .each(function(){
@@ -2287,12 +2287,18 @@
 
         allSlides = _.$slider
             .find('.slick-slide')
-            .removeClass('slick-active slick-center slick-current')
+            .removeClass('slick-active slick-center slick-current slick-next2 slick-prev2')
             .attr('aria-hidden', 'true');
 
         _.$slides
             .eq(index)
-            .addClass('slick-current');
+            .addClass('slick-current yo');
+        _.$slides
+            .eq(index).prev()
+            .addClass('slick-prev2');
+        _.$slides
+            .eq(index).next()
+            .addClass('slick-next2');
 
         if (_.options.centerMode === true) {
 
@@ -2895,7 +2901,7 @@
         }
 
         _.$slides
-            .removeClass('slick-slide slick-active slick-visible slick-current')
+            .removeClass('slick-slide slick-active slick-visible slick-current slick-next2 slick-prev2')
             .attr('aria-hidden', 'true')
             .css('width', '');
 
