@@ -891,7 +891,8 @@
 
     .prefooter-slider-item {
         height: auto;
-        max-height: 430px;
+        /*max-height: 430px;*/
+        max-height: none;
     }
 
     .prefooter-slider-wrapper {
