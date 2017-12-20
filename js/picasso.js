@@ -532,7 +532,7 @@
                 || 'onmsgesturechange' in window; // works on ie10
         }
 		
-		if ($(window).width() > 1000){
+		if ($(window).width() > 1000){			
 			init();
 
 			var wow = new WOW(
