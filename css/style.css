@@ -6,7 +6,7 @@ body {
     font-weight: 400;
 }
 
-.wow-animate {visibility: hidden;}
+.wow-animate {visibility: hidden; padding-top: 26px;}
 .wow-animate.animated {visibility: visible;}
 .wow-animate p {margin-bottom: 20px;}
 
