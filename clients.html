@@ -605,12 +605,13 @@ if (wWidth > 1000){
 }
 	
 	$(window).resize(function () {
-		if (wWidth < 1000 && $(window).width() >= 1000){
+		if (wWidth <= 1000 && $(window).width() > 1000){
 			location.reload();
-		}else if (wWidth >= 1000 && $(window).width() < 1000){
+		}else if (wWidth > 1000 && $(window).width() <= 1000){
 			location.reload();
 		}
 	});
+	
 	//MENU START
 
 	function ActivateMobileMenu() {
