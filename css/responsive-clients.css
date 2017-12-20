@@ -902,6 +902,10 @@
         height: auto;
     }
 
+    .main-content-element-picture {
+        max-height: none;
+    }
+
 }
 
 @media (max-width: 960px){
