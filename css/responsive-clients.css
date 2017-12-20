@@ -158,9 +158,9 @@
         max-height: 320px;
     }
 
-    .main-content-element {
+    /*.main-content-element {
         width: 98%;
-    }
+    }*/
 
 }
 
@@ -168,7 +168,7 @@
 
     .header-wrapper {
         /*padding: 0 30px;*/
-        padding: 0 10px;
+        /*padding: 0 10px;*/
     }
 
 }
@@ -177,7 +177,7 @@
 
     .main-content-element {
         /*width: 79%;*/
-        width: 98%;
+        /*width: 98%;*/
     }
 
     /*.red-text-block {
@@ -345,7 +345,7 @@
 
     .main-content-element {
         width: 100%;
-        padding: 0 15px;
+        /*padding: 0 15px;*/
     }
 /*
     .main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .wrapper {
@@ -472,7 +472,7 @@
        /* width: 80%;
         padding: 0 15px;*/
         width: 100%;
-        padding: 0 10px;
+        /*padding: 0 10px;*/
     }
 
    /* .main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .wrapper {
