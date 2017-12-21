@@ -391,12 +391,12 @@ html {
 /*font-family: 'munnrabot';  (fontello-icons)  */
 @font-face {
     font-family: 'munnrabot';
-    src: url('../fonts/fontello/munnrabot.eot?18332336');
-    src: url('../fonts/fontello/munnrabot.eot?18332336#iefix') format('embedded-opentype'),
-    url('../fonts/fontello/munnrabot.woff2?18332336') format('woff2'),
-    url('../fonts/fontello/munnrabot.woff?18332336') format('woff'),
-    url('../fonts/fontello/munnrabot.ttf?18332336') format('truetype'),
-    url('../fonts/fontello/munnrabot.svg?18332336#munnrabot') format('svg');
+    src: url('../fonts/fontello/munnrabot.eot?5904041');
+    src: url('../fonts/fontello/munnrabot.eot?5904041#iefix') format('embedded-opentype'),
+    url('../fonts/fontello/munnrabot.woff2?5904041') format('woff2'),
+    url('../fonts/fontello/munnrabot.woff?5904041') format('woff'),
+    url('../fonts/fontello/munnrabot.ttf?5904041') format('truetype'),
+    url('../fonts/fontello/munnrabot.svg?5904041#munnrabot') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -420,6 +420,7 @@ html {
 .icon-twitter:before { content: '\e802'; } /* '' */
 .icon-instagram:before { content: '\e803'; } /* '' */
 .icon-facebook:before { content: '\f09a'; } /* '' */
+.icon-angle-left:before { content: '\f104'; } /* '' */
 .icon-youtube-play:before { content: '\f16a'; } /* '' */
 
 * {
@@ -564,11 +565,13 @@ header {
 }
 
 .header-logo {
-    max-width: 175px;
+    max-width: 390px;
     width: 100%;
     height: 30px;
-    display: inline-block;
+    /*display: inline-block;*/
     float: left;
+    display: flex;
+    align-items: center;
 }
 
 .header-logo img {
@@ -2196,5 +2199,42 @@ footer {
 
 .main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .notebook-img-mobile,
 .main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .tablet-img-mobile {
+    display: none;
+}
+
+.comeback-link {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7C7D81;
+    position: relative;
+    margin-left: 35px;
+    padding-left: 10px;
+}
+
+.comeback-link::before {
+    position: absolute;
+    content: '\f104';
+    top: 50%;
+    left: -10px;
+    transform: translateY(-50%);
+    font-family: 'munnrabot';
+    color: #7C7D81;
+    font-size: 30px;
+}
+
+.link-to-bessemer-trust {
+    width: 300px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #7C7D81;
+    font-size: 18px;
+    line-height: 27px;
+    text-transform: uppercase;
+    border: 1px solid #7C7D81;
+    padding: 5.5px 10px;
+    box-sizing: border-box;
     display: none;
 }
