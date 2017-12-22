@@ -2236,5 +2236,12 @@ footer {
     border: 1px solid #7C7D81;
     padding: 5.5px 10px;
     box-sizing: border-box;
-    display: none;
+    margin-top: 20px;
+    transition: .4s;
+}
+
+.link-to-bessemer-trust:hover {
+    border: 1px solid #7C7D81;
+    background-color: #7C7D81;
+    color: #FFFFFF;
 }
