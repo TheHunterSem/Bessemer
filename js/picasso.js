@@ -207,7 +207,8 @@
                             'selector': '#anim4 .main-content-element-picture-tablet-img-block, #anim4 .absolute-block-img .name-wrapper',
                             'opacity': [1, 0],
                             'start': 42,
-                            'end': 48
+                            //'end': 48
+                            'end': 54
                         },
                         {
                             'selector': '#anim4 .absolute-man-block',
@@ -232,7 +233,8 @@
                             'selector': '#anim4 .main-content-element-picture.tablet',
                             'height': ['initial', 0],
                             'opacity': [1, 0.4],
-                            'start': 58,
+                            //'start': 58,
+                            'start': 55,
                             'end': 65
                         },
 						
@@ -567,7 +569,7 @@
 		  }
 		);
 		
-		if ($(window).width() > 1000){			
+		if ($(window).width() > 985){			
 			init();
 
 			$('#anim1, #anim2, #anim3, #anim4, #anim5, #anim6, #anim7').removeClass('wow fadeIn');
@@ -592,15 +594,6 @@
                 '#anim7'
             ];
 
-            /* $(AnimSelectors).each(function(index, value){
-                var $this = $(value);
-
-                var height = $this.height();
-                var centerY = height / 2;
-                centers.push(centerY);
-                heights.push(height);
-            }); */
-			
 			$('#anim1, #anim2 .text-block.wow-animate, #anim2 .main-content-element-video, #anim3, #anim4, #anim5, #anim6, #anim7').addClass('wow fadeIn');
 			$('#anim2 .text-block.wow-animate').css('opacity', 1).removeClass('wow-animate');
 			
