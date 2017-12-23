@@ -873,6 +873,8 @@
     .main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .tablet-img-mobile {
         display: block;
         width: 100%;
+        height: auto;
+        /* delete after images changed */
     }
 
     .main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .tablet-img-mobile {
