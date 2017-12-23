@@ -1083,8 +1083,12 @@ footer {
     .main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .notebook-img-mobile,
     .main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .tablet-img-mobile {
         display: block;
-        height:calc(100vh - 130px);
-        width: auto;
+    /* height:calc(100vh - 130px);
+     width: auto;*/
+    }
+    .main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .tablet-img-mobile {
+         height:calc(100vh - 130px);
+         width: auto;
     }
 
     .main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .tablet-img-mobile {
