@@ -604,6 +604,8 @@
     .main-content-element .text-block p {
         font-weight: 200;
         line-height: 30px;
+
+        margin-bottom: 10px;
     }
 
     .client-page-animations-footer .copyright-block {
