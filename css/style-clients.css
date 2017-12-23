@@ -1049,7 +1049,9 @@ footer {
 }
 
 .comeback-link {
-    display: inline-block;
+    /* display: inline-block; */
+    display: table;
+	width: 200px;
     text-decoration: none;
     font-size: 16px;
     line-height: 24px;
@@ -1069,3 +1071,38 @@ footer {
     color: #7C7D81;
     font-size: 30px;
 }
+
+/* Before images correction */
+    .main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .wrapper,
+    .main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .wrapper,
+    .main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .notebook-img,
+    .main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .tablet-img {
+        display: none;
+    }
+
+    .main-content-element-picture.notebook .main-content-element-picture-notebook-img-block .notebook-img-mobile,
+    .main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .tablet-img-mobile {
+        display: block;
+        height:calc(100vh - 130px);
+        width: auto;
+    }
+
+    .main-content-element-picture.tablet .main-content-element-picture-tablet-img-block .tablet-img-mobile {
+        padding: 0 10%;
+    }
+
+    .main-content-element-picture {
+        width: auto;
+    }
+
+    .main-content-element-picture {
+        max-height: none;
+        max-width: none;
+    }
+	
+	.main-content-element-picture.notebook {
+		background-color: #FFF;
+	}
+	
+	.absolute-man-block {display:none;}
+/* Before images correction */

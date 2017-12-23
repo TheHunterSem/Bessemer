@@ -64,7 +64,7 @@ html {
 }
 
 .top-slides-content-wrapper {
-    /*padding-bottom: 30px;*/
+    margin-top: 70px;
     padding: 0 30px 30px 30px;
 }
 
@@ -997,6 +997,29 @@ top-slides-content-elements.has-active-child .top-slide-content-element.active.l
 
 .top-slide-content-element .read-more-block-mobile {
     display: none;
+}
+
+
+.comeback-link {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7C7D81;
+    position: relative;
+    margin-left: 35px;
+    padding-left: 10px;
+}
+
+.comeback-link::before {
+    position: absolute;
+    content: '\f104';
+    top: 50%;
+    left: -10px;
+    transform: translateY(-50%);
+    font-family: 'munnrabot';
+    color: #7C7D81;
+    font-size: 30px;
 }
 
 .link-to-bessemer-trust {
