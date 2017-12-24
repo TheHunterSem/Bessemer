@@ -521,12 +521,11 @@ jQuery(function($){
 			$(TabletContent).width(TabletWidth / 1.34).height(TabletHeight / 1.25);
 
 		}
-		$(window).resize(function () {
-			NoteTabletContentWidth();
-		}).resize();
 
 		var absoluteTimerId, timerId;
 		$(window).on('resize', function(){
+			NoteTabletContentWidth();
+		
 			var j = $('.main-content-elements > div').length;
 			$('.main-content-elements > div').each(function(){
 				$(this).css({'z-index': j, 'opacity':1});
