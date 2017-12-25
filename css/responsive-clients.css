@@ -988,7 +988,10 @@
 }
 
 @media (max-width: 767px) {
-
+	.main-content-element .text-block p {
+		font-size: 20px;
+	}
+	
     .red-text-block {
         top: 21px;
         right: 21px;

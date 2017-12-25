@@ -207,15 +207,13 @@
                             'selector': '#anim4 .main-content-element-picture-tablet-img-block, #anim4 .absolute-block-img .name-wrapper',
                             'opacity': [1, 0],
                             'start': 42,
-                            //'end': 48
-                            'end': 54
+                            'end': 48
+                            //'end': 54
                         },
                         {
                             'selector': '#anim4 .absolute-man-block',
                             'width': ['initial', 'width'],
                             'height': ['initial', 'height'],
-                            //'margin-left': [0, '-45%'],
-                            //'margin-top': [0, '-27%'],
                             'margin-left': [0, 'other'],
                             'margin-top': [0, 'bald'],
                             'start': 48,
@@ -234,10 +232,18 @@
                             'height': ['initial', 0],
                             'opacity': [1, 0.4],
                             //'start': 58,
-                            'start': 55,
-                            'end': 65
+                            'start': 47,
+                            //'end': 65
+                            'end': 59
                         },
 						
+								// 4-2 screen
+								{
+									'selector': '#anim4-2 .main-content-element-video',
+									'height': ['initial', 0],
+									'start': 61,
+									'end': 67
+								},
 						// 5 screen
                         {
                             'selector': '#anim5',
@@ -594,7 +600,7 @@
                 '#anim7'
             ];
 
-			$('#anim1, #anim2 .text-block.wow-animate, #anim2 .main-content-element-video, #anim3, #anim4, #anim5, #anim6, #anim7').addClass('wow fadeIn');
+			$('#anim1, #anim2 .text-block.wow-animate, #anim2 .main-content-element-video, #anim3, #anim4-2, #anim4, #anim5, #anim6, #anim7').addClass('wow fadeIn');
 			$('#anim2 .text-block.wow-animate').css('opacity', 1).removeClass('wow-animate');
 			
 			wow.init();
